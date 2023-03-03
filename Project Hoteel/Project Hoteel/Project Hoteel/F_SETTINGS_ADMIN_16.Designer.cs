@@ -35,11 +35,11 @@
             this.pnl_line3_16 = new System.Windows.Forms.Panel();
             this.pnl_line2_16 = new System.Windows.Forms.Panel();
             this.pnl_line1_16 = new System.Windows.Forms.Panel();
-            this.pnl_load_form_16 = new System.Windows.Forms.Panel();
             this.b_about_16 = new System.Windows.Forms.Button();
             this.b_customize_16 = new System.Windows.Forms.Button();
             this.b_rooms_16 = new System.Windows.Forms.Button();
             this.b_privac_16 = new System.Windows.Forms.Button();
+            this.pnl_load_form_16 = new System.Windows.Forms.Panel();
             this.pnl_admin_1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -114,14 +114,6 @@
             this.pnl_line1_16.Size = new System.Drawing.Size(3, 39);
             this.pnl_line1_16.TabIndex = 3;
             this.pnl_line1_16.Visible = false;
-            // 
-            // pnl_load_form_16
-            // 
-            this.pnl_load_form_16.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnl_load_form_16.Location = new System.Drawing.Point(0, 0);
-            this.pnl_load_form_16.Name = "pnl_load_form_16";
-            this.pnl_load_form_16.Size = new System.Drawing.Size(762, 467);
-            this.pnl_load_form_16.TabIndex = 44;
             // 
             // b_about_16
             // 
@@ -202,6 +194,14 @@
             this.b_privac_16.Text = "       الخصوصية";
             this.b_privac_16.UseVisualStyleBackColor = false;
             this.b_privac_16.Click += new System.EventHandler(this.b_privacy_16_Click);
+            // 
+            // pnl_load_form_16
+            // 
+            this.pnl_load_form_16.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_load_form_16.Location = new System.Drawing.Point(0, 0);
+            this.pnl_load_form_16.Name = "pnl_load_form_16";
+            this.pnl_load_form_16.Size = new System.Drawing.Size(762, 467);
+            this.pnl_load_form_16.TabIndex = 44;
             // 
             // F_SETTINGS_ADMIN_16
             // 

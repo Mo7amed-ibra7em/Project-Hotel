@@ -562,6 +562,7 @@
             this.Text = "F_ADMIN_5";
             this.TransparencyKey = System.Drawing.Color.IndianRed;
             this.Load += new System.EventHandler(this.F_ADMIN_5_Load);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.F_ADMIN_5_MouseDown);
             this.PB_list_bg_5.ResumeLayout(false);
             this.PB_list_bg_5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_weather_5)).EndInit();

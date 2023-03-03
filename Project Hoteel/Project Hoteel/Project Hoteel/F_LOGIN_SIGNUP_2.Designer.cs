@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_LOGIN_SIGNUP_2));
-            this.timer2 = new System.Windows.Forms.Timer(this.components);
+            this.timer_progress_2 = new System.Windows.Forms.Timer(this.components);
             this.t_password_2 = new System.Windows.Forms.TextBox();
             this.L_2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -50,10 +50,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // timer2
+            // timer_progress_2
             // 
-            this.timer2.Interval = 2;
-            this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
+            this.timer_progress_2.Interval = 2;
+            this.timer_progress_2.Tick += new System.EventHandler(this.timer_progress_2_Tick);
             // 
             // t_password_2
             // 
@@ -313,7 +313,7 @@
 
 
         #endregion
-        public System.Windows.Forms.Timer timer2;
+        public System.Windows.Forms.Timer timer_progress_2;
         private System.Windows.Forms.TextBox t_password_2;
         private System.Windows.Forms.Label L_2;
         private System.Windows.Forms.PictureBox pictureBox1;

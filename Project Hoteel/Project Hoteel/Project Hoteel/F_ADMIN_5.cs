@@ -6,9 +6,11 @@ using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Project_Hoteel.F_LOGIN_SIGNUP_2;
 
 namespace Project_Hoteel
 {
@@ -82,7 +84,6 @@ namespace Project_Hoteel
             f_15.Show();
 
             ////
-
         }
 
         private void b_hanging_reservations_5_Click(object sender, EventArgs e)
@@ -161,8 +162,40 @@ namespace Project_Hoteel
             ///
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             f_16.b_privac_16.BackColor = f_1.BackColor;
-            f_16.pnl_line1_16.Visible = true;
+
         }
+
+        //public const int WM_NCLBUTTONDOWN = 0xA1;
+        //public const int HT_CAPTION = 0x2;
+        private void F_ADMIN_5_MouseDown(object sender, MouseEventArgs e)
+        {
+            //if (e.Button == MouseButtons.Left)
+            //{
+            //    NativeMethods.ReleaseCapture();
+            //    NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            //}
+        }
+        //public class NativeMethods
+        //{
+        //    [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        //    public static extern IntPtr CreateRoundRectRgn
+        //     (
+        //      int nLeftRect, // x-coordinate of upper-left corner
+        //      int nTopRect, // y-coordinate of upper-left corner
+        //      int nRightRect, // x-coordinate of lower-right corner
+        //      int nBottomRect, // y-coordinate of lower-right corner
+        //      int nWidthEllipse, // height of ellipse
+        //      int nHeightEllipse // width of ellipse
+        //     );
+
+        //    [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
+        //    public static extern bool DeleteObject(IntPtr hObject);
+        //    [DllImportAttribute("user32.dll")]
+        //    public static extern bool ReleaseCapture();
+
+        //    [DllImportAttribute("user32.dll")]
+        //    public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        //}
 
         private void timer_menu_Tick(object sender, EventArgs e)
         {
@@ -188,5 +221,7 @@ namespace Project_Hoteel
             }
         }
 
+        ////
+        ///
     }
 }

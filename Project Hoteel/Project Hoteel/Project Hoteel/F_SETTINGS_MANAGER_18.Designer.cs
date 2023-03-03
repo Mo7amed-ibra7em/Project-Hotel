@@ -30,20 +30,33 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_SETTINGS_MANAGER_18));
+            this.pnl_load_form_18 = new Guna.UI2.WinForms.Guna2Panel();
             this.b_cover_2 = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_manager_18 = new System.Windows.Forms.Panel();
-            this.b_acc_emp_18 = new Guna.UI2.WinForms.Guna2Button();
-            this.b_privac_18 = new Guna.UI2.WinForms.Guna2Button();
-            this.b_customize_18 = new Guna.UI2.WinForms.Guna2Button();
-            this.b_about_18 = new Guna.UI2.WinForms.Guna2Button();
             this.b_shape_1 = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_checked_18 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.b_cover_1 = new Guna.UI2.WinForms.Guna2Button();
             this.timer_checked_18 = new System.Windows.Forms.Timer(this.components);
             this.pnl_1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.b_acc_emp_18 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_about_18 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_customize_18 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_privac_18 = new Guna.UI2.WinForms.Guna2Button();
             this.pnl_checked_18.SuspendLayout();
             this.pnl_1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pnl_load_form_18
+            // 
+            this.pnl_load_form_18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.pnl_load_form_18.CustomizableEdges.BottomLeft = false;
+            this.pnl_load_form_18.CustomizableEdges.TopLeft = false;
+            this.pnl_load_form_18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_load_form_18.Location = new System.Drawing.Point(0, 0);
+            this.pnl_load_form_18.MaximumSize = new System.Drawing.Size(964, 645);
+            this.pnl_load_form_18.Name = "pnl_load_form_18";
+            this.pnl_load_form_18.Size = new System.Drawing.Size(964, 645);
+            this.pnl_load_form_18.TabIndex = 39;
             // 
             // b_cover_2
             // 
@@ -76,109 +89,7 @@
             this.pnl_manager_18.Location = new System.Drawing.Point(1005, 0);
             this.pnl_manager_18.Name = "pnl_manager_18";
             this.pnl_manager_18.Size = new System.Drawing.Size(57, 645);
-            this.pnl_manager_18.TabIndex = 23;
-            // 
-            // b_acc_emp_18
-            // 
-            this.b_acc_emp_18.Animated = true;
-            this.b_acc_emp_18.AutoRoundedCorners = true;
-            this.b_acc_emp_18.BackColor = System.Drawing.Color.Transparent;
-            this.b_acc_emp_18.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_acc_emp_18.BorderRadius = 27;
-            this.b_acc_emp_18.BorderThickness = 2;
-            this.b_acc_emp_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            this.b_acc_emp_18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_acc_emp_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_acc_emp_18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b_acc_emp_18.ForeColor = System.Drawing.Color.White;
-            this.b_acc_emp_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_acc_emp_18.Image = ((System.Drawing.Image)(resources.GetObject("b_acc_emp_18.Image")));
-            this.b_acc_emp_18.ImageSize = new System.Drawing.Size(25, 25);
-            this.b_acc_emp_18.Location = new System.Drawing.Point(979, 171);
-            this.b_acc_emp_18.MaximumSize = new System.Drawing.Size(80, 283);
-            this.b_acc_emp_18.Name = "b_acc_emp_18";
-            this.b_acc_emp_18.PressedColor = System.Drawing.Color.Transparent;
-            this.b_acc_emp_18.Size = new System.Drawing.Size(57, 60);
-            this.b_acc_emp_18.TabIndex = 8;
-            this.b_acc_emp_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.b_acc_emp_18.UseTransparentBackground = true;
-            this.b_acc_emp_18.Click += new System.EventHandler(this.b_acc_emp_18_Click);
-            // 
-            // b_privac_18
-            // 
-            this.b_privac_18.Animated = true;
-            this.b_privac_18.AutoRoundedCorners = true;
-            this.b_privac_18.BackColor = System.Drawing.Color.Transparent;
-            this.b_privac_18.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_privac_18.BorderRadius = 27;
-            this.b_privac_18.BorderThickness = 2;
-            this.b_privac_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            this.b_privac_18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_privac_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_privac_18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b_privac_18.ForeColor = System.Drawing.Color.White;
-            this.b_privac_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_privac_18.Image = ((System.Drawing.Image)(resources.GetObject("b_privac_18.Image")));
-            this.b_privac_18.ImageSize = new System.Drawing.Size(30, 30);
-            this.b_privac_18.Location = new System.Drawing.Point(979, 44);
-            this.b_privac_18.MaximumSize = new System.Drawing.Size(80, 156);
-            this.b_privac_18.Name = "b_privac_18";
-            this.b_privac_18.PressedColor = System.Drawing.Color.Transparent;
-            this.b_privac_18.Size = new System.Drawing.Size(57, 60);
-            this.b_privac_18.TabIndex = 7;
-            this.b_privac_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.b_privac_18.UseTransparentBackground = true;
-            this.b_privac_18.Click += new System.EventHandler(this.b_privac_18_Click);
-            // 
-            // b_customize_18
-            // 
-            this.b_customize_18.Animated = true;
-            this.b_customize_18.AutoRoundedCorners = true;
-            this.b_customize_18.BackColor = System.Drawing.Color.Transparent;
-            this.b_customize_18.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_customize_18.BorderRadius = 27;
-            this.b_customize_18.BorderThickness = 2;
-            this.b_customize_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            this.b_customize_18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_customize_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_customize_18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b_customize_18.ForeColor = System.Drawing.Color.White;
-            this.b_customize_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_customize_18.Image = ((System.Drawing.Image)(resources.GetObject("b_customize_18.Image")));
-            this.b_customize_18.ImageSize = new System.Drawing.Size(30, 30);
-            this.b_customize_18.Location = new System.Drawing.Point(979, 302);
-            this.b_customize_18.MaximumSize = new System.Drawing.Size(80, 413);
-            this.b_customize_18.Name = "b_customize_18";
-            this.b_customize_18.PressedColor = System.Drawing.Color.Transparent;
-            this.b_customize_18.Size = new System.Drawing.Size(57, 60);
-            this.b_customize_18.TabIndex = 4;
-            this.b_customize_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.b_customize_18.UseTransparentBackground = true;
-            this.b_customize_18.Click += new System.EventHandler(this.b_customize_18_Click);
-            // 
-            // b_about_18
-            // 
-            this.b_about_18.Animated = true;
-            this.b_about_18.AutoRoundedCorners = true;
-            this.b_about_18.BackColor = System.Drawing.Color.Transparent;
-            this.b_about_18.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_about_18.BorderRadius = 27;
-            this.b_about_18.BorderThickness = 2;
-            this.b_about_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
-            this.b_about_18.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_about_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_about_18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b_about_18.ForeColor = System.Drawing.Color.White;
-            this.b_about_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_about_18.Image = ((System.Drawing.Image)(resources.GetObject("b_about_18.Image")));
-            this.b_about_18.Location = new System.Drawing.Point(979, 567);
-            this.b_about_18.MaximumSize = new System.Drawing.Size(80, 679);
-            this.b_about_18.Name = "b_about_18";
-            this.b_about_18.Size = new System.Drawing.Size(57, 60);
-            this.b_about_18.TabIndex = 5;
-            this.b_about_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.b_about_18.UseTransparentBackground = true;
-            this.b_about_18.Click += new System.EventHandler(this.b_about_18_Click);
+            this.pnl_manager_18.TabIndex = 37;
             // 
             // b_shape_1
             // 
@@ -251,13 +162,115 @@
             this.pnl_1.BackColor = System.Drawing.Color.Transparent;
             this.pnl_1.Controls.Add(this.pnl_checked_18);
             this.pnl_1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
-            this.pnl_1.Location = new System.Drawing.Point(967, 1);
+            this.pnl_1.Location = new System.Drawing.Point(967, -17);
             this.pnl_1.MaximumSize = new System.Drawing.Size(80, 679);
             this.pnl_1.MinimumSize = new System.Drawing.Size(80, 156);
             this.pnl_1.Name = "pnl_1";
             this.pnl_1.Size = new System.Drawing.Size(80, 679);
-            this.pnl_1.TabIndex = 31;
+            this.pnl_1.TabIndex = 38;
             this.pnl_1.UseTransparentBackground = true;
+            // 
+            // b_acc_emp_18
+            // 
+            this.b_acc_emp_18.Animated = true;
+            this.b_acc_emp_18.AutoRoundedCorners = true;
+            this.b_acc_emp_18.BackColor = System.Drawing.Color.Transparent;
+            this.b_acc_emp_18.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_acc_emp_18.BorderRadius = 27;
+            this.b_acc_emp_18.BorderThickness = 2;
+            this.b_acc_emp_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_acc_emp_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_acc_emp_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_acc_emp_18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_acc_emp_18.ForeColor = System.Drawing.Color.White;
+            this.b_acc_emp_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_acc_emp_18.Image = ((System.Drawing.Image)(resources.GetObject("b_acc_emp_18.Image")));
+            this.b_acc_emp_18.ImageSize = new System.Drawing.Size(25, 25);
+            this.b_acc_emp_18.Location = new System.Drawing.Point(979, 153);
+            this.b_acc_emp_18.MaximumSize = new System.Drawing.Size(80, 283);
+            this.b_acc_emp_18.Name = "b_acc_emp_18";
+            this.b_acc_emp_18.PressedColor = System.Drawing.Color.Transparent;
+            this.b_acc_emp_18.Size = new System.Drawing.Size(57, 60);
+            this.b_acc_emp_18.TabIndex = 36;
+            this.b_acc_emp_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.b_acc_emp_18.UseTransparentBackground = true;
+            this.b_acc_emp_18.Click += new System.EventHandler(this.b_acc_emp_18_Click);
+            // 
+            // b_about_18
+            // 
+            this.b_about_18.Animated = true;
+            this.b_about_18.AutoRoundedCorners = true;
+            this.b_about_18.BackColor = System.Drawing.Color.Transparent;
+            this.b_about_18.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_about_18.BorderRadius = 17;
+            this.b_about_18.BorderThickness = 2;
+            this.b_about_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_about_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_about_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_about_18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_about_18.ForeColor = System.Drawing.Color.White;
+            this.b_about_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_about_18.Image = ((System.Drawing.Image)(resources.GetObject("b_about_18.Image")));
+            this.b_about_18.Location = new System.Drawing.Point(989, 560);
+            this.b_about_18.MaximumSize = new System.Drawing.Size(80, 679);
+            this.b_about_18.Name = "b_about_18";
+            this.b_about_18.Size = new System.Drawing.Size(37, 40);
+            this.b_about_18.TabIndex = 34;
+            this.b_about_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.b_about_18.UseTransparentBackground = true;
+            this.b_about_18.Click += new System.EventHandler(this.b_about_18_Click);
+            // 
+            // b_customize_18
+            // 
+            this.b_customize_18.Animated = true;
+            this.b_customize_18.AutoRoundedCorners = true;
+            this.b_customize_18.BackColor = System.Drawing.Color.Transparent;
+            this.b_customize_18.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_customize_18.BorderRadius = 27;
+            this.b_customize_18.BorderThickness = 2;
+            this.b_customize_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_customize_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_customize_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_customize_18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_customize_18.ForeColor = System.Drawing.Color.White;
+            this.b_customize_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_customize_18.Image = ((System.Drawing.Image)(resources.GetObject("b_customize_18.Image")));
+            this.b_customize_18.ImageSize = new System.Drawing.Size(30, 30);
+            this.b_customize_18.Location = new System.Drawing.Point(979, 284);
+            this.b_customize_18.MaximumSize = new System.Drawing.Size(80, 413);
+            this.b_customize_18.Name = "b_customize_18";
+            this.b_customize_18.PressedColor = System.Drawing.Color.Transparent;
+            this.b_customize_18.Size = new System.Drawing.Size(57, 60);
+            this.b_customize_18.TabIndex = 33;
+            this.b_customize_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.b_customize_18.UseTransparentBackground = true;
+            this.b_customize_18.Click += new System.EventHandler(this.b_customize_18_Click);
+            // 
+            // b_privac_18
+            // 
+            this.b_privac_18.Animated = true;
+            this.b_privac_18.AutoRoundedCorners = true;
+            this.b_privac_18.BackColor = System.Drawing.Color.Transparent;
+            this.b_privac_18.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_privac_18.BorderRadius = 27;
+            this.b_privac_18.BorderThickness = 2;
+            this.b_privac_18.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_privac_18.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_privac_18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_privac_18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_privac_18.ForeColor = System.Drawing.Color.White;
+            this.b_privac_18.HoverState.BorderColor = System.Drawing.Color.CornflowerBlue;
+            this.b_privac_18.Image = ((System.Drawing.Image)(resources.GetObject("b_privac_18.Image")));
+            this.b_privac_18.ImageSize = new System.Drawing.Size(30, 30);
+            this.b_privac_18.Location = new System.Drawing.Point(979, 26);
+            this.b_privac_18.MaximumSize = new System.Drawing.Size(80, 156);
+            this.b_privac_18.Name = "b_privac_18";
+            this.b_privac_18.PressedColor = System.Drawing.Color.Transparent;
+            this.b_privac_18.Size = new System.Drawing.Size(57, 60);
+            this.b_privac_18.TabIndex = 35;
+            this.b_privac_18.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.b_privac_18.UseTransparentBackground = true;
+            this.b_privac_18.Click += new System.EventHandler(this.b_privac_18_Click);
             // 
             // F_SETTINGS_MANAGER_18
             // 
@@ -270,6 +283,7 @@
             this.Controls.Add(this.b_customize_18);
             this.Controls.Add(this.b_privac_18);
             this.Controls.Add(this.pnl_1);
+            this.Controls.Add(this.pnl_load_form_18);
             this.Controls.Add(this.pnl_manager_18);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_SETTINGS_MANAGER_18";
@@ -283,16 +297,18 @@
         }
 
         #endregion
+
+        private Guna.UI2.WinForms.Guna2Panel pnl_load_form_18;
         private Guna.UI2.WinForms.Guna2Button b_cover_2;
-        public System.Windows.Forms.Panel pnl_manager_18;
         private Guna.UI2.WinForms.Guna2Button b_acc_emp_18;
-        private Guna.UI2.WinForms.Guna2Button b_privac_18;
-        private Guna.UI2.WinForms.Guna2Button b_customize_18;
         private Guna.UI2.WinForms.Guna2Button b_about_18;
+        private Guna.UI2.WinForms.Guna2Button b_customize_18;
+        private Guna.UI2.WinForms.Guna2Button b_privac_18;
+        public System.Windows.Forms.Panel pnl_manager_18;
         private Guna.UI2.WinForms.Guna2Button b_shape_1;
         private Guna.UI2.WinForms.Guna2GradientPanel pnl_checked_18;
         private Guna.UI2.WinForms.Guna2Button b_cover_1;
-        private Guna.UI2.WinForms.Guna2GradientPanel pnl_1;
         private System.Windows.Forms.Timer timer_checked_18;
+        private Guna.UI2.WinForms.Guna2GradientPanel pnl_1;
     }
 }

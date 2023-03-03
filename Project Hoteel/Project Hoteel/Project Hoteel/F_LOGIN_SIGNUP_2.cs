@@ -107,18 +107,18 @@ namespace Project_Hoteel
                 if (id_employee == 0)
                 {
                     Login_emp = true;
-                    timer2.Start();
+                    timer_progress_2.Start();
                 }
                 else if (id_employee == 1)
                 {
                     Login_manager = true;
-                    timer2.Start();
+                    timer_progress_2.Start();
                 }
             }
         }
 
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer_progress_2_Tick(object sender, EventArgs e)
         {
             if (Login_emp == true || Login_manager == true)
             {
@@ -126,7 +126,7 @@ namespace Project_Hoteel
                 l_progress_2.Text = Convert.ToString(ProgressBar_2.Value / 5) + " %";
                 if (ProgressBar_2.Value == 500)
                 {
-                    timer2.Stop();
+                    timer_progress_2.Stop();
                     if (Login_emp == true)
                     {
                         F_ADMIN_5 f_5 = new F_ADMIN_5();

@@ -529,7 +529,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(762, 273);
+            this.ClientSize = new System.Drawing.Size(762, 467);
             this.Controls.Add(this.l_8_6);
             this.Controls.Add(this.l_5_6);
             this.Controls.Add(this.t_age_9);
