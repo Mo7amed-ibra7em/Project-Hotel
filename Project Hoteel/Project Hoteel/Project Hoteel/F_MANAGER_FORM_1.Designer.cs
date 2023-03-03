@@ -208,9 +208,9 @@
             // 
             this.pnl_load_form_1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_load_form_1.Location = new System.Drawing.Point(0, 0);
-            this.pnl_load_form_1.MaximumSize = new System.Drawing.Size(1062, 641);
+            this.pnl_load_form_1.MaximumSize = new System.Drawing.Size(1062, 655);
             this.pnl_load_form_1.Name = "pnl_load_form_1";
-            this.pnl_load_form_1.Size = new System.Drawing.Size(1062, 641);
+            this.pnl_load_form_1.Size = new System.Drawing.Size(1062, 645);
             this.pnl_load_form_1.TabIndex = 0;
             // 
             // F_MANAGER_FORM_1
@@ -233,8 +233,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel pnl_manager_1;
         private System.Windows.Forms.Button b_settings_1;
         private System.Windows.Forms.Button b_custom_account_1;
         private System.Windows.Forms.Button b_emp_account_1;
@@ -246,5 +244,6 @@
         private System.Windows.Forms.Panel pnl_line1_1;
         private System.Windows.Forms.Panel pnl_line4_1;
         public System.Windows.Forms.Label l_user_name_1;
+        public System.Windows.Forms.Panel pnl_manager_1;
     }
 }

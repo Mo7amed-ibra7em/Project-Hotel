@@ -50,7 +50,6 @@ C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_NEW_RESERVATION_6.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_NEW_RESERVATION_7.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_NEW_RESERVATION_8.resources
-C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_CHANGE_PASSWORD_9.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_RESIDENTS_10.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.Properties.Resources.resources
@@ -69,3 +68,15 @@ C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_EMP_ACCOUNT_4.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_CUSTOM_ACCOUNT_14.resources
 C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_F_ADMIN_15.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_PRIVACY_9.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_CUSTOMIZE_17.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_SETTINGS_ADMIN_16.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\bin\Debug\ar\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.ar.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\ar\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\bin\Debug\Guna.UI2.dll
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\bin\Debug\aa\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.aa.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\aa\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_SETTINGS_MANAGER_18.resources
+C:\Users\RWDA TECH\Desktop\Visula S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_ACC_EMP_19.resources

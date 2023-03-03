@@ -76,6 +76,12 @@ namespace Project_Hoteel
 
         private void b_settings_1_Click(object sender, EventArgs e)
         {
+            pnl_load_form_1.Controls.Clear();
+            F_SETTINGS_MANAGER_18 f_18 = new F_SETTINGS_MANAGER_18();
+            f_18.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_18);
+            f_18.Show();
+            ///
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_settings_1.BackColor = f_1.BackColor;
             b_custom_account_1.BackColor = pnl_manager_1.BackColor;
@@ -89,6 +95,9 @@ namespace Project_Hoteel
 
         private void F_MANAGER_FORM_1_Load(object sender, EventArgs e)
         {
+            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            l_user_name_1.Text = f_2.l_user.ToString();
+
             //////
             pnl_load_form_1.Controls.Clear();
             F_DASHBOARD_3 f_3 = new F_DASHBOARD_3();

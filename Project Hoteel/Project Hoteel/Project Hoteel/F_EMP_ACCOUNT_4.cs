@@ -21,11 +21,6 @@ namespace Project_Hoteel
             InitializeComponent();
         }
 
-        private void b_edit_10_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void F_EMP_ACCOUNT_4_Load(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();
@@ -59,17 +54,21 @@ namespace Project_Hoteel
             }
         }
 
-        private void b_search_10_Click(object sender, EventArgs e)
+        private void b_edit_4_Click(object sender, EventArgs e)
         {
-            if (b_edit_10.BackColor == Color.CadetBlue)
+            if (b_edit_4.FillColor == b_delete_4.FillColor)
             {
                 dgv_4.ReadOnly = false;
-                b_edit_10.BackColor = Color.LightGray;
+                b_edit_4.FillColor = Color.LightSteelBlue;
+                b_edit_4.ForeColor = Color.RoyalBlue;
+                b_edit_4.BorderColor = Color.Plum;
             }
-            else if (b_edit_10.BackColor == Color.LightGray)
+            else if (b_edit_4.FillColor == Color.LightSteelBlue)
             {
                 dgv_4.ReadOnly = true;
-                b_edit_10.BackColor = Color.CadetBlue;
+                b_edit_4.FillColor = b_delete_4.FillColor;
+                b_edit_4.ForeColor = b_delete_4.ForeColor;
+                b_edit_4.BorderColor = b_delete_4.BorderColor;
                 int ID = Convert.ToInt32(dgv_4.CurrentRow.Cells[0].Value);
 
 

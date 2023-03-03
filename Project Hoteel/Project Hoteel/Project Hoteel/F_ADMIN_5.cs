@@ -33,17 +33,6 @@ namespace Project_Hoteel
         }
 
 
-
-        private void l_change_password_5_MouseHover_1(object sender, EventArgs e)
-        {
-            l_change_password_5.ForeColor = Color.SteelBlue;
-        }
-
-        private void l_change_password_5_MouseLeave(object sender, EventArgs e)
-        {
-            l_change_password_5.ForeColor = Color.Black;
-        }
-
         private void l_sign_out_5_MouseHover(object sender, EventArgs e)
         {
             l_sign_out_5.ForeColor = Color.SteelBlue;
@@ -56,7 +45,7 @@ namespace Project_Hoteel
 
         private void l_change_password_5_Click(object sender, EventArgs e)
         {
-            F_CHANGE_PASSWORD_9 f_9 = new F_CHANGE_PASSWORD_9();
+           F_PRIVACY_9 f_9 = new F_PRIVACY_9();
             f_9.ShowDialog();
         }
 
@@ -72,28 +61,38 @@ namespace Project_Hoteel
         private void b_debartures_5_Click(object sender, EventArgs e)
         {
             F_DEBARTURES_11 f_11 = new F_DEBARTURES_11();
-            f_11.ShowDialog();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_11.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_11);
+            f_11.Show();
+            f_11.BringToFront();
         }
 
         private void F_ADMIN_5_Load(object sender, EventArgs e)
         {
-            
+
             PB_weather_5.Image = Properties.Resources.weather;
             PB_language_5.Image = Properties.Resources.language;
 
-            /////
+            ///////
             pnl_load_form_5.Controls.Clear();
             F_F_ADMIN_15 f_15 = new F_F_ADMIN_15();
             f_15.TopLevel = false;
             pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
-            
+
+            ////
+
         }
 
         private void b_hanging_reservations_5_Click(object sender, EventArgs e)
         {
             F_HANGING_RESERVATION_13 f_13 = new F_HANGING_RESERVATION_13();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_13.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_13);
             f_13.Show();
+            f_13.BringToFront();
         }
 
         private void l_sign_out_5_Click(object sender, EventArgs e)
@@ -102,128 +101,6 @@ namespace Project_Hoteel
             f_2.Close();
         }
 
-        private void b_search_5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void b_add_rooms_5_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void b_edit_rooms_5_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void b_delete_rooms_5_Click(object sender, EventArgs e)
-        {
-            
-        }
-       
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void gB_list_5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel3_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void t_search_5_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gb_1_5_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        
 
         private void PB_language_5_Click(object sender, EventArgs e)
         {
@@ -259,16 +136,6 @@ namespace Project_Hoteel
             timer_menu.Start();
         }
 
-        private void dgv_5_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void b_search_5_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void b_main_5_Click(object sender, EventArgs e)
         {
             pnl_load_form_5.Controls.Clear();
@@ -276,6 +143,25 @@ namespace Project_Hoteel
             f_15.TopLevel = false;
             pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
+        }
+        private void button7_Click(object sender, EventArgs e)
+        {
+            F_SETTINGS_ADMIN_16 f_16 = new F_SETTINGS_ADMIN_16();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_16.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_16);
+            f_16.Show();
+            f_16.BringToFront();
+            ///
+            f_16.pnl_load_form_16.Controls.Clear();
+            F_PRIVACY_9 f_9 = new F_PRIVACY_9();
+            f_9.TopLevel = false;
+            f_16.pnl_load_form_16.Controls.Add(f_9);
+            f_9.Show();
+            ///
+            F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
+            f_16.b_privac_16.BackColor = f_1.BackColor;
+            f_16.pnl_line1_16.Visible = true;
         }
 
         private void timer_menu_Tick(object sender, EventArgs e)

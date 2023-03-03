@@ -208,7 +208,54 @@ namespace Project_Hoteel
             //}
         }
 
-       
+        private void n_room_8_TextChanged(object sender, EventArgs e)
+        {
+            string ROOMTYPE = "";
+
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select * from ROOMS";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    if (dread["N_room"].ToString() == n_room_8.Text)
+                    {
+                        ROOMTYPE = dread["Room_condition"].ToString();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+
+            if (ROOMTYPE == "محجوزة")
+            {
+                n_room_8.ForeColor = Color.Red;
+            }
+            else
+            {
+                n_room_8.ForeColor = b_reserve_8.ForeColor;
+            }
+        }
+
         private void radio_panel1_3_8_CheckedChanged(object sender, EventArgs e)
         {
             F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
@@ -319,74 +366,26 @@ namespace Project_Hoteel
                 e.Handled = true;
         }
 
-        private void n_room_8_TextChanged(object sender, EventArgs e)
+
+        private void radio_bb_8_CheckedChanged(object sender, EventArgs e)
         {
-            string ROOMTYPE = "";
-
-            SqlConnection sqlconn = new SqlConnection();
-            try
-            {
-                sqlconn.ConnectionString = connstr;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            SqlCommand sqlcmd = new SqlCommand();
-            sqlcmd.Connection = sqlconn;
-            SqlDataReader dread;
-            try
-            {
-                sqlcmd.CommandText = "select * from ROOMS";
-                sqlconn.Open();
-                dread = sqlcmd.ExecuteReader();
-                while (dread.Read())
-                {
-                    if (dread["N_room"].ToString() == n_room_8.Text)
-                    {
-                        ROOMTYPE = dread["Room_condition"].ToString();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlconn.Close();
-            }
-
-            if (ROOMTYPE == "محجوزة")
-            {
-                n_room_8.ForeColor = Color.Red;
-            }
-            else
-            {
-                n_room_8.ForeColor = Color.Black;
-            }
-        }
-
-
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-            t_meal_type_8.Text = "وجبة الافطار فقط .";
+            //t_meal_type_8.Text = "وجبة الافطار فقط .";
             F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
             price_meals = price_bb_2 * Convert.ToDouble(f_7.t_number_all_7.Text);
             t_price_8.Text = "$ " + Convert.ToString(price_meals+price_room);
         }
 
-        private void radioButton2_CheckedChanged(object sender, EventArgs e)
+        private void radio_hb_8_CheckedChanged(object sender, EventArgs e)
         {
-            t_meal_type_8.Text = "وجبتي طعام ( الإفطار والعشاء ) .";
+            //t_meal_type_8.Text = "وجبتي طعام ( الإفطار والعشاء ) .";
             F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
             price_meals = price_hb_4 * Convert.ToDouble(f_7.t_number_all_7.Text);
             t_price_8.Text = "$ " + Convert.ToString(price_meals + price_room);
         }
 
-        private void radioButton3_CheckedChanged(object sender, EventArgs e)
+        private void radio_fb_8_CheckedChanged(object sender, EventArgs e)
         {
-            t_meal_type_8.Text = "ثلاث وجبات .";
+            //t_meal_type_8.Text = "ثلاث وجبات .";
             F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
             price_meals = price_fb_6 * Convert.ToDouble(f_7.t_number_all_7.Text);
             t_price_8.Text = "$ " + Convert.ToString(price_meals + price_room);
@@ -430,7 +429,14 @@ namespace Project_Hoteel
             }
 
             f_6.Close();
-            f_10.ShowDialog();
+
+            ////
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_10.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_10);
+            f_10.Show();
+            f_10.BringToFront();
+
         }
 
     }

@@ -29,15 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_NEW_RESERVATION_6));
-            this.t_telephone_number_6 = new System.Windows.Forms.TextBox();
-            this.t_identification_number_6 = new System.Windows.Forms.TextBox();
-            this.t_age_6 = new System.Windows.Forms.TextBox();
-            this.t_nationality_6 = new System.Windows.Forms.TextBox();
-            this.t_last_name_6 = new System.Windows.Forms.TextBox();
-            this.t_fore_name_6 = new System.Windows.Forms.TextBox();
             this.l_8_6 = new System.Windows.Forms.Label();
-            this.b_cancel_reservation_6 = new System.Windows.Forms.Button();
-            this.b_next_6 = new System.Windows.Forms.Button();
             this.l_7_6 = new System.Windows.Forms.Label();
             this.l_6_6 = new System.Windows.Forms.Label();
             this.l_5_6 = new System.Windows.Forms.Label();
@@ -45,94 +37,19 @@
             this.l_3_6 = new System.Windows.Forms.Label();
             this.l_2_6 = new System.Windows.Forms.Label();
             this.l_1_6 = new System.Windows.Forms.Label();
-            this.d_date_of_entry_6 = new System.Windows.Forms.DateTimePicker();
-            this.d_exit_date_6 = new System.Windows.Forms.DateTimePicker();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.b_cancel_reservation_6 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_next_6 = new Guna.UI2.WinForms.Guna2Button();
+            this.t_telephone_number_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_identification_number_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_age_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_nationality_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_last_name_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_fore_name_6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.d_exit_date_6 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.d_date_of_entry_6 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // t_telephone_number_6
-            // 
-            this.t_telephone_number_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_telephone_number_6.BackColor = System.Drawing.Color.White;
-            this.t_telephone_number_6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_telephone_number_6.ForeColor = System.Drawing.Color.Black;
-            this.t_telephone_number_6.Location = new System.Drawing.Point(19, 222);
-            this.t_telephone_number_6.Multiline = true;
-            this.t_telephone_number_6.Name = "t_telephone_number_6";
-            this.t_telephone_number_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_telephone_number_6.Size = new System.Drawing.Size(232, 37);
-            this.t_telephone_number_6.TabIndex = 23;
-            this.t_telephone_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t_identification_number_6
-            // 
-            this.t_identification_number_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_identification_number_6.BackColor = System.Drawing.Color.White;
-            this.t_identification_number_6.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_identification_number_6.ForeColor = System.Drawing.Color.Black;
-            this.t_identification_number_6.Location = new System.Drawing.Point(506, 222);
-            this.t_identification_number_6.Multiline = true;
-            this.t_identification_number_6.Name = "t_identification_number_6";
-            this.t_identification_number_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_identification_number_6.Size = new System.Drawing.Size(232, 37);
-            this.t_identification_number_6.TabIndex = 22;
-            this.t_identification_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t_age_6
-            // 
-            this.t_age_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_age_6.BackColor = System.Drawing.Color.White;
-            this.t_age_6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_age_6.ForeColor = System.Drawing.Color.Black;
-            this.t_age_6.Location = new System.Drawing.Point(19, 136);
-            this.t_age_6.Multiline = true;
-            this.t_age_6.Name = "t_age_6";
-            this.t_age_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_age_6.Size = new System.Drawing.Size(232, 37);
-            this.t_age_6.TabIndex = 21;
-            this.t_age_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t_nationality_6
-            // 
-            this.t_nationality_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_nationality_6.BackColor = System.Drawing.Color.White;
-            this.t_nationality_6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_nationality_6.ForeColor = System.Drawing.Color.Black;
-            this.t_nationality_6.Location = new System.Drawing.Point(506, 136);
-            this.t_nationality_6.Multiline = true;
-            this.t_nationality_6.Name = "t_nationality_6";
-            this.t_nationality_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_nationality_6.Size = new System.Drawing.Size(232, 37);
-            this.t_nationality_6.TabIndex = 20;
-            this.t_nationality_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t_last_name_6
-            // 
-            this.t_last_name_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_last_name_6.BackColor = System.Drawing.Color.White;
-            this.t_last_name_6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_last_name_6.ForeColor = System.Drawing.Color.Black;
-            this.t_last_name_6.Location = new System.Drawing.Point(19, 50);
-            this.t_last_name_6.Multiline = true;
-            this.t_last_name_6.Name = "t_last_name_6";
-            this.t_last_name_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_last_name_6.Size = new System.Drawing.Size(232, 37);
-            this.t_last_name_6.TabIndex = 19;
-            this.t_last_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // t_fore_name_6
-            // 
-            this.t_fore_name_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_fore_name_6.BackColor = System.Drawing.Color.White;
-            this.t_fore_name_6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_fore_name_6.ForeColor = System.Drawing.Color.Black;
-            this.t_fore_name_6.Location = new System.Drawing.Point(506, 50);
-            this.t_fore_name_6.Multiline = true;
-            this.t_fore_name_6.Name = "t_fore_name_6";
-            this.t_fore_name_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.t_fore_name_6.Size = new System.Drawing.Size(232, 37);
-            this.t_fore_name_6.TabIndex = 18;
-            this.t_fore_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // l_8_6
             // 
@@ -147,47 +64,6 @@
             this.l_8_6.TabIndex = 17;
             this.l_8_6.Text = "العمر";
             this.l_8_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // b_cancel_reservation_6
-            // 
-            this.b_cancel_reservation_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_cancel_reservation_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_cancel_reservation_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_cancel_reservation_6.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.b_cancel_reservation_6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_cancel_reservation_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_cancel_reservation_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_cancel_reservation_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_cancel_reservation_6.Location = new System.Drawing.Point(314, 405);
-            this.b_cancel_reservation_6.MaximumSize = new System.Drawing.Size(120, 40);
-            this.b_cancel_reservation_6.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_cancel_reservation_6.Name = "b_cancel_reservation_6";
-            this.b_cancel_reservation_6.Size = new System.Drawing.Size(120, 40);
-            this.b_cancel_reservation_6.TabIndex = 15;
-            this.b_cancel_reservation_6.Text = "الغاء التسجيل";
-            this.b_cancel_reservation_6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_cancel_reservation_6.UseVisualStyleBackColor = false;
-            this.b_cancel_reservation_6.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // b_next_6
-            // 
-            this.b_next_6.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_next_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_next_6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_next_6.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_next_6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_next_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_next_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_next_6.Location = new System.Drawing.Point(470, 405);
-            this.b_next_6.MaximumSize = new System.Drawing.Size(120, 40);
-            this.b_next_6.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_next_6.Name = "b_next_6";
-            this.b_next_6.Size = new System.Drawing.Size(120, 40);
-            this.b_next_6.TabIndex = 14;
-            this.b_next_6.Text = "التالي";
-            this.b_next_6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_next_6.UseVisualStyleBackColor = false;
-            this.b_next_6.Click += new System.EventHandler(this.button1_Click);
             // 
             // l_7_6
             // 
@@ -287,73 +163,310 @@
             this.l_1_6.Text = "الاسم الاول";
             this.l_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // d_date_of_entry_6
-            // 
-            this.d_date_of_entry_6.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.d_date_of_entry_6.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.d_date_of_entry_6.Checked = false;
-            this.d_date_of_entry_6.CustomFormat = "dd - MM - yyyy";
-            this.d_date_of_entry_6.Font = new System.Drawing.Font("Simplified Arabic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.d_date_of_entry_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.d_date_of_entry_6.Location = new System.Drawing.Point(506, 307);
-            this.d_date_of_entry_6.Name = "d_date_of_entry_6";
-            this.d_date_of_entry_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.d_date_of_entry_6.RightToLeftLayout = true;
-            this.d_date_of_entry_6.ShowUpDown = true;
-            this.d_date_of_entry_6.Size = new System.Drawing.Size(232, 37);
-            this.d_date_of_entry_6.TabIndex = 0;
-            // 
-            // d_exit_date_6
-            // 
-            this.d_exit_date_6.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.d_exit_date_6.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.d_exit_date_6.Checked = false;
-            this.d_exit_date_6.CustomFormat = "dd - MM - yyyy";
-            this.d_exit_date_6.Font = new System.Drawing.Font("Simplified Arabic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.d_exit_date_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.d_exit_date_6.Location = new System.Drawing.Point(19, 307);
-            this.d_exit_date_6.Name = "d_exit_date_6";
-            this.d_exit_date_6.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.d_exit_date_6.ShowUpDown = true;
-            this.d_exit_date_6.Size = new System.Drawing.Size(232, 37);
-            this.d_exit_date_6.TabIndex = 2;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.b_cancel_reservation_6);
+            this.panel1.Controls.Add(this.b_next_6);
+            this.panel1.Controls.Add(this.t_telephone_number_6);
+            this.panel1.Controls.Add(this.t_identification_number_6);
+            this.panel1.Controls.Add(this.t_age_6);
+            this.panel1.Controls.Add(this.t_nationality_6);
+            this.panel1.Controls.Add(this.t_last_name_6);
+            this.panel1.Controls.Add(this.t_fore_name_6);
+            this.panel1.Controls.Add(this.d_exit_date_6);
+            this.panel1.Controls.Add(this.d_date_of_entry_6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 24;
             // 
+            // b_cancel_reservation_6
+            // 
+            this.b_cancel_reservation_6.Animated = true;
+            this.b_cancel_reservation_6.BackColor = System.Drawing.Color.Transparent;
+            this.b_cancel_reservation_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_cancel_reservation_6.BorderRadius = 10;
+            this.b_cancel_reservation_6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_cancel_reservation_6.BorderThickness = 1;
+            this.b_cancel_reservation_6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_cancel_reservation_6.CustomizableEdges.BottomRight = false;
+            this.b_cancel_reservation_6.CustomizableEdges.TopRight = false;
+            this.b_cancel_reservation_6.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.b_cancel_reservation_6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_cancel_reservation_6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_cancel_reservation_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_cancel_reservation_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_cancel_reservation_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_cancel_reservation_6.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_cancel_reservation_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_cancel_reservation_6.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_cancel_reservation_6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_cancel_reservation_6.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_cancel_reservation_6.Location = new System.Drawing.Point(315, 405);
+            this.b_cancel_reservation_6.Name = "b_cancel_reservation_6";
+            this.b_cancel_reservation_6.ShadowDecoration.BorderRadius = 0;
+            this.b_cancel_reservation_6.Size = new System.Drawing.Size(140, 40);
+            this.b_cancel_reservation_6.TabIndex = 32;
+            this.b_cancel_reservation_6.TabStop = false;
+            this.b_cancel_reservation_6.Text = "الغاء التسجيل";
+            this.b_cancel_reservation_6.TextFormatNoPrefix = true;
+            this.b_cancel_reservation_6.Click += new System.EventHandler(this.b_cancel_reservation_6_Click);
+            // 
+            // b_next_6
+            // 
+            this.b_next_6.Animated = true;
+            this.b_next_6.BackColor = System.Drawing.Color.Transparent;
+            this.b_next_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_next_6.BorderRadius = 10;
+            this.b_next_6.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_next_6.BorderThickness = 1;
+            this.b_next_6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_next_6.CustomizableEdges.BottomLeft = false;
+            this.b_next_6.CustomizableEdges.TopLeft = false;
+            this.b_next_6.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.b_next_6.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_next_6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_next_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_next_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_next_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_next_6.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_next_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_next_6.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_next_6.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_next_6.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_next_6.Location = new System.Drawing.Point(461, 405);
+            this.b_next_6.Name = "b_next_6";
+            this.b_next_6.ShadowDecoration.BorderRadius = 0;
+            this.b_next_6.Size = new System.Drawing.Size(140, 40);
+            this.b_next_6.TabIndex = 31;
+            this.b_next_6.TabStop = false;
+            this.b_next_6.Text = "التالي";
+            this.b_next_6.TextFormatNoPrefix = true;
+            this.b_next_6.Click += new System.EventHandler(this.b_next_6_Click);
+            // 
+            // t_telephone_number_6
+            // 
+            this.t_telephone_number_6.Animated = true;
+            this.t_telephone_number_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_telephone_number_6.BorderRadius = 3;
+            this.t_telephone_number_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_telephone_number_6.DefaultText = "";
+            this.t_telephone_number_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_telephone_number_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_telephone_number_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_telephone_number_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_telephone_number_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_telephone_number_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_telephone_number_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_telephone_number_6.ForeColor = System.Drawing.Color.Black;
+            this.t_telephone_number_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_telephone_number_6.Location = new System.Drawing.Point(18, 221);
+            this.t_telephone_number_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_telephone_number_6.Name = "t_telephone_number_6";
+            this.t_telephone_number_6.PasswordChar = '\0';
+            this.t_telephone_number_6.PlaceholderText = "";
+            this.t_telephone_number_6.SelectedText = "";
+            this.t_telephone_number_6.Size = new System.Drawing.Size(232, 37);
+            this.t_telephone_number_6.TabIndex = 7;
+            // 
+            // t_identification_number_6
+            // 
+            this.t_identification_number_6.Animated = true;
+            this.t_identification_number_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_identification_number_6.BorderRadius = 3;
+            this.t_identification_number_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_identification_number_6.DefaultText = "";
+            this.t_identification_number_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_identification_number_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_identification_number_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_identification_number_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_identification_number_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_identification_number_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_identification_number_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_identification_number_6.ForeColor = System.Drawing.Color.Black;
+            this.t_identification_number_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_identification_number_6.Location = new System.Drawing.Point(505, 221);
+            this.t_identification_number_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_identification_number_6.Name = "t_identification_number_6";
+            this.t_identification_number_6.PasswordChar = '\0';
+            this.t_identification_number_6.PlaceholderText = "";
+            this.t_identification_number_6.SelectedText = "";
+            this.t_identification_number_6.Size = new System.Drawing.Size(232, 37);
+            this.t_identification_number_6.TabIndex = 6;
+            // 
+            // t_age_6
+            // 
+            this.t_age_6.Animated = true;
+            this.t_age_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_age_6.BorderRadius = 3;
+            this.t_age_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_age_6.DefaultText = "";
+            this.t_age_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_age_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_age_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_age_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_age_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_age_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_age_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_age_6.ForeColor = System.Drawing.Color.Black;
+            this.t_age_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_age_6.Location = new System.Drawing.Point(18, 135);
+            this.t_age_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_age_6.Name = "t_age_6";
+            this.t_age_6.PasswordChar = '\0';
+            this.t_age_6.PlaceholderText = "";
+            this.t_age_6.SelectedText = "";
+            this.t_age_6.Size = new System.Drawing.Size(232, 37);
+            this.t_age_6.TabIndex = 5;
+            // 
+            // t_nationality_6
+            // 
+            this.t_nationality_6.Animated = true;
+            this.t_nationality_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_nationality_6.BorderRadius = 3;
+            this.t_nationality_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_nationality_6.DefaultText = "";
+            this.t_nationality_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_nationality_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_nationality_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_nationality_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_nationality_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_nationality_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_nationality_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_nationality_6.ForeColor = System.Drawing.Color.Black;
+            this.t_nationality_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_nationality_6.Location = new System.Drawing.Point(505, 135);
+            this.t_nationality_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_nationality_6.Name = "t_nationality_6";
+            this.t_nationality_6.PasswordChar = '\0';
+            this.t_nationality_6.PlaceholderText = "";
+            this.t_nationality_6.SelectedText = "";
+            this.t_nationality_6.Size = new System.Drawing.Size(232, 37);
+            this.t_nationality_6.TabIndex = 4;
+            // 
+            // t_last_name_6
+            // 
+            this.t_last_name_6.Animated = true;
+            this.t_last_name_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_last_name_6.BorderRadius = 3;
+            this.t_last_name_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_last_name_6.DefaultText = "";
+            this.t_last_name_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_last_name_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_last_name_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_last_name_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_last_name_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_last_name_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_last_name_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_last_name_6.ForeColor = System.Drawing.Color.Black;
+            this.t_last_name_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_last_name_6.Location = new System.Drawing.Point(18, 49);
+            this.t_last_name_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_last_name_6.Name = "t_last_name_6";
+            this.t_last_name_6.PasswordChar = '\0';
+            this.t_last_name_6.PlaceholderText = "";
+            this.t_last_name_6.SelectedText = "";
+            this.t_last_name_6.Size = new System.Drawing.Size(232, 37);
+            this.t_last_name_6.TabIndex = 3;
+            // 
+            // t_fore_name_6
+            // 
+            this.t_fore_name_6.Animated = true;
+            this.t_fore_name_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_fore_name_6.BorderRadius = 3;
+            this.t_fore_name_6.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_fore_name_6.DefaultText = "";
+            this.t_fore_name_6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_fore_name_6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_fore_name_6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_fore_name_6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_fore_name_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_fore_name_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_fore_name_6.Font = new System.Drawing.Font("Times New Roman", 12F);
+            this.t_fore_name_6.ForeColor = System.Drawing.Color.Black;
+            this.t_fore_name_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_fore_name_6.Location = new System.Drawing.Point(505, 49);
+            this.t_fore_name_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_fore_name_6.Name = "t_fore_name_6";
+            this.t_fore_name_6.PasswordChar = '\0';
+            this.t_fore_name_6.PlaceholderText = "";
+            this.t_fore_name_6.SelectedText = "";
+            this.t_fore_name_6.Size = new System.Drawing.Size(232, 37);
+            this.t_fore_name_6.TabIndex = 2;
+            // 
+            // d_exit_date_6
+            // 
+            this.d_exit_date_6.Animated = true;
+            this.d_exit_date_6.BackColor = System.Drawing.Color.Transparent;
+            this.d_exit_date_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_exit_date_6.BorderRadius = 3;
+            this.d_exit_date_6.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.d_exit_date_6.BorderThickness = 1;
+            this.d_exit_date_6.Checked = true;
+            this.d_exit_date_6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_exit_date_6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_exit_date_6.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_exit_date_6.CustomFormat = "dd - MM - yyyy";
+            this.d_exit_date_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_exit_date_6.Font = new System.Drawing.Font("Simplified Arabic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_exit_date_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_exit_date_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.d_exit_date_6.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.d_exit_date_6.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.d_exit_date_6.Location = new System.Drawing.Point(18, 307);
+            this.d_exit_date_6.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.d_exit_date_6.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.d_exit_date_6.Name = "d_exit_date_6";
+            this.d_exit_date_6.Size = new System.Drawing.Size(232, 37);
+            this.d_exit_date_6.TabIndex = 1;
+            this.d_exit_date_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.d_exit_date_6.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
+            // 
+            // d_date_of_entry_6
+            // 
+            this.d_date_of_entry_6.Animated = true;
+            this.d_date_of_entry_6.BackColor = System.Drawing.Color.Transparent;
+            this.d_date_of_entry_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.BorderRadius = 3;
+            this.d_date_of_entry_6.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDot;
+            this.d_date_of_entry_6.BorderThickness = 1;
+            this.d_date_of_entry_6.Checked = true;
+            this.d_date_of_entry_6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_date_of_entry_6.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.CustomFormat = "dd - MM - yyyy";
+            this.d_date_of_entry_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_date_of_entry_6.Font = new System.Drawing.Font("Simplified Arabic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_date_of_entry_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.d_date_of_entry_6.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.d_date_of_entry_6.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.d_date_of_entry_6.Location = new System.Drawing.Point(505, 307);
+            this.d_date_of_entry_6.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.d_date_of_entry_6.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.d_date_of_entry_6.Name = "d_date_of_entry_6";
+            this.d_date_of_entry_6.Size = new System.Drawing.Size(232, 37);
+            this.d_date_of_entry_6.TabIndex = 0;
+            this.d_date_of_entry_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.d_date_of_entry_6.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
+            // 
             // F_NEW_RESERVATION_6
             // 
-            this.AcceptButton = this.b_next_6;
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CancelButton = this.b_cancel_reservation_6;
             this.ClientSize = new System.Drawing.Size(891, 467);
-            this.Controls.Add(this.d_exit_date_6);
-            this.Controls.Add(this.t_telephone_number_6);
-            this.Controls.Add(this.b_next_6);
-            this.Controls.Add(this.d_date_of_entry_6);
             this.Controls.Add(this.l_1_6);
-            this.Controls.Add(this.t_identification_number_6);
             this.Controls.Add(this.l_2_6);
-            this.Controls.Add(this.t_age_6);
             this.Controls.Add(this.l_3_6);
-            this.Controls.Add(this.t_nationality_6);
             this.Controls.Add(this.l_4_6);
-            this.Controls.Add(this.t_last_name_6);
             this.Controls.Add(this.l_5_6);
-            this.Controls.Add(this.t_fore_name_6);
             this.Controls.Add(this.l_6_6);
             this.Controls.Add(this.l_8_6);
             this.Controls.Add(this.l_7_6);
-            this.Controls.Add(this.b_cancel_reservation_6);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.White;
@@ -363,8 +476,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_NEW_RESERVATION_6";
             this.Load += new System.EventHandler(this.F_NEW_RESERVATION_6_Load);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -376,17 +489,17 @@
         private System.Windows.Forms.Label l_3_6;
         private System.Windows.Forms.Label l_2_6;
         private System.Windows.Forms.Label l_1_6;
-        private System.Windows.Forms.Button b_cancel_reservation_6;
-        private System.Windows.Forms.Button b_next_6;
         private System.Windows.Forms.Label l_8_6;
-        public System.Windows.Forms.TextBox t_fore_name_6;
-        public System.Windows.Forms.TextBox t_last_name_6;
-        public System.Windows.Forms.TextBox t_telephone_number_6;
-        public System.Windows.Forms.TextBox t_identification_number_6;
-        public System.Windows.Forms.TextBox t_age_6;
-        public System.Windows.Forms.TextBox t_nationality_6;
-        public System.Windows.Forms.DateTimePicker d_exit_date_6;
-        public System.Windows.Forms.DateTimePicker d_date_of_entry_6;
-        private System.Windows.Forms.Panel panel1;
+        public Guna.UI2.WinForms.Guna2TextBox t_telephone_number_6;
+        public Guna.UI2.WinForms.Guna2TextBox t_identification_number_6;
+        public Guna.UI2.WinForms.Guna2TextBox t_age_6;
+        public Guna.UI2.WinForms.Guna2TextBox t_last_name_6;
+        public Guna.UI2.WinForms.Guna2TextBox t_fore_name_6;
+        private Guna.UI2.WinForms.Guna2Button b_cancel_reservation_6;
+        private Guna.UI2.WinForms.Guna2Button b_next_6;
+        public Guna.UI2.WinForms.Guna2DateTimePicker d_date_of_entry_6;
+        public Guna.UI2.WinForms.Guna2DateTimePicker d_exit_date_6;
+        public System.Windows.Forms.Panel panel1;
+        internal Guna.UI2.WinForms.Guna2TextBox t_nationality_6;
     }
 }

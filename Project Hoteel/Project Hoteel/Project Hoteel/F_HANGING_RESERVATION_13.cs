@@ -24,12 +24,12 @@ namespace Project_Hoteel
         {
             this.Close();
             ///
-            //F_ADMIN_5 f_5 = new F_ADMIN_5();
-            //f_5.pnl_load_form_5.Controls.Clear();
-            //F_F_ADMIN_15 f_15 = new F_F_ADMIN_15();
-            //f_15.TopLevel = false;
-            //f_5.pnl_load_form_5.Controls.Add(f_15);
-            //f_15.Show();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_5.pnl_load_form_5.Controls.Clear();
+            F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
+            f_15.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_15);
+            f_15.Show();
         }
 
         private void F_HANGING_RESERVATION_13_Load(object sender, EventArgs e)
@@ -54,7 +54,7 @@ namespace Project_Hoteel
             {
                 sqlconn.Open();
                 sqladap.Fill(mylist);
-                dgv_10.DataSource = mylist;
+                dgv_13.DataSource = mylist;
             }
             catch (Exception ex)
             {
@@ -64,11 +64,6 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-        }
-
-        private void b_secure_reservation_13_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -54,11 +54,17 @@
     <Reference Include="ComponentFactory.Krypton.Toolkit">
       <HintPath>..\..\..\..\..\Downloads\Krypton-master\Bin\ComponentFactory.Krypton.Toolkit.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.4.4\lib\net472\Guna.UI2.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xaml" />
     <Reference Include="System.Xml.Linq" />
@@ -78,6 +84,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="F_ACC_EMP_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ACC_EMP_19.Designer.cs">
+      <DependentUpon>F_ACC_EMP_19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_LOGIN_SIGNUP_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_LOGIN_SIGNUP_2.Designer.cs">
+      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_ADMIN_5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,11 +162,17 @@
     <Compile Include="F_NEW_RESERVATION_8.Designer.cs">
       <DependentUpon>F_NEW_RESERVATION_8.cs</DependentUpon>
     </Compile>
-    <Compile Include="F_CHANGE_PASSWORD_9.cs">
+    <Compile Include="F_PRIVACY_9.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="F_CHANGE_PASSWORD_9.Designer.cs">
-      <DependentUpon>F_CHANGE_PASSWORD_9.cs</DependentUpon>
+    <Compile Include="F_PRIVACY_9.Designer.cs">
+      <DependentUpon>F_PRIVACY_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_ROOMS_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_ROOMS_12.Designer.cs">
+      <DependentUpon>F_ROOMS_12.cs</DependentUpon>
     </Compile>
     <Compile Include="F_RESIDENTS_10.cs">
       <SubType>Form</SubType>
@@ -156,17 +180,23 @@
     <Compile Include="F_RESIDENTS_10.Designer.cs">
       <DependentUpon>F_RESIDENTS_10.cs</DependentUpon>
     </Compile>
-    <Compile Include="F_LOGIN_SIGNUP_2.cs">
+    <Compile Include="F_SETTINGS_ADMIN_16.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="F_LOGIN_SIGNUP_2.Designer.cs">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <Compile Include="F_SETTINGS_ADMIN_16.Designer.cs">
+      <DependentUpon>F_SETTINGS_ADMIN_16.cs</DependentUpon>
     </Compile>
-    <Compile Include="F_ROOMS_12.cs">
+    <Compile Include="F_CUSTOMIZE_17.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="F_ROOMS_12.Designer.cs">
-      <DependentUpon>F_ROOMS_12.cs</DependentUpon>
+    <Compile Include="F_CUSTOMIZE_17.Designer.cs">
+      <DependentUpon>F_CUSTOMIZE_17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="F_SETTINGS_MANAGER_18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_SETTINGS_MANAGER_18.Designer.cs">
+      <DependentUpon>F_SETTINGS_MANAGER_18.cs</DependentUpon>
     </Compile>
     <Compile Include="hoteelDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -175,6 +205,21 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RjControls\ToggleButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <EmbeddedResource Include="F_ACC_EMP_19.resx">
+      <DependentUpon>F_ACC_EMP_19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LOGIN_SIGNUP_2.aa.resx">
+      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LOGIN_SIGNUP_2.ar.resx">
+      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_LOGIN_SIGNUP_2.resx">
+      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_ADMIN_5.resx">
       <DependentUpon>F_ADMIN_5.cs</DependentUpon>
     </EmbeddedResource>
@@ -208,20 +253,26 @@
     <EmbeddedResource Include="F_NEW_RESERVATION_8.resx">
       <DependentUpon>F_NEW_RESERVATION_8.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="F_CHANGE_PASSWORD_9.resx">
-      <DependentUpon>F_CHANGE_PASSWORD_9.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="F_RESIDENTS_10.resx">
-      <DependentUpon>F_RESIDENTS_10.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="F_LOGIN_SIGNUP_2.resx">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <EmbeddedResource Include="F_PRIVACY_9.resx">
+      <DependentUpon>F_PRIVACY_9.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="F_ROOMS_12.resx">
       <DependentUpon>F_ROOMS_12.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="F_RESIDENTS_10.resx">
+      <DependentUpon>F_RESIDENTS_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SETTINGS_ADMIN_16.resx">
+      <DependentUpon>F_SETTINGS_ADMIN_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_CUSTOMIZE_17.resx">
+      <DependentUpon>F_CUSTOMIZE_17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="F_SETTINGS_MANAGER_18.resx">
+      <DependentUpon>F_SETTINGS_MANAGER_18.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
@@ -259,19 +310,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BackGround Form.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Back.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\BackGround Form Blur.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\Back1.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\BackGround Form Blur2.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
@@ -334,12 +376,6 @@
     <None Include="Resources\weather_blue.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\menu_blue.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\menu.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\edit %282%29.png" />
   </ItemGroup>
   <ItemGroup>
@@ -350,6 +386,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\reset-password %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\menu_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key-room.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login- %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,7 @@ namespace Project_Hoteel
     {
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
+        public bool Expand2 = false;
         public F_F_ADMIN_15()
         {
             InitializeComponent();
@@ -28,17 +29,17 @@ namespace Project_Hoteel
 
         private void b_edit_rooms_15_Click(object sender, EventArgs e)
         {
-            if (b_edit_rooms_15.BackColor == Color.LightSteelBlue)
+            if (b_edit_rooms_15.FillColor == b_delete_rooms_15.FillColor)
             {
                 dgv_15.ReadOnly = false;
-                b_edit_rooms_15.BackColor = Color.SeaShell;
-                b_edit_rooms_15.ForeColor = Color.SteelBlue;
+                b_edit_rooms_15.FillColor = Color.LightSteelBlue;
+                b_edit_rooms_15.ForeColor = Color.RoyalBlue;
                 b_edit_rooms_15.Image = Properties.Resources.edit__2_;
             }
-            else if (b_edit_rooms_15.BackColor == Color.SeaShell)
+            else if (b_edit_rooms_15.FillColor == Color.LightSteelBlue)
             {
                 dgv_15.ReadOnly = true;
-                b_edit_rooms_15.BackColor = Color.LightSteelBlue;
+                b_edit_rooms_15.FillColor = b_delete_rooms_15.FillColor;
                 b_edit_rooms_15.ForeColor = Color.Black;
                 b_edit_rooms_15.Image = Properties.Resources.edit__3_;
 
@@ -190,6 +191,29 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
+        }
+        private void b_add_room_15_Click(object sender, EventArgs e)
+        {
+            Expand2 = true;
+            /////
+            F_SETTINGS_ADMIN_16 f_16 = Application.OpenForms["F_SETTINGS_16"] as F_SETTINGS_ADMIN_16;
+            F_SETTINGS_ADMIN_16 f__16 = new F_SETTINGS_ADMIN_16();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f__16.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f__16);
+            f__16.Show();
+            f__16.BringToFront();
+            /////
+            f__16.pnl_load_form_16.Controls.Clear();
+            F_ROOMS_12 f_12 = new F_ROOMS_12();
+            f_12.TopLevel = false;
+            f__16.pnl_load_form_16.Controls.Add(f_12);
+            f_12.Show();
+            //////
+            F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
+            f__16.b_rooms_16.BackColor = f_1.BackColor;
+            f__16.pnl_line2_16.Visible = true;
+            ////
         }
     }
 }

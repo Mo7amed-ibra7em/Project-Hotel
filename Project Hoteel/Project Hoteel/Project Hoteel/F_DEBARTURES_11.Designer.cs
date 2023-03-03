@@ -33,69 +33,15 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_DEBARTURES_11));
-            this.t_search_11 = new System.Windows.Forms.TextBox();
-            this.b_add_11 = new System.Windows.Forms.Button();
-            this.b_cancel_11 = new System.Windows.Forms.Button();
             this.dgv_11 = new System.Windows.Forms.DataGridView();
-            this.b_search_11 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.t_search_11 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.b_add_11 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_cancel_11 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_11)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // t_search_11
-            // 
-            this.t_search_11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_search_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_search_11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.t_search_11.Font = new System.Drawing.Font("Rockwell", 12F);
-            this.t_search_11.ForeColor = System.Drawing.Color.Black;
-            this.t_search_11.Location = new System.Drawing.Point(256, 419);
-            this.t_search_11.Multiline = true;
-            this.t_search_11.Name = "t_search_11";
-            this.t_search_11.Size = new System.Drawing.Size(371, 30);
-            this.t_search_11.TabIndex = 27;
-            this.t_search_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // b_add_11
-            // 
-            this.b_add_11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_add_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_add_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_add_11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_add_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_add_11.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_add_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_add_11.Location = new System.Drawing.Point(691, 414);
-            this.b_add_11.MaximumSize = new System.Drawing.Size(120, 40);
-            this.b_add_11.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_add_11.Name = "b_add_11";
-            this.b_add_11.Size = new System.Drawing.Size(120, 40);
-            this.b_add_11.TabIndex = 23;
-            this.b_add_11.Text = "إضافة الحجز";
-            this.b_add_11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_add_11.UseVisualStyleBackColor = false;
-            this.b_add_11.Click += new System.EventHandler(this.b_add_11_Click);
-            // 
-            // b_cancel_11
-            // 
-            this.b_cancel_11.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_cancel_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_cancel_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_cancel_11.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.b_cancel_11.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_cancel_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_cancel_11.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_cancel_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_cancel_11.Location = new System.Drawing.Point(56, 414);
-            this.b_cancel_11.MaximumSize = new System.Drawing.Size(120, 40);
-            this.b_cancel_11.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_cancel_11.Name = "b_cancel_11";
-            this.b_cancel_11.Size = new System.Drawing.Size(120, 40);
-            this.b_cancel_11.TabIndex = 22;
-            this.b_cancel_11.Text = "رجوع";
-            this.b_cancel_11.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_cancel_11.UseVisualStyleBackColor = false;
-            this.b_cancel_11.Click += new System.EventHandler(this.b_cancel_11_Click);
             // 
             // dgv_11
             // 
@@ -151,38 +97,134 @@
             this.dgv_11.Size = new System.Drawing.Size(867, 374);
             this.dgv_11.TabIndex = 29;
             // 
-            // b_search_11
-            // 
-            this.b_search_11.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.b_search_11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_11.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b_search_11.BackgroundImage")));
-            this.b_search_11.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.b_search_11.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_search_11.FlatAppearance.BorderColor = System.Drawing.Color.LightSteelBlue;
-            this.b_search_11.FlatAppearance.BorderSize = 0;
-            this.b_search_11.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_11.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_search_11.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
-            this.b_search_11.ForeColor = System.Drawing.Color.Black;
-            this.b_search_11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_search_11.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.b_search_11.Location = new System.Drawing.Point(592, 423);
-            this.b_search_11.Name = "b_search_11";
-            this.b_search_11.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.b_search_11.Size = new System.Drawing.Size(34, 23);
-            this.b_search_11.TabIndex = 37;
-            this.b_search_11.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.b_search_11.UseVisualStyleBackColor = false;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.guna2Button1);
+            this.panel1.Controls.Add(this.t_search_11);
+            this.panel1.Controls.Add(this.b_add_11);
+            this.panel1.Controls.Add(this.b_cancel_11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 38;
+            // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.AutoRoundedCorners = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.BorderRadius = 14;
+            this.guna2Button1.BorderThickness = 1;
+            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.CustomizableEdges.BottomLeft = false;
+            this.guna2Button1.CustomizableEdges.TopLeft = false;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.Location = new System.Drawing.Point(510, 419);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(39, 30);
+            this.guna2Button1.TabIndex = 70;
+            // 
+            // t_search_11
+            // 
+            this.t_search_11.Animated = true;
+            this.t_search_11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_search_11.BorderRadius = 10;
+            this.t_search_11.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_search_11.CustomizableEdges.BottomRight = false;
+            this.t_search_11.CustomizableEdges.TopRight = false;
+            this.t_search_11.DefaultText = "";
+            this.t_search_11.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_search_11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_search_11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_11.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_search_11.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_search_11.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold);
+            this.t_search_11.ForeColor = System.Drawing.Color.White;
+            this.t_search_11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_search_11.Location = new System.Drawing.Point(176, 419);
+            this.t_search_11.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_search_11.Name = "t_search_11";
+            this.t_search_11.PasswordChar = '\0';
+            this.t_search_11.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.t_search_11.PlaceholderText = "بحث";
+            this.t_search_11.SelectedText = "";
+            this.t_search_11.Size = new System.Drawing.Size(371, 30);
+            this.t_search_11.TabIndex = 69;
+            this.t_search_11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // b_add_11
+            // 
+            this.b_add_11.Animated = true;
+            this.b_add_11.BackColor = System.Drawing.Color.Transparent;
+            this.b_add_11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_add_11.BorderRadius = 10;
+            this.b_add_11.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_add_11.BorderThickness = 1;
+            this.b_add_11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_add_11.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.b_add_11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_add_11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_add_11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_add_11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_add_11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_add_11.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_add_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_add_11.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_add_11.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_add_11.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_add_11.Location = new System.Drawing.Point(738, 414);
+            this.b_add_11.Name = "b_add_11";
+            this.b_add_11.ShadowDecoration.BorderRadius = 0;
+            this.b_add_11.Size = new System.Drawing.Size(140, 40);
+            this.b_add_11.TabIndex = 36;
+            this.b_add_11.TabStop = false;
+            this.b_add_11.Text = "إضافة حجز";
+            this.b_add_11.TextFormatNoPrefix = true;
+            this.b_add_11.Click += new System.EventHandler(this.b_add_11_Click);
+            // 
+            // b_cancel_11
+            // 
+            this.b_cancel_11.Animated = true;
+            this.b_cancel_11.BackColor = System.Drawing.Color.Transparent;
+            this.b_cancel_11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_cancel_11.BorderRadius = 10;
+            this.b_cancel_11.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_cancel_11.BorderThickness = 1;
+            this.b_cancel_11.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_cancel_11.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.b_cancel_11.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_cancel_11.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_cancel_11.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_cancel_11.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_cancel_11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_cancel_11.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_cancel_11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_cancel_11.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_cancel_11.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_cancel_11.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_cancel_11.Location = new System.Drawing.Point(11, 414);
+            this.b_cancel_11.Name = "b_cancel_11";
+            this.b_cancel_11.ShadowDecoration.BorderRadius = 0;
+            this.b_cancel_11.Size = new System.Drawing.Size(140, 40);
+            this.b_cancel_11.TabIndex = 35;
+            this.b_cancel_11.TabStop = false;
+            this.b_cancel_11.Text = "رجوع";
+            this.b_cancel_11.TextFormatNoPrefix = true;
+            this.b_cancel_11.Click += new System.EventHandler(this.b_cancel_11_Click);
             // 
             // F_DEBARTURES_11
             // 
@@ -190,13 +232,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.CancelButton = this.b_cancel_11;
             this.ClientSize = new System.Drawing.Size(891, 467);
-            this.Controls.Add(this.b_search_11);
             this.Controls.Add(this.dgv_11);
-            this.Controls.Add(this.b_add_11);
-            this.Controls.Add(this.t_search_11);
-            this.Controls.Add(this.b_cancel_11);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -207,17 +244,17 @@
             this.Text = "F_DEBARTURES_11";
             this.Load += new System.EventHandler(this.F_DEBARTURES_11_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_11)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private System.Windows.Forms.TextBox t_search_11;
-        private System.Windows.Forms.Button b_add_11;
-        private System.Windows.Forms.Button b_cancel_11;
         public System.Windows.Forms.DataGridView dgv_11;
-        private System.Windows.Forms.Button b_search_11;
         private System.Windows.Forms.Panel panel1;
+        private Guna.UI2.WinForms.Guna2Button b_add_11;
+        private Guna.UI2.WinForms.Guna2Button b_cancel_11;
+        internal Guna.UI2.WinForms.Guna2TextBox t_search_11;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }

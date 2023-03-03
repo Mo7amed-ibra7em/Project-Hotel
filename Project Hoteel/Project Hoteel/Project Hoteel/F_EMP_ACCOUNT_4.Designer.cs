@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_EMP_ACCOUNT_4));
             this.dgv_4 = new System.Windows.Forms.DataGridView();
-            this.t_search_10 = new System.Windows.Forms.TextBox();
-            this.b_edit_10 = new System.Windows.Forms.Button();
-            this.b_diparting_10 = new System.Windows.Forms.Button();
-            this.b_search_10 = new System.Windows.Forms.Button();
-            this.b_search_5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_delete_4 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_search_13 = new Guna.UI2.WinForms.Guna2Button();
+            this.t_search_13 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.b_edit_4 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,158 +47,60 @@
             // 
             this.dgv_4.AllowUserToAddRows = false;
             this.dgv_4.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgv_4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.dgv_4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_4.ColumnHeadersHeight = 40;
             this.dgv_4.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_4.EnableHeadersVisualStyles = false;
             this.dgv_4.GridColor = System.Drawing.Color.White;
             this.dgv_4.Location = new System.Drawing.Point(12, 49);
             this.dgv_4.Name = "dgv_4";
             this.dgv_4.ReadOnly = true;
             this.dgv_4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv_4.RowTemplate.Height = 26;
             this.dgv_4.Size = new System.Drawing.Size(1038, 524);
             this.dgv_4.TabIndex = 30;
             // 
-            // t_search_10
-            // 
-            this.t_search_10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_search_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_search_10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.t_search_10.Font = new System.Drawing.Font("Rockwell", 12F);
-            this.t_search_10.ForeColor = System.Drawing.Color.Black;
-            this.t_search_10.Location = new System.Drawing.Point(86, 592);
-            this.t_search_10.Multiline = true;
-            this.t_search_10.Name = "t_search_10";
-            this.t_search_10.Size = new System.Drawing.Size(371, 30);
-            this.t_search_10.TabIndex = 34;
-            this.t_search_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // b_edit_10
-            // 
-            this.b_edit_10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_edit_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_edit_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_edit_10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.b_edit_10.FlatAppearance.BorderSize = 2;
-            this.b_edit_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_edit_10.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_edit_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_10.Location = new System.Drawing.Point(674, 587);
-            this.b_edit_10.MaximumSize = new System.Drawing.Size(142, 40);
-            this.b_edit_10.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_edit_10.Name = "b_edit_10";
-            this.b_edit_10.Size = new System.Drawing.Size(142, 40);
-            this.b_edit_10.TabIndex = 33;
-            this.b_edit_10.Text = "حذف";
-            this.b_edit_10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_edit_10.UseVisualStyleBackColor = false;
-            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
-            // 
-            // b_diparting_10
-            // 
-            this.b_diparting_10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_diparting_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_diparting_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_diparting_10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.b_diparting_10.FlatAppearance.BorderSize = 2;
-            this.b_diparting_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_diparting_10.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_diparting_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_diparting_10.Location = new System.Drawing.Point(844, 587);
-            this.b_diparting_10.MaximumSize = new System.Drawing.Size(142, 40);
-            this.b_diparting_10.MinimumSize = new System.Drawing.Size(120, 40);
-            this.b_diparting_10.Name = "b_diparting_10";
-            this.b_diparting_10.Size = new System.Drawing.Size(142, 40);
-            this.b_diparting_10.TabIndex = 32;
-            this.b_diparting_10.Text = "إضافة";
-            this.b_diparting_10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_diparting_10.UseVisualStyleBackColor = false;
-            // 
-            // b_search_10
-            // 
-            this.b_search_10.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.b_search_10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_search_10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.b_search_10.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(114)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.b_search_10.FlatAppearance.BorderSize = 2;
-            this.b_search_10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_search_10.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_search_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_10.Location = new System.Drawing.Point(500, 587);
-            this.b_search_10.Name = "b_search_10";
-            this.b_search_10.Size = new System.Drawing.Size(142, 40);
-            this.b_search_10.TabIndex = 31;
-            this.b_search_10.Text = "تعديل";
-            this.b_search_10.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.b_search_10.UseVisualStyleBackColor = false;
-            this.b_search_10.Click += new System.EventHandler(this.b_search_10_Click);
-            // 
-            // b_search_5
-            // 
-            this.b_search_5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.b_search_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b_search_5.BackgroundImage")));
-            this.b_search_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.b_search_5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.b_search_5.FlatAppearance.BorderColor = System.Drawing.Color.LightSteelBlue;
-            this.b_search_5.FlatAppearance.BorderSize = 0;
-            this.b_search_5.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.b_search_5.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
-            this.b_search_5.ForeColor = System.Drawing.Color.Black;
-            this.b_search_5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_search_5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.b_search_5.Location = new System.Drawing.Point(421, 596);
-            this.b_search_5.Name = "b_search_5";
-            this.b_search_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.b_search_5.Size = new System.Drawing.Size(34, 23);
-            this.b_search_5.TabIndex = 35;
-            this.b_search_5.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.b_search_5.UseVisualStyleBackColor = false;
-            // 
             // label1
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label1.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
@@ -209,18 +111,163 @@
             this.label1.Text = "حسابات الموظفين";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // guna2Button2
+            // 
+            this.guna2Button2.Animated = true;
+            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button2.BorderRadius = 10;
+            this.guna2Button2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.guna2Button2.CustomizableEdges.BottomLeft = false;
+            this.guna2Button2.CustomizableEdges.TopLeft = false;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.guna2Button2.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.guna2Button2.ImageSize = new System.Drawing.Size(18, 18);
+            this.guna2Button2.Location = new System.Drawing.Point(910, 588);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.BorderRadius = 0;
+            this.guna2Button2.Size = new System.Drawing.Size(140, 40);
+            this.guna2Button2.TabIndex = 75;
+            this.guna2Button2.TabStop = false;
+            this.guna2Button2.Text = "إضافة موظف";
+            this.guna2Button2.TextFormatNoPrefix = true;
+            // 
+            // b_delete_4
+            // 
+            this.b_delete_4.Animated = true;
+            this.b_delete_4.BackColor = System.Drawing.Color.Transparent;
+            this.b_delete_4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_delete_4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_delete_4.BorderThickness = 1;
+            this.b_delete_4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_delete_4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_delete_4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_delete_4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_delete_4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_delete_4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_delete_4.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_delete_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_delete_4.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_delete_4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_delete_4.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_delete_4.Location = new System.Drawing.Point(764, 588);
+            this.b_delete_4.Name = "b_delete_4";
+            this.b_delete_4.ShadowDecoration.BorderRadius = 0;
+            this.b_delete_4.Size = new System.Drawing.Size(140, 40);
+            this.b_delete_4.TabIndex = 75;
+            this.b_delete_4.TabStop = false;
+            this.b_delete_4.Text = "حذف";
+            this.b_delete_4.TextFormatNoPrefix = true;
+            // 
+            // b_search_13
+            // 
+            this.b_search_13.Animated = true;
+            this.b_search_13.AutoRoundedCorners = true;
+            this.b_search_13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.BorderRadius = 14;
+            this.b_search_13.BorderThickness = 1;
+            this.b_search_13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.CustomizableEdges.BottomLeft = false;
+            this.b_search_13.CustomizableEdges.TopLeft = false;
+            this.b_search_13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_search_13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_search_13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_search_13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_search_13.ForeColor = System.Drawing.Color.White;
+            this.b_search_13.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_13.Image = ((System.Drawing.Image)(resources.GetObject("b_search_13.Image")));
+            this.b_search_13.Location = new System.Drawing.Point(470, 594);
+            this.b_search_13.Name = "b_search_13";
+            this.b_search_13.Size = new System.Drawing.Size(39, 30);
+            this.b_search_13.TabIndex = 78;
+            // 
+            // t_search_13
+            // 
+            this.t_search_13.Animated = true;
+            this.t_search_13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_search_13.BorderRadius = 10;
+            this.t_search_13.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_search_13.CustomizableEdges.BottomRight = false;
+            this.t_search_13.CustomizableEdges.TopRight = false;
+            this.t_search_13.DefaultText = "";
+            this.t_search_13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_search_13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_search_13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_search_13.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_search_13.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.t_search_13.ForeColor = System.Drawing.Color.White;
+            this.t_search_13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_search_13.Location = new System.Drawing.Point(136, 594);
+            this.t_search_13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_search_13.Name = "t_search_13";
+            this.t_search_13.PasswordChar = '\0';
+            this.t_search_13.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.t_search_13.PlaceholderText = "بحث";
+            this.t_search_13.SelectedText = "";
+            this.t_search_13.Size = new System.Drawing.Size(371, 30);
+            this.t_search_13.TabIndex = 77;
+            this.t_search_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // b_edit_4
+            // 
+            this.b_edit_4.Animated = true;
+            this.b_edit_4.BackColor = System.Drawing.Color.Transparent;
+            this.b_edit_4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_4.BorderRadius = 10;
+            this.b_edit_4.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_edit_4.BorderThickness = 1;
+            this.b_edit_4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_edit_4.CustomizableEdges.BottomRight = false;
+            this.b_edit_4.CustomizableEdges.TopRight = false;
+            this.b_edit_4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_edit_4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_edit_4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_edit_4.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_edit_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_4.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_edit_4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_edit_4.Image = global::Project_Hoteel.Properties.Resources.edit__3_;
+            this.b_edit_4.ImageSize = new System.Drawing.Size(23, 23);
+            this.b_edit_4.Location = new System.Drawing.Point(618, 588);
+            this.b_edit_4.Name = "b_edit_4";
+            this.b_edit_4.ShadowDecoration.BorderRadius = 0;
+            this.b_edit_4.Size = new System.Drawing.Size(140, 40);
+            this.b_edit_4.TabIndex = 80;
+            this.b_edit_4.TabStop = false;
+            this.b_edit_4.Text = "تعديل";
+            this.b_edit_4.TextFormatNoPrefix = true;
+            this.b_edit_4.Click += new System.EventHandler(this.b_edit_4_Click);
+            // 
             // F_EMP_ACCOUNT_4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(1062, 641);
+            this.Controls.Add(this.b_edit_4);
+            this.Controls.Add(this.b_search_13);
+            this.Controls.Add(this.t_search_13);
+            this.Controls.Add(this.b_delete_4);
+            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.b_search_5);
-            this.Controls.Add(this.t_search_10);
-            this.Controls.Add(this.b_edit_10);
-            this.Controls.Add(this.b_diparting_10);
-            this.Controls.Add(this.b_search_10);
             this.Controls.Add(this.dgv_4);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -229,18 +276,17 @@
             this.Load += new System.EventHandler(this.F_EMP_ACCOUNT_4_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         public System.Windows.Forms.DataGridView dgv_4;
-        private System.Windows.Forms.TextBox t_search_10;
-        private System.Windows.Forms.Button b_edit_10;
-        private System.Windows.Forms.Button b_diparting_10;
-        private System.Windows.Forms.Button b_search_10;
-        private System.Windows.Forms.Button b_search_5;
         private System.Windows.Forms.Label label1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button b_delete_4;
+        private Guna.UI2.WinForms.Guna2Button b_search_13;
+        internal Guna.UI2.WinForms.Guna2TextBox t_search_13;
+        private Guna.UI2.WinForms.Guna2Button b_edit_4;
     }
 }

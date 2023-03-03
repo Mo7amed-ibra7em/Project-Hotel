@@ -24,12 +24,12 @@ namespace Project_Hoteel
         {
             this.Close();
             ///
-            //F_ADMIN_5 f_5 = new F_ADMIN_5();
-            //f_5.pnl_load_form_5.Controls.Clear();
-            //F_F_ADMIN_15 f_15 = new F_F_ADMIN_15();
-            //f_15.TopLevel = false;
-            //f_5.pnl_load_form_5.Controls.Add(f_15);
-            //f_15.Show();
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            f_5.pnl_load_form_5.Controls.Clear();
+            F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
+            f_15.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_15);
+            f_15.Show();
         }
 
         private void F_DEBARTURES_11_Load(object sender, EventArgs e)

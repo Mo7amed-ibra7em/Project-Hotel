@@ -30,7 +30,6 @@ namespace Project_Hoteel
 
         private void b_next_7_Click(object sender, EventArgs e)
         {
-            F_NEW_RESERVATION_8 f_8 = new F_NEW_RESERVATION_8();
 
             if (chb_there_is_awife_7.Checked == true)
             {
@@ -44,7 +43,15 @@ namespace Project_Hoteel
             }
 
             t_number_all_7.Text=people_all.ToString();
-            f_8.ShowDialog();
+
+            /////
+            
+            F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
+            F_NEW_RESERVATION_8 f_8 = new F_NEW_RESERVATION_8();
+            f_8.TopLevel = false;
+            f_5.pnl_load_form_5.Controls.Add(f_8);
+            f_8.Show();
+            f_8.BringToFront();
         }
 
         private void chb_there_is_awife_7_CheckedChanged(object sender, EventArgs e)
@@ -55,9 +62,12 @@ namespace Project_Hoteel
                 t_fore_name_7.ReadOnly = true;
                 t_last_name_7.ReadOnly = true;
                 t_identification_number_7.ReadOnly = true;
-                t_fore_name_7.BackColor = Color.Gainsboro;
-                t_last_name_7.BackColor = Color.Gainsboro;
-                t_identification_number_7.BackColor = Color.Gainsboro;
+                t_fore_name_7.FillColor = Color.Gainsboro;
+                t_last_name_7.FillColor = Color.Gainsboro;
+                t_identification_number_7.FillColor = Color.Gainsboro;
+                t_fore_name_7.BorderThickness = 0;
+                t_last_name_7.BorderThickness = 0;
+                t_identification_number_7.BorderThickness = 0;
                 t_fore_name_7.Text = "";
                 t_last_name_7.Text = "";
                 t_identification_number_7.Text = "";
@@ -72,9 +82,12 @@ namespace Project_Hoteel
                 t_fore_name_7.ReadOnly = false;
                 t_last_name_7.ReadOnly = false;
                 t_identification_number_7.ReadOnly = false;
-                t_fore_name_7.BackColor = Color.White;
-                t_last_name_7.BackColor = Color.White;
-                t_identification_number_7.BackColor = Color.White;
+                t_fore_name_7.FillColor = panel1.BackColor;
+                t_last_name_7.FillColor = panel1.BackColor;
+                t_identification_number_7.FillColor = panel1.BackColor;
+                t_fore_name_7.BorderThickness = 1;
+                t_last_name_7.BorderThickness = 1;
+                t_identification_number_7.BorderThickness = 1;
                 people_7 += 1;
                 people_all += 1;
                 t_number_of_people_7.Text = Convert.ToString(people_7);
@@ -296,9 +309,16 @@ namespace Project_Hoteel
             Close();
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void l_there_is_awife_7_Click(object sender, EventArgs e)
         {
-
+            if (chb_there_is_awife_7.Checked == false)
+            {
+                chb_there_is_awife_7.Checked = true;
+            }
+            else
+            {
+                chb_there_is_awife_7.Checked = false;
+            }
         }
     }
 }

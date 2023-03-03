@@ -15,33 +15,20 @@ namespace Project_Hoteel
     {
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
+        bool Expand = true;
+        F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
+
         public F_ROOMS_12()
         {
             InitializeComponent();
+
+            F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
+            if (f_15.Expand2 == true)
+            {
+                timer_room_12.Start();
+            }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Close();
-        }
-
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
-        {
-            picture_cancel_12.BackgroundImage = Properties.Resources.cancel_2x2;
-        }
-
-        private void pictureBox1_MouseLeave(object sender, EventArgs e)
-        {
-            picture_cancel_12.BackgroundImage = Properties.Resources.cancel_2x;
-        }
-
-        private void t_fore_name_6_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)Keys.Back)
-                e.Handled = false;
-            else
-                e.Handled = true;
-        }
 
         private void b_add_room_12_Click(object sender, EventArgs e)
         {
@@ -60,7 +47,7 @@ namespace Project_Hoteel
             {
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlconn;
-                sqlcmd.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ,"+n_room_12.Text+",'"+t_room_12.Text+"',"+p_room_12.Text +")";
+                sqlcmd.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ," + t_number_room_12.Text + ",'" + t_type_room_12.Text + "'," + t_price_room_12.Text + ")";
                 sqlconn.Open();
                 sqlcmd.ExecuteNonQuery();
             }
@@ -74,36 +61,86 @@ namespace Project_Hoteel
             }
 
 
-            try
-            {
-                sqlconn.ConnectionString = connstr;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            SqlCommand sqlcmd1 = new SqlCommand();
-            sqlcmd1.Connection = sqlconn;
-            sqlcmd1.CommandText = "select Id as 'الرقم الافتراضي' , N_room as 'رقم الغرفة' , T_room as 'نوع الغرفة' , P_room as 'سعر الغرفة' , Room_condition as 'حالة الغرفة' from ROOMS;";
-            SqlDataAdapter sqladap = new SqlDataAdapter();
-            sqladap.SelectCommand = sqlcmd1;
-            DataTable mylist = new DataTable();
-            try
-            {
-                sqlconn.Open();
-                sqladap.Fill(mylist);
-                f_15.dgv_15.DataSource = mylist;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlconn.Close();
-            }
+            //try
+            //{
+            //    sqlconn.ConnectionString = connstr;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //SqlCommand sqlcmd1 = new SqlCommand();
+            //sqlcmd1.Connection = sqlconn;
+            //sqlcmd1.CommandText = "select Id as 'الرقم الافتراضي' , N_room as 'رقم الغرفة' , T_room as 'نوع الغرفة' , P_room as 'سعر الغرفة' , Room_condition as 'حالة الغرفة' from ROOMS;";
+            //SqlDataAdapter sqladap = new SqlDataAdapter();
+            //sqladap.SelectCommand = sqlcmd1;
+            //DataTable mylist = new DataTable();
+            //try
+            //{
+            //    sqlconn.Open();
+            //    sqladap.Fill(mylist);
+            //    f_15.dgv_15.DataSource = mylist;
+            //}
+            //catch (Exception ex)
+            //{
+            //    MessageBox.Show(ex.Message);
+            //}
+            //finally
+            //{
+            //    sqlconn.Close();
+            //}
 
-            this.Close();
+            //this.Close();
+        }
+
+        private void F_ROOMS_12_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void timer_room_12_Tick(object sender, EventArgs e)
+        {
+            if (Expand == false)
+            {
+                this.Height -= 5;
+                l_add_rooms_12.Width -= 5;
+                if (this.Height == this.MinimumSize.Height)
+                {
+                    timer_room_12.Stop();
+                    Expand = true;
+                }
+            }
+            else if(Expand == true || f_15.Expand2 == true)
+            {
+                this.Height += 5;
+                l_add_rooms_12.Width += 5;
+                if (this.Height == this.MaximumSize.Height)
+                {
+                    timer_room_12.Stop();
+                    Expand = false;
+                    f_15.Expand2 = false;
+                }
+            }
+        }
+
+        private void l_add_rooms_12_Click(object sender, EventArgs e)
+        {
+            timer_room_12.Start();
+        }
+        private void l_add_rooms_12_MouseHover(object sender, EventArgs e)
+        {
+            l_add_rooms_12.ForeColor = Color.LightSteelBlue;
+        }
+
+        private void l_add_rooms_12_MouseLeave(object sender, EventArgs e)
+        {
+            F_PRIVACY_9 f_9 = new F_PRIVACY_9();
+            l_add_rooms_12.ForeColor = f_9.l_changePassword_9.ForeColor;
+        }
+
+        private void b_close_12_Click(object sender, EventArgs e)
+        {
+            timer_room_12.Start();
         }
     }
 }

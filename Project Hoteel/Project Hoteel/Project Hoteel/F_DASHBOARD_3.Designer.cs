@@ -39,11 +39,9 @@
             System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.Title title2 = new System.Windows.Forms.DataVisualization.Charting.Title();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.dtpEndDate = new System.Windows.Forms.DateTimePicker();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.d_date_of_entry_6 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -105,11 +103,9 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.label17);
-            this.panel2.Controls.Add(this.label18);
             this.panel2.Controls.Add(this.label16);
-            this.panel2.Controls.Add(this.dateTimePicker1);
-            this.panel2.Controls.Add(this.dtpEndDate);
+            this.panel2.Controls.Add(this.guna2DateTimePicker1);
+            this.panel2.Controls.Add(this.d_date_of_entry_6);
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel5);
             this.panel2.Controls.Add(this.panel8);
@@ -129,68 +125,68 @@
             this.panel2.TabIndex = 2;
             this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.label17.Location = new System.Drawing.Point(16, 13);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(122, 23);
-            this.label17.TabIndex = 1;
-            this.label17.Text = "2023/12/01";
-            this.label17.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label17.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.label18.Location = new System.Drawing.Point(157, 16);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(15, 19);
-            this.label18.TabIndex = 1;
-            this.label18.Text = "-";
-            this.label18.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label18.Click += new System.EventHandler(this.label1_Click);
-            // 
             // label16
             // 
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.label16.Location = new System.Drawing.Point(192, 13);
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.label16.Location = new System.Drawing.Point(149, 9);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(122, 23);
-            this.label16.TabIndex = 1;
-            this.label16.Text = "2023/12/01";
-            this.label16.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label16.Click += new System.EventHandler(this.label1_Click);
+            this.label16.Size = new System.Drawing.Size(21, 30);
+            this.label16.TabIndex = 6;
+            this.label16.Text = "-";
             // 
-            // dateTimePicker1
+            // guna2DateTimePicker1
             // 
-            this.dateTimePicker1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dateTimePicker1.CustomFormat = "MMM dd, yyyy";
-            this.dateTimePicker1.Enabled = false;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker1.Location = new System.Drawing.Point(16, 14);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(122, 23);
-            this.dateTimePicker1.TabIndex = 4;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
+            this.guna2DateTimePicker1.Animated = true;
+            this.guna2DateTimePicker1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2DateTimePicker1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.BorderRadius = 2;
+            this.guna2DateTimePicker1.Checked = true;
+            this.guna2DateTimePicker1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.guna2DateTimePicker1.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.CustomFormat = "dd - MM - yyyy";
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Simplified Arabic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.guna2DateTimePicker1.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.guna2DateTimePicker1.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(167, 12);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(144, 27);
+            this.guna2DateTimePicker1.TabIndex = 5;
+            this.guna2DateTimePicker1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
             // 
-            // dtpEndDate
+            // d_date_of_entry_6
             // 
-            this.dtpEndDate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.dtpEndDate.CustomFormat = "MMM dd, yyyy";
-            this.dtpEndDate.Enabled = false;
-            this.dtpEndDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpEndDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpEndDate.Location = new System.Drawing.Point(192, 14);
-            this.dtpEndDate.Name = "dtpEndDate";
-            this.dtpEndDate.Size = new System.Drawing.Size(122, 23);
-            this.dtpEndDate.TabIndex = 4;
-            this.dtpEndDate.ValueChanged += new System.EventHandler(this.dtpEndDate_ValueChanged);
+            this.d_date_of_entry_6.Animated = true;
+            this.d_date_of_entry_6.BackColor = System.Drawing.Color.Transparent;
+            this.d_date_of_entry_6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.BorderRadius = 2;
+            this.d_date_of_entry_6.Checked = true;
+            this.d_date_of_entry_6.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_date_of_entry_6.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.CustomFormat = "dd - MM - yyyy";
+            this.d_date_of_entry_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.d_date_of_entry_6.Font = new System.Drawing.Font("Simplified Arabic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.d_date_of_entry_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.d_date_of_entry_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.d_date_of_entry_6.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.d_date_of_entry_6.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
+            this.d_date_of_entry_6.Location = new System.Drawing.Point(8, 12);
+            this.d_date_of_entry_6.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.d_date_of_entry_6.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.d_date_of_entry_6.Name = "d_date_of_entry_6";
+            this.d_date_of_entry_6.Size = new System.Drawing.Size(144, 27);
+            this.d_date_of_entry_6.TabIndex = 4;
+            this.d_date_of_entry_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.d_date_of_entry_6.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
             // 
             // panel6
             // 
@@ -588,11 +584,11 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(21, 83);
+            this.label4.Location = new System.Drawing.Point(82, 83);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(131, 21);
+            this.label4.Size = new System.Drawing.Size(73, 21);
             this.label4.TabIndex = 1;
-            this.label4.Text = "عدد المقيمين بالغرف";
+            this.label4.Text = "عدد الغرف";
             this.label4.Click += new System.EventHandler(this.label1_Click);
             // 
             // label5
@@ -612,11 +608,11 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(165)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(21, 17);
+            this.label3.Location = new System.Drawing.Point(65, 17);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(131, 21);
+            this.label3.Size = new System.Drawing.Size(90, 21);
             this.label3.TabIndex = 1;
-            this.label3.Text = "عدد المقيمين بالغرف";
+            this.label3.Text = "عدد الموظفين";
             this.label3.Click += new System.EventHandler(this.label1_Click);
             // 
             // dataGridView1
@@ -809,12 +805,10 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.DateTimePicker dtpEndDate;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label16;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker d_date_of_entry_6;
     }
 }

@@ -22,7 +22,7 @@ namespace Project_Hoteel.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace Project_Hoteel.Properties {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Project_Hoteel.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace Project_Hoteel.Properties {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Back {
+        public static System.Drawing.Bitmap Back {
             get {
                 object obj = ResourceManager.GetObject("Back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -73,7 +73,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Back1 {
+        public static System.Drawing.Bitmap Back1 {
             get {
                 object obj = ResourceManager.GetObject("Back1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -83,7 +83,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Back2 {
+        public static System.Drawing.Bitmap Back2 {
             get {
                 object obj = ResourceManager.GetObject("Back2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -93,37 +93,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap BackGround_Form {
-            get {
-                object obj = ResourceManager.GetObject("BackGround Form", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BackGround_Form_Blur {
-            get {
-                object obj = ResourceManager.GetObject("BackGround Form Blur", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap BackGround_Form_Blur1 {
-            get {
-                object obj = ResourceManager.GetObject("BackGround Form Blur1", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap cancel_2x {
+        public static System.Drawing.Bitmap cancel_2x {
             get {
                 object obj = ResourceManager.GetObject("cancel@2x", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -133,7 +103,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap cancel_2x2 {
+        public static System.Drawing.Bitmap cancel_2x2 {
             get {
                 object obj = ResourceManager.GetObject("cancel@2x2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -143,7 +113,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap edit__2_ {
+        public static System.Drawing.Bitmap edit__2_ {
             get {
                 object obj = ResourceManager.GetObject("edit (2)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -153,7 +123,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap edit__3_ {
+        public static System.Drawing.Bitmap edit__3_ {
             get {
                 object obj = ResourceManager.GetObject("edit (3)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -163,7 +133,17 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap language {
+        public static System.Drawing.Bitmap key_room {
+            get {
+                object obj = ResourceManager.GetObject("key-room", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap language {
             get {
                 object obj = ResourceManager.GetObject("language", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -173,7 +153,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap language_blue {
+        public static System.Drawing.Bitmap language_blue {
             get {
                 object obj = ResourceManager.GetObject("language_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -183,7 +163,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lock1 {
+        public static System.Drawing.Bitmap Lock1 {
             get {
                 object obj = ResourceManager.GetObject("Lock1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -193,7 +173,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap Lock2 {
+        public static System.Drawing.Bitmap Lock2 {
             get {
                 object obj = ResourceManager.GetObject("Lock2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -203,7 +183,17 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menu {
+        public static System.Drawing.Bitmap login___1_ {
+            get {
+                object obj = ResourceManager.GetObject("login- (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        public static System.Drawing.Bitmap menu {
             get {
                 object obj = ResourceManager.GetObject("menu", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -213,7 +203,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menu_blue {
+        public static System.Drawing.Bitmap menu_blue {
             get {
                 object obj = ResourceManager.GetObject("menu_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -223,7 +213,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap reset_password {
+        public static System.Drawing.Bitmap reset_password {
             get {
                 object obj = ResourceManager.GetObject("reset-password", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -233,7 +223,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap reset_password__1_ {
+        public static System.Drawing.Bitmap reset_password__1_ {
             get {
                 object obj = ResourceManager.GetObject("reset-password (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -243,7 +233,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap user1 {
+        public static System.Drawing.Bitmap user1 {
             get {
                 object obj = ResourceManager.GetObject("user1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -253,7 +243,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap user2 {
+        public static System.Drawing.Bitmap user2 {
             get {
                 object obj = ResourceManager.GetObject("user2", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -263,7 +253,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap weather {
+        public static System.Drawing.Bitmap weather {
             get {
                 object obj = ResourceManager.GetObject("weather", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -273,7 +263,7 @@ namespace Project_Hoteel.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap weather_blue {
+        public static System.Drawing.Bitmap weather_blue {
             get {
                 object obj = ResourceManager.GetObject("weather_blue", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
