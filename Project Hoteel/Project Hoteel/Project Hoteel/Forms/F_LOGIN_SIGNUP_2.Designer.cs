@@ -86,6 +86,7 @@
             this.L_2.Size = new System.Drawing.Size(255, 31);
             this.L_2.TabIndex = 19;
             this.L_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.L_2.Visible = false;
             // 
             // panel1
             // 
@@ -314,7 +315,6 @@
         #endregion
         public System.Windows.Forms.Timer timer_progress_2;
         private System.Windows.Forms.TextBox t_password_2;
-        private System.Windows.Forms.Label L_2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel1;
@@ -326,5 +326,6 @@
         private System.Windows.Forms.Label l_username_2;
         private Guna.UI2.WinForms.Guna2Button b_login_2;
         private System.Windows.Forms.TextBox t_email_2;
+        public System.Windows.Forms.Label L_2;
     }
 }

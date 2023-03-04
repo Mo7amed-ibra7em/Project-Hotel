@@ -38,6 +38,7 @@
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.PictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label_19 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -65,7 +66,7 @@
             "اللغة الإنكليزية"});
             this.guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2ComboBox1.ItemsAppearance.SelectedForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(41, 31);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(34, 58);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
             this.guna2ComboBox1.Size = new System.Drawing.Size(178, 26);
             this.guna2ComboBox1.TabIndex = 104;
@@ -108,7 +109,7 @@
             this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(225, 30);
+            this.label1.Location = new System.Drawing.Point(218, 57);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(55, 27);
@@ -124,7 +125,7 @@
             this.l_1_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
             this.l_1_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.l_1_6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_1_6.Location = new System.Drawing.Point(810, 30);
+            this.l_1_6.Location = new System.Drawing.Point(803, 57);
             this.l_1_6.Name = "l_1_6";
             this.l_1_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.l_1_6.Size = new System.Drawing.Size(55, 27);
@@ -154,7 +155,7 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(708, 18);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(701, 45);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton1.Size = new System.Drawing.Size(76, 54);
@@ -184,7 +185,7 @@
             this.guna2GradientButton2.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(599, 18);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(592, 45);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.Transparent;
             this.guna2GradientButton2.Size = new System.Drawing.Size(76, 54);
@@ -205,7 +206,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(286, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(279, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 41);
             this.pictureBox1.TabIndex = 96;
@@ -217,11 +218,25 @@
             this.PictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PictureBox2.BackgroundImage")));
             this.PictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PictureBox2.Location = new System.Drawing.Point(871, 24);
+            this.PictureBox2.Location = new System.Drawing.Point(864, 51);
             this.PictureBox2.Name = "PictureBox2";
             this.PictureBox2.Size = new System.Drawing.Size(41, 41);
             this.PictureBox2.TabIndex = 95;
             this.PictureBox2.TabStop = false;
+            // 
+            // label_19
+            // 
+            this.label_19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_19.BackColor = System.Drawing.Color.Transparent;
+            this.label_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label_19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.label_19.Location = new System.Drawing.Point(862, 9);
+            this.label_19.Name = "label_19";
+            this.label_19.Size = new System.Drawing.Size(90, 36);
+            this.label_19.TabIndex = 108;
+            this.label_19.Text = "المـوظفيـن";
+            this.label_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // F_CUSTOMIZE_MANAGER_21
             // 
@@ -229,6 +244,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(964, 645);
+            this.Controls.Add(this.label_19);
             this.Controls.Add(this.guna2GradientButton2);
             this.Controls.Add(this.guna2GradientButton1);
             this.Controls.Add(this.guna2ComboBox1);
@@ -259,5 +275,6 @@
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        private System.Windows.Forms.Label label_19;
     }
 }

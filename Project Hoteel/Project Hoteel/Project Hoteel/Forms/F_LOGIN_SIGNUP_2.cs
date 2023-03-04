@@ -13,10 +13,12 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
 using System.Runtime.InteropServices;
 using System.Threading;
+using ComponentFactory.Krypton.Toolkit;
+using Project_Hoteel.Notification;
 
 namespace Project_Hoteel
 {
-    public partial class F_LOGIN_SIGNUP_2 : Form
+    public partial class F_LOGIN_SIGNUP_2 : KryptonForm
     {
         //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         //private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
@@ -47,7 +49,6 @@ namespace Project_Hoteel
         private void b_login_2_Click(object sender, EventArgs e)
         {
             t_password_2.PasswordChar = '*';
-
             if (t_email_2.Text != "Password" && t_email_2.Text != "" && t_password_2.Text != "UserName" && t_password_2.Text != "")
             {
                 if(t_email_2.Text != "اسم المستخدم" && t_email_2.Text != "" && t_password_2.Text != "كلمة المرور" && t_password_2.Text != "")
@@ -90,17 +91,21 @@ namespace Project_Hoteel
 
             if (t_password_2.Text == "Password" && t_email_2.Text == "UserName" || t_email_2.Text == "اسم المستخدم" && t_password_2.Text == "كلمة المرور" || t_password_2.Text == "" && t_email_2.Text == "")
             {
-                L_2.Text = "!... ادخل معلوماتك ";
-                t_password_2.Text = "";
-                t_email_2.Text = "";
+                L_2.Text = "ادخل معلوماتك";
+                t_password_2.Text = "Password";
+                t_email_2.Text = "UserName";
+                t_password_2.PasswordChar = char.MinValue;
+                MessageCollection.showNatification();
             }
-            else if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username)
+            if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username)
             {
-                L_2.Text = "!... اسم المستخدم او كلمة المرور خطأ ";
-                t_password_2.Text = "";
-                t_email_2.Text = "";
+                L_2.Text = "اسم المستخدم او كلمة المرور خطأ";
+                t_password_2.Text = "Password";
+                t_email_2.Text = "UserName";
+                t_password_2.PasswordChar = char.MinValue;
+                MessageCollection.showNatification();
             }
-            else if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
+            if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
             {
                 l_username_2.Text = "Welcome  " + l_user;
                 L_2.Text = "تم تسجيل الدخول بنجاح";
@@ -114,6 +119,7 @@ namespace Project_Hoteel
                     Login_manager = true;
                     timer_progress_2.Start();
                 }
+                MessageCollection.showNatification();
             }
         }
 
@@ -130,7 +136,7 @@ namespace Project_Hoteel
                     if (Login_emp == true)
                     {
                         F_ADMIN_5 f_5 = new F_ADMIN_5();
-                        f_5.ShowDialog();
+                        f_5.Show();
                         Login_emp = false;
                         ProgressBar_2.Value = 5;
                         l_progress_2.Text = "1 %";
@@ -138,7 +144,7 @@ namespace Project_Hoteel
                     else if (Login_manager == true)
                     {
                         F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
-                        f_1.ShowDialog();
+                        f_1.Show();
                         Login_manager = false;
                         ProgressBar_2.Value = 5;
                         l_progress_2.Text = "1 %";
