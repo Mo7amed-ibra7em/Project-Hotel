@@ -123,6 +123,15 @@
   <metadata name="label1.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <metadata name="t_search_13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="b_edit_4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="b_search_13.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="b_search_13.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -140,10 +149,13 @@
         AABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="b_delete_4.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="b_delete_4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEYSURBVEhL7dQ/
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAEYSURBVEhL7dQ/
         S0JRHMbxa9k/cbE3IEGtLVKLgVpzg0PQUkGvoRLEKXQQAy0nM4LWxqB2h3bxFfl97h84iNeO9zapD3y4
         xyP+fp5z9DhLmYT//Jds4wE3WEcLbVwjdlS8jwOc4xc5qNE3UoicNaj4PjYxxBVU/BnHiJUjXGJW8Q2U
         0EAHdVhHH/7ACGHf/B1lpN1X3vlYRwV7uEDSH58hY3jFnqEL61QQHOgndKiaM33hxzCAdWo4xAtuoa34
@@ -151,10 +163,13 @@
         DI2u9idvGC13aGLyuhBt0Rt0tceKtkTX9zQLG8cZA8jxOLcFaGfAAAAAAElFTkSuQmCC
 </value>
   </data>
+  <metadata name="guna2Button2.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
   <data name="guna2Button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wgAADsIBFShKgAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGB5SURBVHhe7d0H
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAGB5SURBVHhe7d0H
         eBTV+j9wb/WqV6+967U3sCL2gl28grTQS2gJaQSQKsUFpPcqAQQMPXQCoRN6DZ3QewnZmdkkBEIn838P
         vv5/ODnqTtnNbvb7eZ7vEyy8M/vOOWdmsu0GAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAr9NI1bssrW/X1c99ULU9pTOl+rmy1sefLVk+h

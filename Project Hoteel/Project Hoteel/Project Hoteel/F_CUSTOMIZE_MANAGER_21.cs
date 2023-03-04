@@ -10,19 +10,13 @@ using System.Windows.Forms;
 
 namespace Project_Hoteel
 {
-    public partial class F_ACC_EMP_19 : Form
+    public partial class F_CUSTOMIZE_MANAGER_21 : Form
     {
-        public F_ACC_EMP_19()
+        public F_CUSTOMIZE_MANAGER_21()
         {
             InitializeComponent();
         }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click_1(object sender, EventArgs e)
+        private void F_CUSTOMIZE_MANAGER_21_Load(object sender, EventArgs e)
         {
 
         }

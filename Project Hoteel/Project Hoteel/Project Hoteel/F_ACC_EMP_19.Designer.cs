@@ -70,7 +70,6 @@
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.dgv_19.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dgv_19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dgv_19.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_19.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_19.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
@@ -95,7 +94,7 @@
             this.dgv_19.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_19.EnableHeadersVisualStyles = false;
             this.dgv_19.GridColor = System.Drawing.Color.White;
-            this.dgv_19.Location = new System.Drawing.Point(20, 48);
+            this.dgv_19.Location = new System.Drawing.Point(17, 48);
             this.dgv_19.MaximumSize = new System.Drawing.Size(934, 529);
             this.dgv_19.MinimumSize = new System.Drawing.Size(427, 529);
             this.dgv_19.Name = "dgv_19";
@@ -523,6 +522,7 @@
             this.guna2Button1.TabStop = false;
             this.guna2Button1.Text = "إضافة";
             this.guna2Button1.TextFormatNoPrefix = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click_1);
             // 
             // label2
             // 
@@ -571,7 +571,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(50)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(-1, 0);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(167, 645);
             this.guna2GradientPanel2.TabIndex = 99;

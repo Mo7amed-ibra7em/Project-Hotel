@@ -38,12 +38,12 @@
             this.l_progress_2 = new System.Windows.Forms.Label();
             this.ProgressBar_2 = new CircularProgressBar.CircularProgressBar();
             this.l_username_2 = new System.Windows.Forms.Label();
+            this.t_email_2 = new System.Windows.Forms.TextBox();
             this.b_login_2 = new Guna.UI2.WinForms.Guna2Button();
             this.picture_cancel_12 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.t_email_2 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cancel_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -170,14 +170,31 @@
             this.l_username_2.TabIndex = 29;
             this.l_username_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // t_email_2
+            // 
+            this.t_email_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.t_email_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_email_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.t_email_2.Font = new System.Drawing.Font("Sitka Heading", 10.2F, System.Drawing.FontStyle.Bold);
+            this.t_email_2.ForeColor = System.Drawing.Color.LightGray;
+            this.t_email_2.Location = new System.Drawing.Point(85, 137);
+            this.t_email_2.Multiline = true;
+            this.t_email_2.Name = "t_email_2";
+            this.t_email_2.Size = new System.Drawing.Size(263, 35);
+            this.t_email_2.TabIndex = 0;
+            this.t_email_2.Text = "UserName";
+            this.t_email_2.WordWrap = false;
+            this.t_email_2.Click += new System.EventHandler(this.t_email_2_Click);
+            this.t_email_2.TextChanged += new System.EventHandler(this.t_email_2_TextChanged);
+            this.t_email_2.Leave += new System.EventHandler(this.t_email_2_Leave);
+            // 
             // b_login_2
             // 
             this.b_login_2.Animated = true;
             this.b_login_2.AutoRoundedCorners = true;
             this.b_login_2.BackColor = System.Drawing.Color.Transparent;
             this.b_login_2.BorderColor = System.Drawing.Color.CornflowerBlue;
-            this.b_login_2.BorderRadius = 18;
-            this.b_login_2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dash;
+            this.b_login_2.BorderRadius = 13;
             this.b_login_2.BorderThickness = 1;
             this.b_login_2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.b_login_2.DialogResult = System.Windows.Forms.DialogResult.OK;
@@ -195,7 +212,7 @@
             this.b_login_2.Location = new System.Drawing.Point(48, 319);
             this.b_login_2.Name = "b_login_2";
             this.b_login_2.ShadowDecoration.BorderRadius = 0;
-            this.b_login_2.Size = new System.Drawing.Size(300, 39);
+            this.b_login_2.Size = new System.Drawing.Size(300, 29);
             this.b_login_2.TabIndex = 30;
             this.b_login_2.TabStop = false;
             this.b_login_2.Text = "Log In";
@@ -206,12 +223,12 @@
             // 
             this.picture_cancel_12.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.picture_cancel_12.BackColor = System.Drawing.Color.Transparent;
-            this.picture_cancel_12.BackgroundImage = global::Project_Hoteel.Properties.Resources.cancel_2x;
+            this.picture_cancel_12.BackgroundImage = global::Project_Hoteel.Properties.Resources.cross__2_;
             this.picture_cancel_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.picture_cancel_12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.picture_cancel_12.Location = new System.Drawing.Point(363, 5);
+            this.picture_cancel_12.Location = new System.Drawing.Point(365, 7);
             this.picture_cancel_12.Name = "picture_cancel_12";
-            this.picture_cancel_12.Size = new System.Drawing.Size(30, 33);
+            this.picture_cancel_12.Size = new System.Drawing.Size(27, 27);
             this.picture_cancel_12.TabIndex = 26;
             this.picture_cancel_12.TabStop = false;
             this.picture_cancel_12.Click += new System.EventHandler(this.picture_cancel_12_Click);
@@ -256,24 +273,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
-            // 
-            // t_email_2
-            // 
-            this.t_email_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.t_email_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_email_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.t_email_2.Font = new System.Drawing.Font("Sitka Heading", 10.2F, System.Drawing.FontStyle.Bold);
-            this.t_email_2.ForeColor = System.Drawing.Color.LightGray;
-            this.t_email_2.Location = new System.Drawing.Point(85, 137);
-            this.t_email_2.Multiline = true;
-            this.t_email_2.Name = "t_email_2";
-            this.t_email_2.Size = new System.Drawing.Size(263, 35);
-            this.t_email_2.TabIndex = 0;
-            this.t_email_2.Text = "UserName";
-            this.t_email_2.WordWrap = false;
-            this.t_email_2.Click += new System.EventHandler(this.t_email_2_Click);
-            this.t_email_2.TextChanged += new System.EventHandler(this.t_email_2_TextChanged);
-            this.t_email_2.Leave += new System.EventHandler(this.t_email_2_Leave);
             // 
             // F_LOGIN_SIGNUP_2
             // 

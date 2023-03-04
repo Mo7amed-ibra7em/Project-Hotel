@@ -34,7 +34,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_RESIDENTS_10));
             this.dgv_10 = new System.Windows.Forms.DataGridView();
-            this.hoteelDataSet = new Project_Hoteel.hoteelDataSet();
             this.panel1 = new System.Windows.Forms.Panel();
             this.b_diparting_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_edit_10 = new Guna.UI2.WinForms.Guna2Button();
@@ -42,7 +41,6 @@
             this.b_search_10 = new Guna.UI2.WinForms.Guna2Button();
             this.t_search_10 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoteelDataSet)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -100,11 +98,6 @@
             this.dgv_10.Size = new System.Drawing.Size(867, 374);
             this.dgv_10.TabIndex = 19;
             // 
-            // hoteelDataSet
-            // 
-            this.hoteelDataSet.DataSetName = "hoteelDataSet";
-            this.hoteelDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -118,6 +111,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 37;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // b_diparting_10
             // 
@@ -149,6 +143,7 @@
             this.b_diparting_10.TabStop = false;
             this.b_diparting_10.Text = "مغادر";
             this.b_diparting_10.TextFormatNoPrefix = true;
+            this.b_diparting_10.Click += new System.EventHandler(this.b_diparting_10_Click_1);
             // 
             // b_edit_10
             // 
@@ -180,6 +175,7 @@
             this.b_edit_10.TabStop = false;
             this.b_edit_10.Text = "تعديل";
             this.b_edit_10.TextFormatNoPrefix = true;
+            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click_1);
             // 
             // b_cancel_10
             // 
@@ -237,6 +233,7 @@
             this.b_search_10.Name = "b_search_10";
             this.b_search_10.Size = new System.Drawing.Size(39, 30);
             this.b_search_10.TabIndex = 72;
+            this.b_search_10.Click += new System.EventHandler(this.b_search_10_Click);
             // 
             // t_search_10
             // 
@@ -266,6 +263,7 @@
             this.t_search_10.Size = new System.Drawing.Size(371, 30);
             this.t_search_10.TabIndex = 71;
             this.t_search_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_search_10.TextChanged += new System.EventHandler(this.t_search_10_TextChanged);
             // 
             // F_RESIDENTS_10
             // 
@@ -284,14 +282,12 @@
             this.Text = "F_RESIDENTS_10";
             this.Load += new System.EventHandler(this.F_RESIDENTS_10_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoteelDataSet)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private hoteelDataSet hoteelDataSet;
         public System.Windows.Forms.DataGridView dgv_10;
         private System.Windows.Forms.Panel panel1;
         private Guna.UI2.WinForms.Guna2Button b_search_10;

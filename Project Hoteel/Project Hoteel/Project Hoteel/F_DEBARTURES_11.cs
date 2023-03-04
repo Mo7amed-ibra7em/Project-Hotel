@@ -127,5 +127,20 @@ namespace Project_Hoteel
                 sqlconn1.Close();
             }
         }
+
+        private void dgv_11_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void b_search_11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_search_11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

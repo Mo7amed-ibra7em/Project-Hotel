@@ -77,6 +77,12 @@ namespace Project_Hoteel
             b_customize_18.BorderColor = Color.Thistle;
             b_about_18.FillColor = pnl_manager_18.BackColor;
             b_about_18.BorderColor = Color.CornflowerBlue;
+            //
+            pnl_load_form_18.Controls.Clear();
+            F_CUSTOMIZE_MANAGER_21 f_21 = new F_CUSTOMIZE_MANAGER_21();
+            f_21.TopLevel = false;
+            pnl_load_form_18.Controls.Add(f_21);
+            f_21.Show();
         }
 
         private void b_about_18_Click(object sender, EventArgs e)
@@ -275,6 +281,36 @@ namespace Project_Hoteel
                     fresh = 4;
                 }
             }
+
+        }
+
+        private void b_cover_2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_manager_18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void b_shape_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_checked_18_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void b_cover_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_1_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

@@ -45,5 +45,84 @@ namespace Project_Hoteel
             f_7.BringToFront();
         }
 
+        private void l_8_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_7_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_6_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_5_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_4_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_3_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_2_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void l_1_6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_telephone_number_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_identification_number_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_age_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_nationality_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_last_name_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_fore_name_6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void d_exit_date_6_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void d_date_of_entry_6_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

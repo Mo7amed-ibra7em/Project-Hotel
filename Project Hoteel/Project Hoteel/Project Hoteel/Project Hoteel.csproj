@@ -84,6 +84,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="F_CUSTOMIZE_MANAGER_21.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="F_CUSTOMIZE_MANAGER_21.Designer.cs">
+      <DependentUpon>F_CUSTOMIZE_MANAGER_21.cs</DependentUpon>
+    </Compile>
     <Compile Include="F_PRIVACY_MANAGER_20.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -214,6 +220,9 @@
     <Compile Include="RjControls\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="F_CUSTOMIZE_MANAGER_21.resx">
+      <DependentUpon>F_CUSTOMIZE_MANAGER_21.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="F_PRIVACY_MANAGER_20.resx">
       <DependentUpon>F_PRIVACY_MANAGER_20.cs</DependentUpon>
     </EmbeddedResource>
@@ -407,6 +416,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\login- %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cross %281%29.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

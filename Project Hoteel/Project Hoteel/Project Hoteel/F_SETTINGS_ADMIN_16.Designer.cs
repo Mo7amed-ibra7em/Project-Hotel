@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_SETTINGS_ADMIN_16));
-            this.l_vershion_5 = new System.Windows.Forms.Label();
             this.pnl_admin_1 = new System.Windows.Forms.Panel();
             this.pnl_line4_16 = new System.Windows.Forms.Panel();
             this.pnl_line3_16 = new System.Windows.Forms.Panel();
@@ -43,23 +42,10 @@
             this.pnl_admin_1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // l_vershion_5
-            // 
-            this.l_vershion_5.AutoSize = true;
-            this.l_vershion_5.Font = new System.Drawing.Font("Urdu Typesetting", 7.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_vershion_5.ForeColor = System.Drawing.Color.Silver;
-            this.l_vershion_5.Location = new System.Drawing.Point(3, 401);
-            this.l_vershion_5.Name = "l_vershion_5";
-            this.l_vershion_5.Size = new System.Drawing.Size(54, 22);
-            this.l_vershion_5.TabIndex = 40;
-            this.l_vershion_5.Text = "V  0 . 0 . 1";
-            this.l_vershion_5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // pnl_admin_1
             // 
             this.pnl_admin_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.pnl_admin_1.Controls.Add(this.pnl_line4_16);
-            this.pnl_admin_1.Controls.Add(this.l_vershion_5);
             this.pnl_admin_1.Controls.Add(this.pnl_line3_16);
             this.pnl_admin_1.Controls.Add(this.pnl_line2_16);
             this.pnl_admin_1.Controls.Add(this.pnl_line1_16);
@@ -215,13 +201,11 @@
             this.Name = "F_SETTINGS_ADMIN_16";
             this.Text = "F_SETTINGS_16";
             this.pnl_admin_1.ResumeLayout(false);
-            this.pnl_admin_1.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.Label l_vershion_5;
         private System.Windows.Forms.Panel pnl_admin_1;
         public System.Windows.Forms.Panel pnl_load_form_16;
         public System.Windows.Forms.Button b_about_16;

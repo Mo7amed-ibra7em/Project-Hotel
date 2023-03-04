@@ -588,8 +588,9 @@
             // 
             this.guna2TextBox1.Animated = true;
             this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(160)))), ((int)(((byte)(0)))), ((int)(((byte)(50)))));
+            this.guna2TextBox1.BorderColor = System.Drawing.Color.Red;
             this.guna2TextBox1.BorderRadius = 10;
+            this.guna2TextBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
             this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.guna2TextBox1.DefaultText = "";
             this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -690,7 +691,7 @@
             // guna2GradientPanel2
             // 
             this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(50)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(-1, 1);
+            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.guna2GradientPanel2.Name = "guna2GradientPanel2";
             this.guna2GradientPanel2.Size = new System.Drawing.Size(167, 645);
             this.guna2GradientPanel2.TabIndex = 98;

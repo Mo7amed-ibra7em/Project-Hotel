@@ -255,12 +255,12 @@ namespace Project_Hoteel
 
         private void picture_cancel_12_MouseHover(object sender, EventArgs e)
         {
-            picture_cancel_12.BackgroundImage = Properties.Resources.cancel_2x2;
+            picture_cancel_12.BackgroundImage = Properties.Resources.cross__1_;
         }
 
         private void picture_cancel_12_MouseLeave(object sender, EventArgs e)
         {
-            picture_cancel_12.BackgroundImage = Properties.Resources.cancel_2x;
+            picture_cancel_12.BackgroundImage = Properties.Resources.cross__2_;
         }
 
         //private void toggleButton1_CheckedChanged(object sender, EventArgs e)

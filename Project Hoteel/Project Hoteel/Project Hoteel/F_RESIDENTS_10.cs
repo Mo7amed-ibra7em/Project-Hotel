@@ -195,5 +195,30 @@ namespace Project_Hoteel
             f_5.pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void b_diparting_10_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b_edit_10_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void b_search_10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void t_search_10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

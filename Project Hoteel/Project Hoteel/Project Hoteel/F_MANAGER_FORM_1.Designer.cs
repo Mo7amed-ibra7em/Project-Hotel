@@ -65,6 +65,7 @@
             this.pnl_manager_1.Name = "pnl_manager_1";
             this.pnl_manager_1.Size = new System.Drawing.Size(186, 641);
             this.pnl_manager_1.TabIndex = 0;
+            this.pnl_manager_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_manager_1_Paint);
             // 
             // pnl_line4_1
             // 
@@ -75,6 +76,7 @@
             this.pnl_line4_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line4_1.TabIndex = 3;
             this.pnl_line4_1.Visible = false;
+            this.pnl_line4_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line4_1_Paint);
             // 
             // pnl_line3_1
             // 
@@ -85,6 +87,7 @@
             this.pnl_line3_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line3_1.TabIndex = 3;
             this.pnl_line3_1.Visible = false;
+            this.pnl_line3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line3_1_Paint);
             // 
             // pnl_line2_1
             // 
@@ -95,6 +98,7 @@
             this.pnl_line2_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line2_1.TabIndex = 3;
             this.pnl_line2_1.Visible = false;
+            this.pnl_line2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line2_1_Paint);
             // 
             // pnl_line1_1
             // 
@@ -105,6 +109,7 @@
             this.pnl_line1_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line1_1.TabIndex = 3;
             this.pnl_line1_1.Visible = false;
+            this.pnl_line1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line1_1_Paint);
             // 
             // b_settings_1
             // 
@@ -192,6 +197,7 @@
             this.l_user_name_1.Size = new System.Drawing.Size(186, 25);
             this.l_user_name_1.TabIndex = 1;
             this.l_user_name_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_user_name_1.Click += new System.EventHandler(this.l_user_name_1_Click);
             // 
             // pbox_userName_1
             // 
@@ -203,6 +209,7 @@
             this.pbox_userName_1.Size = new System.Drawing.Size(186, 100);
             this.pbox_userName_1.TabIndex = 0;
             this.pbox_userName_1.TabStop = false;
+            this.pbox_userName_1.Click += new System.EventHandler(this.pbox_userName_1_Click);
             // 
             // pnl_load_form_1
             // 

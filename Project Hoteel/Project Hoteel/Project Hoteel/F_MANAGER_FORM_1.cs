@@ -115,5 +115,40 @@ namespace Project_Hoteel
             pnl_line3_1.Visible = false;
             pnl_line4_1.Visible = false;
         }
+
+        private void pnl_line4_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_line3_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_line2_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pnl_line1_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void l_user_name_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbox_userName_1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnl_manager_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
