@@ -37,6 +37,7 @@ namespace Project_Hoteel.Notification
         {
             F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
             label_notification_22.Text = f_2.L_2.Text;
+            
         }
     }
 }

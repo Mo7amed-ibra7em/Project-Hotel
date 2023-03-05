@@ -89,7 +89,7 @@ namespace Project_Hoteel
                 }
             }
 
-            if (t_password_2.Text == "Password" && t_email_2.Text == "UserName" || t_email_2.Text == "اسم المستخدم" && t_password_2.Text == "كلمة المرور" || t_password_2.Text == "" && t_email_2.Text == "")
+            if (t_password_2.Text == "Password" && t_email_2.Text == "UserName" || t_email_2.Text == "اسم المستخدم" && t_password_2.Text == "كلمة المرور" )
             {
                 L_2.Text = "ادخل معلوماتك";
                 t_password_2.Text = "Password";
@@ -97,7 +97,7 @@ namespace Project_Hoteel
                 t_password_2.PasswordChar = char.MinValue;
                 MessageCollection.showNatification();
             }
-            if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username)
+            else if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username )
             {
                 L_2.Text = "اسم المستخدم او كلمة المرور خطأ";
                 t_password_2.Text = "Password";
@@ -105,7 +105,7 @@ namespace Project_Hoteel
                 t_password_2.PasswordChar = char.MinValue;
                 MessageCollection.showNatification();
             }
-            if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
+            else if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
             {
                 l_username_2.Text = "Welcome  " + l_user;
                 L_2.Text = "تم تسجيل الدخول بنجاح";
