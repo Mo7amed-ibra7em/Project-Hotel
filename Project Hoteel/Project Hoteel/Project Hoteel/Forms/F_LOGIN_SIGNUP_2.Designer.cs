@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_LOGIN_SIGNUP_2));
             this.timer_progress_2 = new System.Windows.Forms.Timer(this.components);
             this.t_password_2 = new System.Windows.Forms.TextBox();
-            this.L_2 = new System.Windows.Forms.Label();
+            this.l_notificatio_2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.l_progress_2 = new System.Windows.Forms.Label();
@@ -44,6 +45,7 @@
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.Transition_form_2 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cancel_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -60,6 +62,7 @@
             this.t_password_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.t_password_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_password_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Transition_form_2.SetDecoration(this.t_password_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_password_2.Font = new System.Drawing.Font("Sitka Heading", 10.2F, System.Drawing.FontStyle.Bold);
             this.t_password_2.ForeColor = System.Drawing.Color.LightGray;
             this.t_password_2.Location = new System.Drawing.Point(85, 217);
@@ -73,25 +76,27 @@
             this.t_password_2.TextChanged += new System.EventHandler(this.t_password_2_TextChanged);
             this.t_password_2.Leave += new System.EventHandler(this.t_password_2_Leave);
             // 
-            // L_2
+            // l_notificatio_2
             // 
-            this.L_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.L_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.L_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.L_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.L_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
-            this.L_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.L_2.Location = new System.Drawing.Point(71, 277);
-            this.L_2.Name = "L_2";
-            this.L_2.Size = new System.Drawing.Size(255, 31);
-            this.L_2.TabIndex = 19;
-            this.L_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.L_2.Visible = false;
+            this.l_notificatio_2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.l_notificatio_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.Transition_form_2.SetDecoration(this.l_notificatio_2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_notificatio_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.l_notificatio_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
+            this.l_notificatio_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
+            this.l_notificatio_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.l_notificatio_2.Location = new System.Drawing.Point(71, 277);
+            this.l_notificatio_2.Name = "l_notificatio_2";
+            this.l_notificatio_2.Size = new System.Drawing.Size(255, 31);
+            this.l_notificatio_2.TabIndex = 19;
+            this.l_notificatio_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_notificatio_2.Visible = false;
             // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Transition_form_2.SetDecoration(this.panel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel1.Location = new System.Drawing.Point(48, 254);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(300, 1);
@@ -101,6 +106,7 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
+            this.Transition_form_2.SetDecoration(this.panel2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.panel2.Location = new System.Drawing.Point(48, 174);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 1);
@@ -109,6 +115,7 @@
             // l_progress_2
             // 
             this.l_progress_2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Transition_form_2.SetDecoration(this.l_progress_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_progress_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.l_progress_2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold);
             this.l_progress_2.ForeColor = System.Drawing.Color.Plum;
@@ -127,6 +134,7 @@
             this.ProgressBar_2.AnimationSpeed = 5000;
             this.ProgressBar_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ProgressBar_2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.Transition_form_2.SetDecoration(this.ProgressBar_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.ProgressBar_2.Font = new System.Drawing.Font("Lucida Fax", 24F);
             this.ProgressBar_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
             this.ProgressBar_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
@@ -161,6 +169,7 @@
             // 
             this.l_username_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l_username_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.Transition_form_2.SetDecoration(this.l_username_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_username_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_username_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.l_username_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
@@ -176,6 +185,7 @@
             this.t_email_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.t_email_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_email_2.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.Transition_form_2.SetDecoration(this.t_email_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_email_2.Font = new System.Drawing.Font("Sitka Heading", 10.2F, System.Drawing.FontStyle.Bold);
             this.t_email_2.ForeColor = System.Drawing.Color.LightGray;
             this.t_email_2.Location = new System.Drawing.Point(85, 137);
@@ -198,6 +208,7 @@
             this.b_login_2.BorderRadius = 13;
             this.b_login_2.BorderThickness = 1;
             this.b_login_2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Transition_form_2.SetDecoration(this.b_login_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.b_login_2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.b_login_2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.b_login_2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -226,6 +237,7 @@
             this.picture_cancel_12.BackColor = System.Drawing.Color.Transparent;
             this.picture_cancel_12.BackgroundImage = global::Project_Hoteel.Properties.Resources.cross__2_;
             this.picture_cancel_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Transition_form_2.SetDecoration(this.picture_cancel_12, Guna.UI2.AnimatorNS.DecorationType.None);
             this.picture_cancel_12.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.picture_cancel_12.Location = new System.Drawing.Point(365, 7);
             this.picture_cancel_12.Name = "picture_cancel_12";
@@ -242,6 +254,7 @@
             this.pictureBox4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Transition_form_2.SetDecoration(this.pictureBox4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox4.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox4.Location = new System.Drawing.Point(124, 7);
             this.pictureBox4.Name = "pictureBox4";
@@ -253,6 +266,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.Transition_form_2.SetDecoration(this.pictureBox1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox1.Location = new System.Drawing.Point(34, 128);
@@ -266,6 +280,7 @@
             // 
             this.pictureBox2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.Transition_form_2.SetDecoration(this.pictureBox2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.pictureBox2.Location = new System.Drawing.Point(34, 204);
@@ -274,6 +289,27 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 21;
             this.pictureBox2.TabStop = false;
+            // 
+            // Transition_form_2
+            // 
+            this.Transition_form_2.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Transparent;
+            this.Transition_form_2.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 1F;
+            this.Transition_form_2.DefaultAnimation = animation2;
             // 
             // F_LOGIN_SIGNUP_2
             // 
@@ -294,7 +330,8 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.L_2);
+            this.Controls.Add(this.l_notificatio_2);
+            this.Transition_form_2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_LOGIN_SIGNUP_2";
             this.Opacity = 0.93D;
@@ -326,6 +363,7 @@
         private System.Windows.Forms.Label l_username_2;
         private Guna.UI2.WinForms.Guna2Button b_login_2;
         private System.Windows.Forms.TextBox t_email_2;
-        public System.Windows.Forms.Label L_2;
+        public System.Windows.Forms.Label l_notificatio_2;
+        private Guna.UI2.WinForms.Guna2Transition Transition_form_2;
     }
 }

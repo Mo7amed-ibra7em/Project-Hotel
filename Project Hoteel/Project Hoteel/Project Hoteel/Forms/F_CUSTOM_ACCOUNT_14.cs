@@ -16,5 +16,10 @@ namespace Project_Hoteel
         {
             InitializeComponent();
         }
+
+        private void F_CUSTOM_ACCOUNT_14_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

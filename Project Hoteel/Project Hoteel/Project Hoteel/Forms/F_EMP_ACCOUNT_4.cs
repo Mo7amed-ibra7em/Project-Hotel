@@ -34,7 +34,7 @@ namespace Project_Hoteel
             }
             SqlCommand sqlcmd1 = new SqlCommand();
             sqlcmd1.Connection = sqlconn;
-            sqlcmd1.CommandText = "select id as 'رقم الموظف', username as ' اسم المستخدم' , password as ' كلمة المرور' , emp_name as 'اسم الموظف ' , id_emp as 'حالة الموظف' from SECURITY_LOGIN;";
+            sqlcmd1.CommandText = "select emp_name as 'اسم الموظف',telephon_emp 'رقم الهاتف',sex_emp as 'الجنس',age_emp as 'العمر',username 'اسم المستخدم',password 'كلمة المرور',salary_emp 'الراتب',type_emp_name 'العمل',start_date 'تاريخ البدء',email_emp 'البريد الالكتروني' from SECURITY_LOGIN where type_emp_index != 3";
             SqlDataAdapter sqladap = new SqlDataAdapter();
             sqladap.SelectCommand = sqlcmd1;
             DataTable mylist = new DataTable();
@@ -97,7 +97,9 @@ namespace Project_Hoteel
                 {
                     sqlconn.Close();
                 }
-
+                ///
+                //Refresh
+                //
                 try
                 {
                     sqlconn.ConnectionString = connstr;
@@ -108,7 +110,7 @@ namespace Project_Hoteel
                 }
                 SqlCommand sqlcmd1 = new SqlCommand();
                 sqlcmd1.Connection = sqlconn;
-                sqlcmd1.CommandText = "select id as 'رقم الموظف', username as ' اسم المستخدم' , password as ' كلمة المرور' , emp_name as 'اسم الموظف ' , id_emp as 'حالة الموظف' from SECURITY_LOGIN;";
+                sqlcmd1.CommandText = "select emp_name as 'اسم الموظف',telephon_emp 'رقم الهاتف',sex_emp as 'الجنس',age_emp as 'العمر',username 'اسم المستخدم',password 'كلمة المرور',salary_emp 'الراتب',type_emp_name 'العمل',start_date 'تاريخ البدء',email_emp 'البريد الالكتروني' from SECURITY_LOGIN where type_emp_index != 3";
                 SqlDataAdapter sqladap = new SqlDataAdapter();
                 sqladap.SelectCommand = sqlcmd1;
                 DataTable mylist = new DataTable();

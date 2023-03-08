@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Notification;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -62,35 +63,35 @@ namespace Project_Hoteel
 
             if (t_password_old_9.Text == "" && t_password_new_2_9.Text == "" && t_password_new_9.Text == "")
             {
-                L_9.Text = "!... ادخل معلوماتك";
+                l_notificatio_9.Text = "!... ادخل معلوماتك";
             }
-            if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == "" &&t_password_new_2_9.Text == "")
+            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == "" &&t_password_new_2_9.Text == "")
             {
-                L_9.Text = "!... ادخل كلمة المرور الجديدة";
+                l_notificatio_9.Text = "!... ادخل كلمة المرور الجديدة";
             }
-            if (t_password_old_9.Text == "" && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
+            else if (t_password_old_9.Text == "" && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
             {
-                L_9.Text = "!... ادخل كلمة مرورك الحالية ";
+                l_notificatio_9.Text = "!... ادخل كلمة مرورك الحالية ";
             }
-            if(t_password_old_9.Text != "" && t_password_new_9.Text == "" )
+            else if(t_password_old_9.Text != "" && t_password_new_9.Text == "" )
             {
-                L_9.Text = "!... ادخل كلمة المرور الجديدة ";
+                l_notificatio_9.Text = "!... ادخل كلمة المرور الجديدة ";
             }
-            if(t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
+            else if(t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
             {
-                L_9.Text = "!... كلمة مرورك خطأ ";
+                l_notificatio_9.Text = "!... كلمة مرورك خطأ ";
             }
-            if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "" || t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "")
+            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "" || t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "")
             {
-                L_9.Text = "!... أعد كتابة كلمة المرور ";
+                l_notificatio_9.Text = "!... أعد كتابة كلمة المرور ";
             }
-            if(t_password_new_9.Text != t_password_new_2_9.Text && t_password_old_9.Text != "" && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
+            else if(t_password_new_9.Text != t_password_new_2_9.Text && t_password_old_9.Text != "" && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
             {
-                L_9.Text = "!... كلمة المرور غير متطابقة";
+                l_notificatio_9.Text = "!... كلمة المرور غير متطابقة";
                 t_password_new_9.Text = "";
                 t_password_new_2_9.Text = "";
             }
-            if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == t_password_new_2_9.Text && t_password_new_9.Text != "")
+            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == t_password_new_2_9.Text && t_password_new_9.Text != "")
             {
 
                 SqlConnection sqlconn1 = new SqlConnection();
@@ -119,12 +120,13 @@ namespace Project_Hoteel
                     sqlconn1.Close();
                 }
 
-                L_9.Text = "تم تغيير كلمة المرور بنجاح";
+                l_notificatio_9.Text = "تم تغيير كلمة المرور بنجاح";
                 Pass = true;
                 _ticks = 0;
                 timer_Close.Start();
 
             }
+            MessageCollection.showNatification(l_notificatio_9.Text);
         }
 
         private void t_password_old_9_KeyPress(object sender, KeyPressEventArgs e)
@@ -153,7 +155,7 @@ namespace Project_Hoteel
                     t_password_old_9.Text = "";
                     t_password_new_2_9.Text = "";
                     t_password_new_9.Text = "";
-                    L_9.Text = "";
+                    l_notificatio_9.Text = "";
                     timer_Close.Stop();
                     timer_Password.Start();
                 }
@@ -163,6 +165,7 @@ namespace Project_Hoteel
         private void l_changePassword_9_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
+            Transition_9.HideSync(l_changePassword_9);
         }
         bool Expand = false;
         private void timer_Password_Tick(object sender, EventArgs e)
@@ -170,7 +173,6 @@ namespace Project_Hoteel
             if (Expand == true)
             {
                 this.Height -= 5;
-                l_changePassword_9.Width -= 5;
                 if (this.Height == this.MinimumSize.Height)
                 {
                     timer_Password.Stop();
@@ -180,7 +182,6 @@ namespace Project_Hoteel
             else
             {
                 this.Height += 5;
-                l_changePassword_9.Width += 5;
                 if (this.Height == this.MaximumSize.Height)
                 {
                     timer_Password.Stop();
@@ -192,6 +193,7 @@ namespace Project_Hoteel
         private void b_close_9_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
+            Transition_9.ShowSync(l_changePassword_9);
         }
 
         private void l_changePassword_9_MouseHover(object sender, EventArgs e)

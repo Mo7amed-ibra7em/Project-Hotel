@@ -35,8 +35,8 @@ namespace Project_Hoteel.Notification
 
         private void F_NOTIFICATION_22_Load(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
-            label_notification_22.Text = f_2.L_2.Text;
+            //F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            //label_notification_22.Text = f_2.L_2.Text;
             
         }
     }

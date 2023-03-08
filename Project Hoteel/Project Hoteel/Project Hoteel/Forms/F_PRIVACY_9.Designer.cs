@@ -29,9 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation3 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_PRIVACY_9));
             this.timer_Close = new System.Windows.Forms.Timer(this.components);
-            this.L_9 = new System.Windows.Forms.Label();
+            this.l_notificatio_9 = new System.Windows.Forms.Label();
             this.l_changePassword_9 = new System.Windows.Forms.Label();
             this.l_3_6 = new System.Windows.Forms.Label();
             this.l_8_6 = new System.Windows.Forms.Label();
@@ -53,6 +54,7 @@
             this.t_identification_number_9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.t_last_name_9 = new Guna.UI2.WinForms.Guna2TextBox();
             this.t_age_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Transition_9 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,22 +63,25 @@
             this.timer_Close.Interval = 1000;
             this.timer_Close.Tick += new System.EventHandler(this.timer_Close_Tick);
             // 
-            // L_9
+            // l_notificatio_9
             // 
-            this.L_9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.L_9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.L_9.Location = new System.Drawing.Point(211, 388);
-            this.L_9.Name = "L_9";
-            this.L_9.Size = new System.Drawing.Size(341, 31);
-            this.L_9.TabIndex = 0;
-            this.L_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_notificatio_9.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Transition_9.SetDecoration(this.l_notificatio_9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_notificatio_9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_notificatio_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.l_notificatio_9.Location = new System.Drawing.Point(211, 388);
+            this.l_notificatio_9.Name = "l_notificatio_9";
+            this.l_notificatio_9.Size = new System.Drawing.Size(341, 31);
+            this.l_notificatio_9.TabIndex = 0;
+            this.l_notificatio_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_notificatio_9.Visible = false;
             // 
             // l_changePassword_9
             // 
             this.l_changePassword_9.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_changePassword_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.l_changePassword_9.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Transition_9.SetDecoration(this.l_changePassword_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_changePassword_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.l_changePassword_9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.l_changePassword_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -97,6 +102,7 @@
             this.l_3_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_3_6.AutoSize = true;
             this.l_3_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.l_3_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_3_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_3_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_3_6.ForeColor = System.Drawing.Color.White;
@@ -113,6 +119,7 @@
             this.l_8_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_8_6.AutoSize = true;
             this.l_8_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.l_8_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_8_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_8_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_8_6.ForeColor = System.Drawing.Color.White;
@@ -129,6 +136,7 @@
             this.l_5_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_5_6.AutoSize = true;
             this.l_5_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.l_5_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_5_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_5_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_5_6.ForeColor = System.Drawing.Color.White;
@@ -145,6 +153,7 @@
             this.l_1_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_1_6.AutoSize = true;
             this.l_1_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.l_1_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_1_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_1_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_1_6.ForeColor = System.Drawing.Color.White;
@@ -161,6 +170,7 @@
             this.l_2_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_2_6.AutoSize = true;
             this.l_2_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.l_2_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_2_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_2_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_2_6.ForeColor = System.Drawing.Color.White;
@@ -177,6 +187,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -193,6 +204,7 @@
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -209,6 +221,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_9.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label4.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -225,6 +238,7 @@
             this.pbox_userName_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbox_userName_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbox_userName_1.BackgroundImage")));
             this.pbox_userName_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Transition_9.SetDecoration(this.pbox_userName_1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pbox_userName_1.Location = new System.Drawing.Point(354, 4);
             this.pbox_userName_1.Name = "pbox_userName_1";
             this.pbox_userName_1.Size = new System.Drawing.Size(55, 58);
@@ -247,6 +261,7 @@
             this.b_change_password_9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.b_change_password_9.CustomizableEdges.BottomLeft = false;
             this.b_change_password_9.CustomizableEdges.TopLeft = false;
+            this.Transition_9.SetDecoration(this.b_change_password_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.b_change_password_9.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.b_change_password_9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.b_change_password_9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -279,6 +294,7 @@
             this.b_close_9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.b_close_9.CustomizableEdges.BottomRight = false;
             this.b_close_9.CustomizableEdges.TopRight = false;
+            this.Transition_9.SetDecoration(this.b_close_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.b_close_9.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.b_close_9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.b_close_9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -307,6 +323,7 @@
             this.t_password_new_2_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_password_new_2_9.BorderRadius = 10;
             this.t_password_new_2_9.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Transition_9.SetDecoration(this.t_password_new_2_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_password_new_2_9.DefaultText = "";
             this.t_password_new_2_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_password_new_2_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -335,6 +352,7 @@
             this.t_password_old_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_password_old_9.CustomizableEdges.BottomLeft = false;
             this.t_password_old_9.CustomizableEdges.TopLeft = false;
+            this.Transition_9.SetDecoration(this.t_password_old_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_password_old_9.DefaultText = "";
             this.t_password_old_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_password_old_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -363,6 +381,7 @@
             this.t_password_new_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_password_new_9.CustomizableEdges.BottomRight = false;
             this.t_password_new_9.CustomizableEdges.TopRight = false;
+            this.Transition_9.SetDecoration(this.t_password_new_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_password_new_9.DefaultText = "";
             this.t_password_new_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_password_new_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -391,6 +410,7 @@
             this.t_fore_name_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_fore_name_9.CustomizableEdges.BottomLeft = false;
             this.t_fore_name_9.CustomizableEdges.TopLeft = false;
+            this.Transition_9.SetDecoration(this.t_fore_name_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_fore_name_9.DefaultText = "";
             this.t_fore_name_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_fore_name_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -419,6 +439,7 @@
             this.t_nationality_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_nationality_9.CustomizableEdges.BottomLeft = false;
             this.t_nationality_9.CustomizableEdges.TopLeft = false;
+            this.Transition_9.SetDecoration(this.t_nationality_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_nationality_9.DefaultText = "";
             this.t_nationality_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_nationality_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -447,6 +468,7 @@
             this.t_identification_number_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_identification_number_9.CustomizableEdges.BottomLeft = false;
             this.t_identification_number_9.CustomizableEdges.TopLeft = false;
+            this.Transition_9.SetDecoration(this.t_identification_number_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_identification_number_9.DefaultText = "";
             this.t_identification_number_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_identification_number_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -475,6 +497,7 @@
             this.t_last_name_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_last_name_9.CustomizableEdges.BottomRight = false;
             this.t_last_name_9.CustomizableEdges.TopRight = false;
+            this.Transition_9.SetDecoration(this.t_last_name_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_last_name_9.DefaultText = "";
             this.t_last_name_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_last_name_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -503,6 +526,7 @@
             this.t_age_9.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_age_9.CustomizableEdges.BottomRight = false;
             this.t_age_9.CustomizableEdges.TopRight = false;
+            this.Transition_9.SetDecoration(this.t_age_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.t_age_9.DefaultText = "";
             this.t_age_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
             this.t_age_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
@@ -522,6 +546,27 @@
             this.t_age_9.Size = new System.Drawing.Size(229, 32);
             this.t_age_9.TabIndex = 69;
             this.t_age_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // Transition_9
+            // 
+            this.Transition_9.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
+            this.Transition_9.Cursor = null;
+            animation3.AnimateOnlyDifferences = true;
+            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
+            animation3.LeafCoeff = 0F;
+            animation3.MaxTime = 1F;
+            animation3.MinTime = 0F;
+            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
+            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
+            animation3.MosaicSize = 0;
+            animation3.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation3.RotateCoeff = 0F;
+            animation3.RotateLimit = 0F;
+            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
+            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
+            animation3.TimeCoeff = 0F;
+            animation3.TransparencyCoeff = 0F;
+            this.Transition_9.DefaultAnimation = animation3;
             // 
             // F_PRIVACY_9
             // 
@@ -550,7 +595,8 @@
             this.Controls.Add(this.b_change_password_9);
             this.Controls.Add(this.l_changePassword_9);
             this.Controls.Add(this.pbox_userName_1);
-            this.Controls.Add(this.L_9);
+            this.Controls.Add(this.l_notificatio_9);
+            this.Transition_9.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -567,7 +613,7 @@
 
         #endregion
         private System.Windows.Forms.Timer timer_Close;
-        private System.Windows.Forms.Label L_9;
+        private System.Windows.Forms.Label l_notificatio_9;
         private System.Windows.Forms.Label l_3_6;
         private System.Windows.Forms.Label l_8_6;
         private System.Windows.Forms.Label l_5_6;
@@ -589,5 +635,6 @@
         internal Guna.UI2.WinForms.Guna2TextBox t_identification_number_9;
         internal Guna.UI2.WinForms.Guna2TextBox t_last_name_9;
         internal Guna.UI2.WinForms.Guna2TextBox t_age_9;
+        private Guna.UI2.WinForms.Guna2Transition Transition_9;
     }
 }

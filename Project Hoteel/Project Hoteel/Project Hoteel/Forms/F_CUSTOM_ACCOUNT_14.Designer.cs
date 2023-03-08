@@ -209,6 +209,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_CUSTOM_ACCOUNT_14";
             this.Text = "F_CUSTOM_ACCOUNT_14";
+            this.Load += new System.EventHandler(this.F_CUSTOM_ACCOUNT_14_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_14)).EndInit();
             this.ResumeLayout(false);
 

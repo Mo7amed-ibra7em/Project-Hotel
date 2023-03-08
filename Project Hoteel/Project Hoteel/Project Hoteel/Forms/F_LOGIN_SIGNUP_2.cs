@@ -44,8 +44,10 @@ namespace Project_Hoteel
             //this.FormBorderStyle = FormBorderStyle.None;
             //this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));
 
+
         }
 
+        
         private void b_login_2_Click(object sender, EventArgs e)
         {
             t_password_2.PasswordChar = '*';
@@ -67,14 +69,14 @@ namespace Project_Hoteel
                     SqlDataReader dread;
                     try
                     {
-                        sqlcmd.CommandText = "select username, password, id_emp, emp_name from SECURITY_LOGIN where username = " + t_email_2.Text + "";
+                        sqlcmd.CommandText = "select username, password, type_emp_index, emp_name from SECURITY_LOGIN where username ='"+t_email_2.Text+"' and password ='"+t_password_2.Text+"'";
                         sqlconn.Open();
                         dread = sqlcmd.ExecuteReader();
                         while (dread.Read())
                         {
                             username = dread["username"].ToString();
                             password = dread["password"].ToString();
-                            id_employee = Convert.ToInt32(dread["id_emp"]);
+                            id_employee = Convert.ToInt32(dread["type_emp_index"]);
                             l_user = dread["emp_name"].ToString();
                         }
                     }
@@ -91,39 +93,37 @@ namespace Project_Hoteel
 
             if (t_password_2.Text == "Password" && t_email_2.Text == "UserName" || t_email_2.Text == "اسم المستخدم" && t_password_2.Text == "كلمة المرور" )
             {
-                L_2.Text = "ادخل معلوماتك";
+                l_notificatio_2.Text = "ادخل معلوماتك";
                 t_password_2.Text = "Password";
                 t_email_2.Text = "UserName";
                 t_password_2.PasswordChar = char.MinValue;
-                MessageCollection.showNatification();
+                MessageCollection.showNatification(l_notificatio_2.Text);
             }
             else if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username )
             {
-                L_2.Text = "اسم المستخدم او كلمة المرور خطأ";
+                l_notificatio_2.Text = "اسم المستخدم او كلمة المرور خطأ";
                 t_password_2.Text = "Password";
                 t_email_2.Text = "UserName";
                 t_password_2.PasswordChar = char.MinValue;
-                MessageCollection.showNatification();
+                MessageCollection.showNatification(l_notificatio_2.Text);
             }
             else if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
             {
                 l_username_2.Text = "Welcome  " + l_user;
-                L_2.Text = "تم تسجيل الدخول بنجاح";
+                l_notificatio_2.Text = "تم تسجيل الدخول بنجاح";
                 if (id_employee == 0)
                 {
                     Login_emp = true;
                     timer_progress_2.Start();
                 }
-                else if (id_employee == 1)
+                else if (id_employee == 3)
                 {
                     Login_manager = true;
                     timer_progress_2.Start();
                 }
-                MessageCollection.showNatification();
+                MessageCollection.showNatification(l_notificatio_2.Text);
             }
         }
-
-
         private void timer_progress_2_Tick(object sender, EventArgs e)
         {
             if (Login_emp == true || Login_manager == true)
@@ -329,5 +329,4 @@ namespace Project_Hoteel
             public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         }
     }
-
 }

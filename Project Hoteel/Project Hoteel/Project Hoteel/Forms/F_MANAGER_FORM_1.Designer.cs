@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_MANAGER_FORM_1));
             this.pnl_manager_1 = new System.Windows.Forms.Panel();
+            this.b_close_1 = new System.Windows.Forms.Button();
             this.pnl_line4_1 = new System.Windows.Forms.Panel();
             this.pnl_line3_1 = new System.Windows.Forms.Panel();
             this.pnl_line2_1 = new System.Windows.Forms.Panel();
@@ -48,6 +49,7 @@
             // pnl_manager_1
             // 
             this.pnl_manager_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.pnl_manager_1.Controls.Add(this.b_close_1);
             this.pnl_manager_1.Controls.Add(this.pnl_line4_1);
             this.pnl_manager_1.Controls.Add(this.pnl_line3_1);
             this.pnl_manager_1.Controls.Add(this.pnl_line2_1);
@@ -65,18 +67,36 @@
             this.pnl_manager_1.Name = "pnl_manager_1";
             this.pnl_manager_1.Size = new System.Drawing.Size(186, 641);
             this.pnl_manager_1.TabIndex = 0;
-            this.pnl_manager_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_manager_1_Paint);
+            // 
+            // b_close_1
+            // 
+            this.b_close_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_close_1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.b_close_1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.b_close_1.FlatAppearance.BorderSize = 0;
+            this.b_close_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_close_1.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_close_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
+            this.b_close_1.Image = ((System.Drawing.Image)(resources.GetObject("b_close_1.Image")));
+            this.b_close_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_close_1.Location = new System.Drawing.Point(0, 600);
+            this.b_close_1.MaximumSize = new System.Drawing.Size(182, 41);
+            this.b_close_1.Name = "b_close_1";
+            this.b_close_1.Size = new System.Drawing.Size(182, 41);
+            this.b_close_1.TabIndex = 4;
+            this.b_close_1.Text = "       تسجيل الخروج";
+            this.b_close_1.UseVisualStyleBackColor = false;
+            this.b_close_1.Click += new System.EventHandler(this.b_close_1_Click);
             // 
             // pnl_line4_1
             // 
             this.pnl_line4_1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pnl_line4_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl_line4_1.Location = new System.Drawing.Point(179, 599);
+            this.pnl_line4_1.Location = new System.Drawing.Point(179, 552);
             this.pnl_line4_1.Name = "pnl_line4_1";
             this.pnl_line4_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line4_1.TabIndex = 3;
             this.pnl_line4_1.Visible = false;
-            this.pnl_line4_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line4_1_Paint);
             // 
             // pnl_line3_1
             // 
@@ -87,7 +107,6 @@
             this.pnl_line3_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line3_1.TabIndex = 3;
             this.pnl_line3_1.Visible = false;
-            this.pnl_line3_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line3_1_Paint);
             // 
             // pnl_line2_1
             // 
@@ -98,7 +117,6 @@
             this.pnl_line2_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line2_1.TabIndex = 3;
             this.pnl_line2_1.Visible = false;
-            this.pnl_line2_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line2_1_Paint);
             // 
             // pnl_line1_1
             // 
@@ -109,7 +127,6 @@
             this.pnl_line1_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line1_1.TabIndex = 3;
             this.pnl_line1_1.Visible = false;
-            this.pnl_line1_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_line1_1_Paint);
             // 
             // b_settings_1
             // 
@@ -121,7 +138,7 @@
             this.b_settings_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
             this.b_settings_1.Image = ((System.Drawing.Image)(resources.GetObject("b_settings_1.Image")));
             this.b_settings_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_settings_1.Location = new System.Drawing.Point(0, 598);
+            this.b_settings_1.Location = new System.Drawing.Point(0, 551);
             this.b_settings_1.MaximumSize = new System.Drawing.Size(182, 41);
             this.b_settings_1.Name = "b_settings_1";
             this.b_settings_1.Size = new System.Drawing.Size(182, 41);
@@ -197,7 +214,6 @@
             this.l_user_name_1.Size = new System.Drawing.Size(186, 25);
             this.l_user_name_1.TabIndex = 1;
             this.l_user_name_1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_user_name_1.Click += new System.EventHandler(this.l_user_name_1_Click);
             // 
             // pbox_userName_1
             // 
@@ -209,7 +225,6 @@
             this.pbox_userName_1.Size = new System.Drawing.Size(186, 100);
             this.pbox_userName_1.TabIndex = 0;
             this.pbox_userName_1.TabStop = false;
-            this.pbox_userName_1.Click += new System.EventHandler(this.pbox_userName_1_Click);
             // 
             // pnl_load_form_1
             // 
@@ -252,5 +267,6 @@
         private System.Windows.Forms.Panel pnl_line4_1;
         public System.Windows.Forms.Label l_user_name_1;
         public System.Windows.Forms.Panel pnl_manager_1;
+        private System.Windows.Forms.Button b_close_1;
     }
 }

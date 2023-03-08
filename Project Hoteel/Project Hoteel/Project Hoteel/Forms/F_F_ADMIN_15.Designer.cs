@@ -117,8 +117,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.b_delete_rooms_15);
             this.panel1.Controls.Add(this.b_edit_rooms_15);
+            this.panel1.Controls.Add(this.b_delete_rooms_15);
             this.panel1.Controls.Add(this.b_add_room_15);
             this.panel1.Controls.Add(this.b_search_13);
             this.panel1.Controls.Add(this.t_search_15);

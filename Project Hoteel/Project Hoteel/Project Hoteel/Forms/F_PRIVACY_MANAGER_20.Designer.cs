@@ -29,39 +29,41 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            Guna.UI2.AnimatorNS.Animation animation1 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_PRIVACY_MANAGER_20));
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             this.l_8_6 = new System.Windows.Forms.Label();
-            this.l_5_6 = new System.Windows.Forms.Label();
-            this.t_age_9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.t_last_name_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_age_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.l_3_6 = new System.Windows.Forms.Label();
-            this.l_2_6 = new System.Windows.Forms.Label();
-            this.t_identification_number_9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.t_nationality_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_telephone_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.l_1_6 = new System.Windows.Forms.Label();
-            this.t_fore_name_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_name_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.t_password_new_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_password_new_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.t_password_old_9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_password_old_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.t_password_new_2_9 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.l_changePassword_9 = new System.Windows.Forms.Label();
+            this.t_password_new_2_20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.l_changePassword_20 = new System.Windows.Forms.Label();
             this.timer_Close = new System.Windows.Forms.Timer(this.components);
             this.timer_Password = new System.Windows.Forms.Timer(this.components);
-            this.L_9 = new System.Windows.Forms.Label();
+            this.L_20 = new System.Windows.Forms.Label();
             this.b_close_9 = new Guna.UI2.WinForms.Guna2Button();
             this.b_change_password_9 = new Guna.UI2.WinForms.Guna2Button();
             this.pbox_userName_1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_email_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.t_enter_password_20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.b_save_edit_20 = new Guna.UI2.WinForms.Guna2Button();
+            this.l_notificatio_20 = new System.Windows.Forms.Label();
             this.label_19 = new System.Windows.Forms.Label();
+            this.Transition_1_20 = new Guna.UI2.WinForms.Guna2Transition();
+            this.Transition_2_20 = new Guna.UI2.WinForms.Guna2Transition();
+            this.label6 = new System.Windows.Forms.Label();
+            this.t_username_new_20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.t_username_old_20 = new Guna.UI2.WinForms.Guna2TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,98 +72,60 @@
             this.l_8_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_8_6.AutoSize = true;
             this.l_8_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.l_8_6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.l_8_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_8_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_8_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_8_6.ForeColor = System.Drawing.Color.White;
-            this.l_8_6.Location = new System.Drawing.Point(267, 117);
+            this.l_8_6.Location = new System.Drawing.Point(302, 72);
             this.l_8_6.Name = "l_8_6";
             this.l_8_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_8_6.Size = new System.Drawing.Size(79, 27);
+            this.l_8_6.Size = new System.Drawing.Size(44, 27);
             this.l_8_6.TabIndex = 76;
-            this.l_8_6.Text = "تاريخ الميلاد";
+            this.l_8_6.Text = "العمر";
             this.l_8_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // l_5_6
+            // t_age_20
             // 
-            this.l_5_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.l_5_6.AutoSize = true;
-            this.l_5_6.BackColor = System.Drawing.Color.Transparent;
-            this.l_5_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.l_5_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.l_5_6.ForeColor = System.Drawing.Color.White;
-            this.l_5_6.Location = new System.Drawing.Point(267, 55);
-            this.l_5_6.Name = "l_5_6";
-            this.l_5_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_5_6.Size = new System.Drawing.Size(79, 27);
-            this.l_5_6.TabIndex = 75;
-            this.l_5_6.Text = "الاسم الاخير";
-            this.l_5_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // t_age_9
-            // 
-            this.t_age_9.Animated = true;
-            this.t_age_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_age_9.BorderRadius = 10;
-            this.t_age_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_age_9.CustomizableEdges.BottomRight = false;
-            this.t_age_9.CustomizableEdges.TopRight = false;
-            this.t_age_9.DefaultText = "";
-            this.t_age_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_age_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_age_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_age_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_age_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_age_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_age_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_age_9.ForeColor = System.Drawing.Color.White;
-            this.t_age_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_age_9.Location = new System.Drawing.Point(123, 143);
-            this.t_age_9.Name = "t_age_9";
-            this.t_age_9.PasswordChar = '\0';
-            this.t_age_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_age_9.PlaceholderText = "";
-            this.t_age_9.SelectedText = "";
-            this.t_age_9.Size = new System.Drawing.Size(229, 32);
-            this.t_age_9.TabIndex = 90;
-            this.t_age_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // t_last_name_9
-            // 
-            this.t_last_name_9.Animated = true;
-            this.t_last_name_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_last_name_9.BorderRadius = 10;
-            this.t_last_name_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_last_name_9.CustomizableEdges.BottomRight = false;
-            this.t_last_name_9.CustomizableEdges.TopRight = false;
-            this.t_last_name_9.DefaultText = "";
-            this.t_last_name_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_last_name_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_last_name_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_last_name_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_last_name_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_last_name_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_last_name_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_last_name_9.ForeColor = System.Drawing.Color.White;
-            this.t_last_name_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_last_name_9.Location = new System.Drawing.Point(123, 80);
-            this.t_last_name_9.Name = "t_last_name_9";
-            this.t_last_name_9.PasswordChar = '\0';
-            this.t_last_name_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_last_name_9.PlaceholderText = "";
-            this.t_last_name_9.SelectedText = "";
-            this.t_last_name_9.Size = new System.Drawing.Size(229, 32);
-            this.t_last_name_9.TabIndex = 89;
-            this.t_last_name_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_age_20.Animated = true;
+            this.t_age_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_age_20.BorderRadius = 10;
+            this.t_age_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_age_20.CustomizableEdges.BottomRight = false;
+            this.t_age_20.CustomizableEdges.TopRight = false;
+            this.Transition_2_20.SetDecoration(this.t_age_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_age_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_age_20.DefaultText = "";
+            this.t_age_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_age_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_age_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_age_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_age_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_age_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_age_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_age_20.ForeColor = System.Drawing.Color.White;
+            this.t_age_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_age_20.Location = new System.Drawing.Point(123, 98);
+            this.t_age_20.Name = "t_age_20";
+            this.t_age_20.PasswordChar = '\0';
+            this.t_age_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_age_20.PlaceholderText = "";
+            this.t_age_20.SelectedText = "";
+            this.t_age_20.Size = new System.Drawing.Size(229, 32);
+            this.t_age_20.TabIndex = 90;
+            this.t_age_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // l_3_6
             // 
             this.l_3_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_3_6.AutoSize = true;
             this.l_3_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.l_3_6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.l_3_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_3_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_3_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_3_6.ForeColor = System.Drawing.Color.White;
-            this.l_3_6.Location = new System.Drawing.Point(744, 180);
+            this.l_3_6.Location = new System.Drawing.Point(744, 155);
             this.l_3_6.Name = "l_3_6";
             this.l_3_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.l_3_6.Size = new System.Drawing.Size(73, 27);
@@ -169,131 +133,95 @@
             this.l_3_6.Text = "رقم الهاتف";
             this.l_3_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // l_2_6
+            // t_telephone_20
             // 
-            this.l_2_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.l_2_6.AutoSize = true;
-            this.l_2_6.BackColor = System.Drawing.Color.Transparent;
-            this.l_2_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.l_2_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.l_2_6.ForeColor = System.Drawing.Color.White;
-            this.l_2_6.Location = new System.Drawing.Point(759, 117);
-            this.l_2_6.Name = "l_2_6";
-            this.l_2_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_2_6.Size = new System.Drawing.Size(58, 27);
-            this.l_2_6.TabIndex = 73;
-            this.l_2_6.Text = "الجنسية";
-            this.l_2_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // t_identification_number_9
-            // 
-            this.t_identification_number_9.Animated = true;
-            this.t_identification_number_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_identification_number_9.BorderRadius = 10;
-            this.t_identification_number_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_identification_number_9.CustomizableEdges.BottomLeft = false;
-            this.t_identification_number_9.CustomizableEdges.TopLeft = false;
-            this.t_identification_number_9.DefaultText = "";
-            this.t_identification_number_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_identification_number_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_identification_number_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_identification_number_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_identification_number_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_identification_number_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_identification_number_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_identification_number_9.ForeColor = System.Drawing.Color.White;
-            this.t_identification_number_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_identification_number_9.Location = new System.Drawing.Point(594, 206);
-            this.t_identification_number_9.Name = "t_identification_number_9";
-            this.t_identification_number_9.PasswordChar = '\0';
-            this.t_identification_number_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_identification_number_9.PlaceholderText = "";
-            this.t_identification_number_9.SelectedText = "";
-            this.t_identification_number_9.Size = new System.Drawing.Size(229, 32);
-            this.t_identification_number_9.TabIndex = 88;
-            this.t_identification_number_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // t_nationality_9
-            // 
-            this.t_nationality_9.Animated = true;
-            this.t_nationality_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_nationality_9.BorderRadius = 10;
-            this.t_nationality_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_nationality_9.CustomizableEdges.BottomLeft = false;
-            this.t_nationality_9.CustomizableEdges.TopLeft = false;
-            this.t_nationality_9.DefaultText = "";
-            this.t_nationality_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_nationality_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_nationality_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_nationality_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_nationality_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_nationality_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_nationality_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_nationality_9.ForeColor = System.Drawing.Color.White;
-            this.t_nationality_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_nationality_9.Location = new System.Drawing.Point(594, 143);
-            this.t_nationality_9.Name = "t_nationality_9";
-            this.t_nationality_9.PasswordChar = '\0';
-            this.t_nationality_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_nationality_9.PlaceholderText = "";
-            this.t_nationality_9.SelectedText = "";
-            this.t_nationality_9.Size = new System.Drawing.Size(229, 32);
-            this.t_nationality_9.TabIndex = 87;
-            this.t_nationality_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_telephone_20.Animated = true;
+            this.t_telephone_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_telephone_20.BorderRadius = 10;
+            this.t_telephone_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_telephone_20.CustomizableEdges.BottomLeft = false;
+            this.t_telephone_20.CustomizableEdges.TopLeft = false;
+            this.Transition_2_20.SetDecoration(this.t_telephone_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_telephone_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_telephone_20.DefaultText = "";
+            this.t_telephone_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_telephone_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_telephone_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_telephone_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_telephone_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_telephone_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_telephone_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_telephone_20.ForeColor = System.Drawing.Color.White;
+            this.t_telephone_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_telephone_20.Location = new System.Drawing.Point(594, 181);
+            this.t_telephone_20.Name = "t_telephone_20";
+            this.t_telephone_20.PasswordChar = '\0';
+            this.t_telephone_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_telephone_20.PlaceholderText = "";
+            this.t_telephone_20.SelectedText = "";
+            this.t_telephone_20.Size = new System.Drawing.Size(229, 32);
+            this.t_telephone_20.TabIndex = 88;
+            this.t_telephone_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // l_1_6
             // 
             this.l_1_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_1_6.AutoSize = true;
             this.l_1_6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.l_1_6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.l_1_6, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_1_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_1_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_1_6.ForeColor = System.Drawing.Color.White;
-            this.l_1_6.Location = new System.Drawing.Point(744, 55);
+            this.l_1_6.Location = new System.Drawing.Point(774, 72);
             this.l_1_6.Name = "l_1_6";
             this.l_1_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_1_6.Size = new System.Drawing.Size(73, 27);
+            this.l_1_6.Size = new System.Drawing.Size(43, 27);
             this.l_1_6.TabIndex = 72;
-            this.l_1_6.Text = "الاسم الاول";
+            this.l_1_6.Text = "الاسم";
             this.l_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // t_fore_name_9
+            // t_name_20
             // 
-            this.t_fore_name_9.Animated = true;
-            this.t_fore_name_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_fore_name_9.BorderRadius = 10;
-            this.t_fore_name_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_fore_name_9.CustomizableEdges.BottomLeft = false;
-            this.t_fore_name_9.CustomizableEdges.TopLeft = false;
-            this.t_fore_name_9.DefaultText = "";
-            this.t_fore_name_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_fore_name_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_fore_name_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_fore_name_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_fore_name_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_fore_name_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_fore_name_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_fore_name_9.ForeColor = System.Drawing.Color.White;
-            this.t_fore_name_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_fore_name_9.Location = new System.Drawing.Point(594, 80);
-            this.t_fore_name_9.Name = "t_fore_name_9";
-            this.t_fore_name_9.PasswordChar = '\0';
-            this.t_fore_name_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_fore_name_9.PlaceholderText = "";
-            this.t_fore_name_9.SelectedText = "";
-            this.t_fore_name_9.Size = new System.Drawing.Size(229, 32);
-            this.t_fore_name_9.TabIndex = 86;
-            this.t_fore_name_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_name_20.Animated = true;
+            this.t_name_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_name_20.BorderRadius = 10;
+            this.t_name_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_name_20.CustomizableEdges.BottomLeft = false;
+            this.t_name_20.CustomizableEdges.TopLeft = false;
+            this.Transition_2_20.SetDecoration(this.t_name_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_name_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_name_20.DefaultText = "";
+            this.t_name_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_name_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_name_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_name_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_name_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_name_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_name_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_name_20.ForeColor = System.Drawing.Color.White;
+            this.t_name_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_name_20.Location = new System.Drawing.Point(594, 98);
+            this.t_name_20.Name = "t_name_20";
+            this.t_name_20.PasswordChar = '\0';
+            this.t_name_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_name_20.PlaceholderText = "";
+            this.t_name_20.SelectedText = "";
+            this.t_name_20.Size = new System.Drawing.Size(229, 32);
+            this.t_name_20.TabIndex = 86;
+            this.t_name_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label4
             // 
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label4.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label4.Location = new System.Drawing.Point(227, 411);
+            this.label4.Location = new System.Drawing.Point(698, 480);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(119, 27);
@@ -301,43 +229,47 @@
             this.label4.Text = "كلمة المرور الجديدة";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // t_password_new_9
+            // t_password_new_20
             // 
-            this.t_password_new_9.Animated = true;
-            this.t_password_new_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_password_new_9.BorderRadius = 10;
-            this.t_password_new_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_password_new_9.CustomizableEdges.BottomRight = false;
-            this.t_password_new_9.CustomizableEdges.TopRight = false;
-            this.t_password_new_9.DefaultText = "";
-            this.t_password_new_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_password_new_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_password_new_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_new_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_new_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_password_new_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_password_new_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_password_new_9.ForeColor = System.Drawing.Color.White;
-            this.t_password_new_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_password_new_9.Location = new System.Drawing.Point(123, 437);
-            this.t_password_new_9.Name = "t_password_new_9";
-            this.t_password_new_9.PasswordChar = '\0';
-            this.t_password_new_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_password_new_9.PlaceholderText = "";
-            this.t_password_new_9.SelectedText = "";
-            this.t_password_new_9.Size = new System.Drawing.Size(229, 32);
-            this.t_password_new_9.TabIndex = 85;
-            this.t_password_new_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_password_new_20.Animated = true;
+            this.t_password_new_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_password_new_20.BorderRadius = 10;
+            this.t_password_new_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_password_new_20.CustomizableEdges.BottomLeft = false;
+            this.t_password_new_20.CustomizableEdges.TopLeft = false;
+            this.Transition_2_20.SetDecoration(this.t_password_new_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_password_new_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_password_new_20.DefaultText = "";
+            this.t_password_new_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_password_new_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_password_new_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_new_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_new_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_password_new_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_password_new_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_password_new_20.ForeColor = System.Drawing.Color.White;
+            this.t_password_new_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_password_new_20.Location = new System.Drawing.Point(594, 506);
+            this.t_password_new_20.Name = "t_password_new_20";
+            this.t_password_new_20.PasswordChar = '\0';
+            this.t_password_new_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_password_new_20.PlaceholderText = "";
+            this.t_password_new_20.SelectedText = "";
+            this.t_password_new_20.Size = new System.Drawing.Size(229, 32);
+            this.t_password_new_20.TabIndex = 85;
+            this.t_password_new_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label3, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label3.Location = new System.Drawing.Point(702, 411);
+            this.label3.Location = new System.Drawing.Point(421, 361);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(115, 27);
@@ -345,43 +277,45 @@
             this.label3.Text = "كلمة المرور القديمة";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // t_password_old_9
+            // t_password_old_20
             // 
-            this.t_password_old_9.Animated = true;
-            this.t_password_old_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_password_old_9.BorderRadius = 10;
-            this.t_password_old_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_password_old_9.CustomizableEdges.BottomLeft = false;
-            this.t_password_old_9.CustomizableEdges.TopLeft = false;
-            this.t_password_old_9.DefaultText = "";
-            this.t_password_old_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_password_old_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_password_old_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_old_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_old_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_password_old_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_password_old_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_password_old_9.ForeColor = System.Drawing.Color.White;
-            this.t_password_old_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_password_old_9.Location = new System.Drawing.Point(594, 436);
-            this.t_password_old_9.Name = "t_password_old_9";
-            this.t_password_old_9.PasswordChar = '\0';
-            this.t_password_old_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_password_old_9.PlaceholderText = "";
-            this.t_password_old_9.SelectedText = "";
-            this.t_password_old_9.Size = new System.Drawing.Size(229, 32);
-            this.t_password_old_9.TabIndex = 84;
-            this.t_password_old_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_password_old_20.Animated = true;
+            this.t_password_old_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_password_old_20.BorderRadius = 10;
+            this.t_password_old_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Transition_2_20.SetDecoration(this.t_password_old_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_password_old_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_password_old_20.DefaultText = "";
+            this.t_password_old_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_password_old_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_password_old_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_old_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_old_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_password_old_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_password_old_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_password_old_20.ForeColor = System.Drawing.Color.White;
+            this.t_password_old_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_password_old_20.Location = new System.Drawing.Point(360, 386);
+            this.t_password_old_20.Name = "t_password_old_20";
+            this.t_password_old_20.PasswordChar = '\0';
+            this.t_password_old_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_password_old_20.PlaceholderText = "";
+            this.t_password_old_20.SelectedText = "";
+            this.t_password_old_20.Size = new System.Drawing.Size(229, 32);
+            this.t_password_old_20.TabIndex = 84;
+            this.t_password_old_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label2.Location = new System.Drawing.Point(410, 460);
+            this.label2.Location = new System.Drawing.Point(209, 480);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(137, 27);
@@ -389,49 +323,55 @@
             this.label2.Text = "إعادة كتابة كلمة المرور";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // t_password_new_2_9
+            // t_password_new_2_20
             // 
-            this.t_password_new_2_9.Animated = true;
-            this.t_password_new_2_9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_password_new_2_9.BorderRadius = 10;
-            this.t_password_new_2_9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_password_new_2_9.DefaultText = "";
-            this.t_password_new_2_9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_password_new_2_9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_password_new_2_9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_new_2_9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_password_new_2_9.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_password_new_2_9.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_password_new_2_9.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_password_new_2_9.ForeColor = System.Drawing.Color.White;
-            this.t_password_new_2_9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_password_new_2_9.Location = new System.Drawing.Point(360, 486);
-            this.t_password_new_2_9.Name = "t_password_new_2_9";
-            this.t_password_new_2_9.PasswordChar = '\0';
-            this.t_password_new_2_9.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_password_new_2_9.PlaceholderText = "";
-            this.t_password_new_2_9.SelectedText = "";
-            this.t_password_new_2_9.Size = new System.Drawing.Size(229, 32);
-            this.t_password_new_2_9.TabIndex = 83;
-            this.t_password_new_2_9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_password_new_2_20.Animated = true;
+            this.t_password_new_2_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_password_new_2_20.BorderRadius = 10;
+            this.t_password_new_2_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_password_new_2_20.CustomizableEdges.BottomRight = false;
+            this.t_password_new_2_20.CustomizableEdges.TopRight = false;
+            this.Transition_2_20.SetDecoration(this.t_password_new_2_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_password_new_2_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_password_new_2_20.DefaultText = "";
+            this.t_password_new_2_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_password_new_2_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_password_new_2_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_new_2_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_password_new_2_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_password_new_2_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_password_new_2_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_password_new_2_20.ForeColor = System.Drawing.Color.White;
+            this.t_password_new_2_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_password_new_2_20.Location = new System.Drawing.Point(123, 506);
+            this.t_password_new_2_20.Name = "t_password_new_2_20";
+            this.t_password_new_2_20.PasswordChar = '\0';
+            this.t_password_new_2_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_password_new_2_20.PlaceholderText = "";
+            this.t_password_new_2_20.SelectedText = "";
+            this.t_password_new_2_20.Size = new System.Drawing.Size(229, 32);
+            this.t_password_new_2_20.TabIndex = 83;
+            this.t_password_new_2_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // l_changePassword_9
+            // l_changePassword_20
             // 
-            this.l_changePassword_9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.l_changePassword_9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.l_changePassword_9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.l_changePassword_9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.l_changePassword_9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_changePassword_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.l_changePassword_9.Location = new System.Drawing.Point(717, 249);
-            this.l_changePassword_9.MaximumSize = new System.Drawing.Size(270, 19);
-            this.l_changePassword_9.MinimumSize = new System.Drawing.Size(106, 19);
-            this.l_changePassword_9.Name = "l_changePassword_9";
-            this.l_changePassword_9.Size = new System.Drawing.Size(106, 19);
-            this.l_changePassword_9.TabIndex = 77;
-            this.l_changePassword_9.Text = "تغيير كلمة المرور";
-            this.l_changePassword_9.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            this.l_changePassword_9.Click += new System.EventHandler(this.l_changePassword_9_Click);
+            this.l_changePassword_20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l_changePassword_20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.l_changePassword_20.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Transition_1_20.SetDecoration(this.l_changePassword_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.l_changePassword_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_changePassword_20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.l_changePassword_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_changePassword_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.l_changePassword_20.Location = new System.Drawing.Point(651, 232);
+            this.l_changePassword_20.MaximumSize = new System.Drawing.Size(351, 19);
+            this.l_changePassword_20.MinimumSize = new System.Drawing.Size(106, 19);
+            this.l_changePassword_20.Name = "l_changePassword_20";
+            this.l_changePassword_20.Size = new System.Drawing.Size(172, 19);
+            this.l_changePassword_20.TabIndex = 77;
+            this.l_changePassword_20.Text = "تغيير بيانات تسجيل الدخول";
+            this.l_changePassword_20.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.l_changePassword_20.Click += new System.EventHandler(this.l_changePassword_20_Click);
             // 
             // timer_Close
             // 
@@ -442,16 +382,18 @@
             this.timer_Password.Interval = 5;
             this.timer_Password.Tick += new System.EventHandler(this.timer_Password_Tick);
             // 
-            // L_9
+            // L_20
             // 
-            this.L_9.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.L_9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.L_9.Location = new System.Drawing.Point(304, 521);
-            this.L_9.Name = "L_9";
-            this.L_9.Size = new System.Drawing.Size(341, 31);
-            this.L_9.TabIndex = 70;
-            this.L_9.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.L_20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.Transition_1_20.SetDecoration(this.L_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.L_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.L_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.L_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.L_20.Location = new System.Drawing.Point(303, 546);
+            this.L_20.Name = "L_20";
+            this.L_20.Size = new System.Drawing.Size(341, 31);
+            this.L_20.TabIndex = 70;
+            this.L_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // b_close_9
             // 
@@ -464,6 +406,8 @@
             this.b_close_9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.b_close_9.CustomizableEdges.BottomRight = false;
             this.b_close_9.CustomizableEdges.TopRight = false;
+            this.Transition_2_20.SetDecoration(this.b_close_9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.b_close_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.b_close_9.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.b_close_9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.b_close_9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -476,7 +420,7 @@
             this.b_close_9.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
             this.b_close_9.Image = ((System.Drawing.Image)(resources.GetObject("b_close_9.Image")));
             this.b_close_9.ImageSize = new System.Drawing.Size(18, 18);
-            this.b_close_9.Location = new System.Drawing.Point(360, 579);
+            this.b_close_9.Location = new System.Drawing.Point(360, 585);
             this.b_close_9.Name = "b_close_9";
             this.b_close_9.ShadowDecoration.BorderRadius = 0;
             this.b_close_9.Size = new System.Drawing.Size(81, 39);
@@ -497,6 +441,8 @@
             this.b_change_password_9.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.b_change_password_9.CustomizableEdges.BottomLeft = false;
             this.b_change_password_9.CustomizableEdges.TopLeft = false;
+            this.Transition_2_20.SetDecoration(this.b_change_password_9, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.b_change_password_9, Guna.UI2.AnimatorNS.DecorationType.None);
             this.b_change_password_9.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.b_change_password_9.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.b_change_password_9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
@@ -508,7 +454,7 @@
             this.b_change_password_9.HoverState.BorderColor = System.Drawing.Color.Plum;
             this.b_change_password_9.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
             this.b_change_password_9.Image = ((System.Drawing.Image)(resources.GetObject("b_change_password_9.Image")));
-            this.b_change_password_9.Location = new System.Drawing.Point(447, 579);
+            this.b_change_password_9.Location = new System.Drawing.Point(447, 585);
             this.b_change_password_9.Name = "b_change_password_9";
             this.b_change_password_9.ShadowDecoration.BorderRadius = 0;
             this.b_change_password_9.Size = new System.Drawing.Size(142, 39);
@@ -516,12 +462,15 @@
             this.b_change_password_9.TabStop = false;
             this.b_change_password_9.Text = "تغيير كلمة المرور";
             this.b_change_password_9.TextFormatNoPrefix = true;
+            this.b_change_password_9.Click += new System.EventHandler(this.b_change_password_9_Click);
             // 
             // pbox_userName_1
             // 
             this.pbox_userName_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pbox_userName_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbox_userName_1.BackgroundImage")));
             this.pbox_userName_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Transition_1_20.SetDecoration(this.pbox_userName_1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.pbox_userName_1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.pbox_userName_1.Location = new System.Drawing.Point(447, 7);
             this.pbox_userName_1.Name = "pbox_userName_1";
             this.pbox_userName_1.Size = new System.Drawing.Size(55, 58);
@@ -533,10 +482,12 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(241, 180);
+            this.label1.Location = new System.Drawing.Point(241, 159);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(105, 27);
@@ -544,162 +495,136 @@
             this.label1.Text = "البريد الالكتروني";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // guna2TextBox2
+            // t_email_20
             // 
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.BorderRadius = 10;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.CustomizableEdges.BottomRight = false;
-            this.guna2TextBox2.CustomizableEdges.TopRight = false;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.White;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Location = new System.Drawing.Point(123, 202);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(229, 36);
-            this.guna2TextBox2.TabIndex = 92;
-            this.guna2TextBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_email_20.Animated = true;
+            this.t_email_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_email_20.BorderRadius = 10;
+            this.t_email_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_email_20.CustomizableEdges.BottomRight = false;
+            this.t_email_20.CustomizableEdges.TopRight = false;
+            this.Transition_2_20.SetDecoration(this.t_email_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_email_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_email_20.DefaultText = "";
+            this.t_email_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_email_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_email_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_email_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_email_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_email_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_email_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_email_20.ForeColor = System.Drawing.Color.White;
+            this.t_email_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_email_20.Location = new System.Drawing.Point(123, 181);
+            this.t_email_20.Name = "t_email_20";
+            this.t_email_20.PasswordChar = '\0';
+            this.t_email_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_email_20.PlaceholderText = "";
+            this.t_email_20.SelectedText = "";
+            this.t_email_20.Size = new System.Drawing.Size(229, 32);
+            this.t_email_20.TabIndex = 92;
+            this.t_email_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // guna2GradientPanel1
             // 
             this.guna2GradientPanel1.AutoRoundedCorners = true;
             this.guna2GradientPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_2_20.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.guna2GradientPanel1, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2GradientPanel1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(128)))), ((int)(((byte)(200)))));
             this.guna2GradientPanel1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(123, 392);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(123, 345);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(700, 1);
             this.guna2GradientPanel1.TabIndex = 93;
             this.guna2GradientPanel1.UseTransparentBackground = true;
             // 
-            // guna2TextBox1
+            // t_enter_password_20
             // 
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Red;
-            this.guna2TextBox1.BorderRadius = 10;
-            this.guna2TextBox1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.Silver;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.White;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(359, 270);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.guna2TextBox1.PlaceholderText = "ادخل كلمة المرور للمتابعة";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(229, 32);
-            this.guna2TextBox1.TabIndex = 94;
-            this.guna2TextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_enter_password_20.Animated = true;
+            this.t_enter_password_20.BackColor = System.Drawing.Color.Transparent;
+            this.t_enter_password_20.BorderColor = System.Drawing.Color.DarkRed;
+            this.t_enter_password_20.BorderRadius = 10;
+            this.t_enter_password_20.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
+            this.t_enter_password_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Transition_2_20.SetDecoration(this.t_enter_password_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_enter_password_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_enter_password_20.DefaultText = "";
+            this.t_enter_password_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_enter_password_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_enter_password_20.DisabledState.ForeColor = System.Drawing.Color.Silver;
+            this.t_enter_password_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_enter_password_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_enter_password_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_enter_password_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_enter_password_20.ForeColor = System.Drawing.Color.White;
+            this.t_enter_password_20.HoverState.BorderColor = System.Drawing.Color.DarkRed;
+            this.t_enter_password_20.Location = new System.Drawing.Point(360, 232);
+            this.t_enter_password_20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.t_enter_password_20.Name = "t_enter_password_20";
+            this.t_enter_password_20.PasswordChar = '\0';
+            this.t_enter_password_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_enter_password_20.PlaceholderText = "ادخل كلمة المرور للمتابعة";
+            this.t_enter_password_20.SelectedText = "";
+            this.t_enter_password_20.Size = new System.Drawing.Size(229, 32);
+            this.t_enter_password_20.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.t_enter_password_20.TabIndex = 94;
+            this.t_enter_password_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // guna2Button1
+            // b_save_edit_20
             // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2Button1.CustomizableEdges.BottomRight = false;
-            this.guna2Button1.CustomizableEdges.TopRight = false;
-            this.guna2Button1.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.guna2Button1.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageSize = new System.Drawing.Size(18, 18);
-            this.guna2Button1.Location = new System.Drawing.Point(359, 332);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.BorderRadius = 0;
-            this.guna2Button1.Size = new System.Drawing.Size(81, 39);
-            this.guna2Button1.TabIndex = 97;
-            this.guna2Button1.TabStop = false;
-            this.guna2Button1.Text = "الغاء";
-            this.guna2Button1.TextFormatNoPrefix = true;
+            this.b_save_edit_20.Animated = true;
+            this.b_save_edit_20.AutoRoundedCorners = true;
+            this.b_save_edit_20.BackColor = System.Drawing.Color.Transparent;
+            this.b_save_edit_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_save_edit_20.BorderRadius = 18;
+            this.b_save_edit_20.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_save_edit_20.BorderThickness = 1;
+            this.b_save_edit_20.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.Transition_2_20.SetDecoration(this.b_save_edit_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.b_save_edit_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.b_save_edit_20.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.b_save_edit_20.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_save_edit_20.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_save_edit_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_save_edit_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_save_edit_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_save_edit_20.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_save_edit_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_save_edit_20.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_save_edit_20.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_save_edit_20.Image = ((System.Drawing.Image)(resources.GetObject("b_save_edit_20.Image")));
+            this.b_save_edit_20.Location = new System.Drawing.Point(360, 290);
+            this.b_save_edit_20.Name = "b_save_edit_20";
+            this.b_save_edit_20.ShadowDecoration.BorderRadius = 0;
+            this.b_save_edit_20.Size = new System.Drawing.Size(229, 39);
+            this.b_save_edit_20.TabIndex = 96;
+            this.b_save_edit_20.TabStop = false;
+            this.b_save_edit_20.Text = "حفظ التعديلات";
+            this.b_save_edit_20.TextFormatNoPrefix = true;
+            this.b_save_edit_20.Click += new System.EventHandler(this.b_save_edit_20_Click);
             // 
-            // guna2Button2
+            // l_notificatio_20
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2Button2.CustomizableEdges.BottomLeft = false;
-            this.guna2Button2.CustomizableEdges.TopLeft = false;
-            this.guna2Button2.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.guna2Button2.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.Location = new System.Drawing.Point(446, 332);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.BorderRadius = 0;
-            this.guna2Button2.Size = new System.Drawing.Size(142, 39);
-            this.guna2Button2.TabIndex = 96;
-            this.guna2Button2.TabStop = false;
-            this.guna2Button2.Text = "حفظ التعديلات";
-            this.guna2Button2.TextFormatNoPrefix = true;
-            // 
-            // label5
-            // 
-            this.label5.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label5.Location = new System.Drawing.Point(303, 285);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(341, 31);
-            this.label5.TabIndex = 95;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // guna2GradientPanel2
-            // 
-            this.guna2GradientPanel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(50)))));
-            this.guna2GradientPanel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2GradientPanel2.Name = "guna2GradientPanel2";
-            this.guna2GradientPanel2.Size = new System.Drawing.Size(167, 645);
-            this.guna2GradientPanel2.TabIndex = 98;
+            this.l_notificatio_20.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l_notificatio_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.Transition_1_20.SetDecoration(this.l_notificatio_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.l_notificatio_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_notificatio_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_notificatio_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.l_notificatio_20.Location = new System.Drawing.Point(304, 247);
+            this.l_notificatio_20.Name = "l_notificatio_20";
+            this.l_notificatio_20.Size = new System.Drawing.Size(341, 31);
+            this.l_notificatio_20.TabIndex = 95;
+            this.l_notificatio_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.l_notificatio_20.Visible = false;
             // 
             // label_19
             // 
-            this.label_19.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label_19.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label_19.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label_19, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label_19, Guna.UI2.AnimatorNS.DecorationType.None);
             this.label_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -710,48 +635,189 @@
             this.label_19.Text = " الخصوصية";
             this.label_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // Transition_1_20
+            // 
+            this.Transition_1_20.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Transparent;
+            this.Transition_1_20.Cursor = null;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 1F;
+            this.Transition_1_20.DefaultAnimation = animation1;
+            this.Transition_1_20.TimeStep = 0.01F;
+            // 
+            // Transition_2_20
+            // 
+            this.Transition_2_20.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
+            this.Transition_2_20.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.Transition_2_20.DefaultAnimation = animation2;
+            // 
+            // label6
+            // 
+            this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label6, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.label6.Location = new System.Drawing.Point(214, 419);
+            this.label6.Name = "label6";
+            this.label6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label6.Size = new System.Drawing.Size(132, 27);
+            this.label6.TabIndex = 100;
+            this.label6.Text = "اسم المستخدم الجديد";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // t_username_new_20
+            // 
+            this.t_username_new_20.Animated = true;
+            this.t_username_new_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_username_new_20.BorderRadius = 10;
+            this.t_username_new_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_username_new_20.CustomizableEdges.BottomRight = false;
+            this.t_username_new_20.CustomizableEdges.TopRight = false;
+            this.Transition_2_20.SetDecoration(this.t_username_new_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_username_new_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_username_new_20.DefaultText = "";
+            this.t_username_new_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_username_new_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_username_new_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_username_new_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_username_new_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_username_new_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_username_new_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_username_new_20.ForeColor = System.Drawing.Color.White;
+            this.t_username_new_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_username_new_20.Location = new System.Drawing.Point(123, 445);
+            this.t_username_new_20.Name = "t_username_new_20";
+            this.t_username_new_20.PasswordChar = '\0';
+            this.t_username_new_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_username_new_20.PlaceholderText = "";
+            this.t_username_new_20.SelectedText = "";
+            this.t_username_new_20.Size = new System.Drawing.Size(229, 32);
+            this.t_username_new_20.TabIndex = 101;
+            this.t_username_new_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label7
+            // 
+            this.label7.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_1_20.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_2_20.SetDecoration(this.label7, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.label7.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.label7.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.label7.Location = new System.Drawing.Point(685, 419);
+            this.label7.Name = "label7";
+            this.label7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label7.Size = new System.Drawing.Size(132, 27);
+            this.label7.TabIndex = 102;
+            this.label7.Text = "اسم المستخدم القديم";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // t_username_old_20
+            // 
+            this.t_username_old_20.Animated = true;
+            this.t_username_old_20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_username_old_20.BorderRadius = 10;
+            this.t_username_old_20.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_username_old_20.CustomizableEdges.BottomLeft = false;
+            this.t_username_old_20.CustomizableEdges.TopLeft = false;
+            this.Transition_2_20.SetDecoration(this.t_username_old_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this.t_username_old_20, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.t_username_old_20.DefaultText = "";
+            this.t_username_old_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_username_old_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_username_old_20.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_username_old_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_username_old_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_username_old_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_username_old_20.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.t_username_old_20.ForeColor = System.Drawing.Color.White;
+            this.t_username_old_20.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_username_old_20.Location = new System.Drawing.Point(594, 445);
+            this.t_username_old_20.Name = "t_username_old_20";
+            this.t_username_old_20.PasswordChar = '\0';
+            this.t_username_old_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.t_username_old_20.PlaceholderText = "";
+            this.t_username_old_20.SelectedText = "";
+            this.t_username_old_20.Size = new System.Drawing.Size(229, 32);
+            this.t_username_old_20.TabIndex = 103;
+            this.t_username_old_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // F_PRIVACY_MANAGER_20
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.ClientSize = new System.Drawing.Size(964, 645);
+            this.CancelButton = this.b_close_9;
+            this.ClientSize = new System.Drawing.Size(964, 355);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.t_username_old_20);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.t_username_new_20);
             this.Controls.Add(this.label_19);
-            this.Controls.Add(this.guna2TextBox1);
-            this.Controls.Add(this.guna2Button1);
-            this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.label5);
+            this.Controls.Add(this.t_enter_password_20);
+            this.Controls.Add(this.b_save_edit_20);
+            this.Controls.Add(this.l_notificatio_20);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.guna2TextBox2);
+            this.Controls.Add(this.t_email_20);
             this.Controls.Add(this.l_8_6);
-            this.Controls.Add(this.l_5_6);
-            this.Controls.Add(this.t_age_9);
-            this.Controls.Add(this.t_last_name_9);
+            this.Controls.Add(this.t_age_20);
             this.Controls.Add(this.l_3_6);
-            this.Controls.Add(this.l_2_6);
-            this.Controls.Add(this.t_identification_number_9);
-            this.Controls.Add(this.t_nationality_9);
+            this.Controls.Add(this.t_telephone_20);
             this.Controls.Add(this.l_1_6);
-            this.Controls.Add(this.t_fore_name_9);
+            this.Controls.Add(this.t_name_20);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.t_password_new_9);
+            this.Controls.Add(this.t_password_new_20);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.t_password_old_9);
+            this.Controls.Add(this.t_password_old_20);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.t_password_new_2_9);
+            this.Controls.Add(this.t_password_new_2_20);
             this.Controls.Add(this.b_close_9);
             this.Controls.Add(this.b_change_password_9);
-            this.Controls.Add(this.l_changePassword_9);
+            this.Controls.Add(this.l_changePassword_20);
             this.Controls.Add(this.pbox_userName_1);
-            this.Controls.Add(this.L_9);
-            this.Controls.Add(this.guna2GradientPanel2);
+            this.Controls.Add(this.L_20);
+            this.Transition_2_20.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.Transition_1_20.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(964, 645);
-            this.MinimumSize = new System.Drawing.Size(964, 383);
+            this.MinimumSize = new System.Drawing.Size(964, 355);
             this.Name = "F_PRIVACY_MANAGER_20";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FPRIVACY_MANAGER_20";
+            this.Load += new System.EventHandler(this.F_PRIVACY_MANAGER_20_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -761,36 +827,36 @@
         #endregion
 
         private System.Windows.Forms.Label l_8_6;
-        private System.Windows.Forms.Label l_5_6;
-        internal Guna.UI2.WinForms.Guna2TextBox t_age_9;
-        internal Guna.UI2.WinForms.Guna2TextBox t_last_name_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_age_20;
         private System.Windows.Forms.Label l_3_6;
-        private System.Windows.Forms.Label l_2_6;
-        internal Guna.UI2.WinForms.Guna2TextBox t_identification_number_9;
-        internal Guna.UI2.WinForms.Guna2TextBox t_nationality_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_telephone_20;
         private System.Windows.Forms.Label l_1_6;
-        internal Guna.UI2.WinForms.Guna2TextBox t_fore_name_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_name_20;
         private System.Windows.Forms.Label label4;
-        internal Guna.UI2.WinForms.Guna2TextBox t_password_new_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_password_new_20;
         private System.Windows.Forms.Label label3;
-        internal Guna.UI2.WinForms.Guna2TextBox t_password_old_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_password_old_20;
         private System.Windows.Forms.Label label2;
-        internal Guna.UI2.WinForms.Guna2TextBox t_password_new_2_9;
+        internal Guna.UI2.WinForms.Guna2TextBox t_password_new_2_20;
         private Guna.UI2.WinForms.Guna2Button b_close_9;
         private Guna.UI2.WinForms.Guna2Button b_change_password_9;
-        public System.Windows.Forms.Label l_changePassword_9;
+        public System.Windows.Forms.Label l_changePassword_20;
         private System.Windows.Forms.PictureBox pbox_userName_1;
         private System.Windows.Forms.Timer timer_Close;
         private System.Windows.Forms.Timer timer_Password;
-        private System.Windows.Forms.Label L_9;
+        private System.Windows.Forms.Label L_20;
         private System.Windows.Forms.Label label1;
-        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        internal Guna.UI2.WinForms.Guna2TextBox t_email_20;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        internal Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel2;
+        internal Guna.UI2.WinForms.Guna2TextBox t_enter_password_20;
+        private Guna.UI2.WinForms.Guna2Button b_save_edit_20;
+        private System.Windows.Forms.Label l_notificatio_20;
         private System.Windows.Forms.Label label_19;
+        private Guna.UI2.WinForms.Guna2Transition Transition_1_20;
+        private Guna.UI2.WinForms.Guna2Transition Transition_2_20;
+        private System.Windows.Forms.Label label6;
+        internal Guna.UI2.WinForms.Guna2TextBox t_username_new_20;
+        private System.Windows.Forms.Label label7;
+        internal Guna.UI2.WinForms.Guna2TextBox t_username_old_20;
     }
 }

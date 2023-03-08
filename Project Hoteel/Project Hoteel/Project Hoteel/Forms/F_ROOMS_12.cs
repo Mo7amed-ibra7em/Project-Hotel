@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Notification;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,7 +34,44 @@ namespace Project_Hoteel
         private void b_add_room_12_Click(object sender, EventArgs e)
         {
             F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
+            if(cbox_type_room_12.Text != "" && t_number_room_12.Text != "" && t_price_room_12.Text != "")
+            {
+                SqlConnection sqlconn = new SqlConnection();
+                try
+                {
+                    sqlconn.ConnectionString = connstr;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                try
+                {
+                    SqlCommand sqlcmd = new SqlCommand();
+                    sqlcmd.Connection = sqlconn;
+                    sqlcmd.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ," + t_number_room_12.Text + ",'" + cbox_type_room_12.SelectedItem.ToString() + "'," + t_price_room_12.Text + ")";
+                    sqlconn.Open();
+                    sqlcmd.ExecuteNonQuery();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    sqlconn.Close();
+                }
 
+                l_notificatio_12.Text = "تم عملية الإضافة بنجاح";
+                MessageCollection.showNatification(l_notificatio_12.Text);
+                cbox_type_room_12.SelectedIndex = -1;
+                t_number_room_12.Text = "";
+                t_price_room_12.Text = "";
+            }
+        }
+
+        private void F_ROOMS_12_Load(object sender, EventArgs e)
+        {
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -43,13 +81,50 @@ namespace Project_Hoteel
             {
                 MessageBox.Show(ex.Message);
             }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
             try
             {
-                SqlCommand sqlcmd = new SqlCommand();
-                sqlcmd.Connection = sqlconn;
-                sqlcmd.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ," + t_number_room_12.Text + ",'" + t_type_room_12.Text + "'," + t_price_room_12.Text + ")";
+                sqlcmd.CommandText = "select count(*) from ROOMS";
                 sqlconn.Open();
-                sqlcmd.ExecuteNonQuery();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_count_rooms_12.Text = dread[""].ToString();
+                }
+                sqlconn.Close();
+                sqlcmd.CommandText = "select count(N_room) from ROOMS where T_room = 'مفردة'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_singular_12.Text = dread[""].ToString();
+                }
+                sqlconn.Close();
+                sqlcmd.CommandText = "select count(N_room) from ROOMS where T_room = 'ثنائية'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_dualism_12.Text = dread[""].ToString();
+                }
+                sqlconn.Close();
+                sqlcmd.CommandText = "select count(N_room) from ROOMS where T_room = 'ثلاثية'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_trilogy_12.Text = dread[""].ToString();
+                }
+                sqlconn.Close();
+                sqlcmd.CommandText = "select count(N_room) from ROOMS where T_room = 'سويت'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_sweet_12.Text = dread[""].ToString();
+                }
             }
             catch (Exception ex)
             {
@@ -59,43 +134,6 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-
-
-            //try
-            //{
-            //    sqlconn.ConnectionString = connstr;
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //SqlCommand sqlcmd1 = new SqlCommand();
-            //sqlcmd1.Connection = sqlconn;
-            //sqlcmd1.CommandText = "select Id as 'الرقم الافتراضي' , N_room as 'رقم الغرفة' , T_room as 'نوع الغرفة' , P_room as 'سعر الغرفة' , Room_condition as 'حالة الغرفة' from ROOMS;";
-            //SqlDataAdapter sqladap = new SqlDataAdapter();
-            //sqladap.SelectCommand = sqlcmd1;
-            //DataTable mylist = new DataTable();
-            //try
-            //{
-            //    sqlconn.Open();
-            //    sqladap.Fill(mylist);
-            //    f_15.dgv_15.DataSource = mylist;
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message);
-            //}
-            //finally
-            //{
-            //    sqlconn.Close();
-            //}
-
-            //this.Close();
-        }
-
-        private void F_ROOMS_12_Load(object sender, EventArgs e)
-        {
-           
         }
 
         private void timer_room_12_Tick(object sender, EventArgs e)
@@ -103,7 +141,6 @@ namespace Project_Hoteel
             if (Expand == false)
             {
                 this.Height -= 5;
-                l_add_rooms_12.Width -= 5;
                 if (this.Height == this.MinimumSize.Height)
                 {
                     timer_room_12.Stop();
@@ -113,7 +150,6 @@ namespace Project_Hoteel
             else if(Expand == true || f_15.Expand2 == true)
             {
                 this.Height += 5;
-                l_add_rooms_12.Width += 5;
                 if (this.Height == this.MaximumSize.Height)
                 {
                     timer_room_12.Stop();
@@ -126,6 +162,7 @@ namespace Project_Hoteel
         private void l_add_rooms_12_Click(object sender, EventArgs e)
         {
             timer_room_12.Start();
+            Transition_12.HideSync(l_add_rooms_12);
         }
         private void l_add_rooms_12_MouseHover(object sender, EventArgs e)
         {
@@ -141,6 +178,7 @@ namespace Project_Hoteel
         private void b_close_12_Click(object sender, EventArgs e)
         {
             timer_room_12.Start();
+            Transition_12.ShowSync(l_add_rooms_12);
         }
     }
 }
