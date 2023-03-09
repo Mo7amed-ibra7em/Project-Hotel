@@ -1,0 +1,22 @@
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\bin\Debug\NotePad.exe.config
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\bin\Debug\NotePad.exe
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\bin\Debug\NotePad.pdb
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.csproj.AssemblyReference.cache
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.csproj.SuggestedBindingRedirects.cache
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.Form1.resources
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.Properties.Resources.resources
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.csproj.GenerateResource.cache
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.csproj.CoreCompileInputs.cache
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.exe
+C:\Users\RWDA TECH\Desktop\NotePad\NotePad\obj\Debug\NotePad.pdb
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\bin\Debug\NotePad.exe.config
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\bin\Debug\NotePad.exe
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\bin\Debug\NotePad.pdb
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.csproj.AssemblyReference.cache
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.csproj.SuggestedBindingRedirects.cache
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.Properties.Resources.resources
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.csproj.GenerateResource.cache
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.csproj.CoreCompileInputs.cache
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.exe
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.pdb
+C:\Users\RWDA TECH\Desktop\Visula S\NotePad\NotePad\obj\Debug\NotePad.F_NotePad_1.resources
