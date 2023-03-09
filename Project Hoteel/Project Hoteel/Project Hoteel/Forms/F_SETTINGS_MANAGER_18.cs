@@ -13,7 +13,7 @@ namespace Project_Hoteel
     public partial class F_SETTINGS_MANAGER_18 : Form
     {
         bool privac_18 = false;
-        bool acc_emp_18 = false;
+        public bool acc_emp_18 = false;
         bool customize_18 = false;
         bool about_18 = false;
         int fresh = 0;

@@ -111,7 +111,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 37;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // b_diparting_10
             // 
@@ -143,7 +142,7 @@
             this.b_diparting_10.TabStop = false;
             this.b_diparting_10.Text = "مغادر";
             this.b_diparting_10.TextFormatNoPrefix = true;
-            this.b_diparting_10.Click += new System.EventHandler(this.b_diparting_10_Click_1);
+            this.b_diparting_10.Click += new System.EventHandler(this.b_diparting_10_Click);
             // 
             // b_edit_10
             // 
@@ -175,7 +174,7 @@
             this.b_edit_10.TabStop = false;
             this.b_edit_10.Text = "تعديل";
             this.b_edit_10.TextFormatNoPrefix = true;
-            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click_1);
+            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
             // 
             // b_cancel_10
             // 
@@ -233,7 +232,6 @@
             this.b_search_10.Name = "b_search_10";
             this.b_search_10.Size = new System.Drawing.Size(39, 30);
             this.b_search_10.TabIndex = 72;
-            this.b_search_10.Click += new System.EventHandler(this.b_search_10_Click);
             // 
             // t_search_10
             // 

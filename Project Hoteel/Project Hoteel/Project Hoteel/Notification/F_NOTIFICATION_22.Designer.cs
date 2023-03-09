@@ -68,13 +68,13 @@
             // 
             this.label_notification_22.BackColor = System.Drawing.Color.Transparent;
             this.label_notification_22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_notification_22.Font = new System.Drawing.Font("Akhbar MT", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.label_notification_22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_notification_22.ForeColor = System.Drawing.Color.White;
             this.label_notification_22.Location = new System.Drawing.Point(0, 0);
             this.label_notification_22.Name = "label_notification_22";
             this.label_notification_22.Size = new System.Drawing.Size(321, 63);
             this.label_notification_22.TabIndex = 0;
-            this.label_notification_22.Text = "تحذير";
+            this.label_notification_22.Text = "الاشعارات";
             this.label_notification_22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_notification_22.Click += new System.EventHandler(this.label_notification_22_Click);
             // 

@@ -197,7 +197,6 @@ namespace Project_Hoteel
         {
             Expand2 = true;
             /////
-            F_SETTINGS_ADMIN_16 f_16 = Application.OpenForms["F_SETTINGS_16"] as F_SETTINGS_ADMIN_16;
             F_SETTINGS_ADMIN_16 f__16 = new F_SETTINGS_ADMIN_16();
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
             f__16.TopLevel = false;
@@ -215,6 +214,39 @@ namespace Project_Hoteel
             f__16.b_rooms_16.BackColor = f_1.BackColor;
             f__16.pnl_line2_16.Visible = true;
             ////
+        }
+
+        private void t_search_15_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd1 = new SqlCommand();
+            sqlcmd1.Connection = sqlconn;
+            sqlcmd1.CommandText = "select Id as 'الرقم الافتراضي' , N_room as 'رقم الغرفة' , T_room as 'نوع الغرفة' , P_room as 'سعر الغرفة' , Room_condition 'حالة الغرفة' from ROOMS where id like '%"+t_search_15.Text+"%' or N_room like '%"+t_search_15.Text+"%' or P_room like '%"+t_search_15.Text+"%' or T_room like '%"+t_search_15.Text+"%' or Room_condition like '%"+t_search_15.Text+"%'";
+            SqlDataAdapter sqladap = new SqlDataAdapter();
+            sqladap.SelectCommand = sqlcmd1;
+            DataTable mylist = new DataTable();
+            try
+            {
+                sqlconn.Open();
+                sqladap.Fill(mylist);
+                dgv_15.DataSource = mylist;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
         }
     }
 }

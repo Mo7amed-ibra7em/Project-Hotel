@@ -51,7 +51,7 @@
             this.pnl_load_form_18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.pnl_load_form_18.CustomizableEdges.BottomLeft = false;
             this.pnl_load_form_18.CustomizableEdges.TopLeft = false;
-            this.pnl_load_form_18.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnl_load_form_18.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnl_load_form_18.Location = new System.Drawing.Point(0, 0);
             this.pnl_load_form_18.MaximumSize = new System.Drawing.Size(964, 645);
             this.pnl_load_form_18.Name = "pnl_load_form_18";
@@ -303,18 +303,17 @@
         }
 
         #endregion
-
-        private Guna.UI2.WinForms.Guna2Panel pnl_load_form_18;
         private Guna.UI2.WinForms.Guna2Button b_cover_2;
-        private Guna.UI2.WinForms.Guna2Button b_acc_emp_18;
-        private Guna.UI2.WinForms.Guna2Button b_about_18;
-        private Guna.UI2.WinForms.Guna2Button b_customize_18;
-        private Guna.UI2.WinForms.Guna2Button b_privac_18;
         public System.Windows.Forms.Panel pnl_manager_18;
-        private Guna.UI2.WinForms.Guna2Button b_shape_1;
         private Guna.UI2.WinForms.Guna2GradientPanel pnl_checked_18;
         private Guna.UI2.WinForms.Guna2Button b_cover_1;
-        private System.Windows.Forms.Timer timer_checked_18;
         private Guna.UI2.WinForms.Guna2GradientPanel pnl_1;
+        public Guna.UI2.WinForms.Guna2Panel pnl_load_form_18;
+        public System.Windows.Forms.Timer timer_checked_18;
+        public Guna.UI2.WinForms.Guna2Button b_acc_emp_18;
+        public Guna.UI2.WinForms.Guna2Button b_about_18;
+        public Guna.UI2.WinForms.Guna2Button b_customize_18;
+        public Guna.UI2.WinForms.Guna2Button b_privac_18;
+        public Guna.UI2.WinForms.Guna2Button b_shape_1;
     }
 }

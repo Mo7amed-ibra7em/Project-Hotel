@@ -255,18 +255,18 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button b_settings_1;
-        private System.Windows.Forms.Button b_custom_account_1;
-        private System.Windows.Forms.Button b_emp_account_1;
-        private System.Windows.Forms.Button b_control_board_1;
         private System.Windows.Forms.PictureBox pbox_userName_1;
-        private System.Windows.Forms.Panel pnl_load_form_1;
-        private System.Windows.Forms.Panel pnl_line3_1;
-        private System.Windows.Forms.Panel pnl_line2_1;
-        private System.Windows.Forms.Panel pnl_line1_1;
-        private System.Windows.Forms.Panel pnl_line4_1;
         public System.Windows.Forms.Label l_user_name_1;
         public System.Windows.Forms.Panel pnl_manager_1;
         private System.Windows.Forms.Button b_close_1;
+        public System.Windows.Forms.Panel pnl_load_form_1;
+        public System.Windows.Forms.Button b_settings_1;
+        public System.Windows.Forms.Panel pnl_line4_1;
+        public System.Windows.Forms.Button b_custom_account_1;
+        public System.Windows.Forms.Button b_emp_account_1;
+        public System.Windows.Forms.Button b_control_board_1;
+        public System.Windows.Forms.Panel pnl_line3_1;
+        public System.Windows.Forms.Panel pnl_line2_1;
+        public System.Windows.Forms.Panel pnl_line1_1;
     }
 }

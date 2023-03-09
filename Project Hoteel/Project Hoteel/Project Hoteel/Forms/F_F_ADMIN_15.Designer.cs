@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_F_ADMIN_15));
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_15 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.b_delete_rooms_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_edit_rooms_15 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_delete_rooms_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_add_room_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_search_13 = new Guna.UI2.WinForms.Guna2Button();
             this.t_search_15 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -64,51 +64,51 @@
             // 
             this.dgv_15.AllowUserToAddRows = false;
             this.dgv_15.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_15.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_15.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_15.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_15.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_15.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.dgv_15.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.dgv_15.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_15.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_15.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_15.ColumnHeadersHeight = 40;
             this.dgv_15.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_15.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_15.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_15.EnableHeadersVisualStyles = false;
             this.dgv_15.GridColor = System.Drawing.Color.White;
             this.dgv_15.Location = new System.Drawing.Point(11, 45);
             this.dgv_15.Name = "dgv_15";
             this.dgv_15.ReadOnly = true;
             this.dgv_15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_15.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("PT Bold Heading", 10.8F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_15.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_15.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv_15.RowTemplate.Height = 26;
             this.dgv_15.Size = new System.Drawing.Size(867, 360);
@@ -127,38 +127,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 49;
-            // 
-            // b_delete_rooms_15
-            // 
-            this.b_delete_rooms_15.Animated = true;
-            this.b_delete_rooms_15.AutoRoundedCorners = true;
-            this.b_delete_rooms_15.BackColor = System.Drawing.Color.Transparent;
-            this.b_delete_rooms_15.BorderColor = System.Drawing.SystemColors.Window;
-            this.b_delete_rooms_15.BorderRadius = 16;
-            this.b_delete_rooms_15.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.b_delete_rooms_15.BorderThickness = 1;
-            this.b_delete_rooms_15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.b_delete_rooms_15.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.b_delete_rooms_15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.b_delete_rooms_15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.b_delete_rooms_15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.b_delete_rooms_15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.b_delete_rooms_15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_delete_rooms_15.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_delete_rooms_15.ForeColor = System.Drawing.Color.Black;
-            this.b_delete_rooms_15.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.b_delete_rooms_15.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.b_delete_rooms_15.Image = ((System.Drawing.Image)(resources.GetObject("b_delete_rooms_15.Image")));
-            this.b_delete_rooms_15.ImageSize = new System.Drawing.Size(23, 23);
-            this.b_delete_rooms_15.Location = new System.Drawing.Point(11, 418);
-            this.b_delete_rooms_15.Name = "b_delete_rooms_15";
-            this.b_delete_rooms_15.ShadowDecoration.BorderRadius = 0;
-            this.b_delete_rooms_15.Size = new System.Drawing.Size(100, 35);
-            this.b_delete_rooms_15.TabIndex = 79;
-            this.b_delete_rooms_15.TabStop = false;
-            this.b_delete_rooms_15.Text = "حذف";
-            this.b_delete_rooms_15.TextFormatNoPrefix = true;
-            this.b_delete_rooms_15.Click += new System.EventHandler(this.b_delete_rooms_15_Click);
             // 
             // b_edit_rooms_15
             // 
@@ -191,6 +159,38 @@
             this.b_edit_rooms_15.Text = "تعديل";
             this.b_edit_rooms_15.TextFormatNoPrefix = true;
             this.b_edit_rooms_15.Click += new System.EventHandler(this.b_edit_rooms_15_Click);
+            // 
+            // b_delete_rooms_15
+            // 
+            this.b_delete_rooms_15.Animated = true;
+            this.b_delete_rooms_15.AutoRoundedCorners = true;
+            this.b_delete_rooms_15.BackColor = System.Drawing.Color.Transparent;
+            this.b_delete_rooms_15.BorderColor = System.Drawing.SystemColors.Window;
+            this.b_delete_rooms_15.BorderRadius = 16;
+            this.b_delete_rooms_15.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.b_delete_rooms_15.BorderThickness = 1;
+            this.b_delete_rooms_15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_delete_rooms_15.DialogResult = System.Windows.Forms.DialogResult.OK;
+            this.b_delete_rooms_15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_delete_rooms_15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_delete_rooms_15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_delete_rooms_15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_delete_rooms_15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_delete_rooms_15.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_delete_rooms_15.ForeColor = System.Drawing.Color.Black;
+            this.b_delete_rooms_15.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_delete_rooms_15.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_delete_rooms_15.Image = ((System.Drawing.Image)(resources.GetObject("b_delete_rooms_15.Image")));
+            this.b_delete_rooms_15.ImageSize = new System.Drawing.Size(23, 23);
+            this.b_delete_rooms_15.Location = new System.Drawing.Point(11, 418);
+            this.b_delete_rooms_15.Name = "b_delete_rooms_15";
+            this.b_delete_rooms_15.ShadowDecoration.BorderRadius = 0;
+            this.b_delete_rooms_15.Size = new System.Drawing.Size(100, 35);
+            this.b_delete_rooms_15.TabIndex = 79;
+            this.b_delete_rooms_15.TabStop = false;
+            this.b_delete_rooms_15.Text = "حذف";
+            this.b_delete_rooms_15.TextFormatNoPrefix = true;
+            this.b_delete_rooms_15.Click += new System.EventHandler(this.b_delete_rooms_15_Click);
             // 
             // b_add_room_15
             // 
@@ -279,6 +279,7 @@
             this.t_search_15.Size = new System.Drawing.Size(371, 30);
             this.t_search_15.TabIndex = 77;
             this.t_search_15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_search_15.TextChanged += new System.EventHandler(this.t_search_15_TextChanged);
             // 
             // F_F_ADMIN_15
             // 
@@ -286,8 +287,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(891, 467);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_15);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_F_ADMIN_15";

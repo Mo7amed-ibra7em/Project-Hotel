@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_EMP_ACCOUNT_4));
             this.dgv_4 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.t_search_13 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.t_search_4 = new Guna.UI2.WinForms.Guna2TextBox();
             this.b_edit_4 = new Guna.UI2.WinForms.Guna2Button();
-            this.b_search_13 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_search_4 = new Guna.UI2.WinForms.Guna2Button();
             this.b_delete_4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.b_add_emp_4 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_4)).BeginInit();
             this.SuspendLayout();
             // 
@@ -47,51 +47,51 @@
             // 
             this.dgv_4.AllowUserToAddRows = false;
             this.dgv_4.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgv_4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgv_4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgv_4.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_4.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.dgv_4.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgv_4.ColumnHeadersHeight = 40;
             this.dgv_4.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgv_4.EnableHeadersVisualStyles = false;
             this.dgv_4.GridColor = System.Drawing.Color.White;
             this.dgv_4.Location = new System.Drawing.Point(12, 49);
             this.dgv_4.Name = "dgv_4";
             this.dgv_4.ReadOnly = true;
             this.dgv_4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_4.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_4.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgv_4.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv_4.RowTemplate.Height = 26;
             this.dgv_4.Size = new System.Drawing.Size(1038, 524);
@@ -111,34 +111,35 @@
             this.label1.Text = "حسابات الموظفين";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // t_search_13
+            // t_search_4
             // 
-            this.t_search_13.Animated = true;
-            this.t_search_13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.t_search_13.BorderRadius = 10;
-            this.t_search_13.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.t_search_13.CustomizableEdges.BottomRight = false;
-            this.t_search_13.CustomizableEdges.TopRight = false;
-            this.t_search_13.DefaultText = "";
-            this.t_search_13.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_search_13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_search_13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_search_13.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_search_13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_search_13.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_search_13.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.t_search_13.ForeColor = System.Drawing.Color.White;
-            this.t_search_13.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_search_13.Location = new System.Drawing.Point(136, 594);
-            this.t_search_13.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.t_search_13.Name = "t_search_13";
-            this.t_search_13.PasswordChar = '\0';
-            this.t_search_13.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.t_search_13.PlaceholderText = "بحث";
-            this.t_search_13.SelectedText = "";
-            this.t_search_13.Size = new System.Drawing.Size(371, 30);
-            this.t_search_13.TabIndex = 77;
-            this.t_search_13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_search_4.Animated = true;
+            this.t_search_4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.t_search_4.BorderRadius = 10;
+            this.t_search_4.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.t_search_4.CustomizableEdges.BottomRight = false;
+            this.t_search_4.CustomizableEdges.TopRight = false;
+            this.t_search_4.DefaultText = "";
+            this.t_search_4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.t_search_4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.t_search_4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.t_search_4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.t_search_4.FocusedState.BorderColor = System.Drawing.Color.Plum;
+            this.t_search_4.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.t_search_4.ForeColor = System.Drawing.Color.White;
+            this.t_search_4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.t_search_4.Location = new System.Drawing.Point(136, 594);
+            this.t_search_4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.t_search_4.Name = "t_search_4";
+            this.t_search_4.PasswordChar = '\0';
+            this.t_search_4.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.t_search_4.PlaceholderText = "بحث";
+            this.t_search_4.SelectedText = "";
+            this.t_search_4.Size = new System.Drawing.Size(371, 30);
+            this.t_search_4.TabIndex = 77;
+            this.t_search_4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_search_4.TextChanged += new System.EventHandler(this.t_search_4_TextChanged);
             // 
             // b_edit_4
             // 
@@ -171,32 +172,32 @@
             this.b_edit_4.TextFormatNoPrefix = true;
             this.b_edit_4.Click += new System.EventHandler(this.b_edit_4_Click);
             // 
-            // b_search_13
+            // b_search_4
             // 
-            this.b_search_13.Animated = true;
-            this.b_search_13.AutoRoundedCorners = true;
-            this.b_search_13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.BorderRadius = 14;
-            this.b_search_13.BorderThickness = 1;
-            this.b_search_13.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.CustomizableEdges.BottomLeft = false;
-            this.b_search_13.CustomizableEdges.TopLeft = false;
-            this.b_search_13.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.b_search_13.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.b_search_13.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.b_search_13.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.b_search_13.ForeColor = System.Drawing.Color.White;
-            this.b_search_13.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_search_13.Image = ((System.Drawing.Image)(resources.GetObject("b_search_13.Image")));
-            this.b_search_13.Location = new System.Drawing.Point(470, 594);
-            this.b_search_13.Name = "b_search_13";
-            this.b_search_13.Size = new System.Drawing.Size(39, 30);
-            this.b_search_13.TabIndex = 78;
+            this.b_search_4.Animated = true;
+            this.b_search_4.AutoRoundedCorners = true;
+            this.b_search_4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.BorderRadius = 14;
+            this.b_search_4.BorderThickness = 1;
+            this.b_search_4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.CheckedState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.CustomizableEdges.BottomLeft = false;
+            this.b_search_4.CustomizableEdges.TopLeft = false;
+            this.b_search_4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_search_4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_search_4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_search_4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.b_search_4.ForeColor = System.Drawing.Color.White;
+            this.b_search_4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_search_4.Image = ((System.Drawing.Image)(resources.GetObject("b_search_4.Image")));
+            this.b_search_4.Location = new System.Drawing.Point(470, 594);
+            this.b_search_4.Name = "b_search_4";
+            this.b_search_4.Size = new System.Drawing.Size(39, 30);
+            this.b_search_4.TabIndex = 78;
             // 
             // b_delete_4
             // 
@@ -224,35 +225,36 @@
             this.b_delete_4.Text = "حذف";
             this.b_delete_4.TextFormatNoPrefix = true;
             // 
-            // guna2Button2
+            // b_add_emp_4
             // 
-            this.guna2Button2.Animated = true;
-            this.guna2Button2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button2.BorderRadius = 10;
-            this.guna2Button2.BorderThickness = 1;
-            this.guna2Button2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2Button2.CustomizableEdges.BottomLeft = false;
-            this.guna2Button2.CustomizableEdges.TopLeft = false;
-            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.guna2Button2.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.guna2Button2.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button2.Image")));
-            this.guna2Button2.ImageSize = new System.Drawing.Size(18, 18);
-            this.guna2Button2.Location = new System.Drawing.Point(910, 588);
-            this.guna2Button2.Name = "guna2Button2";
-            this.guna2Button2.ShadowDecoration.BorderRadius = 0;
-            this.guna2Button2.Size = new System.Drawing.Size(140, 40);
-            this.guna2Button2.TabIndex = 75;
-            this.guna2Button2.TabStop = false;
-            this.guna2Button2.Text = "إضافة موظف";
-            this.guna2Button2.TextFormatNoPrefix = true;
+            this.b_add_emp_4.Animated = true;
+            this.b_add_emp_4.BackColor = System.Drawing.Color.Transparent;
+            this.b_add_emp_4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_add_emp_4.BorderRadius = 10;
+            this.b_add_emp_4.BorderThickness = 1;
+            this.b_add_emp_4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_add_emp_4.CustomizableEdges.BottomLeft = false;
+            this.b_add_emp_4.CustomizableEdges.TopLeft = false;
+            this.b_add_emp_4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_add_emp_4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_add_emp_4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_add_emp_4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_add_emp_4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_add_emp_4.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_add_emp_4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_add_emp_4.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_add_emp_4.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_add_emp_4.Image = ((System.Drawing.Image)(resources.GetObject("b_add_emp_4.Image")));
+            this.b_add_emp_4.ImageSize = new System.Drawing.Size(18, 18);
+            this.b_add_emp_4.Location = new System.Drawing.Point(910, 588);
+            this.b_add_emp_4.Name = "b_add_emp_4";
+            this.b_add_emp_4.ShadowDecoration.BorderRadius = 0;
+            this.b_add_emp_4.Size = new System.Drawing.Size(140, 40);
+            this.b_add_emp_4.TabIndex = 75;
+            this.b_add_emp_4.TabStop = false;
+            this.b_add_emp_4.Text = "إضافة موظف";
+            this.b_add_emp_4.TextFormatNoPrefix = true;
+            this.b_add_emp_4.Click += new System.EventHandler(this.b_add_emp_4_Click);
             // 
             // F_EMP_ACCOUNT_4
             // 
@@ -261,10 +263,10 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(1062, 641);
             this.Controls.Add(this.b_edit_4);
-            this.Controls.Add(this.b_search_13);
-            this.Controls.Add(this.t_search_13);
+            this.Controls.Add(this.b_search_4);
+            this.Controls.Add(this.t_search_4);
             this.Controls.Add(this.b_delete_4);
-            this.Controls.Add(this.guna2Button2);
+            this.Controls.Add(this.b_add_emp_4);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgv_4);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
@@ -281,10 +283,10 @@
 
         public System.Windows.Forms.DataGridView dgv_4;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button b_add_emp_4;
         private Guna.UI2.WinForms.Guna2Button b_delete_4;
-        private Guna.UI2.WinForms.Guna2Button b_search_13;
-        internal Guna.UI2.WinForms.Guna2TextBox t_search_13;
+        private Guna.UI2.WinForms.Guna2Button b_search_4;
+        internal Guna.UI2.WinForms.Guna2TextBox t_search_4;
         private Guna.UI2.WinForms.Guna2Button b_edit_4;
     }
 }
