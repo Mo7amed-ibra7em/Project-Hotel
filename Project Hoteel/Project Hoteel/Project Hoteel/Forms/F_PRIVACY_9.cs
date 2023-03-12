@@ -206,5 +206,45 @@ namespace Project_Hoteel
             F_ROOMS_12 f_12 = new F_ROOMS_12();
             l_changePassword_9.ForeColor = f_12.l_add_rooms_12.ForeColor;
         }
+
+        private void F_PRIVACY_9_Load(object sender, EventArgs e)
+        {
+            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select emp_name, sex_emp, age_emp, type_emp_name, telephon_emp, email_emp from SECURITY_LOGIN where username = '"+f_2.username.ToString()+"' and password = '"+f_2.password.ToString() +"';";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    t_emp_name_9.Text = dread["emp_name"].ToString();
+                    t_sex_9.Text = dread["sex_emp"].ToString();
+                    t_age_9.Text = dread["age_emp"].ToString();
+                    t_type_emp_9.Text = dread["type_emp_name"].ToString();
+                    t_telephone_number_9.Text = dread["telephon_emp"].ToString();
+                    t_email_9.Text = dread["email_emp"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+        }
     }
 }

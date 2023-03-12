@@ -92,5 +92,24 @@ namespace Project_Hoteel
             pnl_line3_16.Visible = false;
             pnl_line4_16.Visible = true;
         }
+
+        private void F_SETTINGS_ADMIN_16_Load(object sender, EventArgs e)
+        {
+            pnl_load_form_16.Controls.Clear();
+            F_PRIVACY_9 f_9 = new F_PRIVACY_9();
+            f_9.TopLevel = false;
+            pnl_load_form_16.Controls.Add(f_9);
+            f_9.Show();
+            //
+            F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
+            b_privac_16.BackColor = f_1.BackColor;
+            b_rooms_16.BackColor = pnl_admin_1.BackColor;
+            b_customize_16.BackColor = pnl_admin_1.BackColor;
+            b_about_16.BackColor = pnl_admin_1.BackColor;
+            pnl_line1_16.Visible = true;
+            pnl_line2_16.Visible = false;
+            pnl_line3_16.Visible = false;
+            pnl_line4_16.Visible = false;
+        }
     }
 }

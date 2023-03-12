@@ -328,5 +328,15 @@ namespace Project_Hoteel
             [DllImportAttribute("user32.dll")]
             public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
         }
+
+        private void l_forget_password_2_MouseHover(object sender, EventArgs e)
+        {
+            l_forget_password_2.ForeColor = Color.White;
+        }
+
+        private void l_forget_password_2_MouseLeave(object sender, EventArgs e)
+        {
+            l_forget_password_2.ForeColor = Color.CornflowerBlue;
+        }
     }
 }

@@ -542,7 +542,7 @@
             this.cbox_type_room_12.ItemHeight = 26;
             this.cbox_type_room_12.Items.AddRange(new object[] {
             "مفردة",
-            "ثنائية",
+            "مزدوجة",
             "ثلاثية",
             "سويت"});
             this.cbox_type_room_12.Location = new System.Drawing.Point(472, 294);

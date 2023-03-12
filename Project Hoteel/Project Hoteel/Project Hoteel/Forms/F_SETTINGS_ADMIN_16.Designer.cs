@@ -200,6 +200,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_SETTINGS_ADMIN_16";
             this.Text = "F_SETTINGS_16";
+            this.Load += new System.EventHandler(this.F_SETTINGS_ADMIN_16_Load);
             this.pnl_admin_1.ResumeLayout(false);
             this.ResumeLayout(false);
 

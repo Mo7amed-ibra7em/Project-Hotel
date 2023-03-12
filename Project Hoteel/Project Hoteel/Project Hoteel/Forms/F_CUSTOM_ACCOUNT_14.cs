@@ -21,10 +21,5 @@ namespace Project_Hoteel
         {
 
         }
-
-        private void t_search_14_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

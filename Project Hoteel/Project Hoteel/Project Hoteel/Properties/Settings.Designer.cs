@@ -33,15 +33,12 @@ namespace Project_Hoteel.Properties {
             }
         }
         
-        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
-        public string Setting {
+        [global::System.Configuration.DefaultSettingValueAttribute("25")]
+        public int Rounder {
             get {
-                return ((string)(this["Setting"]));
-            }
-            set {
-                this["Setting"] = value;
+                return ((int)(this["Rounder"]));
             }
         }
     }

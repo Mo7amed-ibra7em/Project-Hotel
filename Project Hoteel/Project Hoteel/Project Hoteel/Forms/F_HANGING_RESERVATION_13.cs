@@ -96,5 +96,10 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
+
+        private void b_secure_reservation_13_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

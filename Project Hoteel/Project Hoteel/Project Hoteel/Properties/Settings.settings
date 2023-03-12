@@ -10,5 +10,8 @@
 &lt;/SerializableConnectionString&gt;</DesignTimeValue>
       <Value Profile="(Default)">Data Source=M-A-IBRAHEM;Initial Catalog=hoteel;Integrated Security=True</Value>
     </Setting>
+    <Setting Name="Rounder" Type="System.Int32" Scope="Application">
+      <Value Profile="(Default)">25</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

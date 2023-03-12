@@ -43,7 +43,7 @@ namespace Project_Hoteel
                     t_singular_12.Text = dread["P_room"].ToString();
                 }
                 sqlconn.Close();
-                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'ثنائية' group by P_room";
+                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'مزدوجة' group by P_room";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())

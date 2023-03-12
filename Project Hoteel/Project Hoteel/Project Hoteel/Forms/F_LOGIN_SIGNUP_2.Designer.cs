@@ -46,6 +46,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Transition_form_2 = new Guna.UI2.WinForms.Guna2Transition();
+            this.l_forget_password_2 = new System.Windows.Forms.Label();
+            this.BorderlessForm_2 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.picture_cancel_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -85,7 +87,7 @@
             this.l_notificatio_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
             this.l_notificatio_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
             this.l_notificatio_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_notificatio_2.Location = new System.Drawing.Point(71, 277);
+            this.l_notificatio_2.Location = new System.Drawing.Point(71, 561);
             this.l_notificatio_2.Name = "l_notificatio_2";
             this.l_notificatio_2.Size = new System.Drawing.Size(255, 31);
             this.l_notificatio_2.TabIndex = 19;
@@ -221,7 +223,7 @@
             this.b_login_2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
             this.b_login_2.Image = global::Project_Hoteel.Properties.Resources.login___1_;
             this.b_login_2.ImageSize = new System.Drawing.Size(18, 18);
-            this.b_login_2.Location = new System.Drawing.Point(48, 319);
+            this.b_login_2.Location = new System.Drawing.Point(48, 300);
             this.b_login_2.Name = "b_login_2";
             this.b_login_2.ShadowDecoration.BorderRadius = 0;
             this.b_login_2.Size = new System.Drawing.Size(300, 29);
@@ -311,6 +313,39 @@
             animation2.TransparencyCoeff = 1F;
             this.Transition_form_2.DefaultAnimation = animation2;
             // 
+            // l_forget_password_2
+            // 
+            this.l_forget_password_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l_forget_password_2.BackColor = System.Drawing.Color.Transparent;
+            this.Transition_form_2.SetDecoration(this.l_forget_password_2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_forget_password_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.l_forget_password_2.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_forget_password_2.ForeColor = System.Drawing.Color.CornflowerBlue;
+            this.l_forget_password_2.Location = new System.Drawing.Point(48, 334);
+            this.l_forget_password_2.Name = "l_forget_password_2";
+            this.l_forget_password_2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.l_forget_password_2.Size = new System.Drawing.Size(139, 31);
+            this.l_forget_password_2.TabIndex = 100;
+            this.l_forget_password_2.Text = "Forget Password";
+            this.l_forget_password_2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.l_forget_password_2.MouseLeave += new System.EventHandler(this.l_forget_password_2_MouseLeave);
+            this.l_forget_password_2.MouseHover += new System.EventHandler(this.l_forget_password_2_MouseHover);
+            // 
+            // BorderlessForm_2
+            // 
+            this.BorderlessForm_2.AnimateWindow = true;
+            this.BorderlessForm_2.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_POSITIVE;
+            this.BorderlessForm_2.BorderRadius = 25;
+            this.BorderlessForm_2.ContainerControl = this;
+            this.BorderlessForm_2.DockForm = false;
+            this.BorderlessForm_2.DockIndicatorColor = System.Drawing.SystemColors.Window;
+            this.BorderlessForm_2.DockIndicatorTransparencyValue = 0.6D;
+            this.BorderlessForm_2.DragForm = false;
+            this.BorderlessForm_2.DragStartTransparencyValue = 0.5D;
+            this.BorderlessForm_2.HasFormShadow = false;
+            this.BorderlessForm_2.ResizeForm = false;
+            this.BorderlessForm_2.TransparentWhileDrag = true;
+            // 
             // F_LOGIN_SIGNUP_2
             // 
             this.AcceptButton = this.b_login_2;
@@ -318,6 +353,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(399, 601);
+            this.Controls.Add(this.l_forget_password_2);
             this.Controls.Add(this.t_email_2);
             this.Controls.Add(this.b_login_2);
             this.Controls.Add(this.l_username_2);
@@ -333,6 +369,7 @@
             this.Controls.Add(this.l_notificatio_2);
             this.Transition_form_2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Secondary;
             this.Name = "F_LOGIN_SIGNUP_2";
             this.Opacity = 0.93D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -365,5 +402,7 @@
         private System.Windows.Forms.TextBox t_email_2;
         public System.Windows.Forms.Label l_notificatio_2;
         private Guna.UI2.WinForms.Guna2Transition Transition_form_2;
+        private Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm_2;
+        private System.Windows.Forms.Label l_forget_password_2;
     }
 }

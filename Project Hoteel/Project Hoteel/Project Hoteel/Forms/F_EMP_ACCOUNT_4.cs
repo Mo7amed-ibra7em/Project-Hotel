@@ -15,7 +15,7 @@ namespace Project_Hoteel
     {
 
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
-        bool Expand = false;
+        //public bool btn_4 = false;
         public F_EMP_ACCOUNT_4()
         {
             InitializeComponent();
@@ -71,7 +71,6 @@ namespace Project_Hoteel
                 b_edit_4.BorderColor = b_delete_4.BorderColor;
                 int ID = Convert.ToInt32(dgv_4.CurrentRow.Cells[0].Value);
 
-
                 SqlConnection sqlconn = new SqlConnection();
                 try
                 {
@@ -85,7 +84,7 @@ namespace Project_Hoteel
                 {
                     SqlCommand sqlcmd = new SqlCommand();
                     sqlcmd.Connection = sqlconn;
-                    sqlcmd.CommandText = "UPDATE F_RESIDENTS_10 SET inmates_name = '" + dgv_4.CurrentRow.Cells[1].Value + "' , nationality = '" + dgv_4.CurrentRow.Cells[2].Value + "' , age = " + dgv_4.CurrentRow.Cells[3].Value + " , identification_number = " + dgv_4.CurrentRow.Cells[4].Value + " , telephone_number = " + dgv_4.CurrentRow.Cells[5].Value + " , wife_name = '" + dgv_4.CurrentRow.Cells[6].Value + "' , wife_identity_number = " + dgv_4.CurrentRow.Cells[7].Value + " , number_of_individuals = " + dgv_4.CurrentRow.Cells[8].Value + " , room_type = '" + dgv_4.CurrentRow.Cells[9].Value + "' , n_room = " + dgv_4.CurrentRow.Cells[10].Value + " , reservation_date = '" + dgv_4.CurrentRow.Cells[11].Value.ToString() + "' , reservation_expires = '" + dgv_4.CurrentRow.Cells[12].Value.ToString() + "' , Price = " + dgv_4.CurrentRow.Cells[13].Value + " where Id = " + ID + "";
+                    sqlcmd.CommandText = "update SECURITY_LOGIN set emp_name ='" + dgv_4.CurrentRow.Cells[1].Value.ToString() + "', telephon_emp =" + dgv_4.CurrentRow.Cells[2].Value + ", sex_emp ='" + dgv_4.CurrentRow.Cells[3].Value.ToString() + "', age_emp =" + dgv_4.CurrentRow.Cells[4].Value + ", username ='" + dgv_4.CurrentRow.Cells[5].Value.ToString() + "', password ='" + dgv_4.CurrentRow.Cells[6].Value.ToString() + "', salary_emp ='" + dgv_4.CurrentRow.Cells[7].Value.ToString() +"', type_emp_name ='" + dgv_4.CurrentRow.Cells[8].Value.ToString() +"', start_date ='" + dgv_4.CurrentRow.Cells[9].Value.ToString() +"', email_emp ='" + dgv_4.CurrentRow.Cells[10].Value.ToString() +"' where id = " + ID + ";";
                     sqlconn.Open();
                     sqlcmd.ExecuteNonQuery();
                 }
@@ -99,7 +98,7 @@ namespace Project_Hoteel
                 }
                 ///
                 //Refresh
-                //
+                ///
                 try
                 {
                     sqlconn.ConnectionString = connstr;
@@ -166,7 +165,6 @@ namespace Project_Hoteel
         private void b_add_emp_4_Click(object sender, EventArgs e)
         {
             F_MANAGER_FORM_1 f_1 = Application.OpenForms["F_MANAGER_FORM_1"] as F_MANAGER_FORM_1;
-            Expand = true;
             /////
             f_1.pnl_load_form_1.Controls.Clear();
             F_SETTINGS_MANAGER_18 f_18 = new F_SETTINGS_MANAGER_18();
@@ -174,7 +172,7 @@ namespace Project_Hoteel
             f_1.pnl_load_form_1.Controls.Add(f_18);
             f_18.Show();
             f_18.BringToFront();
-            ////
+
             f_1.b_settings_1.BackColor = f_1.BackColor;
             f_1.b_custom_account_1.BackColor = f_1.pnl_manager_1.BackColor;
             f_1.b_emp_account_1.BackColor = f_1.pnl_manager_1.BackColor;
@@ -189,7 +187,7 @@ namespace Project_Hoteel
 
             f_18.b_privac_18.FillColor = f_18.pnl_manager_18.BackColor;
             f_18.b_privac_18.BorderColor = Color.CornflowerBlue;
-            f_18.b_acc_emp_18.FillColor = this.BackColor;
+            f_18.b_acc_emp_18.BackColor = this.BackColor;
             f_18.b_acc_emp_18.BorderColor = Color.Thistle;
             f_18.b_customize_18.FillColor = f_18.pnl_manager_18.BackColor;
             f_18.b_customize_18.BorderColor = Color.CornflowerBlue;
@@ -202,9 +200,67 @@ namespace Project_Hoteel
             f_18.pnl_load_form_18.Controls.Add(f_19);
             f_19.Show();
             ////
-            f_18.b_acc_emp_18.FillColor = this.BackColor;
-            f_18.b_acc_emp_18.UseTransparentBackground = true;
+            f_18.b_acc_emp_18.BackColor = f_1.pnl_manager_1.BackColor;
+            f_18.b_acc_emp_18.FillColor = f_1.pnl_manager_1.BackColor;
+            f_18.b_acc_emp_18.UseTransparentBackground = false;
+        }
 
+        private void b_delete_4_Click(object sender, EventArgs e)
+        {
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            try
+            {
+                SqlCommand sqlcmd = new SqlCommand();
+                sqlcmd.Connection = sqlconn;
+                sqlcmd.CommandText = "delete from SECURITY_LOGIN where id = " + dgv_4.CurrentRow.Cells[0].Value + ";";
+                sqlconn.Open();
+                sqlcmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+            ////Refresh
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd1 = new SqlCommand();
+            sqlcmd1.Connection = sqlconn;
+            sqlcmd1.CommandText = "select id as 'الرقم الافتراضي', emp_name as 'اسم الموظف',telephon_emp 'رقم الهاتف',sex_emp as 'الجنس',age_emp as 'العمر',username 'اسم المستخدم',password 'كلمة المرور',salary_emp 'الراتب',type_emp_name 'العمل',start_date 'تاريخ البدء',email_emp 'البريد الالكتروني' from SECURITY_LOGIN where type_emp_index != 3 ";
+            SqlDataAdapter sqladap = new SqlDataAdapter();
+            sqladap.SelectCommand = sqlcmd1;
+            DataTable mylist = new DataTable();
+            try
+            {
+                sqlconn.Open();
+                sqladap.Fill(mylist);
+                dgv_4.DataSource = mylist;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
         }
     }
 }

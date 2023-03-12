@@ -194,7 +194,6 @@
             this.t_search_14.Size = new System.Drawing.Size(371, 30);
             this.t_search_14.TabIndex = 75;
             this.t_search_14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_search_14.TextChanged += new System.EventHandler(this.t_search_14_TextChanged);
             // 
             // F_CUSTOM_ACCOUNT_14
             // 

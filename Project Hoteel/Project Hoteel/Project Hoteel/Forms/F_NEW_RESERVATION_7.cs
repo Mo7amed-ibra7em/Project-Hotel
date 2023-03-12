@@ -38,8 +38,8 @@ namespace Project_Hoteel
             }
             else
             {
-                WifeName = "#####";
-                iNumber  = "#####";
+                WifeName = "####";
+                iNumber = "0";
             }
 
             t_number_all_7.Text=people_all.ToString();

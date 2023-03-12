@@ -250,6 +250,7 @@
             // 
             this.radio_bb_8.Animated = true;
             this.radio_bb_8.AutoSize = true;
+            this.radio_bb_8.Checked = true;
             this.radio_bb_8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radio_bb_8.CheckedState.BorderThickness = 1;
             this.radio_bb_8.CheckedState.FillColor = System.Drawing.Color.Transparent;
@@ -262,6 +263,7 @@
             this.radio_bb_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.radio_bb_8.Size = new System.Drawing.Size(49, 22);
             this.radio_bb_8.TabIndex = 42;
+            this.radio_bb_8.TabStop = true;
             this.radio_bb_8.Text = "BB";
             this.radio_bb_8.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
             this.radio_bb_8.UncheckedState.BorderThickness = 1;

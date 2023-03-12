@@ -79,7 +79,7 @@
             this.b_close_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
             this.b_close_1.Image = ((System.Drawing.Image)(resources.GetObject("b_close_1.Image")));
             this.b_close_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_close_1.Location = new System.Drawing.Point(0, 600);
+            this.b_close_1.Location = new System.Drawing.Point(0, 559);
             this.b_close_1.MaximumSize = new System.Drawing.Size(182, 41);
             this.b_close_1.Name = "b_close_1";
             this.b_close_1.Size = new System.Drawing.Size(182, 41);
@@ -92,7 +92,7 @@
             // 
             this.pnl_line4_1.BackColor = System.Drawing.Color.CornflowerBlue;
             this.pnl_line4_1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.pnl_line4_1.Location = new System.Drawing.Point(179, 552);
+            this.pnl_line4_1.Location = new System.Drawing.Point(179, 600);
             this.pnl_line4_1.Name = "pnl_line4_1";
             this.pnl_line4_1.Size = new System.Drawing.Size(3, 40);
             this.pnl_line4_1.TabIndex = 3;
@@ -131,6 +131,7 @@
             // b_settings_1
             // 
             this.b_settings_1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
+            this.b_settings_1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.b_settings_1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.b_settings_1.FlatAppearance.BorderSize = 0;
             this.b_settings_1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -138,7 +139,7 @@
             this.b_settings_1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(184)))), ((int)(((byte)(255)))));
             this.b_settings_1.Image = ((System.Drawing.Image)(resources.GetObject("b_settings_1.Image")));
             this.b_settings_1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.b_settings_1.Location = new System.Drawing.Point(0, 551);
+            this.b_settings_1.Location = new System.Drawing.Point(0, 600);
             this.b_settings_1.MaximumSize = new System.Drawing.Size(182, 41);
             this.b_settings_1.Name = "b_settings_1";
             this.b_settings_1.Size = new System.Drawing.Size(182, 41);

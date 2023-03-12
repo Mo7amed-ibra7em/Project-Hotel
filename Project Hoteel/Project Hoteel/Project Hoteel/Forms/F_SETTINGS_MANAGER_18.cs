@@ -16,7 +16,7 @@ namespace Project_Hoteel
         public bool acc_emp_18 = false;
         bool customize_18 = false;
         bool about_18 = false;
-        int fresh = 0;
+        public int refresh = 0;
 
         public F_SETTINGS_MANAGER_18()
         {
@@ -128,7 +128,7 @@ namespace Project_Hoteel
             pnl_load_form_18.Controls.Add(f_20);
             f_20.Show();
             ////
-            fresh = 1;
+            refresh = 1;
         }
         private void timer_checked_18_Tick(object sender, EventArgs e)
         {
@@ -140,24 +140,25 @@ namespace Project_Hoteel
                 {
                     timer_checked_18.Stop();
                     privac_18 = false;
-                    if (fresh == 2)
+                    if (refresh == 2)
                     {
                         b_acc_emp_18.UseTransparentBackground = true;
                     }
-                    if (fresh == 3)
+                    if (refresh == 3)
                     {
                         b_customize_18.UseTransparentBackground = true;
                     }
-                    if (fresh == 4)
+                    if (refresh == 4)
                     {
                         b_about_18.UseTransparentBackground = true;
                     }
-                    fresh = 1;
+                    refresh = 1;
                 }
             }
             ////
             if (acc_emp_18 == true)
             {
+                F_EMP_ACCOUNT_4 f_4 = Application.OpenForms["F_EMP_ACCOUNT_4"] as F_EMP_ACCOUNT_4;
                 if (pnl_checked_18.Height > b_acc_emp_18.MaximumSize.Height)
                 {
                     pnl_checked_18.MinimumSize = b_acc_emp_18.MinimumSize;
@@ -167,19 +168,19 @@ namespace Project_Hoteel
                         pnl_checked_18.Height = b_acc_emp_18.MinimumSize.Height;
                         timer_checked_18.Stop();
                         acc_emp_18 = false;
-                        if (fresh == 1)
+                        if (refresh == 1)
                         {
                             b_privac_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 3)
+                        if (refresh == 3)
                         {
                             b_customize_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 4)
+                        if (refresh == 4)
                         {
                             b_about_18.UseTransparentBackground = true;
                         }
-                        fresh = 2;
+                        refresh = 2;
                     }
                 }
                 if (pnl_checked_18.Height < b_acc_emp_18.MaximumSize.Height)
@@ -190,19 +191,19 @@ namespace Project_Hoteel
                     {
                         timer_checked_18.Stop();
                         acc_emp_18 = false;
-                        if (fresh == 1)
+                        if (refresh == 1)
                         {
                             b_privac_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 3)
+                        if (refresh == 3)
                         {
                             b_customize_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 4)
+                        if (refresh == 4)
                         {
                             b_about_18.UseTransparentBackground = true;
                         }
-                        fresh = 2;
+                        refresh = 2;
                     }
                 }
             }
@@ -218,19 +219,19 @@ namespace Project_Hoteel
                         pnl_checked_18.Height = b_customize_18.MinimumSize.Height;
                         timer_checked_18.Stop();
                         customize_18 = false;
-                        if (fresh == 1)
+                        if (refresh == 1)
                         {
                             b_privac_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 2)
+                        if (refresh == 2)
                         {
                             b_acc_emp_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 4)
+                        if (refresh == 4)
                         {
                             b_about_18.UseTransparentBackground = true;
                         }
-                        fresh = 3;
+                        refresh = 3;
                     }
                 }
                 if (pnl_checked_18.Height < b_customize_18.MaximumSize.Height)
@@ -241,19 +242,19 @@ namespace Project_Hoteel
                     {
                         timer_checked_18.Stop();
                         customize_18 = false;
-                        if (fresh == 1)
+                        if (refresh == 1)
                         {
                             b_privac_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 2)
+                        if (refresh == 2)
                         {
                             b_acc_emp_18.UseTransparentBackground = true;
                         }
-                        if (fresh == 4)
+                        if (refresh == 4)
                         {
                             b_about_18.UseTransparentBackground = true;
                         }
-                        fresh = 3;
+                        refresh = 3;
                     }
                 }
             }
@@ -266,19 +267,19 @@ namespace Project_Hoteel
                 {
                     timer_checked_18.Stop();
                     about_18 = false;
-                    if (fresh == 1)
+                    if (refresh == 1)
                     {
                         b_privac_18.UseTransparentBackground = true;
                     }
-                    if (fresh == 2)
+                    if (refresh == 2)
                     {
                         b_acc_emp_18.UseTransparentBackground =     true;
                     }
-                    if (fresh == 3)
+                    if (refresh == 3)
                     {
                         b_customize_18.UseTransparentBackground = true;
                     }
-                    fresh = 4;
+                    refresh = 4;
                 }
             }
 

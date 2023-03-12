@@ -20,12 +20,6 @@ namespace Project_Hoteel
 
         private void b_emp_account_1_Click(object sender, EventArgs e)
         {
-            pnl_load_form_1.Controls.Clear();
-            F_EMP_ACCOUNT_4 f_4 = new F_EMP_ACCOUNT_4();
-            f_4.TopLevel = false;
-            pnl_load_form_1.Controls.Add(f_4);
-            f_4.Show();
-            /////
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_emp_account_1.BackColor = f_1.BackColor;
             b_control_board_1.BackColor = pnl_manager_1.BackColor;
@@ -35,15 +29,15 @@ namespace Project_Hoteel
             pnl_line2_1.Visible = true;
             pnl_line3_1.Visible = false;
             pnl_line4_1.Visible = false;
+            ////
+            pnl_load_form_1.Controls.Clear();
+            F_EMP_ACCOUNT_4 f_4 = new F_EMP_ACCOUNT_4();
+            f_4.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_4);
+            f_4.Show();
         }
         private void b_custom_account_1_Click(object sender, EventArgs e)
         {
-            pnl_load_form_1.Controls.Clear();
-            F_CUSTOM_ACCOUNT_14 f_14 = new F_CUSTOM_ACCOUNT_14();
-            f_14.TopLevel = false;
-            pnl_load_form_1.Controls.Add(f_14);
-            f_14.Show();
-            /////
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_custom_account_1.BackColor = f_1.BackColor;
             b_control_board_1.BackColor = pnl_manager_1.BackColor;
@@ -53,16 +47,16 @@ namespace Project_Hoteel
             pnl_line2_1.Visible = false;
             pnl_line3_1.Visible = true;
             pnl_line4_1.Visible = false;
+            ////
+            pnl_load_form_1.Controls.Clear();
+            F_CUSTOM_ACCOUNT_14 f_14 = new F_CUSTOM_ACCOUNT_14();
+            f_14.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_14);
+            f_14.Show();
         }
 
         private void b_control_board_1_Click_1(object sender, EventArgs e)
         {
-            pnl_load_form_1.Controls.Clear();
-            F_DASHBOARD_3 f_3 = new F_DASHBOARD_3();
-            f_3.TopLevel = false;
-            pnl_load_form_1.Controls.Add(f_3);
-            f_3.Show();
-            //
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_control_board_1.BackColor = f_1.BackColor;
             b_custom_account_1.BackColor = pnl_manager_1.BackColor;
@@ -72,16 +66,16 @@ namespace Project_Hoteel
             pnl_line2_1.Visible = false;
             pnl_line3_1.Visible = false;
             pnl_line4_1.Visible = false;
+            ////
+            pnl_load_form_1.Controls.Clear();
+            F_DASHBOARD_3 f_3 = new F_DASHBOARD_3();
+            f_3.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_3);
+            f_3.Show();
         }
 
         private void b_settings_1_Click(object sender, EventArgs e)
         {
-            pnl_load_form_1.Controls.Clear();
-            F_SETTINGS_MANAGER_18 f_18 = new F_SETTINGS_MANAGER_18();
-            f_18.TopLevel = false;
-            pnl_load_form_1.Controls.Add(f_18);
-            f_18.Show();
-            ///
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_settings_1.BackColor = f_1.BackColor;
             b_custom_account_1.BackColor = pnl_manager_1.BackColor;
@@ -91,20 +85,19 @@ namespace Project_Hoteel
             pnl_line2_1.Visible = false;
             pnl_line3_1.Visible = false;
             pnl_line4_1.Visible = true;
+            ////
+            pnl_load_form_1.Controls.Clear();
+            F_SETTINGS_MANAGER_18 f_18 = new F_SETTINGS_MANAGER_18();
+            f_18.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_18);
+            f_18.Show();
         }
 
         private void F_MANAGER_FORM_1_Load(object sender, EventArgs e)
         {
             F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
             l_user_name_1.Text = f_2.l_user.ToString();
-
-            //////
-            pnl_load_form_1.Controls.Clear();
-            F_DASHBOARD_3 f_3 = new F_DASHBOARD_3();
-            f_3.TopLevel = false;
-            pnl_load_form_1.Controls.Add(f_3);
-            f_3.Show();
-            //
+            /////
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_control_board_1.BackColor = f_1.BackColor;
             b_custom_account_1.BackColor = pnl_manager_1.BackColor;
@@ -114,6 +107,12 @@ namespace Project_Hoteel
             pnl_line2_1.Visible = false;
             pnl_line3_1.Visible = false;
             pnl_line4_1.Visible = false;
+            //////
+            pnl_load_form_1.Controls.Clear();
+            F_DASHBOARD_3 f_3 = new F_DASHBOARD_3();
+            f_3.TopLevel = false;
+            pnl_load_form_1.Controls.Add(f_3);
+            f_3.Show();
         }
 
         private void b_close_1_Click(object sender, EventArgs e)

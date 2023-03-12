@@ -28,18 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_RESIDENTS_10));
             this.dgv_10 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
             this.b_diparting_10 = new Guna.UI2.WinForms.Guna2Button();
-            this.b_edit_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_cancel_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_search_10 = new Guna.UI2.WinForms.Guna2Button();
             this.t_search_10 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.b_edit_10 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_10)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -48,51 +48,51 @@
             // 
             this.dgv_10.AllowUserToAddRows = false;
             this.dgv_10.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_10.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_10.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgv_10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.dgv_10.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_10.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCellsExceptHeaders;
             this.dgv_10.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(45)))), ((int)(((byte)(86)))));
             this.dgv_10.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.Silver;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_10.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.Silver;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_10.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgv_10.ColumnHeadersHeight = 40;
             this.dgv_10.Cursor = System.Windows.Forms.Cursors.Default;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.Lavender;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_10.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.Lavender;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_10.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_10.EnableHeadersVisualStyles = false;
             this.dgv_10.GridColor = System.Drawing.Color.White;
             this.dgv_10.Location = new System.Drawing.Point(12, 22);
             this.dgv_10.Name = "dgv_10";
             this.dgv_10.ReadOnly = true;
             this.dgv_10.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.LightSteelBlue;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Tahoma", 8F);
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.CadetBlue;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_10.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.LightSteelBlue;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Tahoma", 8F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.CadetBlue;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_10.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_10.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             this.dgv_10.RowTemplate.Height = 26;
             this.dgv_10.Size = new System.Drawing.Size(867, 374);
@@ -101,8 +101,8 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.b_diparting_10);
             this.panel1.Controls.Add(this.b_edit_10);
+            this.panel1.Controls.Add(this.b_diparting_10);
             this.panel1.Controls.Add(this.b_cancel_10);
             this.panel1.Controls.Add(this.b_search_10);
             this.panel1.Controls.Add(this.t_search_10);
@@ -143,38 +143,6 @@
             this.b_diparting_10.Text = "مغادر";
             this.b_diparting_10.TextFormatNoPrefix = true;
             this.b_diparting_10.Click += new System.EventHandler(this.b_diparting_10_Click);
-            // 
-            // b_edit_10
-            // 
-            this.b_edit_10.Animated = true;
-            this.b_edit_10.BackColor = System.Drawing.Color.Transparent;
-            this.b_edit_10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_10.BorderRadius = 10;
-            this.b_edit_10.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.b_edit_10.BorderThickness = 1;
-            this.b_edit_10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.b_edit_10.CustomizableEdges.BottomRight = false;
-            this.b_edit_10.CustomizableEdges.TopRight = false;
-            this.b_edit_10.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.b_edit_10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.b_edit_10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.b_edit_10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_edit_10.Font = new System.Drawing.Font("PT Bold Heading", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_edit_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_10.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.b_edit_10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.b_edit_10.ImageSize = new System.Drawing.Size(18, 18);
-            this.b_edit_10.Location = new System.Drawing.Point(592, 414);
-            this.b_edit_10.Name = "b_edit_10";
-            this.b_edit_10.ShadowDecoration.BorderRadius = 0;
-            this.b_edit_10.Size = new System.Drawing.Size(140, 40);
-            this.b_edit_10.TabIndex = 74;
-            this.b_edit_10.TabStop = false;
-            this.b_edit_10.Text = "تعديل";
-            this.b_edit_10.TextFormatNoPrefix = true;
-            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
             // 
             // b_cancel_10
             // 
@@ -262,6 +230,37 @@
             this.t_search_10.TabIndex = 71;
             this.t_search_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_search_10.TextChanged += new System.EventHandler(this.t_search_10_TextChanged);
+            // 
+            // b_edit_10
+            // 
+            this.b_edit_10.Animated = true;
+            this.b_edit_10.BackColor = System.Drawing.Color.Transparent;
+            this.b_edit_10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_10.BorderRadius = 10;
+            this.b_edit_10.BorderThickness = 1;
+            this.b_edit_10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_edit_10.CustomizableEdges.BottomRight = false;
+            this.b_edit_10.CustomizableEdges.TopRight = false;
+            this.b_edit_10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_edit_10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_edit_10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_edit_10.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_edit_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_10.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_edit_10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_edit_10.Image = global::Project_Hoteel.Properties.Resources.edit__3_;
+            this.b_edit_10.ImageSize = new System.Drawing.Size(23, 23);
+            this.b_edit_10.Location = new System.Drawing.Point(592, 414);
+            this.b_edit_10.Name = "b_edit_10";
+            this.b_edit_10.ShadowDecoration.BorderRadius = 0;
+            this.b_edit_10.Size = new System.Drawing.Size(140, 40);
+            this.b_edit_10.TabIndex = 81;
+            this.b_edit_10.TabStop = false;
+            this.b_edit_10.Text = "تعديل";
+            this.b_edit_10.TextFormatNoPrefix = true;
+            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
             // 
             // F_RESIDENTS_10
             // 

@@ -59,11 +59,11 @@
             this.l_notificatio_20 = new System.Windows.Forms.Label();
             this.label_19 = new System.Windows.Forms.Label();
             this.Transition_1_20 = new Guna.UI2.WinForms.Guna2Transition();
-            this.Transition_2_20 = new Guna.UI2.WinForms.Guna2Transition();
             this.label6 = new System.Windows.Forms.Label();
             this.t_username_new_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.t_username_old_20 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Transition_2_20 = new Guna.UI2.WinForms.Guna2Transition();
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -657,27 +657,6 @@
             this.Transition_1_20.DefaultAnimation = animation1;
             this.Transition_1_20.TimeStep = 0.01F;
             // 
-            // Transition_2_20
-            // 
-            this.Transition_2_20.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
-            this.Transition_2_20.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.Transition_2_20.DefaultAnimation = animation2;
-            // 
             // label6
             // 
             this.label6.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -773,6 +752,27 @@
             this.t_username_old_20.Size = new System.Drawing.Size(229, 32);
             this.t_username_old_20.TabIndex = 103;
             this.t_username_old_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // Transition_2_20
+            // 
+            this.Transition_2_20.AnimationType = Guna.UI2.AnimatorNS.AnimationType.ScaleAndHorizSlide;
+            this.Transition_2_20.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(30, 0, 0, 0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.Transition_2_20.DefaultAnimation = animation2;
             // 
             // F_PRIVACY_MANAGER_20
             // 
