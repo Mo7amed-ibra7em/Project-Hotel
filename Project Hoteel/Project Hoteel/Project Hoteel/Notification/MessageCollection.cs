@@ -12,7 +12,6 @@ namespace Project_Hoteel.Notification
 
     internal class MessageCollection
     {   
-       
         public static void showNatification(string l_notificatio)
         { 
             SoundPlayer _soundPlayer = new SoundPlayer(soundLocation: @"C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\Sound\Background_Sound.wav");

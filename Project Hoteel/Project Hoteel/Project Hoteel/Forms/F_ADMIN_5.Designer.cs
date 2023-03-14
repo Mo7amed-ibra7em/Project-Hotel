@@ -58,6 +58,7 @@
             this.timer_menu = new System.Windows.Forms.Timer(this.components);
             this.pnl_load_form_5 = new System.Windows.Forms.Panel();
             this.PB_menu_5 = new System.Windows.Forms.PictureBox();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.PB_list_bg_5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_weather_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_language_5)).BeginInit();
@@ -559,6 +560,18 @@
             this.PB_menu_5.TabStop = false;
             this.PB_menu_5.Click += new System.EventHandler(this.PB_menu_5_Click);
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.AnimateWindow = true;
+            this.guna2BorderlessForm1.AnimationInterval = 400;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockForm = false;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.DragForm = false;
+            this.guna2BorderlessForm1.HasFormShadow = false;
+            this.guna2BorderlessForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // F_ADMIN_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -566,8 +579,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(951, 467);
-            this.Controls.Add(this.pnl_load_form_5);
             this.Controls.Add(this.PB_menu_5);
+            this.Controls.Add(this.pnl_load_form_5);
             this.Controls.Add(this.PB_list_bg_5);
             this.DoubleBuffered = true;
             this.ForeColor = System.Drawing.Color.Black;
@@ -617,5 +630,6 @@
         public System.Windows.Forms.Panel pnl_load_form_5;
         public System.Windows.Forms.Button button7;
         public System.Windows.Forms.Button button11;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

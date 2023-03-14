@@ -16,6 +16,7 @@ namespace Project_Hoteel
     {
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
         string password = "";
+        Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
         public F_PRIVACY_MANAGER_20()
         {
             InitializeComponent();
@@ -131,7 +132,7 @@ namespace Project_Hoteel
 
         private void b_change_password_9_Click(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_2;
 
 
             SqlConnection sqlconn = new SqlConnection();
@@ -153,7 +154,7 @@ namespace Project_Hoteel
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
                 {
-                    f_2.password = Convert.ToString(dread["password"]);
+                    Class_Forms.Login_2.C_LOGIN_2.password = Convert.ToString(dread["password"]);
                 }
             }
             catch (Exception ex)
@@ -181,11 +182,11 @@ namespace Project_Hoteel
             //{
             //    L_20.Text = "!... ادخل كلمة المرور الجديدة ";
             //}
-            else if (t_password_old_20.Text != Convert.ToString(f_2.password))
+            else if (t_password_old_20.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password))
             {
                 L_20.Text = "!... اسم المستخدم او كلمة المرور خطأ ";
             }
-            else if (t_password_old_20.Text == Convert.ToString(f_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "" || t_password_old_20.Text != Convert.ToString(f_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "")
+            else if (t_password_old_20.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "" || t_password_old_20.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "")
             {
                 L_20.Text = "!... أعد كتابة كلمة المرور ";
             }
@@ -195,7 +196,7 @@ namespace Project_Hoteel
                 t_password_new_20.Text = "";
                 t_password_new_2_20.Text = "";
             }
-            else if (t_password_old_20.Text == Convert.ToString(f_2.password) && t_password_new_20.Text == t_password_new_2_20.Text && t_password_new_20.Text != "")
+            else if (t_password_old_20.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_20.Text == t_password_new_2_20.Text && t_password_new_20.Text != "")
             {
 
                 SqlConnection sqlconn1 = new SqlConnection();

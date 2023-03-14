@@ -84,7 +84,7 @@ namespace Project_Hoteel
                 {
                     SqlCommand sqlcmd = new SqlCommand();
                     sqlcmd.Connection = sqlconn;
-                    sqlcmd.CommandText = "update SECURITY_LOGIN set emp_name ='" + dgv_4.CurrentRow.Cells[1].Value.ToString() + "', telephon_emp =" + dgv_4.CurrentRow.Cells[2].Value + ", sex_emp ='" + dgv_4.CurrentRow.Cells[3].Value.ToString() + "', age_emp =" + dgv_4.CurrentRow.Cells[4].Value + ", username ='" + dgv_4.CurrentRow.Cells[5].Value.ToString() + "', password ='" + dgv_4.CurrentRow.Cells[6].Value.ToString() + "', salary_emp ='" + dgv_4.CurrentRow.Cells[7].Value.ToString() +"', type_emp_name ='" + dgv_4.CurrentRow.Cells[8].Value.ToString() +"', start_date ='" + dgv_4.CurrentRow.Cells[9].Value.ToString() +"', email_emp ='" + dgv_4.CurrentRow.Cells[10].Value.ToString() +"' where id = " + ID + ";";
+                    sqlcmd.CommandText = "update SECURITY_LOGIN set emp_name ='" + dgv_4.CurrentRow.Cells[1].Value.ToString() + "', telephon_emp =" + dgv_4.CurrentRow.Cells[2].Value + ", sex_emp ='" + dgv_4.CurrentRow.Cells[3].Value.ToString() + "', age_emp =" + dgv_4.CurrentRow.Cells[4].Value + ", username ='" + dgv_4.CurrentRow.Cells[5].Value.ToString() + "', password ='" + dgv_4.CurrentRow.Cells[6].Value.ToString() + "', salary_emp ='" + dgv_4.CurrentRow.Cells[7].Value.ToString() +"',/* type_emp_name ='" + dgv_4.CurrentRow.Cells[8].Value.ToString() +"', start_date ='" + dgv_4.CurrentRow.Cells[9].Value.ToString() +"',*/ email_emp ='" + dgv_4.CurrentRow.Cells[10].Value.ToString() +"' where id = " + ID + ";";
                     sqlconn.Open();
                     sqlcmd.ExecuteNonQuery();
                 }

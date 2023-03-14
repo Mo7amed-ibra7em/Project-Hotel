@@ -17,6 +17,7 @@ namespace Project_Hoteel
     public partial class F_PRIVACY_9 : Form
     {        
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
 
         bool Pass = false;
         private int _ticks;
@@ -27,7 +28,7 @@ namespace Project_Hoteel
 
         private void b_change_password_9_Click(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_2;
 
 
             SqlConnection sqlconn = new SqlConnection();
@@ -49,7 +50,7 @@ namespace Project_Hoteel
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
                 {
-                    f_2.password = Convert.ToString(dread["password"]);
+                    Class_Forms.Login_2.C_LOGIN_2.password = Convert.ToString(dread["password"]);
                 }
             }
             catch (Exception ex)
@@ -65,7 +66,7 @@ namespace Project_Hoteel
             {
                 l_notificatio_9.Text = "!... ادخل معلوماتك";
             }
-            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == "" &&t_password_new_2_9.Text == "")
+            else if (t_password_old_9.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_9.Text == "" &&t_password_new_2_9.Text == "")
             {
                 l_notificatio_9.Text = "!... ادخل كلمة المرور الجديدة";
             }
@@ -77,11 +78,11 @@ namespace Project_Hoteel
             {
                 l_notificatio_9.Text = "!... ادخل كلمة المرور الجديدة ";
             }
-            else if(t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
+            else if(t_password_old_9.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text != "")
             {
                 l_notificatio_9.Text = "!... كلمة مرورك خطأ ";
             }
-            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "" || t_password_old_9.Text != Convert.ToString(f_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "")
+            else if (t_password_old_9.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "" || t_password_old_9.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_9.Text != "" && t_password_new_2_9.Text == "")
             {
                 l_notificatio_9.Text = "!... أعد كتابة كلمة المرور ";
             }
@@ -91,7 +92,7 @@ namespace Project_Hoteel
                 t_password_new_9.Text = "";
                 t_password_new_2_9.Text = "";
             }
-            else if (t_password_old_9.Text == Convert.ToString(f_2.password) && t_password_new_9.Text == t_password_new_2_9.Text && t_password_new_9.Text != "")
+            else if (t_password_old_9.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_9.Text == t_password_new_2_9.Text && t_password_new_9.Text != "")
             {
 
                 SqlConnection sqlconn1 = new SqlConnection();
@@ -209,7 +210,7 @@ namespace Project_Hoteel
 
         private void F_PRIVACY_9_Load(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
+            F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_2;
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -224,7 +225,7 @@ namespace Project_Hoteel
             SqlDataReader dread;
             try
             {
-                sqlcmd.CommandText = "select emp_name, sex_emp, age_emp, type_emp_name, telephon_emp, email_emp from SECURITY_LOGIN where username = '"+f_2.username.ToString()+"' and password = '"+f_2.password.ToString() +"';";
+                sqlcmd.CommandText = "select emp_name, sex_emp, age_emp, type_emp_name, telephon_emp, email_emp from SECURITY_LOGIN where username = '"+Class_Forms.Login_2.C_LOGIN_2.username.ToString()+"' and password = '"+Class_Forms.Login_2.C_LOGIN_2.password.ToString() +"';";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())

@@ -95,8 +95,8 @@ namespace Project_Hoteel
 
         private void F_MANAGER_FORM_1_Load(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
-            l_user_name_1.Text = f_2.l_user.ToString();
+            Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
+            l_user_name_1.Text = Class_Forms.Login_2.C_LOGIN_2.l_user.ToString();
             /////
             F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
             b_control_board_1.BackColor = f_1.BackColor;

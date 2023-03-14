@@ -426,7 +426,7 @@
             this.t_number_room_12.SelectedText = "";
             this.t_number_room_12.Size = new System.Drawing.Size(229, 32);
             this.t_number_room_12.TabIndex = 94;
-            this.t_number_room_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_number_room_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // t_price_room_12
             // 
@@ -450,10 +450,11 @@
             this.t_price_room_12.PasswordChar = '\0';
             this.t_price_room_12.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.t_price_room_12.PlaceholderText = "";
+            this.t_price_room_12.ReadOnly = true;
             this.t_price_room_12.SelectedText = "";
             this.t_price_room_12.Size = new System.Drawing.Size(229, 32);
             this.t_price_room_12.TabIndex = 95;
-            this.t_price_room_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.t_price_room_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // b_close_12
             // 
@@ -551,6 +552,7 @@
             this.cbox_type_room_12.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbox_type_room_12.TabIndex = 98;
             this.cbox_type_room_12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.cbox_type_room_12.SelectionChangeCommitted += new System.EventHandler(this.cbox_type_room_12_SelectionChangeCommitted);
             // 
             // Transition_12
             // 

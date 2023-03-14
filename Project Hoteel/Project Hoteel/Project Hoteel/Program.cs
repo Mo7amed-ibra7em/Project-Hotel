@@ -16,7 +16,7 @@ namespace Project_Hoteel
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new F_LOGIN_SIGNUP_2());
+            Application.Run(new F_LOGIN_2());
         }
     }
 }

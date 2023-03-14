@@ -22,7 +22,6 @@ namespace Project_Hoteel
 
         private void F_RESIDENTS_10_Load(object sender, EventArgs e)
         {
-
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -53,7 +52,6 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
-
         private void b_edit_10_Click(object sender, EventArgs e)
         {
             if (b_edit_10.FillColor == b_cancel_10.FillColor)
@@ -84,7 +82,7 @@ namespace Project_Hoteel
                 {
                     SqlCommand sqlcmd = new SqlCommand();
                     sqlcmd.Connection = sqlconn;
-                    sqlcmd.CommandText = "UPDATE F_RESIDENTS_10 SET inmates_name = '" + dgv_10.CurrentRow.Cells[1].Value + "' , nationality = '" + dgv_10.CurrentRow.Cells[2].Value + "' , age = " + dgv_10.CurrentRow.Cells[3].Value + " , identification_number = " + dgv_10.CurrentRow.Cells[4].Value + " , telephone_number = " + dgv_10.CurrentRow.Cells[5].Value + " , wife_name = '" + dgv_10.CurrentRow.Cells[6].Value.ToString() + "' , wife_identity_number = " + dgv_10.CurrentRow.Cells[7].Value + " , number_of_individuals = " + dgv_10.CurrentRow.Cells[8].Value + " , room_type = '" + dgv_10.CurrentRow.Cells[9].Value + "' , n_room = " + dgv_10.CurrentRow.Cells[10].Value + " , reservation_date = '" + dgv_10.CurrentRow.Cells[11].Value.ToString() + "' , reservation_expires = '" + dgv_10.CurrentRow.Cells[12].Value.ToString() + "' , Price = " + dgv_10.CurrentRow.Cells[13].Value +" where Id = " + ID +"";
+                    sqlcmd.CommandText = "UPDATE F_RESIDENTS_10 SET inmates_name = '" + dgv_10.CurrentRow.Cells[1].Value + "' , nationality = '" + dgv_10.CurrentRow.Cells[2].Value + "' , age = " + dgv_10.CurrentRow.Cells[3].Value + " , identification_number = " + dgv_10.CurrentRow.Cells[4].Value + " , telephone_number = " + dgv_10.CurrentRow.Cells[5].Value + " , wife_name = '" + dgv_10.CurrentRow.Cells[6].Value.ToString() + "' , wife_identity_number = " + dgv_10.CurrentRow.Cells[7].Value + " , number_of_individuals = " + dgv_10.CurrentRow.Cells[8].Value + " , room_type = '" + dgv_10.CurrentRow.Cells[9].Value + "' , n_room = " + dgv_10.CurrentRow.Cells[10].Value + " , reservation_date = '" + dgv_10.CurrentRow.Cells[11].Value.ToString() + "' , reservation_expires = '" + dgv_10.CurrentRow.Cells[12].Value.ToString() + "' , Price = " + dgv_10.CurrentRow.Cells[13].Value + " where Id = " + ID + "";
                     sqlconn.Open();
                     sqlcmd.ExecuteNonQuery();
                 }
@@ -127,7 +125,6 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void b_diparting_10_Click(object sender, EventArgs e)
         {
             int ID = Convert.ToInt32(dgv_10.CurrentRow.Cells[0].Value);
@@ -145,6 +142,7 @@ namespace Project_Hoteel
                 SqlCommand sqlcmd = new SqlCommand();
                 sqlcmd.Connection = sqlconn;
                 sqlcmd.CommandText = "INSERT INTO F_DEBARTURES_11 select id, inmates_name, nationality, age, identification_number, telephone_number, wife_name, wife_identity_number, number_of_individuals, room_type, n_room, reservation_date, reservation_expires, Price from F_RESIDENTS_10 where id = " + ID + " delete F_RESIDENTS_10 where id = " + ID + ";";
+                sqlcmd.CommandText += "update ROOMS set Room_condition = 'فارغة' where N_room = " + dgv_10.CurrentRow.Cells[10].Value;
                 sqlconn.Open();
                 sqlcmd.ExecuteNonQuery();
             }
@@ -152,8 +150,7 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-
-
+            /////
             SqlConnection sqlconn1 = new SqlConnection();
             try
             {
@@ -184,7 +181,6 @@ namespace Project_Hoteel
                 sqlconn1.Close();
             }
         }
-
         private void b_cancel_10_Click(object sender, EventArgs e)
         {
             this.Close();

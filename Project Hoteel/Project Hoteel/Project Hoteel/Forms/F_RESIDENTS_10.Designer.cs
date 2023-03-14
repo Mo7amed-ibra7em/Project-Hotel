@@ -35,11 +35,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_RESIDENTS_10));
             this.dgv_10 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.b_edit_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_diparting_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_cancel_10 = new Guna.UI2.WinForms.Guna2Button();
             this.b_search_10 = new Guna.UI2.WinForms.Guna2Button();
             this.t_search_10 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.b_edit_10 = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_10)).BeginInit();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -111,6 +111,37 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 37;
+            // 
+            // b_edit_10
+            // 
+            this.b_edit_10.Animated = true;
+            this.b_edit_10.BackColor = System.Drawing.Color.Transparent;
+            this.b_edit_10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_10.BorderRadius = 10;
+            this.b_edit_10.BorderThickness = 1;
+            this.b_edit_10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.b_edit_10.CustomizableEdges.BottomRight = false;
+            this.b_edit_10.CustomizableEdges.TopRight = false;
+            this.b_edit_10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.b_edit_10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.b_edit_10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.b_edit_10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
+            this.b_edit_10.Font = new System.Drawing.Font("PT Bold Heading", 9F);
+            this.b_edit_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_edit_10.HoverState.BorderColor = System.Drawing.Color.Plum;
+            this.b_edit_10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
+            this.b_edit_10.Image = global::Project_Hoteel.Properties.Resources.edit__3_;
+            this.b_edit_10.ImageSize = new System.Drawing.Size(23, 23);
+            this.b_edit_10.Location = new System.Drawing.Point(592, 414);
+            this.b_edit_10.Name = "b_edit_10";
+            this.b_edit_10.ShadowDecoration.BorderRadius = 0;
+            this.b_edit_10.Size = new System.Drawing.Size(140, 40);
+            this.b_edit_10.TabIndex = 81;
+            this.b_edit_10.TabStop = false;
+            this.b_edit_10.Text = "تعديل";
+            this.b_edit_10.TextFormatNoPrefix = true;
+            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
             // 
             // b_diparting_10
             // 
@@ -230,37 +261,6 @@
             this.t_search_10.TabIndex = 71;
             this.t_search_10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_search_10.TextChanged += new System.EventHandler(this.t_search_10_TextChanged);
-            // 
-            // b_edit_10
-            // 
-            this.b_edit_10.Animated = true;
-            this.b_edit_10.BackColor = System.Drawing.Color.Transparent;
-            this.b_edit_10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_10.BorderRadius = 10;
-            this.b_edit_10.BorderThickness = 1;
-            this.b_edit_10.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.b_edit_10.CustomizableEdges.BottomRight = false;
-            this.b_edit_10.CustomizableEdges.TopRight = false;
-            this.b_edit_10.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_10.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_10.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.b_edit_10.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.b_edit_10.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.b_edit_10.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_edit_10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_10.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.b_edit_10.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.b_edit_10.Image = global::Project_Hoteel.Properties.Resources.edit__3_;
-            this.b_edit_10.ImageSize = new System.Drawing.Size(23, 23);
-            this.b_edit_10.Location = new System.Drawing.Point(592, 414);
-            this.b_edit_10.Name = "b_edit_10";
-            this.b_edit_10.ShadowDecoration.BorderRadius = 0;
-            this.b_edit_10.Size = new System.Drawing.Size(140, 40);
-            this.b_edit_10.TabIndex = 81;
-            this.b_edit_10.TabStop = false;
-            this.b_edit_10.Text = "تعديل";
-            this.b_edit_10.TextFormatNoPrefix = true;
-            this.b_edit_10.Click += new System.EventHandler(this.b_edit_10_Click);
             // 
             // F_RESIDENTS_10
             // 

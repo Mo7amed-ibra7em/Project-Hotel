@@ -86,7 +86,6 @@ C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project Hoteel.csproj.SuggestedBindingRedirects.cache
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_PRIVACY_MANAGER_20.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_ACC_EMP_19.resources
-C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_ADMIN_5.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_CUSTOM_ACCOUNT_14.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_DASHBOARD_3.resources
@@ -105,8 +104,6 @@ C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_CUSTOMIZE_17.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_SETTINGS_MANAGER_18.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.Properties.Resources.resources
-C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.aa.resources
-C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_SIGNUP_2.ar.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project Hoteel.csproj.GenerateResource.cache
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project Hoteel.csproj.CoreCompileInputs.cache
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\aa\Project Hoteel.resources.dll
@@ -250,3 +247,10 @@ C:\Users\RWDA TECH\Desktop\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debu
 C:\Users\RWDA TECH\Desktop\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\aa\Project Hoteel.resources.dll
 C:\Users\RWDA TECH\Desktop\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\ar\Project Hoteel.resources.dll
 C:\Users\RWDA TECH\Desktop\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project Hoteel.csproj.CopyComplete
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\bin\Debug\en\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\en\Project Hoteel.resources.dll
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.resources
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.en.resources
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.aa.resources
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.ar.resources
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.Forms.F_ADD_CUS_23.resources

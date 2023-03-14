@@ -207,7 +207,6 @@
         }
 
         #endregion
-        private System.Windows.Forms.Panel pnl_admin_1;
         public System.Windows.Forms.Panel pnl_load_form_16;
         public System.Windows.Forms.Button b_about_16;
         public System.Windows.Forms.Button b_customize_16;
@@ -217,5 +216,6 @@
         public System.Windows.Forms.Panel pnl_line3_16;
         public System.Windows.Forms.Panel pnl_line2_16;
         public System.Windows.Forms.Panel pnl_line1_16;
+        public System.Windows.Forms.Panel pnl_admin_1;
     }
 }

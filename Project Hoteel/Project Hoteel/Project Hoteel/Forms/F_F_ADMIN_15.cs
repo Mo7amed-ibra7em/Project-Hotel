@@ -160,7 +160,6 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
-
         private void F_F_ADMIN_15_Load(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();
@@ -214,6 +213,8 @@ namespace Project_Hoteel
             f__16.b_rooms_16.BackColor = f_1.BackColor;
             f__16.pnl_line2_16.Visible = true;
             ////
+            f__16.b_privac_16.BackColor = f__16.pnl_admin_1.BackColor;
+            f__16.pnl_line1_16.Visible = false;
         }
 
         private void t_search_15_TextChanged(object sender, EventArgs e)

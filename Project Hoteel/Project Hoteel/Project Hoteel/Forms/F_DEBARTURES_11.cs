@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Forms;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace Project_Hoteel
     public partial class F_DEBARTURES_11 : Form
     {
         string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
-
+        public string[] array = new string[] { };
         public F_DEBARTURES_11()
         {
             InitializeComponent();
@@ -33,7 +34,6 @@ namespace Project_Hoteel
         }
         private void F_DEBARTURES_11_Load(object sender, EventArgs e)
         {
-
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -66,8 +66,6 @@ namespace Project_Hoteel
         }
         private void b_add_11_Click(object sender, EventArgs e)
         {
-            int ID = Convert.ToInt32(dgv_11.CurrentRow.Cells[0].Value);
-
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -77,13 +75,18 @@ namespace Project_Hoteel
             {
                 MessageBox.Show(ex.Message);
             }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
             try
             {
-                SqlCommand sqlcmd = new SqlCommand();
-                sqlcmd.Connection = sqlconn;
-                sqlcmd.CommandText = "INSERT INTO F_RESIDENTS_10 select inmates_name, nationality, age, identification_number, telephone_number, wife_name, wife_identity_number, number_of_individuals, room_type, n_room, reservation_date, reservation_expires, Price from  F_DEBARTURES_11 where id = " + ID + " delete from F_DEBARTURES_11 where id = " + ID + ";";
+                sqlcmd.CommandText = "select id,inmates_name,nationality,age,identification_number,telephone_number,wife_name,wife_identity_number,number_of_individuals,room_type,n_room ,reservation_date ,reservation_expires,Price from F_DEBARTURES_11 where id = " + dgv_11.CurrentRow.Cells[0].Value +";";
                 sqlconn.Open();
-                sqlcmd.ExecuteNonQuery();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    array = new string[] {dread["inmates_name"].ToString(), dread["room_type"].ToString(), dread["n_room"].ToString(), dread["reservation_date"].ToString(), dread["reservation_expires"].ToString(), dread["Price"].ToString(), dread["id"].ToString()};
+                }
             }
             catch (Exception ex)
             {
@@ -93,41 +96,8 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-
-            SqlConnection sqlconn1 = new SqlConnection();
-            try
-            {
-                sqlconn1.ConnectionString = connstr;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            SqlCommand sqlcmd1 = new SqlCommand();
-            sqlcmd1.Connection = sqlconn1;
-            sqlcmd1.CommandText = "select id as الرقم, inmates_name as 'اسم الزبون'" +
-                ",nationality as الجنسية, age as العمر, identification_number as 'رقم الهوية'" +
-                ", telephone_number as 'رقم الهاتف', wife_name as 'اسم الزوجة'" +
-                ", wife_identity_number as 'رقم هوية الزوجة', number_of_individuals as 'عدد الافراد'" +
-                ", room_type as 'نوع الغرفة', n_room as 'رقم الغرفة', reservation_date as 'تاريخ الحجز'" +
-                ", reservation_expires as 'تاريخ المغادرة', Price + '' as الفاتورة from  F_DEBARTURES_11;";
-            SqlDataAdapter sqladap = new SqlDataAdapter();
-            sqladap.SelectCommand = sqlcmd1;
-            DataTable mylist = new DataTable();
-            try
-            {
-                sqlconn1.Open();
-                sqladap.Fill(mylist);
-                dgv_11.DataSource = mylist;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlconn1.Close();
-            }
+            F_ADD_CUS_23 f_23 = new F_ADD_CUS_23();
+            f_23.ShowDialog();
         }
         private void t_search_11_TextChanged(object sender, EventArgs e)
         {

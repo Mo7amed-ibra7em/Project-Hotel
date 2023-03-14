@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static Project_Hoteel.F_LOGIN_SIGNUP_2;
+using static Project_Hoteel.F_LOGIN_2;
 
 namespace Project_Hoteel
 {
@@ -98,8 +98,7 @@ namespace Project_Hoteel
 
         private void l_sign_out_5_Click(object sender, EventArgs e)
         {
-            F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
-            f_2.Close();
+            Application.Exit();
         }
 
 

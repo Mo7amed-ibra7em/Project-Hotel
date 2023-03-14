@@ -56,6 +56,8 @@
             this.cbox_sex_19 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.l_notificatio_19 = new System.Windows.Forms.Label();
             this.timer_add_emp_19 = new System.Windows.Forms.Timer(this.components);
+            this.pbox_userName_1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             this.SuspendLayout();
             // 
             // label_19
@@ -639,12 +641,25 @@
             this.timer_add_emp_19.Interval = 1;
             this.timer_add_emp_19.Tick += new System.EventHandler(this.timer_add_emp_19_Tick);
             // 
+            // pbox_userName_1
+            // 
+            this.pbox_userName_1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.pbox_userName_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pbox_userName_1.BackgroundImage")));
+            this.pbox_userName_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.Transition_19.SetDecoration(this.pbox_userName_1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.pbox_userName_1.Location = new System.Drawing.Point(455, 12);
+            this.pbox_userName_1.Name = "pbox_userName_1";
+            this.pbox_userName_1.Size = new System.Drawing.Size(55, 58);
+            this.pbox_userName_1.TabIndex = 126;
+            this.pbox_userName_1.TabStop = false;
+            // 
             // F_ACC_EMP_19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(964, 645);
+            this.Controls.Add(this.pbox_userName_1);
             this.Controls.Add(this.l_notificatio_19);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbox_sex_19);
@@ -675,6 +690,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "F_ACC_EMP_19";
             this.Load += new System.EventHandler(this.F_ACC_EMP_19_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -706,5 +722,6 @@
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ComboBox cbox_sex_19;
         private System.Windows.Forms.Label l_notificatio_19;
+        private System.Windows.Forms.PictureBox pbox_userName_1;
     }
 }

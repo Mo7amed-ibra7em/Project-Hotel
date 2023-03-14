@@ -76,9 +76,9 @@
             "اللغة الإنكليزية"});
             this.guna2ComboBox1.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.guna2ComboBox1.ItemsAppearance.SelectedForeColor = System.Drawing.Color.Black;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(34, 58);
+            this.guna2ComboBox1.Location = new System.Drawing.Point(12, 58);
             this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.Size = new System.Drawing.Size(178, 26);
+            this.guna2ComboBox1.Size = new System.Drawing.Size(200, 26);
             this.guna2ComboBox1.TabIndex = 104;
             this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -116,15 +116,15 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
+            this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(218, 57);
+            this.label1.Location = new System.Drawing.Point(215, 55);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label1.Size = new System.Drawing.Size(55, 27);
+            this.label1.Size = new System.Drawing.Size(95, 27);
             this.label1.TabIndex = 98;
-            this.label1.Text = "اللغة";
+            this.label1.Text = "لغة التطبيق";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // l_1_6
@@ -132,15 +132,15 @@
             this.l_1_6.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.l_1_6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.l_1_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.l_1_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F);
+            this.l_1_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_1_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.l_1_6.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_1_6.Location = new System.Drawing.Point(803, 57);
+            this.l_1_6.Location = new System.Drawing.Point(756, 55);
             this.l_1_6.Name = "l_1_6";
             this.l_1_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_1_6.Size = new System.Drawing.Size(55, 27);
+            this.l_1_6.Size = new System.Drawing.Size(109, 27);
             this.l_1_6.TabIndex = 97;
-            this.l_1_6.Text = "المظهر  :";
+            this.l_1_6.Text = "مظهر التطبيق";
             this.l_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // guna2GradientButton1
@@ -165,10 +165,10 @@
             this.guna2GradientButton1.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton1.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(701, 45);
+            this.guna2GradientButton1.Location = new System.Drawing.Point(656, 48);
             this.guna2GradientButton1.Name = "guna2GradientButton1";
             this.guna2GradientButton1.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton1.Size = new System.Drawing.Size(76, 54);
+            this.guna2GradientButton1.Size = new System.Drawing.Size(94, 48);
             this.guna2GradientButton1.TabIndex = 105;
             this.guna2GradientButton1.Text = "داكن";
             // 
@@ -195,10 +195,10 @@
             this.guna2GradientButton2.Font = new System.Drawing.Font("PT Bold Heading", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
             this.guna2GradientButton2.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.BackwardDiagonal;
-            this.guna2GradientButton2.Location = new System.Drawing.Point(592, 45);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(552, 48);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
             this.guna2GradientButton2.PressedColor = System.Drawing.Color.Transparent;
-            this.guna2GradientButton2.Size = new System.Drawing.Size(76, 54);
+            this.guna2GradientButton2.Size = new System.Drawing.Size(94, 48);
             this.guna2GradientButton2.TabIndex = 106;
             this.guna2GradientButton2.Text = "فاتح";
             // 
@@ -208,7 +208,7 @@
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.pictureBox1.Location = new System.Drawing.Point(279, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(312, 51);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(41, 41);
             this.pictureBox1.TabIndex = 96;
@@ -245,7 +245,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.label2.Location = new System.Drawing.Point(743, 155);
             this.label2.Name = "label2";
@@ -274,12 +274,12 @@
             this.l_2_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_2_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_2_6.ForeColor = System.Drawing.Color.White;
-            this.l_2_6.Location = new System.Drawing.Point(405, 204);
+            this.l_2_6.Location = new System.Drawing.Point(396, 205);
             this.l_2_6.Name = "l_2_6";
             this.l_2_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.l_2_6.Size = new System.Drawing.Size(47, 27);
+            this.l_2_6.Size = new System.Drawing.Size(56, 27);
             this.l_2_6.TabIndex = 114;
-            this.l_2_6.Text = "ثنائية";
+            this.l_2_6.Text = "مزدوجة";
             this.l_2_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l_3_6

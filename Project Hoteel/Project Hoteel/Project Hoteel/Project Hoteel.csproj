@@ -252,7 +252,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DashBoard\DASHBOARD_CODE.cs" />
+    <Compile Include="Class_Forms\DashBoard_3\C_DASHBOARD.cs" />
+    <Compile Include="Class_Forms\Login_2\C_LOGIN_2.cs" />
+    <Compile Include="Forms\F_ADD_CUS_23.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\F_ADD_CUS_23.Designer.cs">
+      <DependentUpon>F_ADD_CUS_23.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\F_CUSTOMIZE_MANAGER_21.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -271,11 +278,11 @@
     <Compile Include="Forms\F_ACC_EMP_19.Designer.cs">
       <DependentUpon>F_ACC_EMP_19.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\F_LOGIN_SIGNUP_2.cs">
+    <Compile Include="Forms\F_LOGIN_2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\F_LOGIN_SIGNUP_2.Designer.cs">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <Compile Include="Forms\F_LOGIN_2.Designer.cs">
+      <DependentUpon>F_LOGIN_2.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms\F_ADMIN_5.cs">
       <SubType>Form</SubType>
@@ -396,8 +403,14 @@
     <Compile Include="RjControls\ToggleButton.cs">
       <SubType>Component</SubType>
     </Compile>
+    <EmbeddedResource Include="Forms\F_ADD_CUS_23.resx">
+      <DependentUpon>F_ADD_CUS_23.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_CUSTOMIZE_MANAGER_21.resx">
       <DependentUpon>F_CUSTOMIZE_MANAGER_21.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\F_LOGIN_2.en.resx">
+      <DependentUpon>F_LOGIN_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_PRIVACY_MANAGER_20.resx">
       <DependentUpon>F_PRIVACY_MANAGER_20.cs</DependentUpon>
@@ -405,14 +418,14 @@
     <EmbeddedResource Include="Forms\F_ACC_EMP_19.resx">
       <DependentUpon>F_ACC_EMP_19.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_LOGIN_SIGNUP_2.aa.resx">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_LOGIN_2.aa.resx">
+      <DependentUpon>F_LOGIN_2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_LOGIN_SIGNUP_2.ar.resx">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_LOGIN_2.ar.resx">
+      <DependentUpon>F_LOGIN_2.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\F_LOGIN_SIGNUP_2.resx">
-      <DependentUpon>F_LOGIN_SIGNUP_2.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\F_LOGIN_2.resx">
+      <DependentUpon>F_LOGIN_2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\F_ADMIN_5.resx">
       <DependentUpon>F_ADMIN_5.cs</DependentUpon>
@@ -608,6 +621,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\Fody.4.0.2\build\Fody.targets" Condition="Exists('..\packages\Fody.4.0.2\build\Fody.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

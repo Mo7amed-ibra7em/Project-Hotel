@@ -34,6 +34,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label_notification_22 = new System.Windows.Forms.Label();
             this.timer_notification_22 = new System.Windows.Forms.Timer(this.components);
+            this.Borderless_Notification = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictor_icon_22)).BeginInit();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -68,13 +69,12 @@
             // 
             this.label_notification_22.BackColor = System.Drawing.Color.Transparent;
             this.label_notification_22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label_notification_22.Font = new System.Drawing.Font("Courier New", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_notification_22.Font = new System.Drawing.Font("Mudir MT", 10.2F, System.Drawing.FontStyle.Bold);
             this.label_notification_22.ForeColor = System.Drawing.Color.White;
             this.label_notification_22.Location = new System.Drawing.Point(0, 0);
             this.label_notification_22.Name = "label_notification_22";
             this.label_notification_22.Size = new System.Drawing.Size(321, 63);
             this.label_notification_22.TabIndex = 0;
-            this.label_notification_22.Text = "الاشعارات";
             this.label_notification_22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_notification_22.Click += new System.EventHandler(this.label_notification_22_Click);
             // 
@@ -83,6 +83,19 @@
             this.timer_notification_22.Enabled = true;
             this.timer_notification_22.Interval = 3000;
             this.timer_notification_22.Tick += new System.EventHandler(this.timer_notification_22_Tick);
+            // 
+            // Borderless_Notification
+            // 
+            this.Borderless_Notification.AnimateWindow = true;
+            this.Borderless_Notification.AnimationInterval = 400;
+            this.Borderless_Notification.AnimationType = Guna.UI2.WinForms.Guna2BorderlessForm.AnimateWindowType.AW_VER_POSITIVE;
+            this.Borderless_Notification.BorderRadius = 6;
+            this.Borderless_Notification.ContainerControl = this;
+            this.Borderless_Notification.DockForm = false;
+            this.Borderless_Notification.DockIndicatorTransparencyValue = 0.6D;
+            this.Borderless_Notification.DragForm = false;
+            this.Borderless_Notification.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
+            this.Borderless_Notification.TransparentWhileDrag = true;
             // 
             // F_NOTIFICATION_22
             // 
@@ -114,5 +127,6 @@
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         public System.Windows.Forms.Label label_notification_22;
         private System.Windows.Forms.Timer timer_notification_22;
+        private Guna.UI2.WinForms.Guna2BorderlessForm Borderless_Notification;
     }
 }
