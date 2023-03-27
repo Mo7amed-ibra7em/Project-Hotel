@@ -47,7 +47,6 @@
             this.l_changePassword_20 = new System.Windows.Forms.Label();
             this.timer_Close = new System.Windows.Forms.Timer(this.components);
             this.timer_Password = new System.Windows.Forms.Timer(this.components);
-            this.L_20 = new System.Windows.Forms.Label();
             this.b_close_9 = new Guna.UI2.WinForms.Guna2Button();
             this.b_change_password_9 = new Guna.UI2.WinForms.Guna2Button();
             this.pbox_userName_1 = new System.Windows.Forms.PictureBox();
@@ -56,7 +55,6 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.t_enter_password_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.b_save_edit_20 = new Guna.UI2.WinForms.Guna2Button();
-            this.l_notificatio_20 = new System.Windows.Forms.Label();
             this.label_19 = new System.Windows.Forms.Label();
             this.Transition_1_20 = new Guna.UI2.WinForms.Guna2Transition();
             this.label6 = new System.Windows.Forms.Label();
@@ -382,19 +380,6 @@
             this.timer_Password.Interval = 5;
             this.timer_Password.Tick += new System.EventHandler(this.timer_Password_Tick);
             // 
-            // L_20
-            // 
-            this.L_20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.Transition_1_20.SetDecoration(this.L_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Transition_2_20.SetDecoration(this.L_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.L_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.L_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.L_20.Location = new System.Drawing.Point(303, 546);
-            this.L_20.Name = "L_20";
-            this.L_20.Size = new System.Drawing.Size(341, 31);
-            this.L_20.TabIndex = 70;
-            this.L_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // b_close_9
             // 
             this.b_close_9.Animated = true;
@@ -570,6 +555,7 @@
             this.t_enter_password_20.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.t_enter_password_20.TabIndex = 94;
             this.t_enter_password_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.t_enter_password_20.Visible = false;
             // 
             // b_save_edit_20
             // 
@@ -603,21 +589,6 @@
             this.b_save_edit_20.Text = "حفظ التعديلات";
             this.b_save_edit_20.TextFormatNoPrefix = true;
             this.b_save_edit_20.Click += new System.EventHandler(this.b_save_edit_20_Click);
-            // 
-            // l_notificatio_20
-            // 
-            this.l_notificatio_20.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.l_notificatio_20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Transition_1_20.SetDecoration(this.l_notificatio_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Transition_2_20.SetDecoration(this.l_notificatio_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.l_notificatio_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_notificatio_20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.l_notificatio_20.Location = new System.Drawing.Point(304, 247);
-            this.l_notificatio_20.Name = "l_notificatio_20";
-            this.l_notificatio_20.Size = new System.Drawing.Size(341, 31);
-            this.l_notificatio_20.TabIndex = 95;
-            this.l_notificatio_20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_notificatio_20.Visible = false;
             // 
             // label_19
             // 
@@ -788,7 +759,6 @@
             this.Controls.Add(this.label_19);
             this.Controls.Add(this.t_enter_password_20);
             this.Controls.Add(this.b_save_edit_20);
-            this.Controls.Add(this.l_notificatio_20);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.t_email_20);
@@ -808,7 +778,6 @@
             this.Controls.Add(this.b_change_password_9);
             this.Controls.Add(this.l_changePassword_20);
             this.Controls.Add(this.pbox_userName_1);
-            this.Controls.Add(this.L_20);
             this.Transition_2_20.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.Transition_1_20.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -844,13 +813,11 @@
         private System.Windows.Forms.PictureBox pbox_userName_1;
         private System.Windows.Forms.Timer timer_Close;
         private System.Windows.Forms.Timer timer_Password;
-        private System.Windows.Forms.Label L_20;
         private System.Windows.Forms.Label label1;
         internal Guna.UI2.WinForms.Guna2TextBox t_email_20;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         internal Guna.UI2.WinForms.Guna2TextBox t_enter_password_20;
         private Guna.UI2.WinForms.Guna2Button b_save_edit_20;
-        private System.Windows.Forms.Label l_notificatio_20;
         private System.Windows.Forms.Label label_19;
         private Guna.UI2.WinForms.Guna2Transition Transition_1_20;
         private Guna.UI2.WinForms.Guna2Transition Transition_2_20;

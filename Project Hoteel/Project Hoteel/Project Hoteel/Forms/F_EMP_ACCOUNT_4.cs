@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,7 +15,7 @@ namespace Project_Hoteel
     public partial class F_EMP_ACCOUNT_4 : Form
     {
 
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         //public bool btn_4 = false;
         public F_EMP_ACCOUNT_4()
         {
@@ -177,10 +178,6 @@ namespace Project_Hoteel
             f_1.b_custom_account_1.BackColor = f_1.pnl_manager_1.BackColor;
             f_1.b_emp_account_1.BackColor = f_1.pnl_manager_1.BackColor;
             f_1.b_control_board_1.BackColor = f_1.pnl_manager_1.BackColor;
-            f_1.pnl_line1_1.Visible = false;
-            f_1.pnl_line2_1.Visible = false;
-            f_1.pnl_line3_1.Visible = false;
-            f_1.pnl_line4_1.Visible = true;
             ////
             f_18.acc_emp_18 = true;
             f_18.timer_checked_18.Enabled = true;

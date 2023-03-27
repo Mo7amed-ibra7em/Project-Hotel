@@ -14,19 +14,14 @@ namespace Project_Hoteel
     {
         public double people_7 = 1;
         public double people_all = 1;
-
+        ////
         public string WifeName;
         public string iNumber;
-       
-
-
 
         public F_NEW_RESERVATION_7()
         {
             InitializeComponent();
         }
-
-        
 
         private void b_next_7_Click(object sender, EventArgs e)
         {
@@ -43,9 +38,7 @@ namespace Project_Hoteel
             }
 
             t_number_all_7.Text=people_all.ToString();
-
             /////
-            
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
             F_NEW_RESERVATION_8 f_8 = new F_NEW_RESERVATION_8();
             f_8.TopLevel = false;
@@ -53,12 +46,10 @@ namespace Project_Hoteel
             f_8.Show();
             f_8.BringToFront();
         }
-
         private void chb_there_is_awife_7_CheckedChanged(object sender, EventArgs e)
         {
            if(chb_there_is_awife_7.Checked == false)
             {
-               
                 t_fore_name_7.ReadOnly = true;
                 t_last_name_7.ReadOnly = true;
                 t_identification_number_7.ReadOnly = true;
@@ -75,7 +66,6 @@ namespace Project_Hoteel
                 people_all -= 1;
                 t_number_of_people_7.Text = Convert.ToString(people_7);
                 t_number_all_7.Text = Convert.ToString(people_all);
-
             }
            else
             {
@@ -94,7 +84,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void F_NEW_RESERVATION_7_Load(object sender, EventArgs e)
         {
 
@@ -102,7 +91,6 @@ namespace Project_Hoteel
             t_number_all_7.Text = Convert.ToString(people_all);
 
         }
-
         private void radio_panel1_1_7_CheckedChanged(object sender, EventArgs e)
         {
             if(radio_panel1_1_7.Checked == true)
@@ -117,7 +105,6 @@ namespace Project_Hoteel
                 t_number_of_people_7.Text = Convert.ToString(people_7);
             }
         }
-
         private void radio_panel1_2_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel1_2_7.Checked == true)
@@ -131,7 +118,6 @@ namespace Project_Hoteel
                 t_number_of_people_7.Text = Convert.ToString(people_7);
             }
         }
-
         private void radio_panel1_3_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel1_3_7.Checked == true)
@@ -145,7 +131,6 @@ namespace Project_Hoteel
                 t_number_of_people_7.Text = Convert.ToString(people_7);
             }
         }
-
         private void radio_panel1_4_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel1_4_7.Checked == true)
@@ -159,7 +144,6 @@ namespace Project_Hoteel
                 t_number_of_people_7.Text = Convert.ToString(people_7);
             }
         }
-
         private void radio_panel2_1_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel2_1_7.Checked == true)
@@ -177,7 +161,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel2_2_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel2_2_7.Checked == true)
@@ -195,7 +178,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel2_3_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel2_3_7.Checked == true)
@@ -213,7 +195,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel2_4_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel2_4_7.Checked == true)
@@ -231,7 +212,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel3_1_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel3_1_7.Checked == true)
@@ -249,7 +229,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel3_2_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel3_2_7.Checked == true)
@@ -267,7 +246,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel3_3_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel3_3_7.Checked == true)
@@ -285,7 +263,6 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void radio_panel3_4_7_CheckedChanged(object sender, EventArgs e)
         {
             if (radio_panel3_4_7.Checked == true)
@@ -303,12 +280,10 @@ namespace Project_Hoteel
                 t_number_all_7.Text = Convert.ToString(people_all);
             }
         }
-
         private void b_back_7_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void l_there_is_awife_7_Click(object sender, EventArgs e)
         {
             if (chb_there_is_awife_7.Checked == false)

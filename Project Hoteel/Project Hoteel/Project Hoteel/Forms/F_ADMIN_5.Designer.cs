@@ -31,7 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_ADMIN_5));
             this.PB_list_bg_5 = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
+            this.b_setting_5 = new System.Windows.Forms.Button();
             this.b_main_5 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button11 = new System.Windows.Forms.Button();
@@ -57,19 +57,17 @@
             this.button2 = new System.Windows.Forms.Button();
             this.timer_menu = new System.Windows.Forms.Timer(this.components);
             this.pnl_load_form_5 = new System.Windows.Forms.Panel();
-            this.PB_menu_5 = new System.Windows.Forms.PictureBox();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.PB_menu_5 = new Guna.UI2.WinForms.Guna2Button();
             this.PB_list_bg_5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_weather_5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_language_5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_menu_5)).BeginInit();
             this.SuspendLayout();
             // 
             // PB_list_bg_5
             // 
             this.PB_list_bg_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.PB_list_bg_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PB_list_bg_5.Controls.Add(this.button7);
+            this.PB_list_bg_5.Controls.Add(this.b_setting_5);
             this.PB_list_bg_5.Controls.Add(this.b_main_5);
             this.PB_list_bg_5.Controls.Add(this.button10);
             this.PB_list_bg_5.Controls.Add(this.button11);
@@ -102,26 +100,26 @@
             this.PB_list_bg_5.TabIndex = 35;
             this.PB_list_bg_5.Paint += new System.Windows.Forms.PaintEventHandler(this.PB_list_bg_5_Paint);
             // 
-            // button7
+            // b_setting_5
             // 
-            this.button7.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.button7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.button7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button7.BackgroundImage")));
-            this.button7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button7.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.button7.ForeColor = System.Drawing.Color.Black;
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.button7.Location = new System.Drawing.Point(5, 419);
-            this.button7.Name = "button7";
-            this.button7.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.button7.Size = new System.Drawing.Size(38, 37);
-            this.button7.TabIndex = 43;
-            this.button7.UseVisualStyleBackColor = false;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
+            this.b_setting_5.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.b_setting_5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.b_setting_5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("b_setting_5.BackgroundImage")));
+            this.b_setting_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.b_setting_5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.b_setting_5.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.b_setting_5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.b_setting_5.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
+            this.b_setting_5.ForeColor = System.Drawing.Color.Black;
+            this.b_setting_5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.b_setting_5.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.b_setting_5.Location = new System.Drawing.Point(5, 419);
+            this.b_setting_5.Name = "b_setting_5";
+            this.b_setting_5.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.b_setting_5.Size = new System.Drawing.Size(38, 37);
+            this.b_setting_5.TabIndex = 43;
+            this.b_setting_5.UseVisualStyleBackColor = false;
+            this.b_setting_5.Click += new System.EventHandler(this.b_setting_5_Click);
             // 
             // b_main_5
             // 
@@ -547,30 +545,24 @@
             // 
             // PB_menu_5
             // 
-            this.PB_menu_5.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.PB_menu_5.BackColor = System.Drawing.Color.Gainsboro;
+            this.PB_menu_5.Animated = true;
+            this.PB_menu_5.BackColor = System.Drawing.Color.LightGray;
             this.PB_menu_5.BackgroundImage = global::Project_Hoteel.Properties.Resources.menu;
             this.PB_menu_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.PB_menu_5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.PB_menu_5.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PB_menu_5.Location = new System.Drawing.Point(902, 3);
+            this.PB_menu_5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
+            this.PB_menu_5.BorderThickness = 1;
+            this.PB_menu_5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.PB_menu_5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.PB_menu_5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.PB_menu_5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.PB_menu_5.FillColor = System.Drawing.Color.Transparent;
+            this.PB_menu_5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.PB_menu_5.ForeColor = System.Drawing.Color.White;
+            this.PB_menu_5.Location = new System.Drawing.Point(902, 4);
             this.PB_menu_5.Name = "PB_menu_5";
             this.PB_menu_5.Size = new System.Drawing.Size(45, 39);
-            this.PB_menu_5.TabIndex = 34;
-            this.PB_menu_5.TabStop = false;
+            this.PB_menu_5.TabIndex = 0;
             this.PB_menu_5.Click += new System.EventHandler(this.PB_menu_5_Click);
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.AnimateWindow = true;
-            this.guna2BorderlessForm1.AnimationInterval = 400;
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockForm = false;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.DragForm = false;
-            this.guna2BorderlessForm1.HasFormShadow = false;
-            this.guna2BorderlessForm1.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // F_ADMIN_5
             // 
@@ -596,13 +588,11 @@
             this.PB_list_bg_5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PB_weather_5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PB_language_5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PB_menu_5)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox PB_menu_5;
         public System.Windows.Forms.Button b_hanging_reservations_5;
         public System.Windows.Forms.Button b_debartures_5;
         public System.Windows.Forms.Button button8;
@@ -628,8 +618,8 @@
         public System.Windows.Forms.Button b_main_5;
         public System.Windows.Forms.Button button10;
         public System.Windows.Forms.Panel pnl_load_form_5;
-        public System.Windows.Forms.Button button7;
+        public System.Windows.Forms.Button b_setting_5;
         public System.Windows.Forms.Button button11;
-        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
+        private Guna.UI2.WinForms.Guna2Button PB_menu_5;
     }
 }

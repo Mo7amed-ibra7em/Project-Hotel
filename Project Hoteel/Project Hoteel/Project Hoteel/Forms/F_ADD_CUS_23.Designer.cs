@@ -45,8 +45,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.BorderlessForm_23 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.l_customer_name_23 = new System.Windows.Forms.Label();
+            this.BorderlessForm_23 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cancel_23)).BeginInit();
             this.SuspendLayout();
@@ -397,6 +397,17 @@
             this.label4.Text = "السعر الاجمالي";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // l_customer_name_23
+            // 
+            this.Transition_23.SetDecoration(this.l_customer_name_23, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.l_customer_name_23.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.l_customer_name_23.ForeColor = System.Drawing.Color.Gainsboro;
+            this.l_customer_name_23.Location = new System.Drawing.Point(225, 59);
+            this.l_customer_name_23.Name = "l_customer_name_23";
+            this.l_customer_name_23.Size = new System.Drawing.Size(229, 25);
+            this.l_customer_name_23.TabIndex = 131;
+            this.l_customer_name_23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // BorderlessForm_23
             // 
             this.BorderlessForm_23.AnimateWindow = true;
@@ -411,17 +422,6 @@
             this.BorderlessForm_23.DragStartTransparencyValue = 0.3D;
             this.BorderlessForm_23.ResizeForm = false;
             this.BorderlessForm_23.TransparentWhileDrag = true;
-            // 
-            // l_customer_name_23
-            // 
-            this.Transition_23.SetDecoration(this.l_customer_name_23, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.l_customer_name_23.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_customer_name_23.ForeColor = System.Drawing.Color.Gainsboro;
-            this.l_customer_name_23.Location = new System.Drawing.Point(225, 59);
-            this.l_customer_name_23.Name = "l_customer_name_23";
-            this.l_customer_name_23.Size = new System.Drawing.Size(229, 25);
-            this.l_customer_name_23.TabIndex = 131;
-            this.l_customer_name_23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // F_ADD_CUS_23
             // 

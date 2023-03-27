@@ -9,12 +9,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
+using Project_Hoteel.Class_Forms.Login_2;
 
 namespace Project_Hoteel
 {
     public partial class F_NEW_RESERVATION_8 : Form
     {
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         public double price_8_1 = 0, price_8_2 = 0, price_8_3 = 0, price_8_4 = 0, price_room = 0;
         double price_bb_2 = 2,  price_hb_4 = 4,  price_fb_6 = 6,  price_meals = 0;
         string RoomType = "";

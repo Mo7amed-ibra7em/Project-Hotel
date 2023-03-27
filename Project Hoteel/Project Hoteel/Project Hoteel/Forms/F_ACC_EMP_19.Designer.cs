@@ -54,9 +54,8 @@
             this.t_age_19 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.cbox_sex_19 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.l_notificatio_19 = new System.Windows.Forms.Label();
-            this.timer_add_emp_19 = new System.Windows.Forms.Timer(this.components);
             this.pbox_userName_1 = new System.Windows.Forms.PictureBox();
+            this.timer_add_emp_19 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pbox_userName_1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -107,7 +106,7 @@
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label2.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(261, 366);
+            this.label2.Location = new System.Drawing.Point(261, 378);
             this.label2.Name = "label2";
             this.label2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label2.Size = new System.Drawing.Size(105, 27);
@@ -168,7 +167,7 @@
             this.t_email_emp_19.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t_email_emp_19.ForeColor = System.Drawing.Color.White;
             this.t_email_emp_19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_email_emp_19.Location = new System.Drawing.Point(96, 392);
+            this.t_email_emp_19.Location = new System.Drawing.Point(96, 404);
             this.t_email_emp_19.Name = "t_email_emp_19";
             this.t_email_emp_19.PasswordChar = '\0';
             this.t_email_emp_19.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -217,7 +216,7 @@
             this.t_username_19.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t_username_19.ForeColor = System.Drawing.Color.White;
             this.t_username_19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_username_19.Location = new System.Drawing.Point(603, 252);
+            this.t_username_19.Location = new System.Drawing.Point(603, 258);
             this.t_username_19.Name = "t_username_19";
             this.t_username_19.PasswordChar = '\0';
             this.t_username_19.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -270,7 +269,7 @@
             this.l_2_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_2_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_2_6.ForeColor = System.Drawing.Color.White;
-            this.l_2_6.Location = new System.Drawing.Point(779, 226);
+            this.l_2_6.Location = new System.Drawing.Point(779, 232);
             this.l_2_6.Name = "l_2_6";
             this.l_2_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.l_2_6.Size = new System.Drawing.Size(92, 27);
@@ -287,7 +286,7 @@
             this.l_3_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_3_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_3_6.ForeColor = System.Drawing.Color.White;
-            this.l_3_6.Location = new System.Drawing.Point(286, 296);
+            this.l_3_6.Location = new System.Drawing.Point(286, 305);
             this.l_3_6.Name = "l_3_6";
             this.l_3_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.l_3_6.Size = new System.Drawing.Size(78, 27);
@@ -348,7 +347,7 @@
             this.t_password_19.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t_password_19.ForeColor = System.Drawing.Color.White;
             this.t_password_19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_password_19.Location = new System.Drawing.Point(96, 252);
+            this.t_password_19.Location = new System.Drawing.Point(96, 258);
             this.t_password_19.Name = "t_password_19";
             this.t_password_19.PasswordChar = '\0';
             this.t_password_19.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -368,7 +367,7 @@
             this.label3.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label3.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(790, 366);
+            this.label3.Location = new System.Drawing.Point(790, 378);
             this.label3.Name = "label3";
             this.label3.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label3.Size = new System.Drawing.Size(81, 27);
@@ -415,7 +414,7 @@
             this.date_start_date_19.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.date_start_date_19.HoverState.BorderColor = System.Drawing.Color.Plum;
             this.date_start_date_19.HoverState.FillColor = System.Drawing.Color.CornflowerBlue;
-            this.date_start_date_19.Location = new System.Drawing.Point(603, 392);
+            this.date_start_date_19.Location = new System.Drawing.Point(603, 404);
             this.date_start_date_19.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.date_start_date_19.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.date_start_date_19.Name = "date_start_date_19";
@@ -434,7 +433,7 @@
             this.l_8_6.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.l_8_6.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_8_6.ForeColor = System.Drawing.Color.White;
-            this.l_8_6.Location = new System.Drawing.Point(294, 226);
+            this.l_8_6.Location = new System.Drawing.Point(294, 232);
             this.l_8_6.Name = "l_8_6";
             this.l_8_6.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.l_8_6.Size = new System.Drawing.Size(72, 27);
@@ -451,7 +450,7 @@
             this.label1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(820, 296);
+            this.label1.Location = new System.Drawing.Point(820, 305);
             this.label1.Name = "label1";
             this.label1.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label1.Size = new System.Drawing.Size(50, 27);
@@ -480,7 +479,7 @@
             this.t_salary_emp_19.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t_salary_emp_19.ForeColor = System.Drawing.Color.White;
             this.t_salary_emp_19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_salary_emp_19.Location = new System.Drawing.Point(603, 322);
+            this.t_salary_emp_19.Location = new System.Drawing.Point(603, 331);
             this.t_salary_emp_19.Name = "t_salary_emp_19";
             this.t_salary_emp_19.PasswordChar = '\0';
             this.t_salary_emp_19.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -517,7 +516,7 @@
             "محاسب"});
             this.cbox_type_emp_19.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.cbox_type_emp_19.ItemsAppearance.SelectedForeColor = System.Drawing.Color.Black;
-            this.cbox_type_emp_19.Location = new System.Drawing.Point(96, 322);
+            this.cbox_type_emp_19.Location = new System.Drawing.Point(96, 331);
             this.cbox_type_emp_19.Name = "cbox_type_emp_19";
             this.cbox_type_emp_19.Size = new System.Drawing.Size(275, 28);
             this.cbox_type_emp_19.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
@@ -533,7 +532,7 @@
             this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label4.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(321, 163);
+            this.label4.Location = new System.Drawing.Point(321, 166);
             this.label4.Name = "label4";
             this.label4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label4.Size = new System.Drawing.Size(44, 27);
@@ -561,7 +560,7 @@
             this.t_age_19.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.t_age_19.ForeColor = System.Drawing.Color.White;
             this.t_age_19.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_age_19.Location = new System.Drawing.Point(96, 189);
+            this.t_age_19.Location = new System.Drawing.Point(96, 192);
             this.t_age_19.Name = "t_age_19";
             this.t_age_19.PasswordChar = '\0';
             this.t_age_19.PlaceholderForeColor = System.Drawing.Color.DarkGray;
@@ -581,7 +580,7 @@
             this.label5.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.label5.Font = new System.Drawing.Font("PT Simple Bold Ruled", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(814, 163);
+            this.label5.Location = new System.Drawing.Point(814, 166);
             this.label5.Name = "label5";
             this.label5.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label5.Size = new System.Drawing.Size(49, 27);
@@ -615,31 +614,12 @@
             "انثى"});
             this.cbox_sex_19.ItemsAppearance.SelectedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.cbox_sex_19.ItemsAppearance.SelectedForeColor = System.Drawing.Color.Black;
-            this.cbox_sex_19.Location = new System.Drawing.Point(603, 189);
+            this.cbox_sex_19.Location = new System.Drawing.Point(603, 192);
             this.cbox_sex_19.Name = "cbox_sex_19";
             this.cbox_sex_19.Size = new System.Drawing.Size(275, 28);
             this.cbox_sex_19.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.cbox_sex_19.TabIndex = 124;
             this.cbox_sex_19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // l_notificatio_19
-            // 
-            this.l_notificatio_19.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.l_notificatio_19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.Transition_19.SetDecoration(this.l_notificatio_19, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.l_notificatio_19.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.l_notificatio_19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.l_notificatio_19.Location = new System.Drawing.Point(312, 503);
-            this.l_notificatio_19.Name = "l_notificatio_19";
-            this.l_notificatio_19.Size = new System.Drawing.Size(341, 31);
-            this.l_notificatio_19.TabIndex = 125;
-            this.l_notificatio_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_notificatio_19.Visible = false;
-            // 
-            // timer_add_emp_19
-            // 
-            this.timer_add_emp_19.Interval = 1;
-            this.timer_add_emp_19.Tick += new System.EventHandler(this.timer_add_emp_19_Tick);
             // 
             // pbox_userName_1
             // 
@@ -653,6 +633,10 @@
             this.pbox_userName_1.TabIndex = 126;
             this.pbox_userName_1.TabStop = false;
             // 
+            // timer_add_emp_19
+            // 
+            this.timer_add_emp_19.Interval = 1;
+            // 
             // F_ACC_EMP_19
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -660,7 +644,6 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(964, 645);
             this.Controls.Add(this.pbox_userName_1);
-            this.Controls.Add(this.l_notificatio_19);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbox_sex_19);
             this.Controls.Add(this.l_1_6);
@@ -721,7 +704,6 @@
         internal Guna.UI2.WinForms.Guna2TextBox t_age_19;
         private System.Windows.Forms.Label label5;
         private Guna.UI2.WinForms.Guna2ComboBox cbox_sex_19;
-        private System.Windows.Forms.Label l_notificatio_19;
         private System.Windows.Forms.PictureBox pbox_userName_1;
     }
 }

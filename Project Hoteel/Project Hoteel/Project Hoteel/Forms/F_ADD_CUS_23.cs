@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,7 +16,7 @@ namespace Project_Hoteel.Forms
 {
     public partial class F_ADD_CUS_23 : Form
     {
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
         public F_ADD_CUS_23()
         {

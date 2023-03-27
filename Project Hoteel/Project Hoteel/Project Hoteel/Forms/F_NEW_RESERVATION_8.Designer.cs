@@ -400,11 +400,11 @@
             this.BackColor = System.Drawing.Color.CadetBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(891, 467);
+            this.Controls.Add(this.t_price_8);
             this.Controls.Add(this.l_room_type_8);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.l_meal_type_8);
             this.Controls.Add(this.l_price_8);
-            this.Controls.Add(this.t_price_8);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -21,30 +21,9 @@ namespace Project_Hoteel
 {
     public partial class F_LOGIN_2 : KryptonForm
     {
-        #region//// متغيرات + اتصال مع قاعدة البانات ////
-        ////[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        ////private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
-        //public string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
-        ////"انشاء متغيرات للبريد وكلمة المرور"
-        //public string username = "Filed";
-        //public string password = "Filed";
-        //public int id_employee;
-        //public bool Login_emp = false;
-        //public bool Login_manager = false;
-        //public string l_user = "";
-
-        /////////
-        //private int _ticks;
-        ////
-        //bool ExpandMenu;
-        #endregion
-
         public F_LOGIN_2()
         {
             InitializeComponent();
-
-            /*this.FormBorderStyle = FormBorderStyle.None;
-              this.Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 20, 20));*/
         }
         private void F_LOGIN_SIGNUP_2_Load(object sender, EventArgs e)
         {
@@ -52,96 +31,6 @@ namespace Project_Hoteel
         }
         private void b_login_2_Click(object sender, EventArgs e)
         {
-
-
-            //if (t_email_2.Text != "Password" && t_email_2.Text != "" && t_password_2.Text != "UserName" && t_password_2.Text != "")
-            //{
-            //    if(t_email_2.Text != "اسم المستخدم" && t_email_2.Text != "" && t_password_2.Text != "كلمة المرور" && t_password_2.Text != "")
-            //    {
-            //        SqlConnection sqlconn = new SqlConnection();
-            //        try
-            //        {
-            //            sqlconn.ConnectionString = connstr;
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            MessageBox.Show(ex.Message);
-            //        }
-            //        SqlCommand sqlcmd = new SqlCommand();
-            //        sqlcmd.Connection = sqlconn;
-            //        SqlDataReader dread;
-            //        try
-            //        {
-            //            sqlcmd.CommandText = "select username, password, type_emp_index, emp_name from SECURITY_LOGIN where username ='"+t_email_2.Text+"' and password ='"+t_password_2.Text+"'";
-            //            sqlconn.Open();
-            //            dread = sqlcmd.ExecuteReader();
-            //            while (dread.Read())
-            //            {
-            //                username = dread["username"].ToString();
-            //                password = dread["password"].ToString();
-            //                id_employee = Convert.ToInt32(dread["type_emp_index"]);
-            //                l_user = dread["emp_name"].ToString();
-            //            }
-            //        }
-            //        catch (Exception ex)
-            //        {
-            //            MessageBox.Show(ex.Message);
-            //        }
-            //        finally
-            //        {
-            //            sqlconn.Close();
-            //        }
-            //    }
-            //}
-
-            //if (t_password_2.Text == "Password" && t_email_2.Text == "UserName" || t_email_2.Text == "اسم المستخدم" && t_password_2.Text == "كلمة المرور" )
-            //{
-            //    l_notificatio_2.Text = "ادخل معلوماتك";
-            //    if(t_password_2.Text == "Password")
-            //    {
-            //        t_password_2.Text = "Password";
-            //        t_email_2.Text = "UserName";
-            //    }
-            //    else
-            //    {
-            //        t_password_2.Text = "كلمة المرور";
-            //        t_email_2.Text = "اسم المستخدم";
-            //    }
-            //    t_password_2.PasswordChar = char.MinValue;
-            //    MessageCollection.showNatification(l_notificatio_2.Text);
-            //}
-            //else if (t_password_2.Text != Convert.ToString(password) || t_email_2.Text != username )
-            //{
-            //    l_notificatio_2.Text = "اسم المستخدم او كلمة المرور خطأ";
-            //    if (this.RightToLeft == RightToLeft.No)
-            //    {
-            //        t_password_2.Text = "Password";
-            //        t_email_2.Text = "UserName";
-            //    }
-            //    else
-            //    {
-            //        t_password_2.Text = "كلمة المرور";
-            //        t_email_2.Text = "اسم المستخدم";
-            //    }
-            //    t_password_2.PasswordChar = char.MinValue;
-            //    MessageCollection.showNatification(l_notificatio_2.Text);
-            //}
-            //else if (t_email_2.Text == username && t_password_2.Text == Convert.ToString(password))
-            //{
-            //    l_username_2.Text = "Welcome  " + l_user;
-            //    l_notificatio_2.Text = "تم تسجيل الدخول بنجاح";
-            //    if (id_employee == 0)
-            //    {
-            //        Login_emp = true;
-            //        timer_progress_2.Start();
-            //    }
-            //    else if (id_employee == 3)
-            //    {
-            //        Login_manager = true;
-            //        timer_progress_2.Start();
-            //    }
-            //    MessageCollection.showNatification(l_notificatio_2.Text);
-            //}
             C_LOGIN_2.ButtonLogin();
         }
         private void timer_progress_2_Tick(object sender, EventArgs e)

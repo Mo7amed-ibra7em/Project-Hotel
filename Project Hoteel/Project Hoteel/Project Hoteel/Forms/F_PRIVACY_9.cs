@@ -1,4 +1,5 @@
-﻿using Project_Hoteel.Notification;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using Project_Hoteel.Notification;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,7 +17,7 @@ namespace Project_Hoteel
 {
     public partial class F_PRIVACY_9 : Form
     {        
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
 
         bool Pass = false;

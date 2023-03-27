@@ -1,4 +1,5 @@
-﻿using Project_Hoteel.Notification;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using Project_Hoteel.Notification;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace Project_Hoteel
 {
     public partial class F_PRIVACY_MANAGER_20 : Form
     {
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         string password = "";
         Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
         public F_PRIVACY_MANAGER_20()
@@ -94,7 +95,8 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
             ///
-            if (t_enter_password_20.Text == password)
+            Transition_2_20.ShowSync(t_enter_password_20);
+            if (t_enter_password_20.Text == password && t_enter_password_20.Enabled == true)
             {
                 try
                 {
@@ -121,15 +123,13 @@ namespace Project_Hoteel
                     sqlconn.Close();
                 }
             }
-            else
+            else if(t_enter_password_20.Text == password && t_enter_password_20.Enabled == true)
             {
-                l_notificatio_20.Text = "!... كلمة مرورك خطأ ";
                 t_enter_password_20.Text = "";
-                MessageCollection.showNatification(l_notificatio_20.Text);
+                MessageCollection.showNatification("كلمة مرورك خطأ");
             }
 
         }
-
         private void b_change_password_9_Click(object sender, EventArgs e)
         {
             F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_2;
@@ -168,7 +168,7 @@ namespace Project_Hoteel
 
             if (t_password_old_20.Text == "" || t_password_new_2_20.Text == "" || t_password_new_20.Text == "" || t_username_new_20.Text == "" || t_username_old_20.Text == "")
             {
-                L_20.Text = "!...  تأكد من ملء كامل المعلومات";
+                MessageCollection.showNatification("تأكد من ملء كامل المعلومات");
             }
             //if (t_password_old_20.Text == Convert.ToString(f_2.password) && t_password_new_20.Text == "" && t_password_new_2_20.Text == "")
             //{
@@ -184,15 +184,15 @@ namespace Project_Hoteel
             //}
             else if (t_password_old_20.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password))
             {
-                L_20.Text = "!... اسم المستخدم او كلمة المرور خطأ ";
+                MessageCollection.showNatification("اسم المستخدم او كلمة المرور خطأ");
             }
             else if (t_password_old_20.Text == Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "" || t_password_old_20.Text != Convert.ToString(Class_Forms.Login_2.C_LOGIN_2.password) && t_password_new_20.Text != "" && t_password_new_2_20.Text == "")
             {
-                L_20.Text = "!... أعد كتابة كلمة المرور ";
+                MessageCollection.showNatification("أعد كتابة كلمة المرور");
             }
             else if (t_password_new_20.Text != t_password_new_2_20.Text && t_password_old_20.Text != "" && t_password_new_20.Text != "" && t_password_new_2_20.Text != "")
             {
-                L_20.Text = "!... كلمة المرور غير متطابقة";
+                MessageCollection.showNatification("كلمة المرور غير متطابقة");
                 t_password_new_20.Text = "";
                 t_password_new_2_20.Text = "";
             }
@@ -224,8 +224,7 @@ namespace Project_Hoteel
                 {
                     sqlconn1.Close();
                 }
-
-                L_20.Text = "تم التغيير بنجاح";
+                MessageCollection.showNatification("تم التغيير بنجاح");
             }
         }
 

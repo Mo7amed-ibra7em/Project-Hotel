@@ -96,6 +96,7 @@
             this.dgv_13.RowTemplate.Height = 26;
             this.dgv_13.Size = new System.Drawing.Size(867, 374);
             this.dgv_13.TabIndex = 29;
+            this.dgv_13.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_13_CellContentClick);
             // 
             // panel1
             // 
@@ -196,6 +197,7 @@
             this.b_search_13.Name = "b_search_13";
             this.b_search_13.Size = new System.Drawing.Size(39, 30);
             this.b_search_13.TabIndex = 74;
+            this.b_search_13.Click += new System.EventHandler(this.b_search_13_Click);
             // 
             // t_search_13
             // 

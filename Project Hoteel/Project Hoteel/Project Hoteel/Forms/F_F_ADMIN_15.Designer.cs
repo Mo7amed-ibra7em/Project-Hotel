@@ -36,7 +36,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dgv_15 = new System.Windows.Forms.DataGridView();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.b_edit_rooms_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_delete_rooms_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_add_room_15 = new Guna.UI2.WinForms.Guna2Button();
             this.b_search_13 = new Guna.UI2.WinForms.Guna2Button();
@@ -117,7 +116,6 @@
             // panel1
             // 
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.b_edit_rooms_15);
             this.panel1.Controls.Add(this.b_delete_rooms_15);
             this.panel1.Controls.Add(this.b_add_room_15);
             this.panel1.Controls.Add(this.b_search_13);
@@ -127,38 +125,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 49;
-            // 
-            // b_edit_rooms_15
-            // 
-            this.b_edit_rooms_15.Animated = true;
-            this.b_edit_rooms_15.AutoRoundedCorners = true;
-            this.b_edit_rooms_15.BackColor = System.Drawing.Color.Transparent;
-            this.b_edit_rooms_15.BorderColor = System.Drawing.SystemColors.Window;
-            this.b_edit_rooms_15.BorderRadius = 16;
-            this.b_edit_rooms_15.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
-            this.b_edit_rooms_15.BorderThickness = 1;
-            this.b_edit_rooms_15.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.b_edit_rooms_15.DialogResult = System.Windows.Forms.DialogResult.OK;
-            this.b_edit_rooms_15.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_rooms_15.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.b_edit_rooms_15.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.b_edit_rooms_15.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.b_edit_rooms_15.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.b_edit_rooms_15.Font = new System.Drawing.Font("PT Bold Heading", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.b_edit_rooms_15.ForeColor = System.Drawing.Color.Black;
-            this.b_edit_rooms_15.HoverState.BorderColor = System.Drawing.Color.Plum;
-            this.b_edit_rooms_15.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
-            this.b_edit_rooms_15.Image = global::Project_Hoteel.Properties.Resources.edit__3_;
-            this.b_edit_rooms_15.ImageSize = new System.Drawing.Size(23, 23);
-            this.b_edit_rooms_15.Location = new System.Drawing.Point(128, 418);
-            this.b_edit_rooms_15.Name = "b_edit_rooms_15";
-            this.b_edit_rooms_15.ShadowDecoration.BorderRadius = 0;
-            this.b_edit_rooms_15.Size = new System.Drawing.Size(100, 35);
-            this.b_edit_rooms_15.TabIndex = 79;
-            this.b_edit_rooms_15.TabStop = false;
-            this.b_edit_rooms_15.Text = "تعديل";
-            this.b_edit_rooms_15.TextFormatNoPrefix = true;
-            this.b_edit_rooms_15.Click += new System.EventHandler(this.b_edit_rooms_15_Click);
             // 
             // b_delete_rooms_15
             // 
@@ -182,10 +148,10 @@
             this.b_delete_rooms_15.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
             this.b_delete_rooms_15.Image = ((System.Drawing.Image)(resources.GetObject("b_delete_rooms_15.Image")));
             this.b_delete_rooms_15.ImageSize = new System.Drawing.Size(23, 23);
-            this.b_delete_rooms_15.Location = new System.Drawing.Point(11, 418);
+            this.b_delete_rooms_15.Location = new System.Drawing.Point(10, 417);
             this.b_delete_rooms_15.Name = "b_delete_rooms_15";
             this.b_delete_rooms_15.ShadowDecoration.BorderRadius = 0;
-            this.b_delete_rooms_15.Size = new System.Drawing.Size(100, 35);
+            this.b_delete_rooms_15.Size = new System.Drawing.Size(113, 35);
             this.b_delete_rooms_15.TabIndex = 79;
             this.b_delete_rooms_15.TabStop = false;
             this.b_delete_rooms_15.Text = "حذف";
@@ -214,10 +180,10 @@
             this.b_add_room_15.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(80)))));
             this.b_add_room_15.Image = global::Project_Hoteel.Properties.Resources.key_room;
             this.b_add_room_15.ImageSize = new System.Drawing.Size(23, 23);
-            this.b_add_room_15.Location = new System.Drawing.Point(244, 417);
+            this.b_add_room_15.Location = new System.Drawing.Point(142, 417);
             this.b_add_room_15.Name = "b_add_room_15";
             this.b_add_room_15.ShadowDecoration.BorderRadius = 0;
-            this.b_add_room_15.Size = new System.Drawing.Size(100, 35);
+            this.b_add_room_15.Size = new System.Drawing.Size(113, 35);
             this.b_add_room_15.TabIndex = 79;
             this.b_add_room_15.TabStop = false;
             this.b_add_room_15.Text = "إضافة";
@@ -246,7 +212,7 @@
             this.b_search_13.ForeColor = System.Drawing.Color.White;
             this.b_search_13.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.b_search_13.Image = ((System.Drawing.Image)(resources.GetObject("b_search_13.Image")));
-            this.b_search_13.Location = new System.Drawing.Point(709, 421);
+            this.b_search_13.Location = new System.Drawing.Point(661, 421);
             this.b_search_13.Name = "b_search_13";
             this.b_search_13.Size = new System.Drawing.Size(39, 30);
             this.b_search_13.TabIndex = 78;
@@ -269,7 +235,7 @@
             this.t_search_15.Font = new System.Drawing.Font("Courier New", 10.2F, System.Drawing.FontStyle.Bold);
             this.t_search_15.ForeColor = System.Drawing.Color.White;
             this.t_search_15.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.t_search_15.Location = new System.Drawing.Point(375, 421);
+            this.t_search_15.Location = new System.Drawing.Point(327, 421);
             this.t_search_15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.t_search_15.Name = "t_search_15";
             this.t_search_15.PasswordChar = '\0';
@@ -308,6 +274,5 @@
         internal Guna.UI2.WinForms.Guna2TextBox t_search_15;
         private Guna.UI2.WinForms.Guna2Button b_add_room_15;
         private Guna.UI2.WinForms.Guna2Button b_delete_rooms_15;
-        private Guna.UI2.WinForms.Guna2Button b_edit_rooms_15;
     }
 }

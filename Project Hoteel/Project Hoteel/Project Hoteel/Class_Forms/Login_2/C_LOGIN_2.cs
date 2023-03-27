@@ -10,10 +10,11 @@ namespace Project_Hoteel.Class_Forms.Login_2
 {
     internal class C_LOGIN_2
     {
-        #region//// متغيرات + اتصال مع قاعدة البانات ////
+        #region متغيرات + اتصال مع قاعدة البانات
         //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         //private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
-        static string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        static public string SERVER1 = "M-A-IBRAHEM";
+        static string connstr = "Data Source="+SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         static F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_2"] as F_LOGIN_2;
         //"انشاء متغيرات للبريد وكلمة المرور"
         static public string username = "Filed";
@@ -136,7 +137,7 @@ namespace Project_Hoteel.Class_Forms.Login_2
                     if (Login_emp == true)
                     {
                         F_ADMIN_5 f_5 = new F_ADMIN_5();
-                        f_5.Show();
+                        f_5.ShowDialog();
                         Login_emp = false;
                         f_2.ProgressBar_2.Value = 5;
                         f_2.l_progress_2.Text = "1 %";
@@ -145,7 +146,7 @@ namespace Project_Hoteel.Class_Forms.Login_2
                     else if (Login_manager == true)
                     {
                         F_MANAGER_FORM_1 f_1 = new F_MANAGER_FORM_1();
-                        f_1.Show();
+                        f_1.ShowDialog();
                         Login_manager = false;
                         f_2.ProgressBar_2.Value = 5;
                         f_2.l_progress_2.Text = "1 %";

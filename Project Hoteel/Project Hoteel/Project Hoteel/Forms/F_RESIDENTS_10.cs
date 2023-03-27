@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,7 +14,7 @@ namespace Project_Hoteel
 {
     public partial class F_RESIDENTS_10 : Form
     {
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         
         public F_RESIDENTS_10()
         {
@@ -223,6 +224,21 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void dgv_10_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void b_search_10_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

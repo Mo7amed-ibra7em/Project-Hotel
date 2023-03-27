@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,7 +19,7 @@ namespace Project_Hoteel
     {
         int Weather = 0, language = 0;
         bool ExpandMenu = true;
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
         public F_ADMIN_5()
         {
@@ -144,7 +145,7 @@ namespace Project_Hoteel
             pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
         }
-        private void button7_Click(object sender, EventArgs e)
+        private void b_setting_5_Click(object sender, EventArgs e)
         {
             F_SETTINGS_ADMIN_16 f_16 = new F_SETTINGS_ADMIN_16();
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
@@ -173,11 +174,6 @@ namespace Project_Hoteel
             //    NativeMethods.ReleaseCapture();
             //    NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             //}
-        }
-
-        private void PB_list_bg_5_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -251,6 +247,11 @@ namespace Project_Hoteel
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PB_list_bg_5_Paint(object sender, PaintEventArgs e)
         {
 
         }

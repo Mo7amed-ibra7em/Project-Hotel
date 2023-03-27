@@ -1,4 +1,5 @@
-﻿using Project_Hoteel.Notification;
+﻿using Project_Hoteel.Class_Forms.Login_2;
+using Project_Hoteel.Notification;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +15,7 @@ namespace Project_Hoteel
 {
     public partial class F_ROOMS_12 : Form
     {
-        string connstr = "Data Source=M-A-IBRAHEM; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
         string room_singular = "",
                room_dualism = "",
@@ -27,12 +28,6 @@ namespace Project_Hoteel
         public F_ROOMS_12()
         {
             InitializeComponent();
-
-            F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
-            if (f_15.Expand2 == true)
-            {
-                timer_room_12.Start();
-            }
         }
 
 
@@ -205,14 +200,13 @@ namespace Project_Hoteel
                     Expand = true;
                 }
             }
-            else if(Expand == true || f_15.Expand2 == true)
+            else if(Expand == true)
             {
                 this.Height += 5;
                 if (this.Height == this.MaximumSize.Height)
                 {
                     timer_room_12.Stop();
                     Expand = false;
-                    f_15.Expand2 = false;
                 }
             }
         }

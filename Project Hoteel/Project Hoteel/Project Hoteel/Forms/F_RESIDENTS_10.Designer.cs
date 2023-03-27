@@ -97,6 +97,7 @@
             this.dgv_10.RowTemplate.Height = 26;
             this.dgv_10.Size = new System.Drawing.Size(867, 374);
             this.dgv_10.TabIndex = 19;
+            this.dgv_10.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_10_CellContentClick);
             // 
             // panel1
             // 
@@ -111,6 +112,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 467);
             this.panel1.TabIndex = 37;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // b_edit_10
             // 
@@ -231,6 +233,7 @@
             this.b_search_10.Name = "b_search_10";
             this.b_search_10.Size = new System.Drawing.Size(39, 30);
             this.b_search_10.TabIndex = 72;
+            this.b_search_10.Click += new System.EventHandler(this.b_search_10_Click);
             // 
             // t_search_10
             // 
