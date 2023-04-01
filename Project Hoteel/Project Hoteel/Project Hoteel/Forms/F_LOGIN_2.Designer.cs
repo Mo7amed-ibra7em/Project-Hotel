@@ -303,14 +303,14 @@
             animation1.MinTime = 0F;
             animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
             animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 1;
+            animation1.MosaicSize = 2;
             animation1.Padding = new System.Windows.Forms.Padding(100, 50, 100, 150);
             animation1.RotateCoeff = 0F;
             animation1.RotateLimit = 0F;
             animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
             animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 2F;
-            animation1.TransparencyCoeff = 0F;
+            animation1.TimeCoeff = 3F;
+            animation1.TransparencyCoeff = 1F;
             this.Transition_form_2.DefaultAnimation = animation1;
             this.Transition_form_2.Interval = 30;
             // 
@@ -400,7 +400,7 @@
         public Guna.UI2.WinForms.Guna2Button b_login_2;
         public System.Windows.Forms.TextBox t_email_2;
         public System.Windows.Forms.Label l_forget_password_2;
-        public Guna.UI2.WinForms.Guna2Transition Transition_form_2;
         public Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm_2;
+        public Guna.UI2.WinForms.Guna2Transition Transition_form_2;
     }
 }

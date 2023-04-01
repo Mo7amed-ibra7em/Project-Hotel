@@ -268,7 +268,7 @@
             this.t_telephone_number_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_telephone_number_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_telephone_number_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_telephone_number_6.ForeColor = System.Drawing.Color.Black;
+            this.t_telephone_number_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_telephone_number_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_telephone_number_6.Location = new System.Drawing.Point(18, 221);
             this.t_telephone_number_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -278,6 +278,7 @@
             this.t_telephone_number_6.SelectedText = "";
             this.t_telephone_number_6.Size = new System.Drawing.Size(232, 37);
             this.t_telephone_number_6.TabIndex = 7;
+            this.t_telephone_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_telephone_number_6.TextChanged += new System.EventHandler(this.t_telephone_number_6_TextChanged);
             // 
             // t_identification_number_6
@@ -294,7 +295,7 @@
             this.t_identification_number_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_identification_number_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_identification_number_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_identification_number_6.ForeColor = System.Drawing.Color.Black;
+            this.t_identification_number_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_identification_number_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_identification_number_6.Location = new System.Drawing.Point(505, 221);
             this.t_identification_number_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -304,6 +305,7 @@
             this.t_identification_number_6.SelectedText = "";
             this.t_identification_number_6.Size = new System.Drawing.Size(232, 37);
             this.t_identification_number_6.TabIndex = 6;
+            this.t_identification_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_identification_number_6.TextChanged += new System.EventHandler(this.t_identification_number_6_TextChanged);
             // 
             // t_age_6
@@ -320,7 +322,7 @@
             this.t_age_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_age_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_age_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_age_6.ForeColor = System.Drawing.Color.Black;
+            this.t_age_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_age_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_age_6.Location = new System.Drawing.Point(18, 135);
             this.t_age_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -330,6 +332,7 @@
             this.t_age_6.SelectedText = "";
             this.t_age_6.Size = new System.Drawing.Size(232, 37);
             this.t_age_6.TabIndex = 5;
+            this.t_age_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_age_6.TextChanged += new System.EventHandler(this.t_age_6_TextChanged);
             // 
             // t_nationality_6
@@ -346,7 +349,7 @@
             this.t_nationality_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_nationality_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_nationality_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_nationality_6.ForeColor = System.Drawing.Color.Black;
+            this.t_nationality_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_nationality_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_nationality_6.Location = new System.Drawing.Point(505, 135);
             this.t_nationality_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -356,6 +359,7 @@
             this.t_nationality_6.SelectedText = "";
             this.t_nationality_6.Size = new System.Drawing.Size(232, 37);
             this.t_nationality_6.TabIndex = 4;
+            this.t_nationality_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_nationality_6.TextChanged += new System.EventHandler(this.t_nationality_6_TextChanged);
             // 
             // t_last_name_6
@@ -372,7 +376,7 @@
             this.t_last_name_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_last_name_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_last_name_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_last_name_6.ForeColor = System.Drawing.Color.Black;
+            this.t_last_name_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_last_name_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_last_name_6.Location = new System.Drawing.Point(18, 49);
             this.t_last_name_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -382,6 +386,7 @@
             this.t_last_name_6.SelectedText = "";
             this.t_last_name_6.Size = new System.Drawing.Size(232, 37);
             this.t_last_name_6.TabIndex = 3;
+            this.t_last_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_last_name_6.TextChanged += new System.EventHandler(this.t_last_name_6_TextChanged);
             // 
             // t_fore_name_6
@@ -398,7 +403,7 @@
             this.t_fore_name_6.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.t_fore_name_6.FocusedState.BorderColor = System.Drawing.Color.Plum;
             this.t_fore_name_6.Font = new System.Drawing.Font("Times New Roman", 12F);
-            this.t_fore_name_6.ForeColor = System.Drawing.Color.Black;
+            this.t_fore_name_6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
             this.t_fore_name_6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.t_fore_name_6.Location = new System.Drawing.Point(505, 49);
             this.t_fore_name_6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -408,6 +413,7 @@
             this.t_fore_name_6.SelectedText = "";
             this.t_fore_name_6.Size = new System.Drawing.Size(232, 37);
             this.t_fore_name_6.TabIndex = 2;
+            this.t_fore_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.t_fore_name_6.TextChanged += new System.EventHandler(this.t_fore_name_6_TextChanged);
             // 
             // d_exit_date_6

@@ -387,11 +387,11 @@
             this.n_room_8.Location = new System.Drawing.Point(641, 98);
             this.n_room_8.Multiline = true;
             this.n_room_8.Name = "n_room_8";
+            this.n_room_8.ReadOnly = true;
             this.n_room_8.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.n_room_8.Size = new System.Drawing.Size(71, 28);
             this.n_room_8.TabIndex = 32;
             this.n_room_8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.n_room_8.TextChanged += new System.EventHandler(this.n_room_8_TextChanged);
             // 
             // F_NEW_RESERVATION_8
             // 

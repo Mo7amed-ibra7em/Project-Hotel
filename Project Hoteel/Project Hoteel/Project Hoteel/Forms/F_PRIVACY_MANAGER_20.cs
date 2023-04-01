@@ -1,4 +1,5 @@
 ﻿using Project_Hoteel.Class_Forms.Login_2;
+using Project_Hoteel.Forms;
 using Project_Hoteel.Notification;
 using System;
 using System.Collections.Generic;
@@ -7,6 +8,7 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -17,7 +19,8 @@ namespace Project_Hoteel
     {
         string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
         string password = "";
-        Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
+        int Show_pass = 0;
+        //Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
         public F_PRIVACY_MANAGER_20()
         {
             InitializeComponent();
@@ -45,59 +48,23 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void l_changePassword_20_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
             Transition_1_20.HideSync(b_save_edit_20);
             Transition_2_20.HideSync(l_changePassword_20);
-            
-            
         }
-
         private void b_close_9_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
             Transition_1_20.ShowSync(b_save_edit_20);
             Transition_2_20.ShowSync(l_changePassword_20);
         }
-
         private void b_save_edit_20_Click(object sender, EventArgs e)
         {
-            SqlConnection sqlconn = new SqlConnection();
-            try
+            if(Application.OpenForms.OfType<F_NOTIF_PASSWORD_24>().Any())
             {
-                sqlconn.ConnectionString = connstr;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            SqlCommand sqlcmd = new SqlCommand();
-            sqlcmd.Connection = sqlconn;
-            SqlDataReader dread;
-            try
-            {
-                sqlcmd.CommandText = "select password from Security_Login where type_emp_index = 3";
-                sqlconn.Open();
-                dread = sqlcmd.ExecuteReader();
-                while (dread.Read())
-                {
-                    password = Convert.ToString(dread["password"]);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                sqlconn.Close();
-            }
-            ///
-            Transition_2_20.ShowSync(t_enter_password_20);
-            if (t_enter_password_20.Text == password && t_enter_password_20.Enabled == true)
-            {
+                SqlConnection sqlconn = new SqlConnection();
                 try
                 {
                     sqlconn.ConnectionString = connstr;
@@ -106,13 +73,18 @@ namespace Project_Hoteel
                 {
                     MessageBox.Show(ex.Message);
                 }
+                SqlCommand sqlcmd = new SqlCommand();
+                sqlcmd.Connection = sqlconn;
+                SqlDataReader dread;
                 try
                 {
-                    SqlCommand sqlcmd1 = new SqlCommand();
-                    sqlcmd1.Connection = sqlconn;
-                    sqlcmd1.CommandText = "update SECURITY_LOGIN set emp_name = '" + t_name_20.Text + "',age_emp = " + t_age_20.Text + " ,telephon_emp = " + t_telephone_20.Text + " ,email_emp = '" + t_email_20.Text + "' where type_emp_index = 3";
+                    sqlcmd.CommandText = "select password from Security_Login where type_emp_index = 3";
                     sqlconn.Open();
-                    sqlcmd1.ExecuteNonQuery();
+                    dread = sqlcmd.ExecuteReader();
+                    while (dread.Read())
+                    {
+                        password = Convert.ToString(dread["password"]);
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -122,11 +94,51 @@ namespace Project_Hoteel
                 {
                     sqlconn.Close();
                 }
+                ///
+                F_NOTIF_PASSWORD_24 f_24 = Application.OpenForms["F_NOTIF_PASSWORD_24"] as F_NOTIF_PASSWORD_24;
+                if (f_24.t_enter_pass_24.Text == password)
+                {
+                    try
+                    {
+                        sqlconn.ConnectionString = connstr;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    try
+                    {
+                        SqlCommand sqlcmd1 = new SqlCommand();
+                        sqlcmd1.Connection = sqlconn;
+                        sqlcmd1.CommandText = "update SECURITY_LOGIN set emp_name = '" + t_name_20.Text + "',age_emp = " + t_age_20.Text + " ,telephon_emp = " + t_telephone_20.Text + " ,email_emp = '" + t_email_20.Text + "' where type_emp_index = 3";
+                        sqlconn.Open();
+                        sqlcmd1.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        sqlconn.Close();
+                    }
+                    f_24.Close();
+                    MessageCollection.showNatification("تم التعديل بنجاح");
+                }
+                else
+                {
+                    f_24.t_enter_pass_24.Text = "";
+                    f_24.t_enter_pass_24.PlaceholderText = "كلمة مرورك خطأ";
+                    SoundPlayer _soundPlayer = new SoundPlayer(soundLocation: @"C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\Sound\Background_Sound.wav");
+                    _soundPlayer.Play();
+                }
             }
-            else if(t_enter_password_20.Text == password && t_enter_password_20.Enabled == true)
+            else
             {
-                t_enter_password_20.Text = "";
-                MessageCollection.showNatification("كلمة مرورك خطأ");
+                F_NOTIF_PASSWORD_24 f__24 = new F_NOTIF_PASSWORD_24();
+                f__24.Show();
+                SoundPlayer _soundPlayer = new SoundPlayer(soundLocation: @"C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\Sound\Background_Sound.wav");
+                _soundPlayer.Play();
             }
 
         }

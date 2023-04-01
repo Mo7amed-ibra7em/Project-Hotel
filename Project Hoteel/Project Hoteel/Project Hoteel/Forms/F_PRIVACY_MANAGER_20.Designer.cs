@@ -53,7 +53,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.t_email_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.t_enter_password_20 = new Guna.UI2.WinForms.Guna2TextBox();
             this.b_save_edit_20 = new Guna.UI2.WinForms.Guna2Button();
             this.label_19 = new System.Windows.Forms.Label();
             this.Transition_1_20 = new Guna.UI2.WinForms.Guna2Transition();
@@ -524,39 +523,6 @@
             this.guna2GradientPanel1.TabIndex = 93;
             this.guna2GradientPanel1.UseTransparentBackground = true;
             // 
-            // t_enter_password_20
-            // 
-            this.t_enter_password_20.Animated = true;
-            this.t_enter_password_20.BackColor = System.Drawing.Color.Transparent;
-            this.t_enter_password_20.BorderColor = System.Drawing.Color.DarkRed;
-            this.t_enter_password_20.BorderRadius = 10;
-            this.t_enter_password_20.BorderStyle = System.Drawing.Drawing2D.DashStyle.Dot;
-            this.t_enter_password_20.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Transition_2_20.SetDecoration(this.t_enter_password_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.Transition_1_20.SetDecoration(this.t_enter_password_20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.t_enter_password_20.DefaultText = "";
-            this.t_enter_password_20.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.t_enter_password_20.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.t_enter_password_20.DisabledState.ForeColor = System.Drawing.Color.Silver;
-            this.t_enter_password_20.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.t_enter_password_20.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.t_enter_password_20.FocusedState.BorderColor = System.Drawing.Color.Plum;
-            this.t_enter_password_20.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.t_enter_password_20.ForeColor = System.Drawing.Color.White;
-            this.t_enter_password_20.HoverState.BorderColor = System.Drawing.Color.DarkRed;
-            this.t_enter_password_20.Location = new System.Drawing.Point(360, 232);
-            this.t_enter_password_20.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.t_enter_password_20.Name = "t_enter_password_20";
-            this.t_enter_password_20.PasswordChar = '\0';
-            this.t_enter_password_20.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.t_enter_password_20.PlaceholderText = "ادخل كلمة المرور للمتابعة";
-            this.t_enter_password_20.SelectedText = "";
-            this.t_enter_password_20.Size = new System.Drawing.Size(229, 32);
-            this.t_enter_password_20.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.t_enter_password_20.TabIndex = 94;
-            this.t_enter_password_20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_enter_password_20.Visible = false;
-            // 
             // b_save_edit_20
             // 
             this.b_save_edit_20.Animated = true;
@@ -757,7 +723,6 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.t_username_new_20);
             this.Controls.Add(this.label_19);
-            this.Controls.Add(this.t_enter_password_20);
             this.Controls.Add(this.b_save_edit_20);
             this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.label1);
@@ -816,14 +781,13 @@
         private System.Windows.Forms.Label label1;
         internal Guna.UI2.WinForms.Guna2TextBox t_email_20;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
-        internal Guna.UI2.WinForms.Guna2TextBox t_enter_password_20;
         private Guna.UI2.WinForms.Guna2Button b_save_edit_20;
         private System.Windows.Forms.Label label_19;
         private Guna.UI2.WinForms.Guna2Transition Transition_1_20;
-        private Guna.UI2.WinForms.Guna2Transition Transition_2_20;
         private System.Windows.Forms.Label label6;
         internal Guna.UI2.WinForms.Guna2TextBox t_username_new_20;
         private System.Windows.Forms.Label label7;
         internal Guna.UI2.WinForms.Guna2TextBox t_username_old_20;
+        private Guna.UI2.WinForms.Guna2Transition Transition_2_20;
     }
 }

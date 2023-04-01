@@ -269,7 +269,7 @@
             // l5
             // 
             this.l5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.l5.Location = new System.Drawing.Point(1073, 430);
+            this.l5.Location = new System.Drawing.Point(1082, 430);
             this.l5.MaximumSize = new System.Drawing.Size(15, 617);
             this.l5.Name = "l5";
             this.l5.Size = new System.Drawing.Size(15, 23);
@@ -281,8 +281,8 @@
             // l3
             // 
             this.l3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.l3.Location = new System.Drawing.Point(1073, 359);
-            this.l3.MaximumSize = new System.Drawing.Size(15, 224);
+            this.l3.Location = new System.Drawing.Point(1082, 359);
+            this.l3.MaximumSize = new System.Drawing.Size(15, 222);
             this.l3.Name = "l3";
             this.l3.Size = new System.Drawing.Size(15, 23);
             this.l3.TabIndex = 22;
@@ -293,7 +293,7 @@
             // l4
             // 
             this.l4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.l4.Location = new System.Drawing.Point(1073, 394);
+            this.l4.Location = new System.Drawing.Point(1082, 394);
             this.l4.MaximumSize = new System.Drawing.Size(15, 576);
             this.l4.Name = "l4";
             this.l4.Size = new System.Drawing.Size(15, 23);
@@ -305,8 +305,8 @@
             // l2
             // 
             this.l2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.l2.Location = new System.Drawing.Point(1073, 323);
-            this.l2.MaximumSize = new System.Drawing.Size(15, 184);
+            this.l2.Location = new System.Drawing.Point(1082, 323);
+            this.l2.MaximumSize = new System.Drawing.Size(15, 182);
             this.l2.Name = "l2";
             this.l2.Size = new System.Drawing.Size(15, 23);
             this.l2.TabIndex = 20;
@@ -317,7 +317,7 @@
             // l1
             // 
             this.l1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.l1.Location = new System.Drawing.Point(1073, 288);
+            this.l1.Location = new System.Drawing.Point(1082, 288);
             this.l1.MaximumSize = new System.Drawing.Size(15, 141);
             this.l1.Name = "l1";
             this.l1.Size = new System.Drawing.Size(15, 23);

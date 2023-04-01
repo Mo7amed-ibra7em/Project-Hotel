@@ -10,6 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.OleDb;
 using Project_Hoteel.Class_Forms.Login_2;
+using Project_Hoteel.Notification;
 
 namespace Project_Hoteel
 {
@@ -93,6 +94,38 @@ namespace Project_Hoteel
                 t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
 
             }
+            ////
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            sqlcmd.Connection = sqlconn;
+            try
+            {
+                sqlcmd.CommandText = "select T_room,Room_condition,N_room from ROOMS where T_room ='" + RoomType + "' and Room_condition = 'فارغة'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    n_room_8.Text = dread["N_room"].ToString();
+                }
+                if (n_room_8.Text == "")
+                {
+                    MessageCollection.showNatification("لا يوجد شاغر بالغرف المفردة");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
         }
         private void b_back_8_Click(object sender, EventArgs e)
         {
@@ -107,21 +140,8 @@ namespace Project_Hoteel
                 price_room = price_8_1 * Convert.ToDouble(f_7.t_number_all_7.Text);
                 t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
             }
-        }
-        private void radio_panel1_2_8_CheckedChanged(object sender, EventArgs e)
-        {
-            F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
-            RoomType = "مزدوجة";
-            if (f_7.t_number_all_7.Text != Convert.ToString(0))
-            {
-                price_room = price_8_2 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
-            }
-        }
-        private void n_room_8_TextChanged(object sender, EventArgs e)
-        {
-            string ROOMTYPE = "";
-
+            ////
+            string Nroom = "";
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -136,14 +156,21 @@ namespace Project_Hoteel
             SqlDataReader dread;
             try
             {
-                sqlcmd.CommandText = "select * from ROOMS";
+                sqlcmd.CommandText = "select T_room,Room_condition,N_room from ROOMS where T_room ='"+RoomType+"' and Room_condition = 'فارغة'";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
                 {
-                    if (dread["N_room"].ToString() == n_room_8.Text)
+                    n_room_8.Text = dread["N_room"].ToString();
+                    Nroom = dread["N_room"].ToString();
+                }
+                n_room_8.Text = Nroom;
+                if (radio_panel1_4_8.Checked == true)
+                {
+                    if (Nroom == "")
                     {
-                        ROOMTYPE = dread["Room_condition"].ToString();
+                        n_room_8.Text = "";
+                        MessageCollection.showNatification("لا يوجد شاغر بالغرف المفردة");
                     }
                 }
             }
@@ -155,14 +182,57 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-            ///
-            if (ROOMTYPE == "محجوزة")
+        }
+        private void radio_panel1_2_8_CheckedChanged(object sender, EventArgs e)
+        {
+            F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
+            RoomType = "مزدوجة";
+            if (f_7.t_number_all_7.Text != Convert.ToString(0))
             {
-                n_room_8.ForeColor = Color.Red;
+                price_room = price_8_2 * Convert.ToDouble(f_7.t_number_all_7.Text);
+                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
             }
-            else
+            /////
+            string Nroom = "";
+            SqlConnection sqlconn = new SqlConnection();
+            try
             {
-                n_room_8.ForeColor = b_reserve_8.ForeColor;
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select T_room,Room_condition,N_room from ROOMS where T_room ='" + RoomType + "' and Room_condition = 'فارغة'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    n_room_8.Text = dread["N_room"].ToString();
+                    Nroom = dread["N_room"].ToString();
+                }
+                n_room_8.Text = Nroom;
+                if (radio_panel1_4_8.Checked == true)
+                {
+                    if (Nroom == "")
+                    {
+                        n_room_8.Text = "";
+                        MessageCollection.showNatification("لا يوجد شاغر بالغرف المزدوجة");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
             }
         }
         private void radio_panel1_3_8_CheckedChanged(object sender, EventArgs e)
@@ -174,6 +244,48 @@ namespace Project_Hoteel
                 price_room = price_8_3 * Convert.ToDouble(f_7.t_number_all_7.Text);
                 t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
             }
+            ////
+            string Nroom = "";
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select T_room,Room_condition,N_room from ROOMS where T_room ='" + RoomType + "' and Room_condition = 'فارغة'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    n_room_8.Text = dread["N_room"].ToString();
+                    Nroom = dread["N_room"].ToString();
+                }
+                n_room_8.Text = Nroom;
+                if (radio_panel1_4_8.Checked == true)
+                {
+                    if (Nroom == "")
+                    {
+                        n_room_8.Text = "";
+                        MessageCollection.showNatification("لا يوجد شاغر بالغرف الثلاثية");
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
         }
         private void radio_panel1_4_8_CheckedChanged(object sender, EventArgs e)
         {
@@ -183,6 +295,49 @@ namespace Project_Hoteel
             {
                 price_room = price_8_4 * Convert.ToDouble(f_7.t_number_all_7.Text);
                 t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+            }
+            /////
+            string Nroom = "";
+            SqlConnection sqlconn = new SqlConnection();
+            try
+            {
+                sqlconn.ConnectionString = connstr;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select T_room,Room_condition,N_room from ROOMS where T_room ='" + RoomType + "' and Room_condition = 'فارغة'";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    n_room_8.Text = dread["N_room"].ToString();
+                    Nroom = dread["N_room"].ToString();
+                }
+                n_room_8.Text = Nroom;
+                if(radio_panel1_4_8.Checked == true)
+                {
+                    if (Nroom == "")
+                    {
+                        n_room_8.Text = "";
+                        MessageCollection.showNatification("لا يوجد شاغر بالغرف سويت");
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
             }
         }
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)

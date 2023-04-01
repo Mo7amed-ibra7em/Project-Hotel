@@ -16,6 +16,7 @@ namespace Project_Hoteel
         bool but2 = false;
         bool but3 = false;
         bool but4 = false;
+        bool but5 = false;
 
         int animated = 0;
         public F_MANAGER_FORM_1()
@@ -121,7 +122,7 @@ namespace Project_Hoteel
         }
         private void b_settings_1_Click(object sender, EventArgs e)
         {
-            but4 = true;
+            but5 = true;
             b_scroll.ShadowDecoration.Enabled = false;
             animated = pnl_scroll_2.MaximumSize.Height / 2;
             timer_liner_1.Start();
@@ -166,7 +167,6 @@ namespace Project_Hoteel
                 but4 = true;
                 b_scroll.ShadowDecoration.Enabled = false;
                 timer_liner_1.Start();
-                Application.Exit();
             }
             else if (pnl_scroll_2.Height <= l3.MaximumSize.Height)
             {
@@ -174,7 +174,6 @@ namespace Project_Hoteel
                 b_scroll.ShadowDecoration.Enabled = false;
                 animated = pnl_scroll_2.MaximumSize.Height / 2;
                 timer_liner_1.Start();
-                Application.Exit();
             }
             
         }
@@ -315,6 +314,7 @@ namespace Project_Hoteel
                         b_scroll.ShadowDecoration.Enabled = true;
                         timer_liner_1.Stop();
                         but4 = false;
+                        Application.Exit();
                     }
                 }
                 if (pnl_scroll_2.Height < l4.MaximumSize.Height)
@@ -336,11 +336,12 @@ namespace Project_Hoteel
                         b_scroll.ShadowDecoration.Enabled = true;
                         timer_liner_1.Stop();
                         but4 = false;
+                        Application.Exit();
                     }
                 }
             }
             ////
-            if (but4 == true)
+            if (but5 == true)
             {
                 pnl_scroll_2.MaximumSize = l5.MaximumSize;
                 if (pnl_scroll_2.Size.Height >= animated)
@@ -357,7 +358,7 @@ namespace Project_Hoteel
                 if (pnl_scroll_2.Size == pnl_scroll_2.MaximumSize)
                 {
                     timer_liner_1.Stop();
-                    but4 = false;
+                    but5 = false;
                     b_scroll.ShadowDecoration.Enabled = true;
                 }
             }

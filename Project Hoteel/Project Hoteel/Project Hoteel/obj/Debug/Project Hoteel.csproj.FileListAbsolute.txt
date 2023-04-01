@@ -254,3 +254,4 @@ C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.aa.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.F_LOGIN_2.ar.resources
 C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.Forms.F_ADD_CUS_23.resources
+C:\Users\RWDA TECH\Desktop\Visual S\Project Hoteel\Project Hoteel\Project Hoteel\obj\Debug\Project_Hoteel.Forms.F_NOTIF_PASSWORD_24.resources
