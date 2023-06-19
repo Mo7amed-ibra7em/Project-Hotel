@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_Hoteel.Notification;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
@@ -14,7 +15,7 @@ namespace Project_Hoteel.Class_Forms.Login_2
         //[DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
         //private static extern IntPtr CreateRoundRectRgn(int nLeftRect, int nTopRect, int nRightRect, int nBottomRect, int nWidthEllipse, int nHeightEllipse);
         static public string SERVER1 = "M-A-IBRAHEM";
-        static string connstr = "Data Source="+SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        static string connstr = "Data Source="+SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
         static F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_2"] as F_LOGIN_2;
         //"انشاء متغيرات للبريد وكلمة المرور"
         static public string username = "Filed";
@@ -29,7 +30,6 @@ namespace Project_Hoteel.Class_Forms.Login_2
         //
         bool ExpandMenu;
         #endregion
-        
 
         public static void ButtonLogin()
         {
@@ -75,7 +75,7 @@ namespace Project_Hoteel.Class_Forms.Login_2
 
             if (f_2.t_password_2.Text == "Password" && f_2.t_email_2.Text == "UserName" || f_2.t_email_2.Text == "اسم المستخدم" && f_2.t_password_2.Text == "كلمة المرور")
             {
-                f_2.l_notificatio_2.Text = "ادخل معلوماتك";
+                //f_2.l_notificatio_2.Text = "ادخل معلوماتك";
                 if (f_2.t_password_2.Text == "Password")
                 {
                     f_2.t_password_2.Text = "Password";
@@ -87,11 +87,10 @@ namespace Project_Hoteel.Class_Forms.Login_2
                     f_2.t_email_2.Text = "اسم المستخدم";
                 }
                 f_2.t_password_2.PasswordChar = char.MinValue;
-                Notification.MessageCollection.showNatification(f_2.l_notificatio_2.Text);
+                MessageCollection.showNatification("ادخل معلوماتك");
             }
             else if (f_2.t_password_2.Text != Convert.ToString(password) || f_2.t_email_2.Text != username)
             {
-                f_2.l_notificatio_2.Text = "اسم المستخدم او كلمة المرور خطأ";
                 if (f_2.RightToLeft == RightToLeft.No)
                 {
                     f_2.t_password_2.Text = "Password";
@@ -103,12 +102,12 @@ namespace Project_Hoteel.Class_Forms.Login_2
                     f_2.t_email_2.Text = "اسم المستخدم";
                 }
                 f_2.t_password_2.PasswordChar = char.MinValue;
-                Notification.MessageCollection.showNatification(f_2.l_notificatio_2.Text);
+                MessageCollection.showNatification("اسم المستخدم او كلمة المرور خطأ");
             }
             else if (f_2.t_email_2.Text == username && f_2.t_password_2.Text == Convert.ToString(password))
             {
                 f_2.l_username_2.Text = "Welcome  " + l_user;
-                f_2.l_notificatio_2.Text = "تم تسجيل الدخول بنجاح";
+                //f_2.l_notificatio_2.Text = "تم تسجيل الدخول بنجاح";
                 if (id_employee == 0)
                 {
                     f_2.Transition_form_2.HideSync(f_2.b_login_2);
@@ -121,10 +120,9 @@ namespace Project_Hoteel.Class_Forms.Login_2
                     Login_manager = true;
                     f_2.timer_progress_2.Start();
                 }
-                Notification.MessageCollection.showNatification(f_2.l_notificatio_2.Text);
+                MessageCollection.showNatification("تم تسجيل الدخول بنجاح");
             }
         }
-        
         public static void TimerLogin()
         {
             if (Login_emp == true || Login_manager == true)
@@ -155,6 +153,5 @@ namespace Project_Hoteel.Class_Forms.Login_2
                 }
             }
         }
-
     }
 }

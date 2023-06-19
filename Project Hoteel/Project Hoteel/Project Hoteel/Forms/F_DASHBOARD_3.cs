@@ -16,5 +16,10 @@ namespace Project_Hoteel
         {
             InitializeComponent();
         }
+
+        private void F_DASHBOARD_3_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -64,7 +64,6 @@
             this.l_8_6.TabIndex = 17;
             this.l_8_6.Text = "العمر";
             this.l_8_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_8_6.Click += new System.EventHandler(this.l_8_6_Click);
             // 
             // l_7_6
             // 
@@ -79,7 +78,6 @@
             this.l_7_6.TabIndex = 13;
             this.l_7_6.Text = "تاريخ الدخول";
             this.l_7_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_7_6.Click += new System.EventHandler(this.l_7_6_Click);
             // 
             // l_6_6
             // 
@@ -94,7 +92,6 @@
             this.l_6_6.TabIndex = 12;
             this.l_6_6.Text = "رقم الهاتف";
             this.l_6_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_6_6.Click += new System.EventHandler(this.l_6_6_Click);
             // 
             // l_5_6
             // 
@@ -109,7 +106,6 @@
             this.l_5_6.TabIndex = 11;
             this.l_5_6.Text = "الاسم الاخير";
             this.l_5_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_5_6.Click += new System.EventHandler(this.l_5_6_Click);
             // 
             // l_4_6
             // 
@@ -124,7 +120,6 @@
             this.l_4_6.TabIndex = 10;
             this.l_4_6.Text = "تاريخ الخروج";
             this.l_4_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_4_6.Click += new System.EventHandler(this.l_4_6_Click);
             // 
             // l_3_6
             // 
@@ -139,7 +134,6 @@
             this.l_3_6.TabIndex = 9;
             this.l_3_6.Text = "رقم الهوية";
             this.l_3_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_3_6.Click += new System.EventHandler(this.l_3_6_Click);
             // 
             // l_2_6
             // 
@@ -154,7 +148,6 @@
             this.l_2_6.TabIndex = 8;
             this.l_2_6.Text = "الجنسية";
             this.l_2_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_2_6.Click += new System.EventHandler(this.l_2_6_Click);
             // 
             // l_1_6
             // 
@@ -169,7 +162,6 @@
             this.l_1_6.TabIndex = 7;
             this.l_1_6.Text = "الاسم الاول";
             this.l_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_1_6.Click += new System.EventHandler(this.l_1_6_Click);
             // 
             // panel1
             // 
@@ -279,7 +271,6 @@
             this.t_telephone_number_6.Size = new System.Drawing.Size(232, 37);
             this.t_telephone_number_6.TabIndex = 7;
             this.t_telephone_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_telephone_number_6.TextChanged += new System.EventHandler(this.t_telephone_number_6_TextChanged);
             // 
             // t_identification_number_6
             // 
@@ -306,7 +297,6 @@
             this.t_identification_number_6.Size = new System.Drawing.Size(232, 37);
             this.t_identification_number_6.TabIndex = 6;
             this.t_identification_number_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_identification_number_6.TextChanged += new System.EventHandler(this.t_identification_number_6_TextChanged);
             // 
             // t_age_6
             // 
@@ -333,7 +323,6 @@
             this.t_age_6.Size = new System.Drawing.Size(232, 37);
             this.t_age_6.TabIndex = 5;
             this.t_age_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_age_6.TextChanged += new System.EventHandler(this.t_age_6_TextChanged);
             // 
             // t_nationality_6
             // 
@@ -360,7 +349,6 @@
             this.t_nationality_6.Size = new System.Drawing.Size(232, 37);
             this.t_nationality_6.TabIndex = 4;
             this.t_nationality_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_nationality_6.TextChanged += new System.EventHandler(this.t_nationality_6_TextChanged);
             // 
             // t_last_name_6
             // 
@@ -387,7 +375,6 @@
             this.t_last_name_6.Size = new System.Drawing.Size(232, 37);
             this.t_last_name_6.TabIndex = 3;
             this.t_last_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_last_name_6.TextChanged += new System.EventHandler(this.t_last_name_6_TextChanged);
             // 
             // t_fore_name_6
             // 
@@ -414,7 +401,6 @@
             this.t_fore_name_6.Size = new System.Drawing.Size(232, 37);
             this.t_fore_name_6.TabIndex = 2;
             this.t_fore_name_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.t_fore_name_6.TextChanged += new System.EventHandler(this.t_fore_name_6_TextChanged);
             // 
             // d_exit_date_6
             // 
@@ -443,7 +429,6 @@
             this.d_exit_date_6.TabIndex = 1;
             this.d_exit_date_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.d_exit_date_6.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
-            this.d_exit_date_6.ValueChanged += new System.EventHandler(this.d_exit_date_6_ValueChanged);
             // 
             // d_date_of_entry_6
             // 
@@ -472,7 +457,6 @@
             this.d_date_of_entry_6.TabIndex = 0;
             this.d_date_of_entry_6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.d_date_of_entry_6.Value = new System.DateTime(2023, 2, 25, 14, 59, 17, 577);
-            this.d_date_of_entry_6.ValueChanged += new System.EventHandler(this.d_date_of_entry_6_ValueChanged);
             // 
             // F_NEW_RESERVATION_6
             // 

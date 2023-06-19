@@ -35,7 +35,7 @@ namespace Project_Hoteel
         }
         private void timer_progress_2_Tick(object sender, EventArgs e)
         {
-            Class_Forms.Login_2.C_LOGIN_2.TimerLogin();
+            C_LOGIN_2.TimerLogin();
 
             //if (Login_emp == true || Login_manager == true)
             //{

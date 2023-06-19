@@ -17,16 +17,16 @@ namespace Project_Hoteel
 {
     public partial class F_PRIVACY_MANAGER_20 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
+
         string password = "";
-        int Show_pass = 0;
-        //Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
+        bool Expand = false;
+
         public F_PRIVACY_MANAGER_20()
         {
             InitializeComponent();
         }
 
-        bool Expand = false;
         private void timer_Password_Tick(object sender, EventArgs e)
         {
             if (Expand == true)
@@ -166,7 +166,7 @@ namespace Project_Hoteel
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
                 {
-                    Class_Forms.Login_2.C_LOGIN_2.password = Convert.ToString(dread["password"]);
+                    C_LOGIN_2.password = Convert.ToString(dread["password"]);
                 }
             }
             catch (Exception ex)
@@ -239,7 +239,6 @@ namespace Project_Hoteel
                 MessageCollection.showNatification("تم التغيير بنجاح");
             }
         }
-
         private void F_PRIVACY_MANAGER_20_Load(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();

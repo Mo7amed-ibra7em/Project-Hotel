@@ -16,7 +16,7 @@ namespace Project_Hoteel
 {
     public partial class F_ACC_EMP_19 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         public F_ACC_EMP_19()
         {

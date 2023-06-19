@@ -15,7 +15,7 @@ namespace Project_Hoteel
 {
     public partial class F_DEBARTURES_11 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
         public string[] array = new string[] { };
         public F_DEBARTURES_11()
         {
@@ -24,14 +24,14 @@ namespace Project_Hoteel
 
         private void b_cancel_11_Click(object sender, EventArgs e)
         {
-            this.Close();
-            ///
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
             f_5.pnl_load_form_5.Controls.Clear();
             F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
             f_15.TopLevel = false;
             f_5.pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
+            ////
+            this.Close();
         }
         private void F_DEBARTURES_11_Load(object sender, EventArgs e)
         {
@@ -131,16 +131,6 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-        }
-
-        private void dgv_11_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void b_search_11_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

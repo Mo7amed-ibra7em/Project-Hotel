@@ -33,7 +33,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_LOGIN_2));
             this.timer_progress_2 = new System.Windows.Forms.Timer(this.components);
             this.t_password_2 = new System.Windows.Forms.TextBox();
-            this.l_notificatio_2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.l_progress_2 = new System.Windows.Forms.Label();
@@ -47,7 +46,9 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.Transition_form_2 = new Guna.UI2.WinForms.Guna2Transition();
             this.l_forget_password_2 = new System.Windows.Forms.Label();
+            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.BorderlessForm_2 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.picture_cancel_12)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -78,22 +79,6 @@
             this.t_password_2.TextChanged += new System.EventHandler(this.t_password_2_TextChanged);
             this.t_password_2.Leave += new System.EventHandler(this.t_password_2_Leave);
             // 
-            // l_notificatio_2
-            // 
-            this.l_notificatio_2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.l_notificatio_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.Transition_form_2.SetDecoration(this.l_notificatio_2, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.l_notificatio_2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.l_notificatio_2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold);
-            this.l_notificatio_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(186)))), ((int)(((byte)(255)))));
-            this.l_notificatio_2.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.l_notificatio_2.Location = new System.Drawing.Point(71, 561);
-            this.l_notificatio_2.Name = "l_notificatio_2";
-            this.l_notificatio_2.Size = new System.Drawing.Size(255, 31);
-            this.l_notificatio_2.TabIndex = 19;
-            this.l_notificatio_2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.l_notificatio_2.Visible = false;
-            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -116,6 +101,7 @@
             // 
             // l_progress_2
             // 
+            this.l_progress_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l_progress_2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.Transition_form_2.SetDecoration(this.l_progress_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_progress_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -131,7 +117,7 @@
             // 
             // ProgressBar_2
             // 
-            this.ProgressBar_2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.ProgressBar_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.ProgressBar_2.AnimationFunction = WinFormAnimation.KnownAnimationFunctions.CircularEaseInOut;
             this.ProgressBar_2.AnimationSpeed = 5000;
             this.ProgressBar_2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
@@ -203,6 +189,7 @@
             // 
             // b_login_2
             // 
+            this.b_login_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.b_login_2.AnimatedGIF = true;
             this.b_login_2.AutoRoundedCorners = true;
             this.b_login_2.BackColor = System.Drawing.Color.Transparent;
@@ -235,7 +222,7 @@
             // 
             // picture_cancel_12
             // 
-            this.picture_cancel_12.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.picture_cancel_12.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picture_cancel_12.BackColor = System.Drawing.Color.Transparent;
             this.picture_cancel_12.BackgroundImage = global::Project_Hoteel.Properties.Resources.cross__2_;
             this.picture_cancel_12.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
@@ -316,7 +303,7 @@
             // 
             // l_forget_password_2
             // 
-            this.l_forget_password_2.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.l_forget_password_2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.l_forget_password_2.BackColor = System.Drawing.Color.Transparent;
             this.Transition_form_2.SetDecoration(this.l_forget_password_2, Guna.UI2.AnimatorNS.DecorationType.None);
             this.l_forget_password_2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -331,6 +318,24 @@
             this.l_forget_password_2.MouseLeave += new System.EventHandler(this.l_forget_password_2_MouseLeave);
             this.l_forget_password_2.MouseHover += new System.EventHandler(this.l_forget_password_2_MouseHover);
             // 
+            // guna2ControlBox1
+            // 
+            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox1.Animated = true;
+            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.Transition_form_2.SetDecoration(this.guna2ControlBox1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox1.HoverState.IconColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2ControlBox1.IconColor = System.Drawing.Color.MediumOrchid;
+            this.guna2ControlBox1.Location = new System.Drawing.Point(282, 7);
+            this.guna2ControlBox1.Name = "guna2ControlBox1";
+            this.guna2ControlBox1.Size = new System.Drawing.Size(38, 29);
+            this.guna2ControlBox1.TabIndex = 101;
+            this.guna2ControlBox1.TabStop = false;
+            // 
             // BorderlessForm_2
             // 
             this.BorderlessForm_2.BorderRadius = 25;
@@ -344,6 +349,24 @@
             this.BorderlessForm_2.ShadowColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(10)))), ((int)(((byte)(30)))));
             this.BorderlessForm_2.TransparentWhileDrag = true;
             // 
+            // guna2ControlBox2
+            // 
+            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2ControlBox2.Animated = true;
+            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MaximizeBox;
+            this.Transition_form_2.SetDecoration(this.guna2ControlBox2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2ControlBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.FillColor = System.Drawing.Color.Transparent;
+            this.guna2ControlBox2.HoverState.IconColor = System.Drawing.Color.CornflowerBlue;
+            this.guna2ControlBox2.IconColor = System.Drawing.Color.MediumOrchid;
+            this.guna2ControlBox2.Location = new System.Drawing.Point(324, 7);
+            this.guna2ControlBox2.Name = "guna2ControlBox2";
+            this.guna2ControlBox2.Size = new System.Drawing.Size(35, 27);
+            this.guna2ControlBox2.TabIndex = 102;
+            this.guna2ControlBox2.TabStop = false;
+            // 
             // F_LOGIN_2
             // 
             this.AcceptButton = this.b_login_2;
@@ -351,6 +374,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.ClientSize = new System.Drawing.Size(399, 601);
+            this.Controls.Add(this.guna2ControlBox2);
+            this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.l_forget_password_2);
             this.Controls.Add(this.t_email_2);
             this.Controls.Add(this.b_login_2);
@@ -364,7 +389,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.l_notificatio_2);
             this.Transition_form_2.SetDecoration(this, Guna.UI2.AnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.HeaderStyle = ComponentFactory.Krypton.Toolkit.HeaderStyle.Secondary;
@@ -386,7 +410,6 @@
 
         #endregion
         public System.Windows.Forms.Timer timer_progress_2;
-        public System.Windows.Forms.Label l_notificatio_2;
         public System.Windows.Forms.TextBox t_password_2;
         public System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.PictureBox pictureBox2;
@@ -402,5 +425,7 @@
         public System.Windows.Forms.Label l_forget_password_2;
         public Guna.UI2.WinForms.Guna2BorderlessForm BorderlessForm_2;
         public Guna.UI2.WinForms.Guna2Transition Transition_form_2;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
     }
 }

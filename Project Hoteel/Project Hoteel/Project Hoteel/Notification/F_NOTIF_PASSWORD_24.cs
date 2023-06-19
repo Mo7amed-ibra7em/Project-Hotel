@@ -21,12 +21,10 @@ namespace Project_Hoteel.Forms
         {
             t_enter_pass_24.Focus();
         }
-
         private void timer_notification_24_Tick(object sender, EventArgs e)
         {
             Close();
         }
-
         private void pictor_icon_24_Click(object sender, EventArgs e)
         {
             Close();

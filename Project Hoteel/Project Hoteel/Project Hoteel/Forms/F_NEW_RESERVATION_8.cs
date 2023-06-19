@@ -16,11 +16,11 @@ namespace Project_Hoteel
 {
     public partial class F_NEW_RESERVATION_8 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        #region اتصال مع قاعدة البيانات ومتغيرات
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
         public double price_8_1 = 0, price_8_2 = 0, price_8_3 = 0, price_8_4 = 0, price_room = 0;
-        double price_bb_2 = 2,  price_hb_4 = 4,  price_fb_6 = 6,  price_meals = 0;
         string RoomType = "";
-        
+        #endregion
         public F_NEW_RESERVATION_8()
         {
             InitializeComponent();
@@ -91,7 +91,7 @@ namespace Project_Hoteel
             {
                 RoomType = "مفردة";
                 price_room = price_8_1 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+                t_price_8.Text = "$ " + Convert.ToString(price_room);
 
             }
             ////
@@ -138,7 +138,7 @@ namespace Project_Hoteel
             if (f_7.t_number_all_7.Text != Convert.ToString(0))
             {
                 price_room = price_8_1 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+                t_price_8.Text = "$ " + Convert.ToString(price_room);
             }
             ////
             string Nroom = "";
@@ -190,7 +190,7 @@ namespace Project_Hoteel
             if (f_7.t_number_all_7.Text != Convert.ToString(0))
             {
                 price_room = price_8_2 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+                t_price_8.Text = "$ " + Convert.ToString(price_room);
             }
             /////
             string Nroom = "";
@@ -242,7 +242,7 @@ namespace Project_Hoteel
             if (f_7.t_number_all_7.Text != Convert.ToString(0))
             {
                 price_room = price_8_3 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+                t_price_8.Text = "$ " + Convert.ToString(price_room);
             }
             ////
             string Nroom = "";
@@ -294,7 +294,7 @@ namespace Project_Hoteel
             if (f_7.t_number_all_7.Text != Convert.ToString(0))
             {
                 price_room = price_8_4 * Convert.ToDouble(f_7.t_number_all_7.Text);
-                t_price_8.Text = "$ " + Convert.ToString(price_room + price_meals);
+                t_price_8.Text = "$ " + Convert.ToString(price_room);
             }
             /////
             string Nroom = "";
@@ -329,7 +329,6 @@ namespace Project_Hoteel
                         MessageCollection.showNatification("لا يوجد شاغر بالغرف سويت");
                     }
                 }
-
             }
             catch (Exception ex)
             {
@@ -340,40 +339,11 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
-        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)Keys.Back)
-                e.Handled = false;
-            else
-                e.Handled = true;
-        }
-        private void radio_bb_8_CheckedChanged(object sender, EventArgs e)
-        {
-            //t_meal_type_8.Text = "وجبة الافطار فقط .";
-            F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
-            price_meals = price_bb_2 * Convert.ToDouble(f_7.t_number_all_7.Text);
-            t_price_8.Text = "$ " + Convert.ToString(price_meals+price_room);
-        }
-        private void radio_hb_8_CheckedChanged(object sender, EventArgs e)
-        {
-            //t_meal_type_8.Text = "وجبتي طعام ( الإفطار والعشاء ) .";
-            F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
-            price_meals = price_hb_4 * Convert.ToDouble(f_7.t_number_all_7.Text);
-            t_price_8.Text = "$ " + Convert.ToString(price_meals + price_room);
-        }
-        private void radio_fb_8_CheckedChanged(object sender, EventArgs e)
-        {
-            //t_meal_type_8.Text = "ثلاث وجبات .";
-            F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
-            price_meals = price_fb_6 * Convert.ToDouble(f_7.t_number_all_7.Text);
-            t_price_8.Text = "$ " + Convert.ToString(price_meals + price_room);
-        }
         private void b_reserve_8_Click(object sender, EventArgs e)
         {
             F_NEW_RESERVATION_6 f_6 = Application.OpenForms["F_NEW_RESERVATION_6"] as F_NEW_RESERVATION_6;
             F_NEW_RESERVATION_7 f_7 = Application.OpenForms["F_NEW_RESERVATION_7"] as F_NEW_RESERVATION_7;
             F_RESIDENTS_10 f_10 = new F_RESIDENTS_10();
-
             ////
             SqlConnection sqlconn = new SqlConnection();
             double Number_Room = 0;
@@ -412,7 +382,7 @@ namespace Project_Hoteel
             ////
             if (Number_Room == 0)
             {
-                Notification.MessageCollection.showNatification("الغرفة غير موجودة");
+                MessageCollection.showNatification("الغرفة غير موجودة");
             }
             else
             {
@@ -436,7 +406,7 @@ namespace Project_Hoteel
                     }
                     else
                     {
-                        Notification.MessageCollection.showNatification("هذه الغرفة محجوزة");
+                        MessageCollection.showNatification("هذه الغرفة محجوزة");
                     }
                 }
                 catch (Exception ex)

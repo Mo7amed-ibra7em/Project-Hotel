@@ -22,21 +22,16 @@ namespace Project_Hoteel.Notification
         {
             Close();
         }
-
         private void label_notification_22_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void pictor_icon_22_Click(object sender, EventArgs e)
         {
             Close();
         }
-
         private void F_NOTIFICATION_22_Load(object sender, EventArgs e)
         {
-            //F_LOGIN_SIGNUP_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_SIGNUP_2;
-            //label_notification_22.Text = f_2.L_2.Text;
             
         }
     }

@@ -81,7 +81,6 @@
             this.b_cover_2.Name = "b_cover_2";
             this.b_cover_2.Size = new System.Drawing.Size(23, 37);
             this.b_cover_2.TabIndex = 19;
-            this.b_cover_2.Click += new System.EventHandler(this.b_cover_2_Click);
             // 
             // pnl_manager_18
             // 
@@ -91,7 +90,6 @@
             this.pnl_manager_18.Name = "pnl_manager_18";
             this.pnl_manager_18.Size = new System.Drawing.Size(57, 645);
             this.pnl_manager_18.TabIndex = 37;
-            this.pnl_manager_18.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_manager_18_Paint);
             // 
             // b_shape_1
             // 
@@ -113,7 +111,6 @@
             this.b_shape_1.Size = new System.Drawing.Size(75, 75);
             this.b_shape_1.TabIndex = 25;
             this.b_shape_1.UseTransparentBackground = true;
-            this.b_shape_1.Click += new System.EventHandler(this.b_shape_1_Click);
             // 
             // pnl_checked_18
             // 
@@ -130,7 +127,6 @@
             this.pnl_checked_18.Size = new System.Drawing.Size(80, 156);
             this.pnl_checked_18.TabIndex = 30;
             this.pnl_checked_18.UseTransparentBackground = true;
-            this.pnl_checked_18.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_checked_18_Paint);
             // 
             // b_cover_1
             // 
@@ -155,7 +151,6 @@
             this.b_cover_1.Name = "b_cover_1";
             this.b_cover_1.Size = new System.Drawing.Size(23, 37);
             this.b_cover_1.TabIndex = 31;
-            this.b_cover_1.Click += new System.EventHandler(this.b_cover_1_Click);
             // 
             // timer_checked_18
             // 
@@ -174,7 +169,6 @@
             this.pnl_1.Size = new System.Drawing.Size(80, 679);
             this.pnl_1.TabIndex = 38;
             this.pnl_1.UseTransparentBackground = true;
-            this.pnl_1.Paint += new System.Windows.Forms.PaintEventHandler(this.pnl_1_Paint);
             // 
             // b_acc_emp_18
             // 

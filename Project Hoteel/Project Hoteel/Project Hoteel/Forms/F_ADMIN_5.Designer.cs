@@ -98,7 +98,6 @@
             this.PB_list_bg_5.Name = "PB_list_bg_5";
             this.PB_list_bg_5.Size = new System.Drawing.Size(52, 467);
             this.PB_list_bg_5.TabIndex = 35;
-            this.PB_list_bg_5.Paint += new System.Windows.Forms.PaintEventHandler(this.PB_list_bg_5_Paint);
             // 
             // b_setting_5
             // 
@@ -159,7 +158,6 @@
             this.button10.Size = new System.Drawing.Size(134, 38);
             this.button10.TabIndex = 41;
             this.button10.UseVisualStyleBackColor = false;
-            this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
             // button11
             // 
@@ -178,7 +176,6 @@
             this.button11.Size = new System.Drawing.Size(126, 46);
             this.button11.TabIndex = 42;
             this.button11.UseVisualStyleBackColor = false;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // l_archive_5
             // 
@@ -197,7 +194,6 @@
             this.l_archive_5.Size = new System.Drawing.Size(44, 37);
             this.l_archive_5.TabIndex = 37;
             this.l_archive_5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.l_archive_5.Click += new System.EventHandler(this.l_archive_5_Click);
             // 
             // b_new_reservation_5
             // 
@@ -250,7 +246,6 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(129, 2);
             this.panel6.TabIndex = 4;
-            this.panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.panel6_Paint);
             // 
             // panel4
             // 
@@ -261,7 +256,6 @@
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(190, 2);
             this.panel4.TabIndex = 0;
-            this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
             // label2
             // 
@@ -274,7 +268,6 @@
             this.label2.Size = new System.Drawing.Size(117, 30);
             this.label2.TabIndex = 36;
             this.label2.Text = "القائمة الرئيسية";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // PB_weather_5
             // 
@@ -307,7 +300,6 @@
             this.button4.Size = new System.Drawing.Size(134, 46);
             this.button4.TabIndex = 15;
             this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -326,7 +318,6 @@
             this.button5.Size = new System.Drawing.Size(126, 46);
             this.button5.TabIndex = 16;
             this.button5.UseVisualStyleBackColor = false;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // PB_language_5
             // 
@@ -351,7 +342,6 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(126, 2);
             this.panel5.TabIndex = 1;
-            this.panel5.Paint += new System.Windows.Forms.PaintEventHandler(this.panel5_Paint);
             // 
             // button3
             // 
@@ -370,7 +360,6 @@
             this.button3.Size = new System.Drawing.Size(134, 38);
             this.button3.TabIndex = 19;
             this.button3.UseVisualStyleBackColor = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // l_sign_out_5
             // 
@@ -410,7 +399,6 @@
             this.button6.Size = new System.Drawing.Size(126, 46);
             this.button6.TabIndex = 20;
             this.button6.UseVisualStyleBackColor = false;
-            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // b_hanging_reservations_5
             // 
@@ -471,7 +459,6 @@
             this.button1.Size = new System.Drawing.Size(134, 38);
             this.button1.TabIndex = 21;
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button8
             // 
@@ -490,7 +477,6 @@
             this.button8.Size = new System.Drawing.Size(134, 38);
             this.button8.TabIndex = 24;
             this.button8.UseVisualStyleBackColor = false;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -509,7 +495,6 @@
             this.button9.Size = new System.Drawing.Size(126, 46);
             this.button9.TabIndex = 25;
             this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // button2
             // 
@@ -528,7 +513,6 @@
             this.button2.Size = new System.Drawing.Size(126, 46);
             this.button2.TabIndex = 22;
             this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // timer_menu
             // 

@@ -19,7 +19,6 @@ namespace Project_Hoteel
     {
         int Weather = 0, language = 0;
         bool ExpandMenu = true;
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
 
         public F_ADMIN_5()
         {
@@ -34,8 +33,6 @@ namespace Project_Hoteel
             pnl_load_form_5.Controls.Add(f_6);
             f_6.Show();
         }
-
-
         private void l_sign_out_5_MouseHover(object sender, EventArgs e)
         {
             l_sign_out_5.ForeColor = Color.SteelBlue;
@@ -73,7 +70,6 @@ namespace Project_Hoteel
 
         private void F_ADMIN_5_Load(object sender, EventArgs e)
         {
-
             PB_weather_5.Image = Properties.Resources.weather;
             PB_language_5.Image = Properties.Resources.language;
 
@@ -119,7 +115,6 @@ namespace Project_Hoteel
 
         private void PB_weather_5_Click(object sender, EventArgs e)
         {
-
             if (Weather != 0)
             {
                 PB_weather_5.Image = Properties.Resources.weather_blue;
@@ -164,120 +159,6 @@ namespace Project_Hoteel
             f_16.b_privac_16.BackColor = f_1.BackColor;
 
         }
-
-        //public const int WM_NCLBUTTONDOWN = 0xA1;
-        //public const int HT_CAPTION = 0x2;
-        private void F_ADMIN_5_MouseDown(object sender, MouseEventArgs e)
-        {
-            //if (e.Button == MouseButtons.Left)
-            //{
-            //    NativeMethods.ReleaseCapture();
-            //    NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            //}
-        }
-
-        private void button10_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button11_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void l_archive_5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel6_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button8_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button9_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PB_list_bg_5_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        //public class NativeMethods
-        //{
-        //    [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-        //    public static extern IntPtr CreateRoundRectRgn
-        //     (
-        //      int nLeftRect, // x-coordinate of upper-left corner
-        //      int nTopRect, // y-coordinate of upper-left corner
-        //      int nRightRect, // x-coordinate of lower-right corner
-        //      int nBottomRect, // y-coordinate of lower-right corner
-        //      int nWidthEllipse, // height of ellipse
-        //      int nHeightEllipse // width of ellipse
-        //     );
-
-        //    [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
-        //    public static extern bool DeleteObject(IntPtr hObject);
-        //    [DllImportAttribute("user32.dll")]
-        //    public static extern bool ReleaseCapture();
-
-        //    [DllImportAttribute("user32.dll")]
-        //    public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        //}
-
         private void timer_menu_Tick(object sender, EventArgs e)
         {
             if (ExpandMenu == true)
@@ -302,7 +183,37 @@ namespace Project_Hoteel
             }
         }
 
-        ////
-        ///
+        //public const int WM_NCLBUTTONDOWN = 0xA1;
+        //public const int HT_CAPTION = 0x2;
+        private void F_ADMIN_5_MouseDown(object sender, MouseEventArgs e)
+        {
+            //if (e.Button == MouseButtons.Left)
+            //{
+            //    NativeMethods.ReleaseCapture();
+            //    NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            //}
+        }
+        //public class NativeMethods
+        //{
+        //    [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+        //    public static extern IntPtr CreateRoundRectRgn
+        //     (
+        //      int nLeftRect, // x-coordinate of upper-left corner
+        //      int nTopRect, // y-coordinate of upper-left corner
+        //      int nRightRect, // x-coordinate of lower-right corner
+        //      int nBottomRect, // y-coordinate of lower-right corner
+        //      int nWidthEllipse, // height of ellipse
+        //      int nHeightEllipse // width of ellipse
+        //     );
+
+        //    [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
+        //    public static extern bool DeleteObject(IntPtr hObject);
+        //    [DllImportAttribute("user32.dll")]
+        //    public static extern bool ReleaseCapture();
+
+        //    [DllImportAttribute("user32.dll")]
+        //    public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        //}
+
     }
 }

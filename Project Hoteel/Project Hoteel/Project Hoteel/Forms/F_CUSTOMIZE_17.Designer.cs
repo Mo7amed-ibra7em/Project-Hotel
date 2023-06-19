@@ -69,7 +69,6 @@
             this.guna2Button2.TabStop = false;
             this.guna2Button2.Text = "حفظ التعديلات";
             this.guna2Button2.TextFormatNoPrefix = true;
-            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // guna2GradientButton2
             // 
@@ -100,7 +99,6 @@
             this.guna2GradientButton2.Size = new System.Drawing.Size(74, 50);
             this.guna2GradientButton2.TabIndex = 113;
             this.guna2GradientButton2.Text = "فاتح";
-            this.guna2GradientButton2.Click += new System.EventHandler(this.guna2GradientButton2_Click);
             // 
             // guna2GradientButton1
             // 
@@ -130,7 +128,6 @@
             this.guna2GradientButton1.Size = new System.Drawing.Size(74, 50);
             this.guna2GradientButton1.TabIndex = 112;
             this.guna2GradientButton1.Text = "داكن";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
             // 
             // guna2ComboBox1
             // 
@@ -160,7 +157,6 @@
             this.guna2ComboBox1.Size = new System.Drawing.Size(178, 26);
             this.guna2ComboBox1.TabIndex = 111;
             this.guna2ComboBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.guna2ComboBox1.SelectedIndexChanged += new System.EventHandler(this.guna2ComboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -177,7 +173,6 @@
             this.label1.TabIndex = 110;
             this.label1.Text = "اللغة";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // l_1_6
             // 
@@ -194,7 +189,6 @@
             this.l_1_6.TabIndex = 109;
             this.l_1_6.Text = "المظهر  :";
             this.l_1_6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.l_1_6.Click += new System.EventHandler(this.l_1_6_Click);
             // 
             // pictureBox1
             // 
@@ -207,7 +201,6 @@
             this.pictureBox1.Size = new System.Drawing.Size(41, 41);
             this.pictureBox1.TabIndex = 108;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // PictureBox2
             // 
@@ -220,7 +213,6 @@
             this.PictureBox2.Size = new System.Drawing.Size(41, 41);
             this.PictureBox2.TabIndex = 107;
             this.PictureBox2.TabStop = false;
-            this.PictureBox2.Click += new System.EventHandler(this.PictureBox2_Click);
             // 
             // F_CUSTOMIZE_17
             // 
@@ -239,7 +231,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "F_CUSTOMIZE_17";
             this.Text = "F_CUSTOMIZE_17";
-            this.Load += new System.EventHandler(this.F_CUSTOMIZE_17_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).EndInit();
             this.ResumeLayout(false);

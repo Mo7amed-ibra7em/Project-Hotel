@@ -12,6 +12,7 @@ namespace Project_Hoteel
 {
     public partial class F_MANAGER_FORM_1 : Form
     {
+        #region متغيرات
         bool but1 = false;
         bool but2 = false;
         bool but3 = false;
@@ -19,6 +20,7 @@ namespace Project_Hoteel
         bool but5 = false;
 
         int animated = 0;
+        #endregion
         public F_MANAGER_FORM_1()
         {
             InitializeComponent();

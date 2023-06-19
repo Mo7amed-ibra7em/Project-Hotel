@@ -16,50 +16,5 @@ namespace Project_Hoteel
         {
             InitializeComponent();
         }
-
-        private void F_CUSTOMIZE_17_Load(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void l_1_6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

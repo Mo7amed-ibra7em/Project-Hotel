@@ -14,12 +14,13 @@ namespace Project_Hoteel
 {
     public partial class F_CUSTOMIZE_MANAGER_21 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         public F_CUSTOMIZE_MANAGER_21()
         {
             InitializeComponent();
         }
+
         private void F_CUSTOMIZE_MANAGER_21_Load(object sender, EventArgs e)
         {
            SqlConnection sqlconn = new SqlConnection();

@@ -14,7 +14,7 @@ namespace Project_Hoteel
 {
     public partial class F_HANGING_RESERVATION_13 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1 +"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1 +"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         public F_HANGING_RESERVATION_13()
         {
@@ -23,18 +23,17 @@ namespace Project_Hoteel
 
         private void b_cancel_13_Click(object sender, EventArgs e)
         {
-            this.Close();
-            ///
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
             f_5.pnl_load_form_5.Controls.Clear();
             F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
             f_15.TopLevel = false;
             f_5.pnl_load_form_5.Controls.Add(f_15);
             f_15.Show();
+            ////
+            this.Close();
         }
         private void F_HANGING_RESERVATION_13_Load(object sender, EventArgs e)
         {
-
             SqlConnection sqlconn = new SqlConnection();
             try
             {
@@ -96,21 +95,6 @@ namespace Project_Hoteel
             {
                 sqlconn.Close();
             }
-        }
-
-        private void b_secure_reservation_13_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dgv_13_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void b_search_13_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

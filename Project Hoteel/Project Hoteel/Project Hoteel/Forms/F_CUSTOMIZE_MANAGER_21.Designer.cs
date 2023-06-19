@@ -233,11 +233,11 @@
             this.label_19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.label_19.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_19.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.label_19.Location = new System.Drawing.Point(862, 9);
+            this.label_19.Location = new System.Drawing.Point(856, 8);
             this.label_19.Name = "label_19";
             this.label_19.Size = new System.Drawing.Size(90, 36);
             this.label_19.TabIndex = 108;
-            this.label_19.Text = "المـوظفيـن";
+            this.label_19.Text = "تخـصيص";
             this.label_19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2

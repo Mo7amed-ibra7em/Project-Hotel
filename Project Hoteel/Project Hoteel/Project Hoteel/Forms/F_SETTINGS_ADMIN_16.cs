@@ -12,11 +12,13 @@ namespace Project_Hoteel
 {
     public partial class F_SETTINGS_ADMIN_16 : Form
     {
+        #region متغيرات
         bool but1 = false;
         public bool but2 = false;
         bool but3 = false;
         bool but4 = false;
         int animated = 0;
+        #endregion
 
         public F_SETTINGS_ADMIN_16()
         {

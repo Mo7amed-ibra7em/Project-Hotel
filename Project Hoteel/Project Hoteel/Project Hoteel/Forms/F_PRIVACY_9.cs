@@ -1,27 +1,22 @@
 ﻿using Project_Hoteel.Class_Forms.Login_2;
 using Project_Hoteel.Notification;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.TrackBar;
+
 
 namespace Project_Hoteel
 {
     public partial class F_PRIVACY_9 : Form
     {        
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
-        Class_Forms.Login_2.C_LOGIN_2 c_2 = new Class_Forms.Login_2.C_LOGIN_2();
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         bool Pass = false;
         private int _ticks;
+        bool Expand = false;
+
         public F_PRIVACY_9()
         {
             InitializeComponent();
@@ -130,23 +125,6 @@ namespace Project_Hoteel
             }
             MessageCollection.showNatification(l_notificatio_9.Text);
         }
-
-        private void t_password_old_9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)Keys.Back)
-            //    e.Handled = false;
-            //else
-            //    e.Handled = true;
-        }
-
-        private void t_password_new_9_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            //if (e.KeyChar >= '0' && e.KeyChar <= '9' || e.KeyChar == (char)Keys.Back)
-            //    e.Handled = false;
-            //else
-            //    e.Handled = true;
-        }
-
         private void timer_Close_Tick(object sender, EventArgs e)
         {
             if (Pass == true)
@@ -163,13 +141,11 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void l_changePassword_9_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
             Transition_9.HideSync(l_changePassword_9);
         }
-        bool Expand = false;
         private void timer_Password_Tick(object sender, EventArgs e)
         {
             if (Expand == true)
@@ -191,24 +167,20 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void b_close_9_Click(object sender, EventArgs e)
         {
             timer_Password.Start();
             Transition_9.ShowSync(l_changePassword_9);
         }
-
         private void l_changePassword_9_MouseHover(object sender, EventArgs e)
         {
             l_changePassword_9.ForeColor = Color.LightSteelBlue;
         }
-
         private void l_changePassword_9_MouseLeave(object sender, EventArgs e)
         {
             F_ROOMS_12 f_12 = new F_ROOMS_12();
             l_changePassword_9.ForeColor = f_12.l_add_rooms_12.ForeColor;
         }
-
         private void F_PRIVACY_9_Load(object sender, EventArgs e)
         {
             F_LOGIN_2 f_2 = Application.OpenForms["F_LOGIN_SIGNUP_2"] as F_LOGIN_2;

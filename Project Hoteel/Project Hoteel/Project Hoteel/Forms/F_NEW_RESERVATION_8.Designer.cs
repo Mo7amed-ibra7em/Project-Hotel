@@ -31,15 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(F_NEW_RESERVATION_8));
             this.t_price_8 = new System.Windows.Forms.TextBox();
             this.l_price_8 = new System.Windows.Forms.Label();
-            this.l_meal_type_8 = new System.Windows.Forms.Label();
             this.l_room_type_8 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.b_back_8 = new Guna.UI2.WinForms.Guna2Button();
             this.b_reserve_8 = new Guna.UI2.WinForms.Guna2Button();
-            this.radio_fb_8 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.radio_hb_8 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.radio_bb_8 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.panel_1_8 = new System.Windows.Forms.Panel();
             this.radio_panel1_4_8 = new Guna.UI2.WinForms.Guna2RadioButton();
             this.radio_panel1_3_8 = new Guna.UI2.WinForms.Guna2RadioButton();
@@ -58,7 +54,7 @@
             this.t_price_8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.t_price_8.Font = new System.Drawing.Font("PT Bold Broken", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.t_price_8.ForeColor = System.Drawing.Color.White;
-            this.t_price_8.Location = new System.Drawing.Point(566, 324);
+            this.t_price_8.Location = new System.Drawing.Point(566, 243);
             this.t_price_8.Multiline = true;
             this.t_price_8.Name = "t_price_8";
             this.t_price_8.ReadOnly = true;
@@ -73,25 +69,12 @@
             this.l_price_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.l_price_8.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_price_8.ForeColor = System.Drawing.Color.White;
-            this.l_price_8.Location = new System.Drawing.Point(704, 319);
+            this.l_price_8.Location = new System.Drawing.Point(704, 238);
             this.l_price_8.Name = "l_price_8";
             this.l_price_8.Size = new System.Drawing.Size(126, 32);
             this.l_price_8.TabIndex = 31;
             this.l_price_8.Text = "السعر الإجمالي :";
             this.l_price_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // l_meal_type_8
-            // 
-            this.l_meal_type_8.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.l_meal_type_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
-            this.l_meal_type_8.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
-            this.l_meal_type_8.ForeColor = System.Drawing.Color.White;
-            this.l_meal_type_8.Location = new System.Drawing.Point(720, 137);
-            this.l_meal_type_8.Name = "l_meal_type_8";
-            this.l_meal_type_8.Size = new System.Drawing.Size(101, 32);
-            this.l_meal_type_8.TabIndex = 18;
-            this.l_meal_type_8.Text = "نوع الوجبة :";
-            this.l_meal_type_8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // l_room_type_8
             // 
@@ -99,7 +82,7 @@
             this.l_room_type_8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.l_room_type_8.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.l_room_type_8.ForeColor = System.Drawing.Color.White;
-            this.l_room_type_8.Location = new System.Drawing.Point(723, 36);
+            this.l_room_type_8.Location = new System.Drawing.Point(722, 73);
             this.l_room_type_8.Name = "l_room_type_8";
             this.l_room_type_8.Size = new System.Drawing.Size(98, 32);
             this.l_room_type_8.TabIndex = 16;
@@ -112,7 +95,7 @@
             this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.label1.Font = new System.Drawing.Font("PT Simple Bold Ruled", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(723, 88);
+            this.label1.Location = new System.Drawing.Point(723, 157);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 32);
             this.label1.TabIndex = 17;
@@ -124,10 +107,8 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(28)))), ((int)(((byte)(63)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.b_back_8);
+            this.panel1.Controls.Add(this.l_room_type_8);
             this.panel1.Controls.Add(this.b_reserve_8);
-            this.panel1.Controls.Add(this.radio_fb_8);
-            this.panel1.Controls.Add(this.radio_hb_8);
-            this.panel1.Controls.Add(this.radio_bb_8);
             this.panel1.Controls.Add(this.panel_1_8);
             this.panel1.Controls.Add(this.n_room_8);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -200,77 +181,6 @@
             this.b_reserve_8.TextFormatNoPrefix = true;
             this.b_reserve_8.Click += new System.EventHandler(this.b_reserve_8_Click);
             // 
-            // radio_fb_8
-            // 
-            this.radio_fb_8.Animated = true;
-            this.radio_fb_8.AutoSize = true;
-            this.radio_fb_8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radio_fb_8.CheckedState.BorderThickness = 1;
-            this.radio_fb_8.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radio_fb_8.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radio_fb_8.CheckedState.InnerOffset = -5;
-            this.radio_fb_8.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold);
-            this.radio_fb_8.ForeColor = System.Drawing.Color.White;
-            this.radio_fb_8.Location = new System.Drawing.Point(657, 259);
-            this.radio_fb_8.Name = "radio_fb_8";
-            this.radio_fb_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radio_fb_8.Size = new System.Drawing.Size(48, 22);
-            this.radio_fb_8.TabIndex = 44;
-            this.radio_fb_8.Text = "FB";
-            this.radio_fb_8.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
-            this.radio_fb_8.UncheckedState.BorderThickness = 1;
-            this.radio_fb_8.UncheckedState.FillColor = System.Drawing.Color.LightGray;
-            this.radio_fb_8.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.radio_fb_8.CheckedChanged += new System.EventHandler(this.radio_fb_8_CheckedChanged);
-            // 
-            // radio_hb_8
-            // 
-            this.radio_hb_8.Animated = true;
-            this.radio_hb_8.AutoSize = true;
-            this.radio_hb_8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radio_hb_8.CheckedState.BorderThickness = 1;
-            this.radio_hb_8.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radio_hb_8.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radio_hb_8.CheckedState.InnerOffset = -5;
-            this.radio_hb_8.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold);
-            this.radio_hb_8.ForeColor = System.Drawing.Color.White;
-            this.radio_hb_8.Location = new System.Drawing.Point(654, 212);
-            this.radio_hb_8.Name = "radio_hb_8";
-            this.radio_hb_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radio_hb_8.Size = new System.Drawing.Size(51, 22);
-            this.radio_hb_8.TabIndex = 43;
-            this.radio_hb_8.Text = "HB";
-            this.radio_hb_8.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
-            this.radio_hb_8.UncheckedState.BorderThickness = 1;
-            this.radio_hb_8.UncheckedState.FillColor = System.Drawing.Color.LightGray;
-            this.radio_hb_8.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.radio_hb_8.CheckedChanged += new System.EventHandler(this.radio_hb_8_CheckedChanged);
-            // 
-            // radio_bb_8
-            // 
-            this.radio_bb_8.Animated = true;
-            this.radio_bb_8.AutoSize = true;
-            this.radio_bb_8.Checked = true;
-            this.radio_bb_8.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.radio_bb_8.CheckedState.BorderThickness = 1;
-            this.radio_bb_8.CheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.radio_bb_8.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.radio_bb_8.CheckedState.InnerOffset = -5;
-            this.radio_bb_8.Font = new System.Drawing.Font("Felix Titling", 9F, System.Drawing.FontStyle.Bold);
-            this.radio_bb_8.ForeColor = System.Drawing.Color.White;
-            this.radio_bb_8.Location = new System.Drawing.Point(656, 163);
-            this.radio_bb_8.Name = "radio_bb_8";
-            this.radio_bb_8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.radio_bb_8.Size = new System.Drawing.Size(49, 22);
-            this.radio_bb_8.TabIndex = 42;
-            this.radio_bb_8.TabStop = true;
-            this.radio_bb_8.Text = "BB";
-            this.radio_bb_8.UncheckedState.BorderColor = System.Drawing.Color.LightGray;
-            this.radio_bb_8.UncheckedState.BorderThickness = 1;
-            this.radio_bb_8.UncheckedState.FillColor = System.Drawing.Color.LightGray;
-            this.radio_bb_8.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.radio_bb_8.CheckedChanged += new System.EventHandler(this.radio_bb_8_CheckedChanged);
-            // 
             // panel_1_8
             // 
             this.panel_1_8.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -281,7 +191,7 @@
             this.panel_1_8.Controls.Add(this.radio_panel1_1_8);
             this.panel_1_8.Font = new System.Drawing.Font("PT Simple Bold Ruled", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.panel_1_8.ForeColor = System.Drawing.Color.White;
-            this.panel_1_8.Location = new System.Drawing.Point(337, 33);
+            this.panel_1_8.Location = new System.Drawing.Point(336, 70);
             this.panel_1_8.Name = "panel_1_8";
             this.panel_1_8.Size = new System.Drawing.Size(389, 45);
             this.panel_1_8.TabIndex = 33;
@@ -384,7 +294,7 @@
             this.n_room_8.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.n_room_8.Font = new System.Drawing.Font("PT Bold Broken", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.n_room_8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(146)))), ((int)(((byte)(255)))));
-            this.n_room_8.Location = new System.Drawing.Point(641, 98);
+            this.n_room_8.Location = new System.Drawing.Point(641, 161);
             this.n_room_8.Multiline = true;
             this.n_room_8.Name = "n_room_8";
             this.n_room_8.ReadOnly = true;
@@ -401,9 +311,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(891, 467);
             this.Controls.Add(this.t_price_8);
-            this.Controls.Add(this.l_room_type_8);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.l_meal_type_8);
             this.Controls.Add(this.l_price_8);
             this.Controls.Add(this.panel1);
             this.DoubleBuffered = true;
@@ -425,15 +333,11 @@
 
         #endregion
         public System.Windows.Forms.Label l_room_type_8;
-        public System.Windows.Forms.Label l_meal_type_8;
         public System.Windows.Forms.TextBox t_price_8;
         public System.Windows.Forms.Label l_price_8;
         public System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel1;
         public System.Windows.Forms.TextBox n_room_8;
-        private Guna.UI2.WinForms.Guna2RadioButton radio_fb_8;
-        private Guna.UI2.WinForms.Guna2RadioButton radio_hb_8;
-        private Guna.UI2.WinForms.Guna2RadioButton radio_bb_8;
         public System.Windows.Forms.Panel panel_1_8;
         public Guna.UI2.WinForms.Guna2RadioButton radio_panel1_4_8;
         public Guna.UI2.WinForms.Guna2RadioButton radio_panel1_3_8;

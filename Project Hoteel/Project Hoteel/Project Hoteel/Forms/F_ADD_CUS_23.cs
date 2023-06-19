@@ -16,7 +16,7 @@ namespace Project_Hoteel.Forms
 {
     public partial class F_ADD_CUS_23 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         public F_ADD_CUS_23()
         {
@@ -33,56 +33,18 @@ namespace Project_Hoteel.Forms
             t_endDate_23.Text = f_11.array[4];
             t_priceAll_23.Text = f_11.array[5];
         }
-
         private void picture_cancel_23_Click(object sender, EventArgs e)
         {
             this.Close();
         } 
-
-        #region كود لجعل الفورم قابل للتحريك
-        public const int WM_NCLBUTTONDOWN = 0xA1;
-        public const int HT_CAPTION = 0x2;
-        private void F_ADD_CUS_23_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                NativeMethods.ReleaseCapture();
-                NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
-            }
-        }
-        public class NativeMethods
-        {
-            [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
-            public static extern IntPtr CreateRoundRectRgn
-             (
-              int nLeftRect, // x-coordinate of upper-left corner
-              int nTopRect, // y-coordinate of upper-left corner
-              int nRightRect, // x-coordinate of lower-right corner
-              int nBottomRect, // y-coordinate of lower-right corner
-              int nWidthEllipse, // height of ellipse
-              int nHeightEllipse // width of ellipse
-             );
-
-            [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
-            public static extern bool DeleteObject(IntPtr hObject);
-            [DllImportAttribute("user32.dll")]
-            public static extern bool ReleaseCapture();
-
-            [DllImportAttribute("user32.dll")]
-            public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
-        }
-        #endregion
-
         private void picture_cancel_23_MouseHover(object sender, EventArgs e)
         {
             picture_cancel_23.BackgroundImage = Properties.Resources.cross__1_;
         }
-
         private void picture_cancel_23_MouseLeave(object sender, EventArgs e)
         {
             picture_cancel_23.BackgroundImage = Properties.Resources.cross__2_;
         }
-
         private void b_add_cus_23_Click(object sender, EventArgs e)
         {
             F_DEBARTURES_11 f_11 = Application.OpenForms["F_DEBARTURES_11"] as F_DEBARTURES_11;
@@ -138,7 +100,6 @@ namespace Project_Hoteel.Forms
                 }
                 try
                 {
-                   
                     if (t_number_room_23.ForeColor != Color.Red)
                     {
                         sqlcmd.Connection = sqlconn;
@@ -164,7 +125,6 @@ namespace Project_Hoteel.Forms
                 }
             }
         }
-
         private void t_number_room_23_TextChanged(object sender, EventArgs e)
         {
             string ROOMTYPE = "";
@@ -242,5 +202,39 @@ namespace Project_Hoteel.Forms
                 sqlconn.Close();
             }
         }
+
+        #region كود لجعل الفورم قابل للتحريك
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+        private void F_ADD_CUS_23_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                NativeMethods.ReleaseCapture();
+                NativeMethods.SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        public class NativeMethods
+        {
+            [DllImport("Gdi32.dll", EntryPoint = "CreateRoundRectRgn")]
+            public static extern IntPtr CreateRoundRectRgn
+             (
+              int nLeftRect, // x-coordinate of upper-left corner
+              int nTopRect, // y-coordinate of upper-left corner
+              int nRightRect, // x-coordinate of lower-right corner
+              int nBottomRect, // y-coordinate of lower-right corner
+              int nWidthEllipse, // height of ellipse
+              int nHeightEllipse // width of ellipse
+             );
+
+            [DllImport("gdi32.dll", EntryPoint = "DeleteObject")]
+            public static extern bool DeleteObject(IntPtr hObject);
+            [DllImportAttribute("user32.dll")]
+            public static extern bool ReleaseCapture();
+
+            [DllImportAttribute("user32.dll")]
+            public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        }
+        #endregion
     }
 }

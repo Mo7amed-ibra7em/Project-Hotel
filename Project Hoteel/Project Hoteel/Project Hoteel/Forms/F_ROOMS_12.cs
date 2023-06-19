@@ -15,16 +15,16 @@ namespace Project_Hoteel
 {
     public partial class F_ROOMS_12 : Form
     {
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
+        #region اتصال مع السيرفر والمتغيرات
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
         string room_singular = "",
                room_dualism = "",
                room_trilogy = "",
                room_sweet = "";
-
+        string R_number = "";
         bool Expand = true;
-        F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
-
+        #endregion
         public F_ROOMS_12()
         {
             InitializeComponent();
@@ -33,43 +33,85 @@ namespace Project_Hoteel
 
         private void b_add_room_12_Click(object sender, EventArgs e)
         {
-            F_F_ADMIN_15 f_15 = Application.OpenForms["F_F_ADMIN_15"] as F_F_ADMIN_15;
-            if(cbox_type_room_12.Text != "" && t_number_room_12.Text != "" && t_price_room_12.Text != "")
+            ////
+            SqlConnection sqlconn = new SqlConnection();
+            try
             {
-                SqlConnection sqlconn = new SqlConnection();
-                try
-                {
-                    sqlconn.ConnectionString = connstr;
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                try
-                {
-                    SqlCommand sqlcmd = new SqlCommand();
-                    sqlcmd.Connection = sqlconn;
-                    sqlcmd.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ," + t_number_room_12.Text + ",'" + cbox_type_room_12.SelectedItem.ToString() + "'," + t_price_room_12.Text + ")";
-                    sqlconn.Open();
-                    sqlcmd.ExecuteNonQuery();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    sqlconn.Close();
-                }
-
-                l_notificatio_12.Text = "تم عملية الإضافة بنجاح";
-                MessageCollection.showNatification(l_notificatio_12.Text);
-                cbox_type_room_12.SelectedIndex = -1;
-                t_number_room_12.Text = "";
-                t_price_room_12.Text = "";
+                sqlconn.ConnectionString = connstr;
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            SqlCommand sqlcmd = new SqlCommand();
+            sqlcmd.Connection = sqlconn;
+            SqlDataReader dread;
+            try
+            {
+                sqlcmd.CommandText = "select N_room from ROOMS where N_room = " + t_number_room_12.Text + ";";
+                sqlconn.Open();
+                dread = sqlcmd.ExecuteReader();
+                while (dread.Read())
+                {
+                    R_number = dread["N_room"].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                //MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+            ////
+            if (R_number == "")
+            {
+                if (cbox_type_room_12.Text != "" && t_number_room_12.Text != "" && t_price_room_12.Text != "")
+                {
+                    SqlConnection sqlconn1 = new SqlConnection();
+                    try
+                    {
+                        sqlconn1.ConnectionString = connstr;
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    try
+                    {
+                        SqlCommand sqlcmd1 = new SqlCommand();
+                        sqlcmd1.Connection = sqlconn1;
+                        sqlcmd1.CommandText = "insert into ROOMS (Room_condition , N_room , T_room , P_room) values ( 'فارغة' ," + t_number_room_12.Text + ",'" + cbox_type_room_12.SelectedItem.ToString() + "'," + t_price_room_12.Text + ")";
+                        sqlconn1.Open();
+                        sqlcmd1.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message);
+                    }
+                    finally
+                    {
+                        sqlconn1.Close();
+                    }
+                    l_notificatio_12.Text = "تم عملية الإضافة بنجاح";
+                    MessageCollection.showNatification(l_notificatio_12.Text);
+                    cbox_type_room_12.SelectedIndex = -1;
+                    t_number_room_12.Text = "";
+                    t_price_room_12.Text = "";
+                }
+                else
+                {
+                    MessageCollection.showNatification("ادخل معلومات الغرفة كاملة");
+                }
+            }
+            else
+            {
+                MessageCollection.showNatification("الغرفة ذات الرقم ' "+t_number_room_12.Text+" ' موجودة بالفعل");
+                t_number_room_12.Text = "";
+            }
+            
         }
-
         private void F_ROOMS_12_Load(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();
@@ -135,7 +177,6 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
             /////Price Room
-            
             try
             {
                 sqlconn.ConnectionString = connstr;
@@ -147,7 +188,7 @@ namespace Project_Hoteel
             sqlcmd.Connection = sqlconn;
             try
             {
-                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'مفردة'";
+                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'مفردة' group by P_room";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
@@ -163,7 +204,7 @@ namespace Project_Hoteel
                     room_dualism = dread["P_room"].ToString();
                 }
                 sqlconn.Close();
-                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'ثلاثية'";
+                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'ثلاثية' group by P_room";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
@@ -171,7 +212,7 @@ namespace Project_Hoteel
                     room_trilogy = dread["P_room"].ToString();
                 }
                 sqlconn.Close();
-                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'سويت'";
+                sqlcmd.CommandText = "select P_room from ROOMS where T_room = 'سويت' group by P_room";
                 sqlconn.Open();
                 dread = sqlcmd.ExecuteReader();
                 while (dread.Read())
@@ -188,7 +229,6 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
-
         private void timer_room_12_Tick(object sender, EventArgs e)
         {
             if (Expand == false)
@@ -210,7 +250,6 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void l_add_rooms_12_Click(object sender, EventArgs e)
         {
             timer_room_12.Start();
@@ -220,19 +259,16 @@ namespace Project_Hoteel
         {
             l_add_rooms_12.ForeColor = Color.LightSteelBlue;
         }
-
         private void l_add_rooms_12_MouseLeave(object sender, EventArgs e)
         {
             F_PRIVACY_9 f_9 = new F_PRIVACY_9();
             l_add_rooms_12.ForeColor = f_9.l_changePassword_9.ForeColor;
         }
-
         private void b_close_12_Click(object sender, EventArgs e)
         {
             timer_room_12.Start();
             Transition_12.ShowSync(l_add_rooms_12);
         }
-
         private void cbox_type_room_12_SelectionChangeCommitted(object sender, EventArgs e)
         {
             if (cbox_type_room_12.SelectedIndex == 0)

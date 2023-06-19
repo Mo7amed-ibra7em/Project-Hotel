@@ -12,16 +12,19 @@ namespace Project_Hoteel
 {
     public partial class F_SETTINGS_MANAGER_18 : Form
     {
+        #region متغيرات
         bool privac_18 = false;
         public bool acc_emp_18 = false;
         bool customize_18 = false;
         bool about_18 = false;
         public int refresh = 0;
+        #endregion
 
         public F_SETTINGS_MANAGER_18()
         {
             InitializeComponent();
         }
+
         private void b_privac_18_Click(object sender, EventArgs e)
         {
             privac_18 = true;
@@ -42,7 +45,6 @@ namespace Project_Hoteel
             pnl_load_form_18.Controls.Add(f_20);
             f_20.Show();
         }
-
         private void b_acc_emp_18_Click(object sender, EventArgs e)
         {
             acc_emp_18 = true;
@@ -63,7 +65,6 @@ namespace Project_Hoteel
             pnl_load_form_18.Controls.Add(f_19);
             f_19.Show();
         }
-
         private void b_customize_18_Click(object sender, EventArgs e)
         {
             customize_18 = true;
@@ -84,7 +85,6 @@ namespace Project_Hoteel
             pnl_load_form_18.Controls.Add(f_21);
             f_21.Show();
         }
-
         private void b_about_18_Click(object sender, EventArgs e)
         {
             about_18 = true;
@@ -99,7 +99,6 @@ namespace Project_Hoteel
             b_about_18.FillColor = this.BackColor;
             b_about_18.BorderColor = Color.Thistle;
         }
-
         private void F_SETTINGS_MANAGER_18_Load(object sender, EventArgs e)
         {
             b_privac_18.HoverState.FillColor = b_privac_18.FillColor;
@@ -282,36 +281,6 @@ namespace Project_Hoteel
                     refresh = 4;
                 }
             }
-
-        }
-
-        private void b_cover_2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnl_manager_18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void b_shape_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnl_checked_18_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void b_cover_1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void pnl_1_Paint(object sender, PaintEventArgs e)
-        {
 
         }
     }

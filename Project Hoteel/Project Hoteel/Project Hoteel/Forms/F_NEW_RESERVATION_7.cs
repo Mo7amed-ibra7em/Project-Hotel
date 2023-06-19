@@ -25,7 +25,6 @@ namespace Project_Hoteel
 
         private void b_next_7_Click(object sender, EventArgs e)
         {
-
             if (chb_there_is_awife_7.Checked == true)
             {
                 WifeName = t_fore_name_7.Text + " " + t_last_name_7.Text;
@@ -36,7 +35,6 @@ namespace Project_Hoteel
                 WifeName = "####";
                 iNumber = "0";
             }
-
             t_number_all_7.Text=people_all.ToString();
             /////
             F_ADMIN_5 f_5 = Application.OpenForms["F_ADMIN_5"] as F_ADMIN_5;
@@ -86,10 +84,8 @@ namespace Project_Hoteel
         }
         private void F_NEW_RESERVATION_7_Load(object sender, EventArgs e)
         {
-
             t_number_of_people_7.Text = Convert.ToString(people_7);
             t_number_all_7.Text = Convert.ToString(people_all);
-
         }
         private void radio_panel1_1_7_CheckedChanged(object sender, EventArgs e)
         {

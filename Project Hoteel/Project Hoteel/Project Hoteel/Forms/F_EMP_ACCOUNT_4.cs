@@ -14,9 +14,8 @@ namespace Project_Hoteel
 {
     public partial class F_EMP_ACCOUNT_4 : Form
     {
+        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hoteel Reservation;Integrated Security = True";
 
-        string connstr = "Data Source="+C_LOGIN_2.SERVER1+"; Initial Catalog=Hotel Reservation;Integrated Security = True";
-        //public bool btn_4 = false;
         public F_EMP_ACCOUNT_4()
         {
             InitializeComponent();
@@ -54,7 +53,6 @@ namespace Project_Hoteel
                 sqlconn.Close();
             }
         }
-
         private void b_edit_4_Click(object sender, EventArgs e)
         {
             if (b_edit_4.FillColor == b_delete_4.FillColor)
@@ -130,7 +128,6 @@ namespace Project_Hoteel
                 }
             }
         }
-
         private void t_search_4_TextChanged(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();
@@ -201,7 +198,6 @@ namespace Project_Hoteel
             f_18.b_acc_emp_18.FillColor = f_1.pnl_manager_1.BackColor;
             f_18.b_acc_emp_18.UseTransparentBackground = false;
         }
-
         private void b_delete_4_Click(object sender, EventArgs e)
         {
             SqlConnection sqlconn = new SqlConnection();
