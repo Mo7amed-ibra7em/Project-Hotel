@@ -1,0 +1,23 @@
+body
+{
+    background-color: #0c1022;
+    text-align: center;
+    color: #00ccee;
+   
+}
+.sub2{
+    background-color: #00ccee;
+    color: #0c1022;
+    width: 175px;
+    height: 25px;
+}
+input{
+    border-color: #00ccee;
+background-color: #0c1022;
+color: white;
+border-radius: 20px;
+text-align: center;
+
+}
+
+

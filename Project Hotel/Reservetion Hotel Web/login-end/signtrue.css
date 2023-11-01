@@ -1,0 +1,50 @@
+body{
+    text-align: center;
+    
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    background-color: #0c1022;
+}
+h2{
+    color: #00ccff;
+ 
+}
+div{
+    
+        position: relative;
+        width: 300px;
+        height: 40px;
+        transition: 1s;
+        margin-top: 70px;
+    
+    
+
+        position: absolute;
+        width: 50%;
+        height: 10%;
+        text-decoration: none;
+      
+        cursor: pointer;
+        font-size: 22px;
+        letter-spacing: 2px;
+        border: 1px solid #00ccff;
+        border-radius: 50px;
+        background-color: #0c1022;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+}
+a{
+    color: #00ccff;
+
+}
+#sub1{
+    color: #00ccff;
+    background-color: #0c1022;
+    width: 40%;
+    border-radius: 20px;
+height: 50%;
+    border-color: #00ccff;
+  }
